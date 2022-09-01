@@ -1,0 +1,30 @@
+{
+    "name": "boost-eo",
+    "displayName": "boost-eo",
+    "publisher": "raja",
+    "description": "A set of custom code snippets available for the VScode IDE to help you be more productive by providing helper methods ",
+    "version": "0.0.1",
+    "icon": "assets/boost-eo-ico.png",
+    "engines": {
+        "vscode": "^1.70.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./dist/boosteo-js.code-snippets"
+            },
+            {
+                "language": "python",
+                "path": "./dist/boosteo-py.code-snippets"
+            },
+            {
+                "language": "shellscript",
+                "path": "./dist/boosteo-sh.code-snippets"
+            }
+        ]
+    }
+}
