@@ -1,10 +1,28 @@
 import traverse from 'traverse';
 import fs from 'fs';
 import { header, footer } from './utils/docs.js';
-import { js_console } from './src/javascript/js-console.js';
-import { js_import } from './src/javascript/js-import.js';
+// python module importation
 import { py_basic } from './src/python/py-basic.js';
+// shellscript module importation
 import { sh_basic } from './src/shellscript/sh-basic.js';
+// javascript module importation
+import { js_console } from './src/javascript/js-console.js';
+import { js_module } from './src/javascript/js-module.js';
+import { js_func } from './src/javascript/js-func.js';
+import { js_gen } from './src/javascript/js-gen.js';
+import { js_regex } from './src/javascript/js-regex.js';
+import { js_cast } from './src/javascript/js-cast.js';
+import { js_math } from './src/javascript/js-math.js';
+import { js_string } from './src/javascript/js-string.js';
+import { js_hybrid } from './src/javascript/js-hybrid.js';
+import { js_mixte } from './src/javascript/js-mixte.js';
+import { js_array } from './src/javascript/js-array.js';
+import { js_destruct } from './src/javascript/js-destruct.js';
+import { js_spread } from './src/javascript/js-spread.js';
+import { js_struct } from './src/javascript/js-struct.js';
+import { js_class } from './src/javascript/js-class.js';
+import { js_object } from './src/javascript/js-object.js';
+import { js_basic } from './src/javascript/js-basic.js';
 
 // table generator
 function generateTable(data, language) {
@@ -100,7 +118,25 @@ function refactorSourceList(sourceList) {
 }
 
 // source list data
-const javascriptSourceList = refactorSourceList([js_console, js_import]);
+const javascriptSourceList = refactorSourceList([
+	js_array,
+	js_basic,
+	js_cast,
+	js_class,
+	js_console,
+	js_destruct,
+	js_func,
+	js_gen,
+	js_hybrid,
+	js_math,
+	js_mixte,
+	js_module,
+	js_object,
+	js_regex,
+	js_spread,
+	js_string,
+	js_struct,
+]);
 const pythonSourceList = refactorSourceList([py_basic]);
 const shellscriptSourceList = refactorSourceList([sh_basic]);
 

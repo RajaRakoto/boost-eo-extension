@@ -33,6 +33,10 @@ You can install it by typing `boost-eo` in the extension tab of your IDE
 
 ### 📌 Usage
 
+> **Notation**
+hybr = string | array
+mixte = array | object
+
 
 #### ◾ Javascript snippets
 
@@ -43,7 +47,714 @@ You can install it by typing `boost-eo` in the extension tab of your IDE
 
 <tr>
 <td>
-<strong>bbeo-js-clg</strong>
+<strong>bbeo-js-array-ascElement</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.sort((${2:a},${3:b}) => ${2:a} - ${3:b})
+```
+</td>
+<td>
+
+>[array]: (a0 -> b1) sort in ascending order -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-array-descElement</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.sort((${2:a},${3:b}) => ${3:b} - ${2:a})
+```
+</td>
+<td>
+
+>[array]: (b1 -> a0) sort in descending order -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-array-slice</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.slice(${2:start}, ${3:end+1})
+```
+</td>
+<td>
+
+>[array]: split an array [n, n+1] -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-array-join</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.join(${2:delimiter})
+```
+</td>
+<td>
+
+>[array]: join an array from a delimiter to get a string -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-array-flat</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.flat(${2:depth})
+```
+</td>
+<td>
+
+>[array]: Flatten the elements of a nested array to a specific depth -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-array-isEmpty</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.length === 0 ? true : false
+```
+</td>
+<td>
+
+>[array]: Check if an array is empty -> boolean
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-array-removeDuplicates</strong>
+</td>
+<td>
+
+```js
+[...new Set(${1:array_var})]
+```
+</td>
+<td>
+
+>[array]: Remove duplicates from an array -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-ifCondition</strong>
+</td>
+<td>
+
+```js
+if (${1:condition}) {
+    ${3:condition_body}
+} else if (${2:condition}) {
+    ${4:condition_body}
+} else {
+    ${5:condition_body}
+}
+```
+</td>
+<td>
+
+>[basic]: Conditional statement
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-forLoop</strong>
+</td>
+<td>
+
+```js
+for (let ${1:index} = 0; ${1:index} < ${2:array_length}; ${1:index}++) {
+    ${3:for_body}
+}
+```
+</td>
+<td>
+
+>[basic]: For loop
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-whileLoop</strong>
+</td>
+<td>
+
+```js
+while (${1:condition}) {
+    ${2:while_body}
+}
+```
+</td>
+<td>
+
+>[basic]: While loop
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-doWhileLoop</strong>
+</td>
+<td>
+
+```js
+do {
+    ${2:do_body}
+} while (${1:condition});
+```
+</td>
+<td>
+
+>[basic]: Do while loop
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-forInLoop</strong>
+</td>
+<td>
+
+```js
+for (let ${1:e} in ${2:array_var}) {
+    ${3:for_body}
+}
+```
+</td>
+<td>
+
+>[basic]: For in loop
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-forOfLoop</strong>
+</td>
+<td>
+
+```js
+for (let ${1:e} of ${2:array_var}) {
+    ${3:for_body}
+}
+```
+</td>
+<td>
+
+>[basic]: For of loop
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-forEachLoop</strong>
+</td>
+<td>
+
+```js
+${2:array_var}.forEach((${1:e}) => {
+    ${3:for_body}
+});
+```
+</td>
+<td>
+
+>[basic]: For each loop
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-switchStatement</strong>
+</td>
+<td>
+
+```js
+switch (${1:condition}) {
+    case ${2:condition_value}:
+        ${3:switch_body}
+        break;
+    case ${4:condition_value}:
+        ${5:switch_body}
+        break;
+    default:
+        ${6:switch_body}
+        break;
+}
+```
+</td>
+<td>
+
+>[basic]: Switch statement
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-tryCatchStatement</strong>
+</td>
+<td>
+
+```js
+try {
+    ${1:try_body}
+} catch (${2:error}) {
+    ${3:catch_body}
+}
+```
+</td>
+<td>
+
+>[basic]: Try catch statement
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-tryCatchFinallyStatement</strong>
+</td>
+<td>
+
+```js
+try {
+    ${1:try_body}
+} catch (${2:error}) {
+    ${3:catch_body}
+} finally {
+    ${4:finally_body}
+}
+```
+</td>
+<td>
+
+>[basic]: Try catch finally statement
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-tryCatchFinallyStatementMultiple</strong>
+</td>
+<td>
+
+```js
+try {
+    ${1:try_body}
+} catch (${2:error}) {
+    ${3:catch_body}
+} catch (${4:error}) {
+    ${5:catch_body}
+} finally {
+    ${6:finally_body}
+}
+```
+</td>
+<td>
+
+>[basic]: Try catch finally statement with multiple catch blocks
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-objToString1</strong>
+</td>
+<td>
+
+```js
+${1:object}.toString()
+```
+</td>
+<td>
+
+>[cast]: method 1 - Convert any object to string -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-objToString2</strong>
+</td>
+<td>
+
+```js
+String(${1:object})
+```
+</td>
+<td>
+
+>[cast]: method 2 - Convert any object to string -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-stringToArray1</strong>
+</td>
+<td>
+
+```js
+Array.from(${1:string_var})
+```
+</td>
+<td>
+
+>[cast]: method 1 - convert string to array -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-stringToArray2</strong>
+</td>
+<td>
+
+```js
+[... ${1:string_var}]
+```
+</td>
+<td>
+
+>[cast]: method 2 - convert string to array -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-stringToArray3</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.split``
+```
+</td>
+<td>
+
+>[cast]: method 3 - convert string to array -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-stringToNumber1</strong>
+</td>
+<td>
+
+```js
+Number(${1:string_var})
+```
+</td>
+<td>
+
+>[cast]: method 1 - convert string to number -> number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-stringToNumber2</strong>
+</td>
+<td>
+
+```js
+parseInt(${1:string_var})
+```
+</td>
+<td>
+
+>[cast]: method 2 - convert string to number -> number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-hex2dec</strong>
+</td>
+<td>
+
+```js
++('0x'+ ${1:hex_var})
+```
+</td>
+<td>
+
+>[cast]: hex -> dec
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-dec2hex</strong>
+</td>
+<td>
+
+```js
+${1:dec_var}.toString(16)
+```
+</td>
+<td>
+
+>[cast]: dec -> hex
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-oct2dec</strong>
+</td>
+<td>
+
+```js
+parseInt(${1:oct_var}, 8)
+```
+</td>
+<td>
+
+>[cast]: oct -> dec
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-dec2oct</strong>
+</td>
+<td>
+
+```js
+${1:dec_var}.toString(8)
+```
+</td>
+<td>
+
+>[cast]: dec -> oct
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-bin2dec</strong>
+</td>
+<td>
+
+```js
+parseInt(${bin_var}, 2)
+```
+</td>
+<td>
+
+>[cast]: bin -> dec
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-dec2bin</strong>
+</td>
+<td>
+
+```js
+${1:dec_var}.toString(2)
+```
+</td>
+<td>
+
+>[cast]: dec -> bin
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-getter</strong>
+</td>
+<td>
+
+```js
+get ${1:property_name} () { return this.${1:property_name}; }
+```
+</td>
+<td>
+
+>[class]: Create getter pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-setter</strong>
+</td>
+<td>
+
+```js
+set ${1:property_name} (${2:value}) { this.${1:property_name} = ${2:value}; }
+```
+</td>
+<td>
+
+>[class]: Create setter pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-method</strong>
+</td>
+<td>
+
+```js
+${1:method_name} () { ${2:method_body} }
+```
+</td>
+<td>
+
+>[class]: Create method pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-constructor</strong>
+</td>
+<td>
+
+```js
+constructor () { ${1:constructor_body} }
+```
+</td>
+<td>
+
+>[class]: Create constructor pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-staticMethod</strong>
+</td>
+<td>
+
+```js
+static ${1:method_name} () { ${2:method_body} }
+```
+</td>
+<td>
+
+>[class]: Create static method pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-staticProperty</strong>
+</td>
+<td>
+
+```js
+static ${1:property_name} = ${2:property_value}
+```
+</td>
+<td>
+
+>[class]: Create static property pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-staticGetter</strong>
+</td>
+<td>
+
+```js
+static get ${1:property_name} () { return this.${1:property_name}; }
+```
+</td>
+<td>
+
+>[class]: Create static getter pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-staticSetter</strong>
+</td>
+<td>
+
+```js
+static set ${1:property_name} (${2:value}) { this.${1:property_name} = ${2:value}; }
+```
+</td>
+<td>
+
+>[class]: Create static setter pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-class-genClassPattern</strong>
+</td>
+<td>
+
+```js
+class Circle extends Shape {
+  
+  // constructor
+  constructor (radius) {
+    this.radius = radius
+  }
+  
+  // methods
+   getArea () {
+    return Math.PI * 2 * this.radius
+  }
+  
+  // superclass
+   expand (n) {
+    return super.expand(n) * Math.PI
+  }
+  
+  //static method
+   static createFromDiameter(diameter) {
+    return new Circle(diameter / 2)
+  }
+}
+```
+</td>
+<td>
+
+>[class]: Generate class pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-console-clg</strong>
 </td>
 <td>
 
@@ -59,7 +770,7 @@ console.log(${1:object})
 
 <tr>
 <td>
-<strong>bbeo-js-clr</strong>
+<strong>bbeo-js-console-clr</strong>
 </td>
 <td>
 
@@ -75,7 +786,7 @@ console.error(${1:object})
 
 <tr>
 <td>
-<strong>bbeo-js-clt</strong>
+<strong>bbeo-js-console-clt</strong>
 </td>
 <td>
 
@@ -91,7 +802,7 @@ console.table(${1:object})
 
 <tr>
 <td>
-<strong>bbeo-js-cli</strong>
+<strong>bbeo-js-console-cli</strong>
 </td>
 <td>
 
@@ -107,7 +818,7 @@ console.info(${1:object})
 
 <tr>
 <td>
-<strong>bbeo-js-clw</strong>
+<strong>bbeo-js-console-clw</strong>
 </td>
 <td>
 
@@ -123,7 +834,350 @@ console.warn(${1:object})
 
 <tr>
 <td>
-<strong>bbeo-js-imp</strong>
+<strong>bbeo-js-destruct-assignArray</strong>
+</td>
+<td>
+
+```js
+const [${1:var1}, ${2:var2}] = [${3:value1}, ${4:value2}]
+```
+</td>
+<td>
+
+>[destruct]: Destructuring assignment -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-destruct-assignObject</strong>
+</td>
+<td>
+
+```js
+const {${1:attrib1}, ${2:attrib2}} = ${3:object_container}
+```
+</td>
+<td>
+
+>[destruct]: Object destructuring assignment -> object
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-func-arrowFunc</strong>
+</td>
+<td>
+
+```js
+const ${1:func_name} = (${2:args}) => {
+  ${3:code...}
+}
+```
+</td>
+<td>
+
+>[func]: Create arrow function
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-gen-permut</strong>
+</td>
+<td>
+
+```js
+[${1:a},${2:b}] = [${2:b},${1:a}]
+```
+</td>
+<td>
+
+>[gen]: Swap 2 values ​​from 2 variables
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-gen-idGen</strong>
+</td>
+<td>
+
+```js
+let ${1:id_name} = idMaker()
+${1:id_name}.next().value  // → 0
+${1:id_name}.next().value  // → 1
+${1:id_name}.next().value  // → 2
+```
+</td>
+<td>
+
+>[gen]: Id generator
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-gen-alphaGen</strong>
+</td>
+<td>
+
+```js
+String.fromCharCode(...Array(123).keys()).slice(97)
+```
+</td>
+<td>
+
+>[gen]: Alphabet generator
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-gen-numGen</strong>
+</td>
+<td>
+
+```js
+[...Array(${1:min(0)~max(n+1)})].map((_, i) => i); 
+```
+</td>
+<td>
+
+>[gen]: Number generator
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-hybrid-indexOfElement</strong>
+</td>
+<td>
+
+```js
+${1:hybr_var}.indexOf(${2:e})
+```
+</td>
+<td>
+
+>[hybr]: Find index of element
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-hybrid-includesElement</strong>
+</td>
+<td>
+
+```js
+${1:hybr_var}.includes(${2:e})
+```
+</td>
+<td>
+
+>[hybr]: Check the existence of an element
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-dot</strong>
+</td>
+<td>
+
+```js
+${1:number_var}.toFixed(${2:decal})
+```
+</td>
+<td>
+
+>[math]: Format a number in fixed-dot notation -> number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-pow</strong>
+</td>
+<td>
+
+```js
+${1:number_var} ** ${2:exp}
+```
+</td>
+<td>
+
+>[math]: Power of number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-max</strong>
+</td>
+<td>
+
+```js
+Math.max(... ${1: element})
+```
+</td>
+<td>
+
+>[math]: Get MAX element
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-min</strong>
+</td>
+<td>
+
+```js
+Math.min(... ${1: element})
+```
+</td>
+<td>
+
+>[math]: Get MAX element
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-expOfNumber</strong>
+</td>
+<td>
+
+```js
+Math.log(${solution})/Math.log(${base})
+```
+</td>
+<td>
+
+>[math]: Get exponent of a number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-mixte-findElement</strong>
+</td>
+<td>
+
+```js
+${1:mixte_var}.find(${2:e} => ${2:e} ${3:===} ${4:foo})
+```
+</td>
+<td>
+
+>[mixte]: Search a specific element -> mixed
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-mixte-someElement</strong>
+</td>
+<td>
+
+```js
+${1:mixte_var}.some(${2:e} => ${2:e} ${3:===} ${4:foo})
+```
+</td>
+<td>
+
+>[mixte]: Check one or more specific element.s of an array/object (no size modification) -> boolean
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-mixte-everyElement</strong>
+</td>
+<td>
+
+```js
+${1:mixte_var}.every(${2:e} => ${2:e} ${3:===} ${4:foo})
+```
+</td>
+<td>
+
+>[mixte]: Check the integrity of the elements of an array/object (no size modification) -> boolean
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-mixte-mapElement</strong>
+</td>
+<td>
+
+```js
+${1:mixte_var}.map(${2:e} => {${3:expression}})
+```
+</td>
+<td>
+
+>[mixte]: Processing of different element of the array/object (no modification of the size) -> mixed
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-mixte-filterElement</strong>
+</td>
+<td>
+
+```js
+${1:mixte_var}.filter(${2:e} => {${3:condition}})
+```
+</td>
+<td>
+
+>[mixte]: Filter the element of an array/object (size modification) -> mixed
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-mixte-reduceElement</strong>
+</td>
+<td>
+
+```js
+${1:mixte_var}.reduce((${2:total, e}) => {${3:total + e}})
+```
+</td>
+<td>
+
+>[mixte]: Processing each element of the array/object to obtain a single value -> number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-mixte-foreachElement</strong>
+</td>
+<td>
+
+```js
+${1:mixte_var}.forEach((${2:e}) => {
+    ${3:expression}
+})
+```
+</td>
+<td>
+
+>[mixte]: Browse the elements of an array/object -> any
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-module-imp</strong>
 </td>
 <td>
 
@@ -133,13 +1187,13 @@ import ${1:module_name} from ${2:module_source};
 </td>
 <td>
 
->[import]: Imports entire module statement in ES6 syntax
+>[module]: Imports entire module statement in ES6 syntax
 </td>
 </tr>
 
 <tr>
 <td>
-<strong>bbeo-js-imd</strong>
+<strong>bbeo-js-module-imd</strong>
 </td>
 <td>
 
@@ -149,7 +1203,360 @@ import { ${1:module_name} } from ${2:module_source};
 </td>
 <td>
 
->[import]: Imports only a portion of the module in ES6 syntax (destructuring assignment)
+>[module]: Imports only a portion of the module in ES6 syntax (destructuring assignment)
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-extractValues</strong>
+</td>
+<td>
+
+```js
+Object.values(${1:object_var})
+```
+</td>
+<td>
+
+>[object]: Extract objecy values
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-extractEntries</strong>
+</td>
+<td>
+
+```js
+Object.entries(${1:object_var})
+```
+</td>
+<td>
+
+>[object]: Extract object entries
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-regex-numExtract</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.match(/\d/g);
+```
+</td>
+<td>
+
+>[regex]: Extract number in string 
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-regex-occTotal</strong>
+</td>
+<td>
+
+```js
+const ${1:string_var} = ${2:string_value}
+${3:occ_name}=(${1:string_var}.match(/${4:arg}/g)||[]).length 
+```
+</td>
+<td>
+
+>[regex]: Get total occurrence of argument in string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-regex-ifExist</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.match(/${2:arg}/)
+```
+</td>
+<td>
+
+>[regex]: {arg} must be present from {string_var}
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-regex-startOf</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.match(/^${2:arg}/)
+```
+</td>
+<td>
+
+>[regex]: Start of {arg} 
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-regex-endOf</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.match(/^${2:arg}/)
+```
+</td>
+<td>
+
+>[regex]: End of {arg} 
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-regex-ifExistOR</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.match(/${2:a}|${3:b}/)
+```
+</td>
+<td>
+
+>[regex]: {a} OR {b} must be present from {string_var}
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-spread-mergeArrays</strong>
+</td>
+<td>
+
+```js
+[...${1:arr1}, ...${2:arr2}]
+```
+</td>
+<td>
+
+>[spread]: Merge several arrays (concat() alternative) -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-spread-mergeObjects</strong>
+</td>
+<td>
+
+```js
+{...${1:obj1}, ...${2:obj2}}
+```
+</td>
+<td>
+
+>[spread]: Merge several objects (Object.assign() alternative) -> object
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-spread-removeDuplicates</strong>
+</td>
+<td>
+
+```js
+[...new Set(${1:array_var})]
+```
+</td>
+<td>
+
+>[spread]: Remove duplicates from an array -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-spread-addProp</strong>
+</td>
+<td>
+
+```js
+{...${1:obj_var}, ${2:newProp}: ${3:foo}}
+```
+</td>
+<td>
+
+>[spread]: Add a new prop/value to an existing object -> object
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-string-replace</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.replace(${2:'input'}, ${3:'output'})
+```
+</td>
+<td>
+
+>[string]: Replace single occurrence of value -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-string-replaceAll</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.replaceAll(${2:'input'}, ${3:'output'})
+```
+</td>
+<td>
+
+>[string]: Replace all occurrences of value -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-string-split</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.split(${2:'delimiter'})
+```
+</td>
+<td>
+
+>[string]: Split string into array -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-string-sub</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.substr(${2:start}, ${3:end+1})
+```
+</td>
+<td>
+
+>[string]: Split a string [start, end+1] -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-string-repeat</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.repeat(${2:N})
+```
+</td>
+<td>
+
+>[string]: Repeat a string N times -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-string-trim</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.trim()
+```
+</td>
+<td>
+
+>[string]: Remove the white space at the beginning and at the end of a string -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-struct-addToQueue</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.push(${2:e})
+```
+</td>
+<td>
+
+>[struct]: Add to queue -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-struct-addToHead</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.unshift(${2:e})
+```
+</td>
+<td>
+
+>[struct]: Add to head -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-struct-deleteAtTail</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.pop(${2:e})
+```
+</td>
+<td>
+
+>[struct]: Delete at tail -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-struct-deleteAtHead</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.shift(${2:e})
+```
+</td>
+<td>
+
+>[struct]: Delete at head -> array
 </td>
 </tr>
 
