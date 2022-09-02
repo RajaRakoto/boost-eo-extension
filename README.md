@@ -1,7 +1,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/RajaRakoto/boost-eo/master/assets/boost-eo-ico.png?token=GHSAT0AAAAAABXI5LRTNWMBNPFPHLIBLFAOYYR4S3A" width=128>
+<img src="https://github.com/RajaRakoto/boost-eo/blob/master/assets/boost-eo-ico.png?raw=true" width=128>
 
 # BOOST-EO
 
