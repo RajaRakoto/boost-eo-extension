@@ -11,6 +11,8 @@ import { js_regex } from './src/javascript/js-regex.js';
 import { js_cast } from './src/javascript/js-cast.js';
 import { js_math } from './src/javascript/js-math.js';
 import { js_string } from './src/javascript/js-string.js';
+import { js_hybrid } from './src/javascript/js-hybrid.js';
+import { js_mixte } from './src/javascript/js-mixte.js';
 
 // table generator
 function generateTable(data, language) {
@@ -111,7 +113,9 @@ const javascriptSourceList = refactorSourceList([
 	js_console,
 	js_func,
 	js_gen,
+	js_hybrid,
 	js_math,
+	js_mixte,
 	js_module,
 	js_regex,
 	js_string,

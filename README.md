@@ -420,6 +420,38 @@ String.fromCharCode(...Array(123).keys()).slice(97)
 
 <tr>
 <td>
+<strong>bbeo-js-hybrid-indexOfElement</strong>
+</td>
+<td>
+
+```js
+${1:hybr_var}.indexOf(${2:e})
+```
+</td>
+<td>
+
+>[hybr]: Find index of element
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-hybrid-includesElement</strong>
+</td>
+<td>
+
+```js
+${1:hybr_var}.includes(${2:e})
+```
+</td>
+<td>
+
+>[hybr]: Check the existence of an element
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-math-dot</strong>
 </td>
 <td>
@@ -500,6 +532,120 @@ Math.log(${solution})/Math.log(${base})
 
 <tr>
 <td>
+<strong>bbeo-js-mixte-findElement</strong>
+</td>
+<td>
+
+```js
+${1:mixte_var}.find(${2:e} => ${2:e} ${3:===} ${4:foo})
+```
+</td>
+<td>
+
+>[mixte]: Search a specific element -> mixed
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-mixte-someElement</strong>
+</td>
+<td>
+
+```js
+${1:mixte_var}.some(${2:e} => ${2:e} ${3:===} ${4:foo})
+```
+</td>
+<td>
+
+>[mixte]: Check one or more specific element.s of an array/object (no size modification) -> boolean
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-mixte-everyElement</strong>
+</td>
+<td>
+
+```js
+${1:mixte_var}.every(${2:e} => ${2:e} ${3:===} ${4:foo})
+```
+</td>
+<td>
+
+>[mixte]: Check the integrity of the elements of an array/object (no size modification) -> boolean
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-mixte-mapElement</strong>
+</td>
+<td>
+
+```js
+${1:mixte_var}.map(${2:e} => {${3:expression}})
+```
+</td>
+<td>
+
+>[mixte]: Processing of different element of the array/object (no modification of the size) -> mixed
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-mixte-filterElement</strong>
+</td>
+<td>
+
+```js
+${1:mixte_var}.filter(${2:e} => {${3:condition}})
+```
+</td>
+<td>
+
+>[mixte]: Filter the element of an array/object (size modification) -> mixed
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-mixte-reduceElement</strong>
+</td>
+<td>
+
+```js
+${1:mixte_var}.reduce((${2:total, e}) => {${3:total + e}})
+```
+</td>
+<td>
+
+>[mixte]: Processing each element of the array/object to obtain a single value -> number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-mixte-foreachElement</strong>
+</td>
+<td>
+
+```js
+${1:mixte_var}.forEach((${2:e}) => {
+    ${3:expression}
+})
+```
+</td>
+<td>
+
+>[mixte]: Browse the elements of an array/object -> any
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-module-imp</strong>
 </td>
 <td>
@@ -510,7 +656,7 @@ import ${1:module_name} from ${2:module_source};
 </td>
 <td>
 
->[import]: Imports entire module statement in ES6 syntax
+>[module]: Imports entire module statement in ES6 syntax
 </td>
 </tr>
 
@@ -526,7 +672,7 @@ import { ${1:module_name} } from ${2:module_source};
 </td>
 <td>
 
->[import]: Imports only a portion of the module in ES6 syntax (destructuring assignment)
+>[module]: Imports only a portion of the module in ES6 syntax (destructuring assignment)
 </td>
 </tr>
 
