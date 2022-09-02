@@ -94,28 +94,31 @@ function checkObjectValue(object) {
 // source list data
 const javascriptSourceList = [js_basic];
 const pythonSourceList = [py_basic];
-
-// snippets exportation calling
-exportSnippets(
-	'./dist/boosteo-js.code-snippets',
-	getConcatResult(javascriptSourceList),
-);
-exportSnippets(
-	'./dist/boosteo-py.code-snippets',
-	getConcatResult(pythonSourceList),
-);
+const shellscriptSourceList = [sh_basic];
 
 // output
 console.log(header);
 if (!checkObjectValue(js_basic)) {
+	exportSnippets(
+		'./dist/boosteo-js.code-snippets',
+		getConcatResult(javascriptSourceList),
+	);
 	console.log('#### ◾ Javascript snippets');
 	console.log(getTable('./dist/boosteo-js.code-snippets', 'javascript'));
 }
 if (!checkObjectValue(py_basic)) {
+	exportSnippets(
+		'./dist/boosteo-py.code-snippets',
+		getConcatResult(pythonSourceList),
+	);
 	console.log('#### ◾ Python snippets');
 	console.log(getTable('./dist/boosteo-py.code-snippets', 'python'));
 }
 if (!checkObjectValue(sh_basic)) {
+	exportSnippets(
+		'./dist/boosteo-sh.code-snippets',
+		getConcatResult(shellscriptSourceList),
+	);
 	console.log('#### ◾ Shellscript snippets');
 	console.log(getTable('./dist/boosteo-sh.code-snippets', 'shellscript'));
 }
