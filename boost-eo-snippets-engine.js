@@ -1,7 +1,8 @@
 import traverse from 'traverse';
 import fs from 'fs';
 import { header, footer } from './utils/docs.js';
-import { js_basic } from './src/javascript/js-basic.js';
+import { js_console } from './src/javascript/js-console.js';
+import { js_import } from './src/javascript/js-import.js';
 import { py_basic } from './src/python/py-basic.js';
 import { sh_basic } from './src/shellscript/sh-basic.js';
 
@@ -104,13 +105,13 @@ function checkObjectValue(object) {
 }
 
 // source list data
-const javascriptSourceList = [js_basic];
+const javascriptSourceList = [js_console];
 const pythonSourceList = [py_basic];
 const shellscriptSourceList = [sh_basic];
 
 // output
 console.log(header);
-getOutput(js_basic, javascriptSourceList, './dist/boosteo-js.code-snippets', '#### ◾ Javascript snippets', 'javascript');
+getOutput(js_console, javascriptSourceList, './dist/boosteo-js.code-snippets', '#### ◾ Javascript snippets', 'javascript');
 getOutput(py_basic, pythonSourceList, './dist/boosteo-py.code-snippets', '#### ◾ Python snippets', 'python');
 getOutput(sh_basic, shellscriptSourceList, './dist/boosteo-sh.code-snippets', '#### ◾ Shellscript snippets', 'shellscript');
 console.log(footer);
