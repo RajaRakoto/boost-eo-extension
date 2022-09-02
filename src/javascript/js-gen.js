@@ -5,7 +5,7 @@ export const js_gen = {
 		description: '[gen]: Swap 2 values ​​from 2 variables',
 	},
 	'[gen]: Id generator': {
-		prefix: 'bbeo-js-gen-idgen',
+		prefix: 'bbeo-js-gen-idGen',
 		body: [
 			'let ${1:id_name} = idMaker()',
 			'${1:id_name}.next().value  // → 0',
@@ -15,12 +15,12 @@ export const js_gen = {
 		description: '[gen]: Id generator',
 	},
 	'[gen]: Alphabet generator': {
-		prefix: 'bbeo-js-gen-alphagen',
+		prefix: 'bbeo-js-gen-alphaGen',
 		body: ['String.fromCharCode(...Array(123).keys()).slice(97)'],
 		description: '[gen]: Alphabet generator',
 	},
 	'[gen]: Number generator': {
-		prefix: 'bbeo-js-gen-numgen',
+		prefix: 'bbeo-js-gen-numGen',
 		body: ['[...Array(${1:min(0)~max(n+1)})].map((_, i) => i); '],
 		description: '[gen]: Number generator',
 	},

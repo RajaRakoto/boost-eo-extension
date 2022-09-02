@@ -18,12 +18,12 @@ export const js_regex = {
 		description: '[regex]: {arg} must be present from {string_var}',
 	},
 	'[regex]: Start of {arg} ': {
-		prefix: 'bbeo-js-regex-startof',
+		prefix: 'bbeo-js-regex-startOf',
 		body: ['${1:string_var}.match(/^${2:arg}/)'],
 		description: '[regex]: Start of {arg} ',
 	},
 	'[regex]: End of {arg} ': {
-		prefix: 'bbeo-js-regex-endof',
+		prefix: 'bbeo-js-regex-endOf',
 		body: ['${1:string_var}.match(/^${2:arg}/)'],
 		description: '[regex]: End of {arg} ',
 	},
