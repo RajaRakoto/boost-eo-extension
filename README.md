@@ -623,6 +623,70 @@ ${1:string_var}.match(/${2:a}|${3:b}/)
 </td>
 </tr>
 
+<tr>
+<td>
+<strong>bbeo-js-string-replace</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.replace(${2:'input'}, ${3:'output'})
+```
+</td>
+<td>
+
+>[string]: Replace single occurrence of value -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-string-replaceAll</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.replaceAll(${2:'input'}, ${3:'output'})
+```
+</td>
+<td>
+
+>[string]: Replace all occurrences of value -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-string-split</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.split(${2:'delimiter'})
+```
+</td>
+<td>
+
+>[string]: Split string into array -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-string-sub</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.substr(${2:start}, ${3:end+1})
+```
+</td>
+<td>
+
+>[string]: Split a string [start, end+1] -> string
+</td>
+</tr>
+
 </table>
 
 
