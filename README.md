@@ -933,6 +933,38 @@ ${1:string_var}.substr(${2:start}, ${3:end+1})
 </td>
 </tr>
 
+<tr>
+<td>
+<strong>bbeo-js-string-repeat</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.repeat(${2:N})
+```
+</td>
+<td>
+
+>[string]: Repeat a string N times -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-string-trim</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.trim()
+```
+</td>
+<td>
+
+>[string]: Remove the white space at the beginning and at the end of a string -> string
+</td>
+</tr>
+
 </table>
 
 

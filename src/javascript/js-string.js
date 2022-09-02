@@ -19,4 +19,16 @@ export const js_string = {
 		body: ['${1:string_var}.substr(${2:start}, ${3:end+1})'],
 		description: '[string]: Split a string [start, end+1] -> string',
 	},
+	'[string]: Repeat a string N times -> string': {
+		prefix: 'bbeo-js-string-repeat',
+		body: ['${1:string_var}.repeat(${2:N})'],
+		description: '[string]: Repeat a string N times -> string',
+	},
+	'[string]: Remove the white space at the beginning and at the end of a string -> string':
+		{
+			prefix: 'bbeo-js-string-trim',
+			body: ['${1:string_var}.trim()'],
+			description:
+				'[string]: Remove the white space at the beginning and at the end of a string -> string',
+		},
 };
