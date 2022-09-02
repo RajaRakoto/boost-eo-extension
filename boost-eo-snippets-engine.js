@@ -3,6 +3,7 @@ import fs from 'fs';
 import { header, footer } from './utils/docs.js';
 import { js_console } from './src/javascript/js-console.js';
 import { js_import } from './src/javascript/js-import.js';
+import { js_func } from './src/javascript/js-func.js';
 import { py_basic } from './src/python/py-basic.js';
 import { sh_basic } from './src/shellscript/sh-basic.js';
 
@@ -100,7 +101,7 @@ function refactorSourceList(sourceList) {
 }
 
 // source list data
-const javascriptSourceList = refactorSourceList([js_console, js_import]);
+const javascriptSourceList = refactorSourceList([js_console, js_import, js_func]);
 const pythonSourceList = refactorSourceList([py_basic]);
 const shellscriptSourceList = refactorSourceList([sh_basic]);
 
