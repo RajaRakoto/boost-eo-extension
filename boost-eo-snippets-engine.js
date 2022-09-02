@@ -86,6 +86,18 @@ function exportSnippets(distPath, concatResult) {
 	});
 }
 
+// output getter
+function getOutput(sourceRef, sourceList,  distPath, snippetsTitle ,language) {
+	if (!checkObjectValue(sourceRef)) {
+		exportSnippets(
+			distPath,
+			getConcatResult(sourceList),
+		);
+		console.log(snippetsTitle);
+		console.log(getTable(distPath, language));
+	}
+}
+
 // object value checker
 function checkObjectValue(object) {
 	return Object.keys(object).length === 0;
@@ -94,29 +106,11 @@ function checkObjectValue(object) {
 // source list data
 const javascriptSourceList = [js_basic];
 const pythonSourceList = [py_basic];
-
-// snippets exportation calling
-exportSnippets(
-	'./dist/boosteo-js.code-snippets',
-	getConcatResult(javascriptSourceList),
-);
-exportSnippets(
-	'./dist/boosteo-py.code-snippets',
-	getConcatResult(pythonSourceList),
-);
+const shellscriptSourceList = [sh_basic];
 
 // output
 console.log(header);
-if (!checkObjectValue(js_basic)) {
-	console.log('#### ◾ Javascript snippets');
-	console.log(getTable('./dist/boosteo-js.code-snippets', 'javascript'));
-}
-if (!checkObjectValue(py_basic)) {
-	console.log('#### ◾ Python snippets');
-	console.log(getTable('./dist/boosteo-py.code-snippets', 'python'));
-}
-if (!checkObjectValue(sh_basic)) {
-	console.log('#### ◾ Shellscript snippets');
-	console.log(getTable('./dist/boosteo-sh.code-snippets', 'shellscript'));
-}
+getOutput(js_basic, javascriptSourceList, './dist/boosteo-js.code-snippets', '#### ◾ Javascript snippets', 'javascript');
+getOutput(py_basic, pythonSourceList, './dist/boosteo-py.code-snippets', '#### ◾ Python snippets', 'python');
+getOutput(sh_basic, shellscriptSourceList, './dist/boosteo-sh.code-snippets', '#### ◾ Shellscript snippets', 'shellscript');
 console.log(footer);
