@@ -21,7 +21,7 @@
 
 ### 📌 Extension
 
-**BOOST-EO** is a set of custom code snippets available for the VScode IDE to help you be more productive by providing helper methods.
+**BOOST-EO** is a set of custom code snippets available for VScode IDE to help you be more productive by providing helper methods.
 
 ---
 
