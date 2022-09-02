@@ -1,7 +1,8 @@
 import traverse from 'traverse';
 import fs from 'fs';
 import { header, footer } from './utils/docs.js';
-import { js_basic } from './src/javascript/js-basic.js';
+import { js_console } from './src/javascript/js-console.js';
+import { js_import } from './src/javascript/js-import.js';
 import { py_basic } from './src/python/py-basic.js';
 import { sh_basic } from './src/shellscript/sh-basic.js';
 
@@ -68,34 +69,11 @@ function getTable(distPath, language) {
 	);
 }
 
-// concatenation getter
-function getConcatResult(sourceListData) {
-	let concatResult = '{';
-	sourceListData.forEach(source => {
-		source = JSON.stringify(source);
-		source = source.slice(1, source.length - 1);
-		concatResult += source + ',';
-	});
-	return concatResult.slice(0, concatResult.length - 2) + '}}';
-}
-
 // snippets exportation
-function exportSnippets(distPath, concatResult) {
-	fs.writeFileSync(distPath, concatResult, 'utf8', err => {
+function exportSnippets(distPath, sourceList) {
+	fs.writeFileSync(distPath, JSON.stringify(sourceList), 'utf8', err => {
 		console.log(err ? err : 'The file was saved!');
 	});
-}
-
-// output getter
-function getOutput(sourceRef, sourceList,  distPath, snippetsTitle ,language) {
-	if (!checkObjectValue(sourceRef)) {
-		exportSnippets(
-			distPath,
-			getConcatResult(sourceList),
-		);
-		console.log(snippetsTitle);
-		console.log(getTable(distPath, language));
-	}
 }
 
 // object value checker
@@ -103,14 +81,47 @@ function checkObjectValue(object) {
 	return Object.keys(object).length === 0;
 }
 
+// output getter
+function getOutput(sourceList, distPath, snippetsTitle, language) {
+	if (!checkObjectValue(sourceList)) {
+		exportSnippets(distPath, sourceList);
+		console.log(snippetsTitle);
+		console.log(getTable(distPath, language));
+	}
+}
+
+// source list refactoring
+function refactorSourceList(sourceList) {
+	let objRefactored = {};
+	sourceList.forEach(source => {
+		objRefactored = { ...objRefactored, ...source };
+	});
+	return objRefactored;
+}
+
 // source list data
-const javascriptSourceList = [js_basic];
-const pythonSourceList = [py_basic];
-const shellscriptSourceList = [sh_basic];
+const javascriptSourceList = refactorSourceList([js_console, js_import]);
+const pythonSourceList = refactorSourceList([py_basic]);
+const shellscriptSourceList = refactorSourceList([sh_basic]);
 
 // output
 console.log(header);
-getOutput(js_basic, javascriptSourceList, './dist/boosteo-js.code-snippets', '#### ◾ Javascript snippets', 'javascript');
-getOutput(py_basic, pythonSourceList, './dist/boosteo-py.code-snippets', '#### ◾ Python snippets', 'python');
-getOutput(sh_basic, shellscriptSourceList, './dist/boosteo-sh.code-snippets', '#### ◾ Shellscript snippets', 'shellscript');
+getOutput(
+	javascriptSourceList,
+	'./dist/boosteo-js.code-snippets',
+	'#### ◾ Javascript snippets',
+	'javascript',
+);
+getOutput(
+	pythonSourceList,
+	'./dist/boosteo-py.code-snippets',
+	'#### ◾ Python snippets',
+	'python',
+);
+getOutput(
+	shellscriptSourceList,
+	'./dist/boosteo-sh.code-snippets',
+	'#### ◾ Shellscript snippets',
+	'shellscript',
+);
 console.log(footer);
