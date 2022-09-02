@@ -1,4 +1,4 @@
-
+export const header = `
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/RajaRakoto/boost-eo/master/assets/boost-eo-ico.png?token=GHSAT0AAAAAABXI5LRTNWMBNPFPHLIBLFAOYYR4S3A" width=128>
@@ -24,52 +24,28 @@
 
 ### 📌 Installation
 
-You can install it by typing `boost-eo` in the extension tab of your IDE
+You can install it by typing \`boost-eo\` in the extension tab of your IDE
 
 ---
 
 ### 📌 Usage
 
+`;
 
-#### ◾ Javascript snippets
-
-<table>
-<th>prefix</th>
-<th>body</th>
-<th>description</th>
-
-<tr>
-<td>
-<strong>bbeo-js-clg</strong>
-</td>
-<td>
-
-```js
-console.log(${1:object})
-```
-</td>
-<td>
-
->[console]: console log
-</td>
-</tr>
-
-</table>
-
-
+export const footer = `
 ---
 
 ### 📌 Contribution
   
 - If you want to contribute to this project, here is a tool that will help you to generate snippets -> https://snippet-generator.app/
-- With each new code snippet added, you need to update `all snippets` file and regenerate the documentation, all in one command:
-```bash
+- With each new code snippet added, you need to update \`all snippets\` file and regenerate the documentation, all in one command:
+\`\`\`bash
 node boost-eo-snippets-engine.js > README.md
-```
+\`\`\`
 - Then you can make a PR.
 
 <div align="center">
 
 #### Enjoy it 😉
 </div>
-
+`;
