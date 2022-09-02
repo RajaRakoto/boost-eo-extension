@@ -1,11 +1,13 @@
 import traverse from 'traverse';
 import fs from 'fs';
 import { header, footer } from './utils/docs.js';
-import { js_console } from './src/javascript/js-console.js';
-import { js_import } from './src/javascript/js-import.js';
-import { js_func } from './src/javascript/js-func.js';
 import { py_basic } from './src/python/py-basic.js';
 import { sh_basic } from './src/shellscript/sh-basic.js';
+import { js_console } from './src/javascript/js-console.js';
+import { js_module } from './src/javascript/js-module.js';
+import { js_func } from './src/javascript/js-func.js';
+import { js_gen } from './src/javascript/js-gen.js';
+import { js_regex } from './src/javascript/js-regex.js';
 
 // table generator
 function generateTable(data, language) {
@@ -101,7 +103,13 @@ function refactorSourceList(sourceList) {
 }
 
 // source list data
-const javascriptSourceList = refactorSourceList([js_console, js_import, js_func]);
+const javascriptSourceList = refactorSourceList([
+	js_console,
+	js_module,
+	js_func,
+	js_gen,
+	js_regex,
+]);
 const pythonSourceList = refactorSourceList([py_basic]);
 const shellscriptSourceList = refactorSourceList([sh_basic]);
 
