@@ -43,7 +43,7 @@ You can install it by typing `boost-eo` in the extension tab of your IDE
 
 <tr>
 <td>
-<strong>bbeo-js-clg</strong>
+<strong>bbeo-js-console-clg</strong>
 </td>
 <td>
 
@@ -59,7 +59,7 @@ console.log(${1:object})
 
 <tr>
 <td>
-<strong>bbeo-js-clr</strong>
+<strong>bbeo-js-console-clr</strong>
 </td>
 <td>
 
@@ -75,7 +75,7 @@ console.error(${1:object})
 
 <tr>
 <td>
-<strong>bbeo-js-clt</strong>
+<strong>bbeo-js-console-clt</strong>
 </td>
 <td>
 
@@ -91,7 +91,7 @@ console.table(${1:object})
 
 <tr>
 <td>
-<strong>bbeo-js-cli</strong>
+<strong>bbeo-js-console-cli</strong>
 </td>
 <td>
 
@@ -107,7 +107,7 @@ console.info(${1:object})
 
 <tr>
 <td>
-<strong>bbeo-js-clw</strong>
+<strong>bbeo-js-console-clw</strong>
 </td>
 <td>
 
@@ -123,7 +123,7 @@ console.warn(${1:object})
 
 <tr>
 <td>
-<strong>bbeo-js-imp</strong>
+<strong>bbeo-js-module-imp</strong>
 </td>
 <td>
 
@@ -139,7 +139,7 @@ import ${1:module_name} from ${2:module_source};
 
 <tr>
 <td>
-<strong>bbeo-js-imd</strong>
+<strong>bbeo-js-module-imd</strong>
 </td>
 <td>
 
@@ -150,6 +150,188 @@ import { ${1:module_name} } from ${2:module_source};
 <td>
 
 >[import]: Imports only a portion of the module in ES6 syntax (destructuring assignment)
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-func-arrowfunc</strong>
+</td>
+<td>
+
+```js
+const ${1:func_name} = (${2:args}) => {
+  ${3:code...}
+}
+```
+</td>
+<td>
+
+>[func]: Create arrow function
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-gen-permut</strong>
+</td>
+<td>
+
+```js
+[${1:a},${2:b}] = [${2:b},${1:a}]
+```
+</td>
+<td>
+
+>[gen]: Swap 2 values ​​from 2 variables
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-gen-idgen</strong>
+</td>
+<td>
+
+```js
+let ${1:id_name} = idMaker()
+${1:id_name}.next().value  // → 0
+${1:id_name}.next().value  // → 1
+${1:id_name}.next().value  // → 2
+```
+</td>
+<td>
+
+>[gen]: Id generator
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-gen-alphagen</strong>
+</td>
+<td>
+
+```js
+String.fromCharCode(...Array(123).keys()).slice(97)
+```
+</td>
+<td>
+
+>[gen]: Alphabet generator
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-gen-numgen</strong>
+</td>
+<td>
+
+```js
+[...Array(${1:min(0)~max(n+1)})].map((_, i) => i); 
+```
+</td>
+<td>
+
+>[gen]: Number generator
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-regex-numExtract</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.match(/\d/g);
+```
+</td>
+<td>
+
+>[regex]: Extract number in string 
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-regex-occTotal</strong>
+</td>
+<td>
+
+```js
+const ${1:string_var} = ${2:string_value}
+${3:occ_name}=(${1:string_var}.match(/${4:arg}/g)||[]).length 
+```
+</td>
+<td>
+
+>[regex]: Get total occurrence of argument in string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-regex-ifExist</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.match(/${2:arg}/)
+```
+</td>
+<td>
+
+>[regex]: {arg} must be present from {string_var}
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-regex-startof</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.match(/^${2:arg}/)
+```
+</td>
+<td>
+
+>[regex]: Start of {arg} 
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-regex-endof</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.match(/^${2:arg}/)
+```
+</td>
+<td>
+
+>[regex]: End of {arg} 
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-regex-ifExistOR</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.match(/${2:a}|${3:b}/)
+```
+</td>
+<td>
+
+>[regex]: {a} OR {b} must be present from {string_var}
 </td>
 </tr>
 
