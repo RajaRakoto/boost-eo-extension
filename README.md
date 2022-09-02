@@ -57,6 +57,102 @@ console.log(${1:object})
 </td>
 </tr>
 
+<tr>
+<td>
+<strong>bbeo-js-clr</strong>
+</td>
+<td>
+
+```js
+console.error(${1:object})
+```
+</td>
+<td>
+
+>[console]: console error
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-clt</strong>
+</td>
+<td>
+
+```js
+console.table(${1:object})
+```
+</td>
+<td>
+
+>[console]: console table
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cli</strong>
+</td>
+<td>
+
+```js
+console.info(${1:object})
+```
+</td>
+<td>
+
+>[console]: console info
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-clw</strong>
+</td>
+<td>
+
+```js
+console.warn(${1:object})
+```
+</td>
+<td>
+
+>[console]: console warn
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-imp</strong>
+</td>
+<td>
+
+```js
+import ${1:module_name} from ${2:module_source};
+```
+</td>
+<td>
+
+>[import]: Imports entire module statement in ES6 syntax
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-imd</strong>
+</td>
+<td>
+
+```js
+import { ${1:module_name} } from ${2:module_source};
+```
+</td>
+<td>
+
+>[import]: Imports only a portion of the module in ES6 syntax (destructuring assignment)
+</td>
+</tr>
+
 </table>
 
 
