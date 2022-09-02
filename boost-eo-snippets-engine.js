@@ -8,6 +8,7 @@ import { js_module } from './src/javascript/js-module.js';
 import { js_func } from './src/javascript/js-func.js';
 import { js_gen } from './src/javascript/js-gen.js';
 import { js_regex } from './src/javascript/js-regex.js';
+import { js_cast } from './src/javascript/js-cast.js';
 
 // table generator
 function generateTable(data, language) {
@@ -104,10 +105,11 @@ function refactorSourceList(sourceList) {
 
 // source list data
 const javascriptSourceList = refactorSourceList([
+	js_cast,
 	js_console,
-	js_module,
 	js_func,
 	js_gen,
+	js_module,
 	js_regex,
 ]);
 const pythonSourceList = refactorSourceList([py_basic]);
