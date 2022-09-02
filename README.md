@@ -431,6 +431,38 @@ console.warn(${1:object})
 
 <tr>
 <td>
+<strong>bbeo-js-destruct-assignArray</strong>
+</td>
+<td>
+
+```js
+const [${1:var1}, ${2:var2}] = [${3:value1}, ${4:value2}]
+```
+</td>
+<td>
+
+>[destruct]: Destructuring assignment -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-destruct-assignObject</strong>
+</td>
+<td>
+
+```js
+const {${1:attrib1}, ${2:attrib2}} = ${3:object_container}
+```
+</td>
+<td>
+
+>[destruct]: Object destructuring assignment -> object
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-func-arrowFunc</strong>
 </td>
 <td>

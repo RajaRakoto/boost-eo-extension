@@ -17,6 +17,7 @@ import { js_string } from './src/javascript/js-string.js';
 import { js_hybrid } from './src/javascript/js-hybrid.js';
 import { js_mixte } from './src/javascript/js-mixte.js';
 import { js_array } from './src/javascript/js-array.js';
+import { js_destruct } from './src/javascript/js-destruct.js';
 
 // table generator
 function generateTable(data, language) {
@@ -116,6 +117,7 @@ const javascriptSourceList = refactorSourceList([
 	js_array,
 	js_cast,
 	js_console,
+	js_destruct,
 	js_func,
 	js_gen,
 	js_hybrid,
