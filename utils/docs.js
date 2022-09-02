@@ -33,6 +33,10 @@ You can install it by typing \`boost-eo\` in the extension tab of your IDE
 
 ### 📌 Usage
 
+> **Notation**
+hybr = string | array
+mixte = array | object
+
 `;
 
 export const footer = `
