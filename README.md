@@ -143,6 +143,22 @@ ${1:array_var}.length === 0 ? true : false
 
 <tr>
 <td>
+<strong>bbeo-array-removeDuplicates</strong>
+</td>
+<td>
+
+```js
+[...new Set(${1:array_var})]
+```
+</td>
+<td>
+
+>[array]: Remove duplicates from an array -> array
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-cast-objToString1</strong>
 </td>
 <td>
@@ -903,6 +919,70 @@ ${1:string_var}.match(/${2:a}|${3:b}/)
 
 <tr>
 <td>
+<strong>bbeo-spread-mergeArrays</strong>
+</td>
+<td>
+
+```js
+[...${1:arr1}, ...${2:arr2}]
+```
+</td>
+<td>
+
+>[spread]: Merge several arrays (concat() alternative) -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-spread-mergeObjects</strong>
+</td>
+<td>
+
+```js
+{...${1:obj1}, ...${2:obj2}}
+```
+</td>
+<td>
+
+>[spread]: Merge several objects (Object.assign() alternative) -> object
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-spread-removeDuplicates</strong>
+</td>
+<td>
+
+```js
+[...new Set(${1:array_var})]
+```
+</td>
+<td>
+
+>[spread]: Remove duplicates from an array -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-spread-addProp</strong>
+</td>
+<td>
+
+```js
+{...${1:obj_var}, ${2:newProp}: ${3:foo}}
+```
+</td>
+<td>
+
+>[spread]: Add a new prop/value to an existing object -> object
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-string-replace</strong>
 </td>
 <td>
@@ -994,6 +1074,70 @@ ${1:string_var}.trim()
 <td>
 
 >[string]: Remove the white space at the beginning and at the end of a string -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-struct-addToQueue</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.push(${2:e})
+```
+</td>
+<td>
+
+>[struct]: Add to queue -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-struct-addToHead</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.unshift(${2:e})
+```
+</td>
+<td>
+
+>[struct]: Add to head -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-struct-deleteAtTail</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.pop(${2:e})
+```
+</td>
+<td>
+
+>[struct]: Delete at tail -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-struct-deleteAtHead</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.shift(${2:e})
+```
+</td>
+<td>
+
+>[struct]: Delete at head -> array
 </td>
 </tr>
 

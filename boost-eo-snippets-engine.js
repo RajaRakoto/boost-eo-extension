@@ -18,6 +18,8 @@ import { js_hybrid } from './src/javascript/js-hybrid.js';
 import { js_mixte } from './src/javascript/js-mixte.js';
 import { js_array } from './src/javascript/js-array.js';
 import { js_destruct } from './src/javascript/js-destruct.js';
+import { js_spread } from './src/javascript/js-spread.js';
+import { js_struct } from './src/javascript/js-struct.js';
 
 // table generator
 function generateTable(data, language) {
@@ -125,7 +127,9 @@ const javascriptSourceList = refactorSourceList([
 	js_mixte,
 	js_module,
 	js_regex,
+	js_spread,
 	js_string,
+	js_struct,
 ]);
 const pythonSourceList = refactorSourceList([py_basic]);
 const shellscriptSourceList = refactorSourceList([sh_basic]);
