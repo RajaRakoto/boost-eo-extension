@@ -32,4 +32,9 @@ export const js_array = {
 		body: ['${1:array_var}.length === 0 ? true : false'],
 		description: '[array]: Check if an array is empty -> boolean',
 	},
+	'[array]: Remove duplicates from an array -> array': {
+		prefix: 'bbeo-array-removeDuplicates',
+		body: ['[...new Set(${1:array_var})]'],
+		description: '[array]: Remove duplicates from an array -> array',
+	},
 };
