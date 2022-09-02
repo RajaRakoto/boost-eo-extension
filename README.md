@@ -47,6 +47,102 @@ mixte = array | object
 
 <tr>
 <td>
+<strong>bbeo-js-array-ascElement</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.sort((${2:a},${3:b}) => ${2:a} - ${3:b})
+```
+</td>
+<td>
+
+>[array]: (a0 -> b1) sort in ascending order -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-array-descElement</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.sort((${2:a},${3:b}) => ${3:b} - ${2:a})
+```
+</td>
+<td>
+
+>[array]: (b1 -> a0) sort in descending order -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-array-slice</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.slice(${2:start}, ${3:end+1})
+```
+</td>
+<td>
+
+>[array]: split an array [n, n+1] -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-array-join</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.join(${2:delimiter})
+```
+</td>
+<td>
+
+>[array]: join an array from a delimiter to get a string -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-array-flat</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.flat(${2:depth})
+```
+</td>
+<td>
+
+>[array]: Flatten the elements of a nested array to a specific depth -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-array-isEmpty</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.length === 0 ? true : false
+```
+</td>
+<td>
+
+>[array]: Check if an array is empty -> boolean
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-cast-objToString1</strong>
 </td>
 <td>

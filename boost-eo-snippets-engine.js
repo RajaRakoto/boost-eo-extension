@@ -1,8 +1,11 @@
 import traverse from 'traverse';
 import fs from 'fs';
 import { header, footer } from './utils/docs.js';
+// python module importation
 import { py_basic } from './src/python/py-basic.js';
+// shellscript module importation
 import { sh_basic } from './src/shellscript/sh-basic.js';
+// javascript module importation
 import { js_console } from './src/javascript/js-console.js';
 import { js_module } from './src/javascript/js-module.js';
 import { js_func } from './src/javascript/js-func.js';
@@ -13,6 +16,7 @@ import { js_math } from './src/javascript/js-math.js';
 import { js_string } from './src/javascript/js-string.js';
 import { js_hybrid } from './src/javascript/js-hybrid.js';
 import { js_mixte } from './src/javascript/js-mixte.js';
+import { js_array } from './src/javascript/js-array.js';
 
 // table generator
 function generateTable(data, language) {
@@ -109,6 +113,7 @@ function refactorSourceList(sourceList) {
 
 // source list data
 const javascriptSourceList = refactorSourceList([
+	js_array,
 	js_cast,
 	js_console,
 	js_func,
