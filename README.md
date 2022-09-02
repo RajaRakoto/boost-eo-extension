@@ -159,6 +159,228 @@ ${1:array_var}.length === 0 ? true : false
 
 <tr>
 <td>
+<strong>bbeo-js-basic-ifCondition</strong>
+</td>
+<td>
+
+```js
+if (${1:condition}) {
+    ${3:condition_body}
+} else if (${2:condition}) {
+    ${4:condition_body}
+} else {
+    ${5:condition_body}
+}
+```
+</td>
+<td>
+
+>[basic]: Conditional statement
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-forLoop</strong>
+</td>
+<td>
+
+```js
+for (let ${1:index} = 0; ${1:index} < ${2:array_length}; ${1:index}++) {
+    ${3:for_body}
+}
+```
+</td>
+<td>
+
+>[basic]: For loop
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-whileLoop</strong>
+</td>
+<td>
+
+```js
+while (${1:condition}) {
+    ${2:while_body}
+}
+```
+</td>
+<td>
+
+>[basic]: While loop
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-doWhileLoop</strong>
+</td>
+<td>
+
+```js
+do {
+    ${2:do_body}
+} while (${1:condition});
+```
+</td>
+<td>
+
+>[basic]: Do while loop
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-forInLoop</strong>
+</td>
+<td>
+
+```js
+for (let ${1:e} in ${2:array_var}) {
+    ${3:for_body}
+}
+```
+</td>
+<td>
+
+>[basic]: For in loop
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-forOfLoop</strong>
+</td>
+<td>
+
+```js
+for (let ${1:e} of ${2:array_var}) {
+    ${3:for_body}
+}
+```
+</td>
+<td>
+
+>[basic]: For of loop
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-forEachLoop</strong>
+</td>
+<td>
+
+```js
+${2:array_var}.forEach((${1:e}) => {
+    ${3:for_body}
+});
+```
+</td>
+<td>
+
+>[basic]: For each loop
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-switchStatement</strong>
+</td>
+<td>
+
+```js
+switch (${1:condition}) {
+    case ${2:condition_value}:
+        ${3:switch_body}
+        break;
+    case ${4:condition_value}:
+        ${5:switch_body}
+        break;
+    default:
+        ${6:switch_body}
+        break;
+}
+```
+</td>
+<td>
+
+>[basic]: Switch statement
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-tryCatchStatement</strong>
+</td>
+<td>
+
+```js
+try {
+    ${1:try_body}
+} catch (${2:error}) {
+    ${3:catch_body}
+}
+```
+</td>
+<td>
+
+>[basic]: Try catch statement
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-tryCatchFinallyStatement</strong>
+</td>
+<td>
+
+```js
+try {
+    ${1:try_body}
+} catch (${2:error}) {
+    ${3:catch_body}
+} finally {
+    ${4:finally_body}
+}
+```
+</td>
+<td>
+
+>[basic]: Try catch finally statement
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-basic-tryCatchFinallyStatementMultiple</strong>
+</td>
+<td>
+
+```js
+try {
+    ${1:try_body}
+} catch (${2:error}) {
+    ${3:catch_body}
+} catch (${4:error}) {
+    ${5:catch_body}
+} finally {
+    ${6:finally_body}
+}
+```
+</td>
+<td>
+
+>[basic]: Try catch finally statement with multiple catch blocks
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-cast-objToString1</strong>
 </td>
 <td>
@@ -490,6 +712,43 @@ static set ${1:property_name} (${2:value}) { this.${1:property_name} = ${2:value
 <td>
 
 >[class]: Create static setter pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-class-genClassPattern</strong>
+</td>
+<td>
+
+```js
+class Circle extends Shape {
+  
+  // constructor
+  constructor (radius) {
+    this.radius = radius
+  }
+  
+  // methods
+   getArea () {
+    return Math.PI * 2 * this.radius
+  }
+  
+  // superclass
+   expand (n) {
+    return super.expand(n) * Math.PI
+  }
+  
+  //static method
+   static createFromDiameter(diameter) {
+    return new Circle(diameter / 2)
+  }
+}
+```
+</td>
+<td>
+
+>[class]: Generate class pattern
 </td>
 </tr>
 

@@ -22,6 +22,7 @@ import { js_spread } from './src/javascript/js-spread.js';
 import { js_struct } from './src/javascript/js-struct.js';
 import { js_class } from './src/javascript/js-class.js';
 import { js_object } from './src/javascript/js-object.js';
+import { js_basic } from './src/javascript/js-basic.js';
 
 // table generator
 function generateTable(data, language) {
@@ -119,6 +120,7 @@ function refactorSourceList(sourceList) {
 // source list data
 const javascriptSourceList = refactorSourceList([
 	js_array,
+	js_basic,
 	js_cast,
 	js_class,
 	js_console,
