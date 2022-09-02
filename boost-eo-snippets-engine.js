@@ -9,6 +9,7 @@ import { js_func } from './src/javascript/js-func.js';
 import { js_gen } from './src/javascript/js-gen.js';
 import { js_regex } from './src/javascript/js-regex.js';
 import { js_cast } from './src/javascript/js-cast.js';
+import { js_math } from './src/javascript/js-math.js';
 
 // table generator
 function generateTable(data, language) {
@@ -109,6 +110,7 @@ const javascriptSourceList = refactorSourceList([
 	js_console,
 	js_func,
 	js_gen,
+	js_math,
 	js_module,
 	js_regex,
 ]);
