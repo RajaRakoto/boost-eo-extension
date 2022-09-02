@@ -367,6 +367,134 @@ ${1:dec_var}.toString(2)
 
 <tr>
 <td>
+<strong>bbeo-js-object-getter</strong>
+</td>
+<td>
+
+```js
+get ${1:property_name} () { return this.${1:property_name}; }
+```
+</td>
+<td>
+
+>[class]: Create getter pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-setter</strong>
+</td>
+<td>
+
+```js
+set ${1:property_name} (${2:value}) { this.${1:property_name} = ${2:value}; }
+```
+</td>
+<td>
+
+>[class]: Create setter pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-method</strong>
+</td>
+<td>
+
+```js
+${1:method_name} () { ${2:method_body} }
+```
+</td>
+<td>
+
+>[class]: Create method pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-constructor</strong>
+</td>
+<td>
+
+```js
+constructor () { ${1:constructor_body} }
+```
+</td>
+<td>
+
+>[class]: Create constructor pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-staticMethod</strong>
+</td>
+<td>
+
+```js
+static ${1:method_name} () { ${2:method_body} }
+```
+</td>
+<td>
+
+>[class]: Create static method pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-staticProperty</strong>
+</td>
+<td>
+
+```js
+static ${1:property_name} = ${2:property_value}
+```
+</td>
+<td>
+
+>[class]: Create static property pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-staticGetter</strong>
+</td>
+<td>
+
+```js
+static get ${1:property_name} () { return this.${1:property_name}; }
+```
+</td>
+<td>
+
+>[class]: Create static getter pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-staticSetter</strong>
+</td>
+<td>
+
+```js
+static set ${1:property_name} (${2:value}) { this.${1:property_name} = ${2:value}; }
+```
+</td>
+<td>
+
+>[class]: Create static setter pattern
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-console-clg</strong>
 </td>
 <td>
@@ -817,6 +945,38 @@ import { ${1:module_name} } from ${2:module_source};
 <td>
 
 >[module]: Imports only a portion of the module in ES6 syntax (destructuring assignment)
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-extractValues</strong>
+</td>
+<td>
+
+```js
+Object.values(${1:object_var})
+```
+</td>
+<td>
+
+>[object]: Extract objecy values
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-extractEntries</strong>
+</td>
+<td>
+
+```js
+Object.entries(${1:object_var})
+```
+</td>
+<td>
+
+>[object]: Extract object entries
 </td>
 </tr>
 

@@ -20,6 +20,8 @@ import { js_array } from './src/javascript/js-array.js';
 import { js_destruct } from './src/javascript/js-destruct.js';
 import { js_spread } from './src/javascript/js-spread.js';
 import { js_struct } from './src/javascript/js-struct.js';
+import { js_class } from './src/javascript/js-class.js';
+import { js_object } from './src/javascript/js-object.js';
 
 // table generator
 function generateTable(data, language) {
@@ -118,6 +120,7 @@ function refactorSourceList(sourceList) {
 const javascriptSourceList = refactorSourceList([
 	js_array,
 	js_cast,
+	js_class,
 	js_console,
 	js_destruct,
 	js_func,
@@ -126,6 +129,7 @@ const javascriptSourceList = refactorSourceList([
 	js_math,
 	js_mixte,
 	js_module,
+	js_object,
 	js_regex,
 	js_spread,
 	js_string,
