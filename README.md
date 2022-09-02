@@ -416,6 +416,86 @@ String.fromCharCode(...Array(123).keys()).slice(97)
 
 <tr>
 <td>
+<strong>bbeo-js-math-dot</strong>
+</td>
+<td>
+
+```js
+${1:number_var}.toFixed(${2:decal})
+```
+</td>
+<td>
+
+>[math]: Format a number in fixed-dot notation -> number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-pow</strong>
+</td>
+<td>
+
+```js
+${1:number_var} ** ${2:exp}
+```
+</td>
+<td>
+
+>[math]: Power of number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-max</strong>
+</td>
+<td>
+
+```js
+Math.max(... ${1: element})
+```
+</td>
+<td>
+
+>[math]: Get MAX element
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-min</strong>
+</td>
+<td>
+
+```js
+Math.min(... ${1: element})
+```
+</td>
+<td>
+
+>[math]: Get MAX element
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-expOfNumber</strong>
+</td>
+<td>
+
+```js
+Math.log(${solution})/Math.log(${base})
+```
+</td>
+<td>
+
+>[math]: Get exponent of a number
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-module-imp</strong>
 </td>
 <td>
