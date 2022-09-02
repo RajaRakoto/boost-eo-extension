@@ -5,6 +5,7 @@
     "description": "A set of custom code snippets available for the VScode IDE to help you be more productive by providing helper methods ",
     "version": "0.0.1",
     "icon": "assets/boost-eo-ico.png",
+    "type": "module",
     "engines": {
         "vscode": "^1.70.0"
     },
