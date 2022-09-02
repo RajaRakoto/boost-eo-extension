@@ -43,6 +43,214 @@ You can install it by typing `boost-eo` in the extension tab of your IDE
 
 <tr>
 <td>
+<strong>bbeo-js-cast-objToString1</strong>
+</td>
+<td>
+
+```js
+${1:object}.toString()
+```
+</td>
+<td>
+
+>[cast]: method 1 - Convert any object to string -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-objToString2</strong>
+</td>
+<td>
+
+```js
+String(${1:object})
+```
+</td>
+<td>
+
+>[cast]: method 2 - Convert any object to string -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-stringToArray1</strong>
+</td>
+<td>
+
+```js
+Array.from(${1:string_var})
+```
+</td>
+<td>
+
+>[cast]: method 1 - convert string to array -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-stringToArray2</strong>
+</td>
+<td>
+
+```js
+[... ${1:string_var}]
+```
+</td>
+<td>
+
+>[cast]: method 2 - convert string to array -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-stringToArray3</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.split``
+```
+</td>
+<td>
+
+>[cast]: method 3 - convert string to array -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-stringToNumber1</strong>
+</td>
+<td>
+
+```js
+Number(${1:string_var})
+```
+</td>
+<td>
+
+>[cast]: method 1 - convert string to number -> number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-stringToNumber2</strong>
+</td>
+<td>
+
+```js
+parseInt(${1:string_var})
+```
+</td>
+<td>
+
+>[cast]: method 2 - convert string to number -> number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-hex2dec</strong>
+</td>
+<td>
+
+```js
++('0x'+ ${1:hex_var})
+```
+</td>
+<td>
+
+>[cast]: hex -> dec
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-dec2hex</strong>
+</td>
+<td>
+
+```js
+${1:dec_var}.toString(16)
+```
+</td>
+<td>
+
+>[cast]: dec -> hex
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-oct2dec</strong>
+</td>
+<td>
+
+```js
+parseInt(${1:oct_var}, 8)
+```
+</td>
+<td>
+
+>[cast]: oct -> dec
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-dec2oct</strong>
+</td>
+<td>
+
+```js
+${1:dec_var}.toString(8)
+```
+</td>
+<td>
+
+>[cast]: dec -> oct
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-bin2dec</strong>
+</td>
+<td>
+
+```js
+parseInt(${bin_var}, 2)
+```
+</td>
+<td>
+
+>[cast]: bin -> dec
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-cast-dec2bin</strong>
+</td>
+<td>
+
+```js
+${1:dec_var}.toString(2)
+```
+</td>
+<td>
+
+>[cast]: dec -> bin
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-console-clg</strong>
 </td>
 <td>
@@ -123,39 +331,7 @@ console.warn(${1:object})
 
 <tr>
 <td>
-<strong>bbeo-js-module-imp</strong>
-</td>
-<td>
-
-```js
-import ${1:module_name} from ${2:module_source};
-```
-</td>
-<td>
-
->[import]: Imports entire module statement in ES6 syntax
-</td>
-</tr>
-
-<tr>
-<td>
-<strong>bbeo-js-module-imd</strong>
-</td>
-<td>
-
-```js
-import { ${1:module_name} } from ${2:module_source};
-```
-</td>
-<td>
-
->[import]: Imports only a portion of the module in ES6 syntax (destructuring assignment)
-</td>
-</tr>
-
-<tr>
-<td>
-<strong>bbeo-js-func-arrowfunc</strong>
+<strong>bbeo-js-func-arrowFunc</strong>
 </td>
 <td>
 
@@ -189,7 +365,7 @@ const ${1:func_name} = (${2:args}) => {
 
 <tr>
 <td>
-<strong>bbeo-js-gen-idgen</strong>
+<strong>bbeo-js-gen-idGen</strong>
 </td>
 <td>
 
@@ -208,7 +384,7 @@ ${1:id_name}.next().value  // → 2
 
 <tr>
 <td>
-<strong>bbeo-js-gen-alphagen</strong>
+<strong>bbeo-js-gen-alphaGen</strong>
 </td>
 <td>
 
@@ -224,7 +400,7 @@ String.fromCharCode(...Array(123).keys()).slice(97)
 
 <tr>
 <td>
-<strong>bbeo-js-gen-numgen</strong>
+<strong>bbeo-js-gen-numGen</strong>
 </td>
 <td>
 
@@ -235,6 +411,38 @@ String.fromCharCode(...Array(123).keys()).slice(97)
 <td>
 
 >[gen]: Number generator
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-module-imp</strong>
+</td>
+<td>
+
+```js
+import ${1:module_name} from ${2:module_source};
+```
+</td>
+<td>
+
+>[import]: Imports entire module statement in ES6 syntax
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-module-imd</strong>
+</td>
+<td>
+
+```js
+import { ${1:module_name} } from ${2:module_source};
+```
+</td>
+<td>
+
+>[import]: Imports only a portion of the module in ES6 syntax (destructuring assignment)
 </td>
 </tr>
 
@@ -289,7 +497,7 @@ ${1:string_var}.match(/${2:arg}/)
 
 <tr>
 <td>
-<strong>bbeo-js-regex-startof</strong>
+<strong>bbeo-js-regex-startOf</strong>
 </td>
 <td>
 
@@ -305,7 +513,7 @@ ${1:string_var}.match(/^${2:arg}/)
 
 <tr>
 <td>
-<strong>bbeo-js-regex-endof</strong>
+<strong>bbeo-js-regex-endOf</strong>
 </td>
 <td>
 
