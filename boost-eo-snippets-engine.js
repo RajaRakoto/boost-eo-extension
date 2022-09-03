@@ -24,6 +24,7 @@ import { js_class } from './src/javascript/js-class.js';
 import { js_object } from './src/javascript/js-object.js';
 import { js_basic } from './src/javascript/js-basic.js';
 import { js_date } from './src/javascript/js-date.js';
+import { js_dom } from './src/javascript/js-dom.js';
 
 // table generator
 function generateTable(data, language) {
@@ -127,6 +128,7 @@ const javascriptSourceList = refactorSourceList([
 	js_console,
 	js_date,
 	js_destruct,
+	js_dom,
 	js_func,
 	js_gen,
 	js_hybrid,
