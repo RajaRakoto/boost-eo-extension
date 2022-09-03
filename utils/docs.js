@@ -41,9 +41,7 @@ You can install it by typing \`boost-eo\` in the extension tab of your IDE
 | [🔎 Javascript patterns](#-javascript-patterns) |
 </div>
 
-> **Notation**
-> hybrid = string | array
-> mixte = array | object
+> **Notation**: hybrid = string | array -- mixte = array | object
 
 `;
 
@@ -55,7 +53,7 @@ export const footer = `
 - If you want to contribute to this project, here is a tool that will help you to generate snippets -> https://snippet-generator.app/
 - With each new code snippet added, you need to update \`all snippets\` file and regenerate the documentation, all in one command:
 \`\`\`bash
-node boost-eo-snippets-engine.js > README.md
+node boost-eo-engine.js > README.md
 \`\`\`
 - Then you can make a PR.
 

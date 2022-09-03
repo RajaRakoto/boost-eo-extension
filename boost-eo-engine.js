@@ -29,7 +29,6 @@ import { js_date } from './src/snippets/javascript/js-date.js';
 import { js_dom } from './src/snippets/javascript/js-dom.js';
 import { js_bom } from './src/snippets/javascript/js-bom.js';
 
-
 // table generator
 function generateTable(data, language) {
 	let languageSyntax = '';

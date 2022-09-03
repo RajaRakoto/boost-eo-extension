@@ -7,10 +7,24 @@
 	"icon": "assets/boost-eo-ico.png",
 	"type": "module",
 	"engines": {
-		"vscode": "^1.70.0"
+		"vscode": "^1.49.0"
 	},
 	"categories": [
 		"Snippets"
+	],
+	"keywords": [
+		"react",
+		"javascript",
+		"python",
+		"productivity",
+		"snippets",
+		"helper",
+		"patterns",
+		"vscode",
+		"vscode-extension",
+		"shell-script",
+		"snippets-collection",
+		"nodejs"
 	],
 	"contributes": {
 		"snippets": [
