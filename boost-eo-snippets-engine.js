@@ -1,33 +1,33 @@
 import traverse from 'traverse';
 import fs from 'fs';
 import { header, footer } from './utils/docs.js';
-// pattern module importation
+// javascript patterns importation
 import { js_patterns } from './src/patterns/js-patterns.js';
-// python module importation
-import { py_basic } from './src/python/py-basic.js';
-// shellscript module importation
-import { sh_basic } from './src/shellscript/sh-basic.js';
-// javascript module importation
-import { js_console } from './src/javascript/js-console.js';
-import { js_module } from './src/javascript/js-module.js';
-import { js_func } from './src/javascript/js-func.js';
-import { js_gen } from './src/javascript/js-gen.js';
-import { js_regex } from './src/javascript/js-regex.js';
-import { js_cast } from './src/javascript/js-cast.js';
-import { js_math } from './src/javascript/js-math.js';
-import { js_string } from './src/javascript/js-string.js';
-import { js_hybrid } from './src/javascript/js-hybrid.js';
-import { js_mixte } from './src/javascript/js-mixte.js';
-import { js_array } from './src/javascript/js-array.js';
-import { js_destruct } from './src/javascript/js-destruct.js';
-import { js_spread } from './src/javascript/js-spread.js';
-import { js_struct } from './src/javascript/js-struct.js';
-import { js_class } from './src/javascript/js-class.js';
-import { js_object } from './src/javascript/js-object.js';
-import { js_basic } from './src/javascript/js-basic.js';
-import { js_date } from './src/javascript/js-date.js';
-import { js_dom } from './src/javascript/js-dom.js';
-import { js_bom } from './src/javascript/js-bom.js';
+// python snippets importation
+import { py_basic } from './src/snippets/python/py-basic.js';
+// shellscript snippets importation
+import { sh_basic } from './src/snippets/shellscript/sh-basic.js';
+// javascript snippets importation
+import { js_console } from './src/snippets/javascript/js-console.js';
+import { js_module } from './src/snippets/javascript/js-module.js';
+import { js_func } from './src/snippets/javascript/js-func.js';
+import { js_gen } from './src/snippets/javascript/js-gen.js';
+import { js_regex } from './src/snippets/javascript/js-regex.js';
+import { js_cast } from './src/snippets/javascript/js-cast.js';
+import { js_math } from './src/snippets/javascript/js-math.js';
+import { js_string } from './src/snippets/javascript/js-string.js';
+import { js_hybrid } from './src/snippets/javascript/js-hybrid.js';
+import { js_mixte } from './src/snippets/javascript/js-mixte.js';
+import { js_array } from './src/snippets/javascript/js-array.js';
+import { js_destruct } from './src/snippets/javascript/js-destruct.js';
+import { js_spread } from './src/snippets/javascript/js-spread.js';
+import { js_struct } from './src/snippets/javascript/js-struct.js';
+import { js_class } from './src/snippets/javascript/js-class.js';
+import { js_object } from './src/snippets/javascript/js-object.js';
+import { js_basic } from './src/snippets/javascript/js-basic.js';
+import { js_date } from './src/snippets/javascript/js-date.js';
+import { js_dom } from './src/snippets/javascript/js-dom.js';
+import { js_bom } from './src/snippets/javascript/js-bom.js';
 
 
 // table generator
