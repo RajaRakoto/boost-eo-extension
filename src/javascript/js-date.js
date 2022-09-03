@@ -66,4 +66,44 @@ export const js_date = {
 		body: ['${1:date_objVar}.toString()'],
 		description: '[date]: Get current date as string',
 	},
+  '[date]: Set date': {
+    prefix: 'bbeo-js-date-setDate',
+    body: ['${1:date_objVar}.setDate(${2:new_date})'],
+    description: '[date]: Set date',
+  },
+  '[date]: Set month': {
+    prefix: 'bbeo-js-date-setMonth',
+    body: ['${1:date_objVar}.setMonth(${2:new_month})'],
+    description: '[date]: Set month',
+  },
+  '[date]: Set year': {
+    prefix: 'bbeo-js-date-setYear',
+    body: ['${1:date_objVar}.setFullYear(${2:new_year})'],
+    description: '[date]: Set year',
+  },
+  '[date]: Set hour': {
+    prefix: 'bbeo-js-date-setHour',
+    body: ['${1:date_objVar}.setHours(${2:new_hour})'],
+    description: '[date]: Set hour',
+  },
+  '[date]: Set minute': {
+    prefix: 'bbeo-js-date-setMinute',
+    body: ['${1:date_objVar}.setMinutes(${2:new_minute})'],
+    description: '[date]: Set minute',
+  },
+  '[date]: Set second': {
+    prefix: 'bbeo-js-date-setSecond',
+    body: ['${1:date_objVar}.setSeconds(${2:new_second})'],
+    description: '[date]: Set second',
+  },
+  '[date]: Set millisecond': {
+    prefix: 'bbeo-js-date-setMillisecond',
+    body: ['${1:date_objVar}.setMilliseconds(${2:new_millisecond})'],
+    description: '[date]: Set millisecond',
+  },
+  '[date]: Set time': {
+    prefix: 'bbeo-js-date-setTime',
+    body: ['${1:date_objVar}.setTime(${2:new_time})'],
+    description: '[date]: Set time',
+  },
 };
