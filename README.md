@@ -1063,6 +1063,198 @@ Math.log(${solution})/Math.log(${base})
 
 <tr>
 <td>
+<strong>bbeo-js-math-sqrt</strong>
+</td>
+<td>
+
+```js
+Math.sqrt(${1:number})
+```
+</td>
+<td>
+
+>[math]: Get square of a number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-abs</strong>
+</td>
+<td>
+
+```js
+Math.abs(${1:number})
+```
+</td>
+<td>
+
+>[math]: Get absolute value of a number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-round</strong>
+</td>
+<td>
+
+```js
+Math.round(${1:number})
+```
+</td>
+<td>
+
+>[math]: Get round value of a number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-ceil</strong>
+</td>
+<td>
+
+```js
+Math.ceil(${1:number})
+```
+</td>
+<td>
+
+>[math]: Get ceil value of a number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-floor</strong>
+</td>
+<td>
+
+```js
+Math.floor(${1:number})
+```
+</td>
+<td>
+
+>[math]: Get floor value of a number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-random</strong>
+</td>
+<td>
+
+```js
+Math.random()
+```
+</td>
+<td>
+
+>[math]: Get random value between 0 and 1
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-random-max</strong>
+</td>
+<td>
+
+```js
+Math.floor(Math.random() * ${1:max})
+```
+</td>
+<td>
+
+>[math]: Get random value between 0 and max
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-random-min-max</strong>
+</td>
+<td>
+
+```js
+Math.floor(Math.random() * (${1:max} - ${2:min}) + ${2:min})
+```
+</td>
+<td>
+
+>[math]: Get random value between min and max
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-pi</strong>
+</td>
+<td>
+
+```js
+Math.PI
+```
+</td>
+<td>
+
+>[math]: Get PI value
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-e</strong>
+</td>
+<td>
+
+```js
+Math.E
+```
+</td>
+<td>
+
+>[math]: Get E value
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-ln2</strong>
+</td>
+<td>
+
+```js
+Math.LN2
+```
+</td>
+<td>
+
+>[math]: Get LN2 value
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-math-ln10</strong>
+</td>
+<td>
+
+```js
+Math.LN10
+```
+</td>
+<td>
+
+>[math]: Get LN10 value
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-mixte-findElement</strong>
 </td>
 <td>
@@ -1493,6 +1685,54 @@ ${1:string_var}.trim()
 <td>
 
 >[string]: Remove the white space at the beginning and at the end of a string -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-string-charAt</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.charAt(${2:index})
+```
+</td>
+<td>
+
+>[string]: Get chatAt index -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-string-startsWith</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.startsWith(${2:input}, ${3:start_index})
+```
+</td>
+<td>
+
+>[string]: Check start of a string -> boolean
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-string-endsWith</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.endsWith(${2:input}, ${3:end_index})
+```
+</td>
+<td>
+
+>[string]: Check end of a string -> boolean
 </td>
 </tr>
 
