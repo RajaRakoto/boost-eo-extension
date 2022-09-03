@@ -37,4 +37,9 @@ export const js_array = {
 		body: ['[...new Set(${1:array_var})]'],
 		description: '[array]: Remove duplicates from an array -> array',
 	},
+	'[array]: Reverse all element in an array -> array': {
+		prefix: 'bbeo-js-array-reverse',
+		body: ['${1:array_var}.reverse()'],
+		description: '[array]: Reverse all element in an array -> array',
+	},
 };

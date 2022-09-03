@@ -34,8 +34,8 @@ You can install it by typing `boost-eo` in the extension tab of your IDE
 ### 📌 Usage
 
 > **Notation**
-hybr = string | array
-mixte = array | object
+> hybrid = string | array
+> mixte = array | object
 
 
 #### ◾ Javascript snippets
@@ -154,6 +154,22 @@ ${1:array_var}.length === 0 ? true : false
 <td>
 
 >[array]: Remove duplicates from an array -> array
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-array-reverse</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.reverse()
+```
+</td>
+<td>
+
+>[array]: Reverse all element in an array -> array
 </td>
 </tr>
 
@@ -376,6 +392,22 @@ try {
 <td>
 
 >[basic]: Try catch finally statement with multiple catch blocks
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-bom-addWindowEventListener</strong>
+</td>
+<td>
+
+```js
+window.addEventListener(${1:'resize, scroll'}, ${2:callback})
+```
+</td>
+<td>
+
+>[bom]: Create window event listener
 </td>
 </tr>
 
@@ -1042,6 +1074,134 @@ ${1:date_objVar}.toString()
 
 <tr>
 <td>
+<strong>bbeo-js-date-setDate</strong>
+</td>
+<td>
+
+```js
+${1:date_objVar}.setDate(${2:new_date})
+```
+</td>
+<td>
+
+>[date]: Set date
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-date-setMonth</strong>
+</td>
+<td>
+
+```js
+${1:date_objVar}.setMonth(${2:new_month})
+```
+</td>
+<td>
+
+>[date]: Set month
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-date-setYear</strong>
+</td>
+<td>
+
+```js
+${1:date_objVar}.setFullYear(${2:new_year})
+```
+</td>
+<td>
+
+>[date]: Set year
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-date-setHour</strong>
+</td>
+<td>
+
+```js
+${1:date_objVar}.setHours(${2:new_hour})
+```
+</td>
+<td>
+
+>[date]: Set hour
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-date-setMinute</strong>
+</td>
+<td>
+
+```js
+${1:date_objVar}.setMinutes(${2:new_minute})
+```
+</td>
+<td>
+
+>[date]: Set minute
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-date-setSecond</strong>
+</td>
+<td>
+
+```js
+${1:date_objVar}.setSeconds(${2:new_second})
+```
+</td>
+<td>
+
+>[date]: Set second
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-date-setMillisecond</strong>
+</td>
+<td>
+
+```js
+${1:date_objVar}.setMilliseconds(${2:new_millisecond})
+```
+</td>
+<td>
+
+>[date]: Set millisecond
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-date-setTime</strong>
+</td>
+<td>
+
+```js
+${1:date_objVar}.setTime(${2:new_time})
+```
+</td>
+<td>
+
+>[date]: Set time
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-destruct-assignArray</strong>
 </td>
 <td>
@@ -1522,6 +1682,22 @@ document.getElementById(${1:id}).addEventListener(${2:click, 'keypress, scroll, 
 
 <tr>
 <td>
+<strong>bbeo-js-dom-eventTargetValue</strong>
+</td>
+<td>
+
+```js
+${1:e}.target.value
+```
+</td>
+<td>
+
+>[dom]: Get target value from event]
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-dom-id-addEventListenerWithpreventDefault</strong>
 </td>
 <td>
@@ -1553,22 +1729,6 @@ document.getElementById(${1:id}).addEventListener(${2:click, 'keypress, scroll, 
 <td>
 
 >[dom]: Get element by id and add event listener with stop propagation]
-</td>
-</tr>
-
-<tr>
-<td>
-<strong>bbeo-js-dom-event-targetValue</strong>
-</td>
-<td>
-
-```js
-${1:e}.target.value
-```
-</td>
-<td>
-
->[dom]: Get target value from event]
 </td>
 </tr>
 
@@ -1669,7 +1829,7 @@ ${1:hybr_var}.indexOf(${2:e})
 </td>
 <td>
 
->[hybr]: Find index of element
+>[hybrid]: Find index of element
 </td>
 </tr>
 
@@ -1685,7 +1845,23 @@ ${1:hybr_var}.includes(${2:e})
 </td>
 <td>
 
->[hybr]: Check the existence of an element
+>[hybrid]: Check the existence of an element
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-hybrid-length</strong>
+</td>
+<td>
+
+```js
+${1:hybr_var}.length
+```
+</td>
+<td>
+
+>[hybrid]: Length of string/array
 </td>
 </tr>
 
