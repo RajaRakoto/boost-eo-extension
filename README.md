@@ -381,6 +381,22 @@ try {
 
 <tr>
 <td>
+<strong>bbeo-js-bom-addWindowEventListener</strong>
+</td>
+<td>
+
+```js
+window.addEventListener(${1:'resize, scroll'}, ${2:callback})
+```
+</td>
+<td>
+
+>[bom]: Create window event listener
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-cast-objToString1</strong>
 </td>
 <td>
