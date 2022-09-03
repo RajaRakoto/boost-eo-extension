@@ -159,6 +159,22 @@ ${1:array_var}.length === 0 ? true : false
 
 <tr>
 <td>
+<strong>bbeo-js-array-reverse</strong>
+</td>
+<td>
+
+```js
+${1:array_var}.reverse()
+```
+</td>
+<td>
+
+>[array]: Reverse all element in an array -> array
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-basic-ifCondition</strong>
 </td>
 <td>
