@@ -1946,6 +1946,38 @@ ${1:string_var}.endsWith(${2:input}, ${3:end_index})
 
 <tr>
 <td>
+<strong>bbeo-js-string-toLowerCase</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.toLowerCase()
+```
+</td>
+<td>
+
+>[string]: String to lower case -> string
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-string-toUpperCase</strong>
+</td>
+<td>
+
+```js
+${1:string_var}.toUpperCase()
+```
+</td>
+<td>
+
+>[string]: String to upper case -> string
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-struct-addToQueue</strong>
 </td>
 <td>
