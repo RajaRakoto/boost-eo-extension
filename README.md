@@ -19,9 +19,9 @@
 
 <br>
 
-### 📌 Extension
+### 📌 Description
 
-**BOOST-EO** is a set of custom code snippets available for VScode IDE to help you be more productive by providing helper methods.
+**BOOST-EO** is a set of custom code snippets & pattern available for VScode IDE to help you be more productive by providing helper methods 🚀.
 
 ---
 
@@ -32,6 +32,14 @@ You can install it by typing `boost-eo` in the extension tab of your IDE
 ---
 
 ### 📌 Usage
+
+<div align="center">
+
+| Snippets & patterns Index |
+| :-- |
+| [🔎 Javascript snippets](#-javascript-snippets) |
+| [🔎 Javascript patterns](#-javascript-patterns) |
+</div>
 
 > **Notation**
 > hybrid = string | array
@@ -2230,6 +2238,22 @@ ${1:mixte_var}.reduce((${2:total, e}) => {${3:total + e}})
 <td>
 
 >[mixte]: Processing each element of the array/object to obtain a single value -> number
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-mixte-fillElement</strong>
+</td>
+<td>
+
+```js
+${1:mixte_var}.fill(${2:start_index},${3:foo})
+```
+</td>
+<td>
+
+>[mixte]: Fill an array/object with a static value -> mixed
 </td>
 </tr>
 
