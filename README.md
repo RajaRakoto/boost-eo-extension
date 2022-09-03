@@ -2235,6 +2235,22 @@ ${1:mixte_var}.reduce((${2:total, e}) => {${3:total + e}})
 
 <tr>
 <td>
+<strong>bbeo-js-mixte-fillElement</strong>
+</td>
+<td>
+
+```js
+${1:mixte_var}.fill(${2:start_index},${3:foo})
+```
+</td>
+<td>
+
+>[mixte]: Fill an array/object with a static value -> mixed
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-mixte-foreachElement</strong>
 </td>
 <td>

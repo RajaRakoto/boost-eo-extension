@@ -39,6 +39,11 @@ export const js_mixte = {
 			description:
 				'[mixte]: Processing each element of the array/object to obtain a single value -> number',
 		},
+	'[mixte]: Fill an array/object with a static value -> mixed': {
+		prefix: 'bbeo-js-mixte-fillElement',
+		body: ['${1:mixte_var}.fill(${2:start_index},${3:foo})'],
+		description: '[mixte]: Fill an array/object with a static value -> mixed',
+	},
 	'[mixte]: Browse the elements of an array/object -> any': {
 		prefix: 'bbeo-js-mixte-foreachElement',
 		body: ['${1:mixte_var}.forEach((${2:e}) => {', '    ${3:expression}', '})'],
