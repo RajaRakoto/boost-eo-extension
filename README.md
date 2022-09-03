@@ -34,8 +34,8 @@ You can install it by typing `boost-eo` in the extension tab of your IDE
 ### 📌 Usage
 
 > **Notation**
-hybr = string | array
-mixte = array | object
+> hybrid = string | array
+> mixte = array | object
 
 
 #### ◾ Javascript snippets
@@ -1829,7 +1829,7 @@ ${1:hybr_var}.indexOf(${2:e})
 </td>
 <td>
 
->[hybr]: Find index of element
+>[hybrid]: Find index of element
 </td>
 </tr>
 
@@ -1845,7 +1845,23 @@ ${1:hybr_var}.includes(${2:e})
 </td>
 <td>
 
->[hybr]: Check the existence of an element
+>[hybrid]: Check the existence of an element
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-hybrid-length</strong>
+</td>
+<td>
+
+```js
+${1:hybr_var}.length
+```
+</td>
+<td>
+
+>[hybrid]: Length of string/array
 </td>
 </tr>
 
