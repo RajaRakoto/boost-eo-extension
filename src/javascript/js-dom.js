@@ -149,6 +149,11 @@ export const js_dom = {
 		],
 		description: '[dom]: Get element by id and add event listener]',
 	},
+	'[dom]: Get target value from event]': {
+		prefix: 'bbeo-js-dom-eventTargetValue',
+		body: ['${1:e}.target.value'],
+		description: '[dom]: Get target value from event]',
+	},
 	'[dom]: Get element by id and add event listener with prevent default]': {
 		prefix: 'bbeo-js-dom-id-addEventListenerWithpreventDefault',
 		body: [
@@ -168,10 +173,5 @@ export const js_dom = {
 		],
 		description:
 			'[dom]: Get element by id and add event listener with stop propagation]',
-	},
-	'[dom]: Get target value from event]': {
-		prefix: 'bbeo-js-dom-event-targetValue',
-		body: ['${1:e}.target.value'],
-		description: '[dom]: Get target value from event]',
 	},
 };

@@ -1522,6 +1522,22 @@ document.getElementById(${1:id}).addEventListener(${2:click, 'keypress, scroll, 
 
 <tr>
 <td>
+<strong>bbeo-js-dom-eventTargetValue</strong>
+</td>
+<td>
+
+```js
+${1:e}.target.value
+```
+</td>
+<td>
+
+>[dom]: Get target value from event]
+</td>
+</tr>
+
+<tr>
+<td>
 <strong>bbeo-js-dom-id-addEventListenerWithpreventDefault</strong>
 </td>
 <td>
@@ -1553,22 +1569,6 @@ document.getElementById(${1:id}).addEventListener(${2:click, 'keypress, scroll, 
 <td>
 
 >[dom]: Get element by id and add event listener with stop propagation]
-</td>
-</tr>
-
-<tr>
-<td>
-<strong>bbeo-js-dom-event-targetValue</strong>
-</td>
-<td>
-
-```js
-${1:e}.target.value
-```
-</td>
-<td>
-
->[dom]: Get target value from event]
 </td>
 </tr>
 
