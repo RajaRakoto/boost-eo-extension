@@ -1,6 +1,8 @@
 import traverse from 'traverse';
 import fs from 'fs';
 import { header, footer } from './utils/docs.js';
+// pattern module importation
+import { js_pattern } from './src/pattern/js-pattern.js';
 // python module importation
 import { py_basic } from './src/python/py-basic.js';
 // shellscript module importation
@@ -26,6 +28,7 @@ import { js_basic } from './src/javascript/js-basic.js';
 import { js_date } from './src/javascript/js-date.js';
 import { js_dom } from './src/javascript/js-dom.js';
 import { js_bom } from './src/javascript/js-bom.js';
+
 
 // table generator
 function generateTable(data, language) {
@@ -145,6 +148,7 @@ const javascriptSourceList = refactorSourceList([
 ]);
 const pythonSourceList = refactorSourceList([py_basic]);
 const shellscriptSourceList = refactorSourceList([sh_basic]);
+const javascriptPatternSourceList = refactorSourceList([js_pattern]);
 
 // output
 console.log(header);
@@ -166,4 +170,11 @@ getOutput(
 	'#### ◾ Shellscript snippets',
 	'shellscript',
 );
+getOutput(
+	javascriptPatternSourceList,
+	'./dist/boosteo-js-pattern.code-snippets',
+	'#### ◾ Javascript pattern',
+	'javascript',
+);
+
 console.log(footer);
