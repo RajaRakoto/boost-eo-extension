@@ -12,6 +12,19 @@
 	"categories": [
 		"Snippets"
 	],
+	"keywords": [
+		"react",
+		"javascript",
+		"python",
+		"productivity",
+		"snippets",
+		"helper",
+		"patterns",
+		"vscode",
+		"vscode-extension",
+		"shell-script",
+		"snippets-collection"
+	],
 	"contributes": {
 		"snippets": [
 			{
