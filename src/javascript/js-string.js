@@ -31,4 +31,19 @@ export const js_string = {
 			description:
 				'[string]: Remove the white space at the beginning and at the end of a string -> string',
 		},
+	'[string]: Get chatAt index -> string': {
+		prefix: 'bbeo-js-string-charAt',
+		body: ['${1:string_var}.charAt(${2:index})'],
+		description: '[string]: Get chatAt index -> string',
+	},
+	'[string]: Check start of a string -> boolean': {
+		prefix: 'bbeo-js-string-startsWith',
+		body: ['${1:string_var}.startsWith(${2:input}, ${3:start_index})'],
+		description: '[string]: Check start of a string -> boolean',
+	},
+	'[string]: Check end of a string -> boolean': {
+		prefix: 'bbeo-js-string-endsWith',
+		body: ['${1:string_var}.endsWith(${2:input}, ${3:end_index})'],
+		description: '[string]: Check end of a string -> boolean',
+	},
 };
