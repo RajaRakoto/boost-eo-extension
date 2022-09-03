@@ -28,7 +28,7 @@
 			},
 			{
 				"language": "javascript",
-				"path": "./dist/boosteo-js-pattern.code-snippets"
+				"path": "./dist/boosteo-js-patterns.code-snippets"
 			}
 		]
 	},

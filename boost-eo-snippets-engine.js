@@ -2,7 +2,7 @@ import traverse from 'traverse';
 import fs from 'fs';
 import { header, footer } from './utils/docs.js';
 // pattern module importation
-import { js_pattern } from './src/pattern/js-pattern.js';
+import { js_patterns } from './src/patterns/js-patterns.js';
 // python module importation
 import { py_basic } from './src/python/py-basic.js';
 // shellscript module importation
@@ -148,7 +148,7 @@ const javascriptSourceList = refactorSourceList([
 ]);
 const pythonSourceList = refactorSourceList([py_basic]);
 const shellscriptSourceList = refactorSourceList([sh_basic]);
-const javascriptPatternSourceList = refactorSourceList([js_pattern]);
+const javascriptPatternSourceList = refactorSourceList([js_patterns]);
 
 // output
 console.log(header);
@@ -172,8 +172,8 @@ getOutput(
 );
 getOutput(
 	javascriptPatternSourceList,
-	'./dist/boosteo-js-pattern.code-snippets',
-	'#### ◾ Javascript pattern',
+	'./dist/boosteo-js-patterns.code-snippets',
+	'#### ◾ Javascript patterns',
 	'javascript',
 );
 
