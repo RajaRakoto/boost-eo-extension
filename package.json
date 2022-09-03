@@ -23,7 +23,8 @@
 		"vscode",
 		"vscode-extension",
 		"shell-script",
-		"snippets-collection"
+		"snippets-collection",
+		"nodejs"
 	],
 	"contributes": {
 		"snippets": [
