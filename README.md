@@ -33,6 +33,14 @@ You can install it by typing `boost-eo` in the extension tab of your IDE
 
 ### 📌 Usage
 
+<div align="center">
+
+| Snippets & patterns Index |
+| :-- |
+| [🔎 Javascript snippets](#-javascript-snippets) |
+| [🔎 Javascript patterns](#-javascript-patterns) |
+</div>
+
 > **Notation**
 > hybrid = string | array
 > mixte = array | object
