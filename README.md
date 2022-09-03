@@ -41,9 +41,7 @@ You can install it by typing `boost-eo` in the extension tab of your IDE
 | [🔎 Javascript patterns](#-javascript-patterns) |
 </div>
 
-> **Notation**
-> hybrid = string | array
-> mixte = array | object
+> **Notation**: hybrid = string | array -- mixte = array | object
 
 
 #### ◾ Javascript snippets
