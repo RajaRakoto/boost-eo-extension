@@ -60,7 +60,7 @@ export const js_math = {
 		description: '[math]: Get random value between 0 and max',
 	},
 	'[math]: Get random value between min and max': {
-		prefix: 'bbeo-js-math-random-min-max',
+		prefix: 'bbeo-js-math-random-minMax',
 		body: ['Math.floor(Math.random() * (${1:max} - ${2:min}) + ${2:min})'],
 		description: '[math]: Get random value between min and max',
 	},
