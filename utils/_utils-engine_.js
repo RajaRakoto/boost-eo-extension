@@ -21,6 +21,11 @@ export function fsExport(data, filename) {
 	});
 }
 
+// get file list in directory
+export function fsReadDir(path) {
+  return fs.readdirSync(path);
+}
+
 // pattern model getter
 export function getPatternModel(title, description, body) {
 	return `
