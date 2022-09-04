@@ -1,3 +1,5 @@
+import { stats } from "./stats.js";
+
 export const header = `
 <div align="center">
 
@@ -29,11 +31,32 @@ You can install it by typing \`boost-eo\` in the extension tab of your IDE
 
 ---
 
+### 📌 Features
+
+- [x] Javascript snippets collection
+- [x] Javascript patterns collection
+- [x] Some snippets on frequently used javascript libraries
+- [ ] Typescript snippets collection
+- [ ] React snippets collection
+- [ ] React patterns collection
+- [ ] Python snippets collection
+- [ ] Python patterns collection
+- [ ] Shell script snippets collection
+- [ ] Shell script patterns collection
+
+---
+
+### 📌 Stats
+
+${stats}
+
+---
+
 ### 📌 Usage
 
 <div align="center">
 
-| Snippets & patterns Index |
+| Snippets & Patterns Index |
 | :-- |
 | [🔎 Javascript snippets](#-javascript-snippets) |
 | [🔎 Javascript patterns](#-javascript-patterns) |
