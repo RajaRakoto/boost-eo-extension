@@ -17,9 +17,15 @@
 
 <br>
 
+
+
+
 ### 📌 Description
 
 **BOOST-EO** is a set of custom code snippets & pattern available for VScode IDE to help you be more productive by providing helper methods 🚀.
+
+
+
 
 ---
 
@@ -27,16 +33,82 @@
 
 You can install it by typing `boost-eo` in the extension tab of your IDE
 
+
+
+
+---
+
+### 📌 Features
+
+- [x] Javascript snippets collection
+- [x] Javascript patterns collection
+- [x] Some snippets on frequently used javascript libraries
+- [ ] Typescript snippets collection
+- [ ] Typescript patterns collection
+- [ ] React snippets collection
+- [ ] React patterns collection
+- [ ] Python snippets collection
+- [ ] Python patterns collection
+- [ ] Shell script snippets collection
+- [ ] Shell script patterns collection
+
+
+
+
+---
+
+### 📌 Contribution
+  
+- If you want to contribute to this project, here is a tool that will help you to generate snippets -> https://snippet-generator.app/
+- With each new code snippet added, you need to update all `snippets` & `patterns` file and regenerate the documentation, all in one command (in root directory):
+```bash
+cd utils && node boost-eo.js > ../README.md && cd ..
+```
+- Then you can make a PR.
+
+
+
+
+---
+
+### 📌 Stats
+
+#### ◾ Total stats
+
+| Languages | Patterns | Libraries | Snippets |
+| --- | --- | --- | --- |
+| JavaScript | <div align='center'>127</div> | <div align='center'>2</div> | <div align='center'>20</div> |
+| Python | <div align='center'>0</div> | <div align='center'>0</div> | <div align='center'>0</div> |
+| React | <div align='center'>0</div> | <div align='center'>-</div> | <div align='center'>0</div> |
+| Shell Script | <div align='center'>0</div> | <div align='center'>-</div> | <div align='center'>0</div> |
+| TypeScript | <div align='center'>0</div> | <div align='center'>-</div> | <div align='center'>0</div> |
+
+
+#### ◾ List stats
+
+| Languages | Patterns | Libraries | Snippets |
+| --- | --- | --- | --- |
+| JavaScript | <div align="center">`1-all` `2-allEqual` `3-approximatelyEqual` `4-arrayToCSV` `5-arrayToHtmlList` `6-attempt` `7-average` `8-averageBy` `9-bifurcate` `10-bifurcateBy` `11-bottomVisible` `12-byteSize` `13-capitalize` `14-capitalizeEveryWord` `15-castArray` `16-compact` `17-countOccurrences` `18-createDirIfNotExists` `19-currentURL` `20-dayOfYear` `21-decapitalize` `22-deepFlatten` `23-default` `24-defer` `25-degreesToRads` `26-difference` `27-differenceBy` `28-differenceWith` `29-digitize` `30-distance` `31-DropLeft` `32-dropRight` `33-dropRightWhile` `34-dropWhile` `35-elementContains` `36-Filter Duplicate Elements` `37-findKey` `38-findLast` `39-flatten` `40-forEachRight` `41-forOwn` `42-functionName` `43-Get Time From Date` `44-Get Days Between Dates` `45-getStyle` `46-getType` `47-hasClass` `48-head` `49-hide` `50-httpsRedirect` `51-indexOfAll` `52-initial` `53-insertAfter` `54-insertBefore` `55-intersection` `56-intersectionBy` `57-intersectionWith` `58-is` `59-isAfterDate` `60-isAnagram` `61-isArrayLike` `62-isBeforeDate` `63-isBoolean` `64-isBrowser` `65-isBrowserTabFocused` `66-isLowerCase` `67-isNil` `68-isNull` `69-isNumber` `70-isObject` `71-isObjectLike` `72-isPlainObject` `73-isPromiseLike` `74-isSameDate` `75-isString` `76-isSymbol` `77-isUndefined` `78-isUpperCase` `79-isValidJSON` `80-last` `81-matches` `82-maxDate` `83-maxN` `84-minDate` `85-minN` `86-negate` `87-nodeListToArray` `88-pad` `89-radsToDegrees` `90-Random Hexadecimal Color Code` `91-randomIntArrayInRange` `92-randomIntegerInRange` `93-randomNumberInRange` `94-readFileLines` `95-Redirect to a URL` `96-reverse` `97-round` `98-runPromisesInSeries` `99-sample` `100-sampleSize` `101-scrollToTop` `102-serializeCookie` `103-setStyle` `104-shallowClone` `105-show` `106-shuffle` `107-similarity` `108-sleep` `109-smoothScroll` `110-sortCharactersInString` `111-splitLines` `112-stripHTMLTags` `113-sum` `114-tail` `115-take` `116-takeRight` `117-timeTaken` `118-times` `119-toCurrency` `120-toDecimalMark` `121-toggleClass` `122-tomorrow` `123-unfold` `124-union` `125-uniqueElements` `126-validateNumber` `127-words`</div> | <div align="center">`fs` `traverse`</div> | <div align="center">`array` `basic` `bom` `cast` `class` `console` `date` `destruct` `dom` `func` `gen` `hybrid` `math` `mixte` `module` `object` `regex` `spread` `string` `struct`</div> |
+| Python | <div align="center"> n/a </div> | <div align="center"> n/a </div> | <div align="center"> n/a </div> |
+| React | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
+| Shell Script | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
+| TypeScript | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
+
+
+
+
+
 ---
 
 ### 📌 Usage
 
 <div align="center">
 
-| Snippets & patterns Index |
+| Snippets & Patterns Index |
 | :-- |
 | [🔎 Javascript snippets](#-javascript-snippets) |
 | [🔎 Javascript patterns](#-javascript-patterns) |
+| [🔎 Javascript libaries](#-javascript-libaries) |
 </div>
 
 > **Notation**: hybrid = string | array -- mixte = array | object
@@ -3081,7 +3153,7 @@ countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-18-Create Directory</strong>
+<strong>bbeo-js-pattern-18-createDirIfNotExists</strong>
 </td>
 <td>
 
@@ -3327,16 +3399,16 @@ distance(1, 1, 2, 3); // 2.23606797749979
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-31-Drop Elements</strong>
+<strong>bbeo-js-pattern-31-DropLeft</strong>
 </td>
 <td>
 
 ```js
-const drop = (arr, n = 1) => arr.slice(n);
+const dropLeft = (arr, n = 1) => arr.slice(n);
 
-drop([1, 2, 3]); // [2,3]
-drop([1, 2, 3], 2); // [3]
-drop([1, 2, 3], 42); // []
+dropLeft([1, 2, 3]); // [2,3]
+dropLeft([1, 2, 3], 2); // [3]
+dropLeft([1, 2, 3], 42); // []
 ```
 </td>
 <td>
@@ -5257,17 +5329,205 @@ words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 
 </table>
 
+#### ◾ Javascript libraries
 
----
+<table>
+<th>prefix</th>
+<th>body</th>
+<th>description</th>
 
-### 📌 Contribution
-  
-- If you want to contribute to this project, here is a tool that will help you to generate snippets -> https://snippet-generator.app/
-- With each new code snippet added, you need to update `all snippets` file and regenerate the documentation, all in one command:
-```bash
-node boost-eo-engine.js > README.md
+<tr>
+<td>
+<strong>bbeo-js-libs-fs-deps</strong>
+</td>
+<td>
+
+```js
+import fs from 'fs';
 ```
-- Then you can make a PR.
+</td>
+<td>
+
+>[libs]: Import fs module
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-libs-fs-fsImport</strong>
+</td>
+<td>
+
+```js
+export function fsImport(filepath) {
+  return JSON.parse(
+	fs.readFileSync(filepath, 'utf8'),
+  );
+} 
+
+
+```
+</td>
+<td>
+
+>[libs]: Import all data type into variable with fs lib
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-libs-fs-fsExport</strong>
+</td>
+<td>
+
+```js
+export function fsExport(data, filepath) {
+	fs.writeFile(filepath, JSON.stringify(data), err => {
+		if (err) {
+			console.log(err);
+		}
+	});
+}
+
+```
+</td>
+<td>
+
+>[libs]: Export all data type into file with fs lib
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-libs-fs-fsReadDir</strong>
+</td>
+<td>
+
+```js
+export function fsReadDir(path) {
+  return fs.readdirSync(path);
+}
+```
+</td>
+<td>
+
+>[libs]: Get all file list in directory with fs lib
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-libs-traverse-deps</strong>
+</td>
+<td>
+
+```js
+import traverse from 'traverse';
+```
+</td>
+<td>
+
+>[libs]: Import traverse module
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-libs-traverse-props</strong>
+</td>
+<td>
+
+```js
+// this.node -> The present node on the recursive walk
+// this.path -> An array of string keys from the root to the present node
+// this.parent -> The context of the node's parent. This is undefined for the root node.
+// this.key -> The name of the key of the present node in its parent. This is undefined for the root node.
+```
+</td>
+<td>
+
+>[libs]: Get traverse properties
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-libs-traverse-leaves</strong>
+</td>
+<td>
+
+```js
+var obj = {
+    a : [1,2,3],
+    b : 4,
+    c : [5,6],
+    d : { e : [7,8], f : 9 },
+};
+ 
+var leaves = traverse(obj).reduce(function (acc, x) {
+    if (this.isLeaf) acc.push(x);
+    return acc;
+}, []);
+ 
+console.dir(leaves); // [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+```
+</td>
+<td>
+
+>[libs]: Leaves.js traverse pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-libs-traverse-traverseKeyValueByObject</strong>
+</td>
+<td>
+
+```js
+export function traverseKeyValueByObject(source, key) {
+	let traverseResult = [];
+	traverse(source).forEach(function (e) {
+		if (this.key == key) {
+			traverseResult.push(e);
+		}
+	});
+	return traverseResult;
+}
+```
+</td>
+<td>
+
+>[libs]: Get all key value from external object
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-libs-traverse-traverseKeyValueByJSON</strong>
+</td>
+<td>
+
+```js
+export function traverseKeyValueByJSON(source, key) {
+	let traverseResult = [];
+	traverse(JSON.parse(fs.readFileSync(source, 'utf8'))).forEach(function (e) {
+		if (this.key == key) {
+			traverseResult.push(e);
+		}
+	});
+	return traverseResult;
+}
+```
+</td>
+<td>
+
+>[libs]: Get all key value from external JSON file
+</td>
+</tr>
+
+</table>
+
 
 <div align="center">
 
