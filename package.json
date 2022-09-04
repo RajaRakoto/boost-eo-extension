@@ -6,6 +6,9 @@
 	"version": "1.0.0",
 	"icon": "assets/boost-eo-ico.png",
 	"type": "module",
+	"scripts": {
+		"build": "cd utils && node boost-eo.js > ../README.md && cd .."
+	},
 	"engines": {
 		"vscode": "^1.49.0"
 	},

@@ -10,7 +10,7 @@ npm install
 \`\`\`
 🏁 With each new code snippet added, you need to update all \`snippets\` & \`patterns\` file and regenerate the documentation, all in one command (in root directory):
 \`\`\`bash
-cd utils && node boost-eo.js > ../README.md && cd ..
+npm run build
 \`\`\`
 🏁 You can run a \`grunt task\` to make a \`local backup\` of this project by running the following command (in root directory):
 \`\`\`bash
