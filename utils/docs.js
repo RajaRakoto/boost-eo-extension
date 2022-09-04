@@ -1,4 +1,4 @@
-import { stats } from "./stats.js";
+// import { stats } from "./stats.js";
 
 export const header = `
 <div align="center">
@@ -49,8 +49,6 @@ You can install it by typing \`boost-eo\` in the extension tab of your IDE
 
 ### 📌 Stats
 
-${stats}
-
 ---
 
 ### 📌 Usage
@@ -74,7 +72,7 @@ export const footer = `
 ### 📌 Contribution
   
 - If you want to contribute to this project, here is a tool that will help you to generate snippets -> https://snippet-generator.app/
-- With each new code snippet added, you need to update \`all snippets\` file and regenerate the documentation, all in one command:
+- With each new code snippet added, you need to update \`all snippets\` & \`patterns\` file and regenerate the documentation, all in one command:
 \`\`\`bash
 node boost-eo-engine.js > README.md
 \`\`\`
