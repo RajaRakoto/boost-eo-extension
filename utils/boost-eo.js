@@ -7,6 +7,7 @@ import { desc } from '../docs/desc.js';
 import { feats } from '../docs/feats.js';
 import { install } from '../docs/install.js';
 import { usage } from '../docs/usage.js';
+import { demo } from '../docs/demo.js';
 import { stats } from './stats.js';
 // javascript libraires importation
 import { js_fs } from '../src/libs/javascript/js-fs.js';
@@ -63,6 +64,7 @@ const javascriptLibrariesSourceList = refactorSourceList([js_fs, js_traverse]);
 
 // export docs & snippets & patterns
 console.log(banner);
+console.log(demo);
 console.log(desc);
 console.log(install);
 console.log(feats);
