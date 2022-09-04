@@ -37,6 +37,7 @@ You can install it by typing \`boost-eo\` in the extension tab of your IDE
 - [x] Javascript patterns collection
 - [x] Some snippets on frequently used javascript libraries
 - [ ] Typescript snippets collection
+- [ ] Typescript patterns collection
 - [ ] React snippets collection
 - [ ] React patterns collection
 - [ ] Python snippets collection
