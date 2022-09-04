@@ -17,9 +17,15 @@
 
 <br>
 
+
+
+
 ### 📌 Description
 
-**BOOST-EO** is a set of custom code snippets & pattern available for VScode IDE to help you be more productive by providing helper methods 🚀.
+**BOOST-EO** is a set of custom code `snippets` & `pattern` available for VScode IDE to help you be more productive by providing helper methods 🚀.
+
+
+
 
 ---
 
@@ -27,16 +33,90 @@
 
 You can install it by typing `boost-eo` in the extension tab of your IDE
 
+
+
+
+---
+
+### 📌 Features
+
+- [x] Javascript snippets collection
+- [x] Javascript patterns collection
+- [x] Some snippets on frequently used javascript libraries
+- [ ] Typescript snippets collection
+- [ ] Typescript patterns collection
+- [ ] React snippets collection
+- [ ] React patterns collection
+- [ ] Python snippets collection
+- [ ] Python patterns collection
+- [ ] Shell script snippets collection
+- [ ] Shell script patterns collection
+
+
+
+
+---
+
+### 📌 Contribution
+
+🏁 Before contributing, be sure to `install all dependencies` needed to work in this project by running the following command (in root directory):
+```bash
+npm install
+```
+🏁 With each new code snippet added, you need to update all `snippets` & `patterns` file and regenerate the documentation, all in one command (in root directory):
+```bash
+cd utils && node boost-eo.js > ../README.md && cd ..
+```
+🏁 You can run a `grunt task` to make a `local backup` of this project by running the following command (in root directory):
+```bash
+grunt compress-all
+```
+🏁 Here is a tool that will help you to generate snippets -> https://snippet-generator.app/
+🏁 Then you can make a PR.
+
+
+
+
+---
+
+### 📌 Stats
+
+#### ◾ Total stats
+
+| Languages | Patterns | Libraries | Snippets |
+| --- | --- | --- | --- |
+| JavaScript | <div align='center'>127</div> | <div align='center'>2</div> | <div align='center'>20</div> |
+| Python | <div align='center'>0</div> | <div align='center'>0</div> | <div align='center'>0</div> |
+| React | <div align='center'>0</div> | <div align='center'>-</div> | <div align='center'>0</div> |
+| Shell Script | <div align='center'>0</div> | <div align='center'>-</div> | <div align='center'>0</div> |
+| TypeScript | <div align='center'>0</div> | <div align='center'>-</div> | <div align='center'>0</div> |
+
+
+#### ◾ List stats
+
+| Languages | Patterns | Libraries | Snippets |
+| --- | --- | --- | --- |
+| JavaScript | <div align="center">`1-all` `2-allEqual` `3-approximatelyEqual` `4-arrayToCSV` `5-arrayToHtmlList` `6-attempt` `7-average` `8-averageBy` `9-bifurcate` `10-bifurcateBy` `11-bottomVisible` `12-byteSize` `13-capitalize` `14-capitalizeEveryWord` `15-castArray` `16-compact` `17-countOccurrences` `18-createDirIfNotExists` `19-currentURL` `20-dayOfYear` `21-decapitalize` `22-deepFlatten` `23-default` `24-defer` `25-degreesToRads` `26-difference` `27-differenceBy` `28-differenceWith` `29-digitize` `30-distance` `31-DropLeft` `32-dropRight` `33-dropRightWhile` `34-dropWhile` `35-elementContains` `36-Filter Duplicate Elements` `37-findKey` `38-findLast` `39-flatten` `40-forEachRight` `41-forOwn` `42-functionName` `43-Get Time From Date` `44-Get Days Between Dates` `45-getStyle` `46-getType` `47-hasClass` `48-head` `49-hide` `50-httpsRedirect` `51-indexOfAll` `52-initial` `53-insertAfter` `54-insertBefore` `55-intersection` `56-intersectionBy` `57-intersectionWith` `58-is` `59-isAfterDate` `60-isAnagram` `61-isArrayLike` `62-isBeforeDate` `63-isBoolean` `64-isBrowser` `65-isBrowserTabFocused` `66-isLowerCase` `67-isNil` `68-isNull` `69-isNumber` `70-isObject` `71-isObjectLike` `72-isPlainObject` `73-isPromiseLike` `74-isSameDate` `75-isString` `76-isSymbol` `77-isUndefined` `78-isUpperCase` `79-isValidJSON` `80-last` `81-matches` `82-maxDate` `83-maxN` `84-minDate` `85-minN` `86-negate` `87-nodeListToArray` `88-pad` `89-radsToDegrees` `90-Random Hexadecimal Color Code` `91-randomIntArrayInRange` `92-randomIntegerInRange` `93-randomNumberInRange` `94-readFileLines` `95-Redirect to a URL` `96-reverse` `97-round` `98-runPromisesInSeries` `99-sample` `100-sampleSize` `101-scrollToTop` `102-serializeCookie` `103-setStyle` `104-shallowClone` `105-show` `106-shuffle` `107-similarity` `108-sleep` `109-smoothScroll` `110-sortCharactersInString` `111-splitLines` `112-stripHTMLTags` `113-sum` `114-tail` `115-take` `116-takeRight` `117-timeTaken` `118-times` `119-toCurrency` `120-toDecimalMark` `121-toggleClass` `122-tomorrow` `123-unfold` `124-union` `125-uniqueElements` `126-validateNumber` `127-words`</div> | <div align="center">`fs` `traverse`</div> | <div align="center">`array` `basic` `bom` `cast` `class` `console` `date` `destruct` `dom` `func` `gen` `hybrid` `math` `mixte` `module` `object` `regex` `spread` `string` `struct`</div> |
+| Python | <div align="center"> n/a </div> | <div align="center"> n/a </div> | <div align="center"> n/a </div> |
+| React | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
+| Shell Script | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
+| TypeScript | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
+
+
+
+
+
 ---
 
 ### 📌 Usage
 
 <div align="center">
 
-| Snippets & patterns Index |
+| Snippets & Patterns Index |
 | :-- |
 | [🔎 Javascript snippets](#-javascript-snippets) |
 | [🔎 Javascript patterns](#-javascript-patterns) |
+| [🔎 Javascript libaries](#-javascript-libaries) |
 </div>
 
 > **Notation**: hybrid = string | array -- mixte = array | object
@@ -147,7 +227,7 @@ ${1:array_var}.length === 0 ? true : false
 
 <tr>
 <td>
-<strong>bbeo-array-removeDuplicates</strong>
+<strong>bbeo-array-js-removeDuplicates</strong>
 </td>
 <td>
 
@@ -870,7 +950,7 @@ console.warn(${1:object})
 
 <tr>
 <td>
-<strong>bbeo-date-createNullDate</strong>
+<strong>bbeo-js-date-createNullDate</strong>
 </td>
 <td>
 
@@ -886,7 +966,7 @@ const ${1:date_objVar} = new Date()
 
 <tr>
 <td>
-<strong>bbeo-date-createFullDate</strong>
+<strong>bbeo-js-date-createFullDate</strong>
 </td>
 <td>
 
@@ -902,7 +982,7 @@ const ${1:date_objVar} = new Date(${2:year}, ${3:month}, ${4:day}, ${5:hour}, ${
 
 <tr>
 <td>
-<strong>bbeo-date-createStringDate</strong>
+<strong>bbeo-js-date-createStringDate</strong>
 </td>
 <td>
 
@@ -2747,7 +2827,7 @@ ${1:array_var}.shift(${2:e})
 
 <tr>
 <td>
-<strong>bbeo-pattern-1-all</strong>
+<strong>bbeo-js-pattern-1-all</strong>
 </td>
 <td>
 
@@ -2766,7 +2846,7 @@ all([1, 2, 3]); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-2-allEqual</strong>
+<strong>bbeo-js-pattern-2-allEqual</strong>
 </td>
 <td>
 
@@ -2785,7 +2865,7 @@ allEqual([1, 1, 1, 1]); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-3-approximatelyEqual</strong>
+<strong>bbeo-js-pattern-3-approximatelyEqual</strong>
 </td>
 <td>
 
@@ -2803,7 +2883,7 @@ approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-4-arrayToCSV</strong>
+<strong>bbeo-js-pattern-4-arrayToCSV</strong>
 </td>
 <td>
 
@@ -2823,7 +2903,7 @@ arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 
 <tr>
 <td>
-<strong>bbeo-pattern-5-arrayToHtmlList</strong>
+<strong>bbeo-js-pattern-5-arrayToHtmlList</strong>
 </td>
 <td>
 
@@ -2845,7 +2925,7 @@ arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 
 <tr>
 <td>
-<strong>bbeo-pattern-6-attempt</strong>
+<strong>bbeo-js-pattern-6-attempt</strong>
 </td>
 <td>
 
@@ -2871,7 +2951,7 @@ if (elements instanceof Error) elements = []; // elements = []
 
 <tr>
 <td>
-<strong>bbeo-pattern-7-average</strong>
+<strong>bbeo-js-pattern-7-average</strong>
 </td>
 <td>
 
@@ -2889,7 +2969,7 @@ average(1, 2, 3); // 2
 
 <tr>
 <td>
-<strong>bbeo-pattern-8-averageBy</strong>
+<strong>bbeo-js-pattern-8-averageBy</strong>
 </td>
 <td>
 
@@ -2910,7 +2990,7 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 
 <tr>
 <td>
-<strong>bbeo-pattern-9-bifurcate</strong>
+<strong>bbeo-js-pattern-9-bifurcate</strong>
 </td>
 <td>
 
@@ -2929,7 +3009,7 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 
 <tr>
 <td>
-<strong>bbeo-pattern-10-bifurcateBy</strong>
+<strong>bbeo-js-pattern-10-bifurcateBy</strong>
 </td>
 <td>
 
@@ -2949,7 +3029,7 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 
 <tr>
 <td>
-<strong>bbeo-pattern-11-bottomVisible</strong>
+<strong>bbeo-js-pattern-11-bottomVisible</strong>
 </td>
 <td>
 
@@ -2969,7 +3049,7 @@ bottomVisible(); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-12-byteSize</strong>
+<strong>bbeo-js-pattern-12-byteSize</strong>
 </td>
 <td>
 
@@ -2988,7 +3068,7 @@ byteSize('Hello World'); // 11
 
 <tr>
 <td>
-<strong>bbeo-pattern-13-capitalize</strong>
+<strong>bbeo-js-pattern-13-capitalize</strong>
 </td>
 <td>
 
@@ -3008,7 +3088,7 @@ capitalize('fooBar', true); // 'Foobar'
 
 <tr>
 <td>
-<strong>bbeo-pattern-14-capitalizeEveryWord</strong>
+<strong>bbeo-js-pattern-14-capitalizeEveryWord</strong>
 </td>
 <td>
 
@@ -3026,7 +3106,7 @@ capitalizeEveryWord('hello world!'); // 'Hello World!'
 
 <tr>
 <td>
-<strong>bbeo-pattern-15-castArray</strong>
+<strong>bbeo-js-pattern-15-castArray</strong>
 </td>
 <td>
 
@@ -3045,7 +3125,7 @@ castArray([1]); // [1]
 
 <tr>
 <td>
-<strong>bbeo-pattern-16-compact</strong>
+<strong>bbeo-js-pattern-16-compact</strong>
 </td>
 <td>
 
@@ -3064,7 +3144,7 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 
 <tr>
 <td>
-<strong>bbeo-pattern-17-countOccurrences</strong>
+<strong>bbeo-js-pattern-17-countOccurrences</strong>
 </td>
 <td>
 
@@ -3081,7 +3161,7 @@ countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 
 <tr>
 <td>
-<strong>bbeo-pattern-18-Create Directory</strong>
+<strong>bbeo-js-pattern-18-createDirIfNotExists</strong>
 </td>
 <td>
 
@@ -3100,7 +3180,7 @@ createDirIfNotExists('test');
 
 <tr>
 <td>
-<strong>bbeo-pattern-19-currentURL</strong>
+<strong>bbeo-js-pattern-19-currentURL</strong>
 </td>
 <td>
 
@@ -3118,7 +3198,7 @@ currentURL(); // 'https://medium.com/@fatosmorina'
 
 <tr>
 <td>
-<strong>bbeo-pattern-20-dayOfYear</strong>
+<strong>bbeo-js-pattern-20-dayOfYear</strong>
 </td>
 <td>
 
@@ -3137,7 +3217,7 @@ dayOfYear(new Date()); // 272
 
 <tr>
 <td>
-<strong>bbeo-pattern-21-decapitalize</strong>
+<strong>bbeo-js-pattern-21-decapitalize</strong>
 </td>
 <td>
 
@@ -3157,7 +3237,7 @@ decapitalize('FooBar'); // 'fooBar'
 
 <tr>
 <td>
-<strong>bbeo-pattern-22-deepFlatten</strong>
+<strong>bbeo-js-pattern-22-deepFlatten</strong>
 </td>
 <td>
 
@@ -3175,7 +3255,7 @@ deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 
 <tr>
 <td>
-<strong>bbeo-pattern-23-default</strong>
+<strong>bbeo-js-pattern-23-default</strong>
 </td>
 <td>
 
@@ -3193,7 +3273,7 @@ defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 
 <tr>
 <td>
-<strong>bbeo-pattern-24-defer</strong>
+<strong>bbeo-js-pattern-24-defer</strong>
 </td>
 <td>
 
@@ -3211,7 +3291,7 @@ defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 
 <tr>
 <td>
-<strong>bbeo-pattern-25-degreesToRads</strong>
+<strong>bbeo-js-pattern-25-degreesToRads</strong>
 </td>
 <td>
 
@@ -3229,7 +3309,7 @@ degreesToRads(90.0); // ~1.5708
 
 <tr>
 <td>
-<strong>bbeo-pattern-26-difference</strong>
+<strong>bbeo-js-pattern-26-difference</strong>
 </td>
 <td>
 
@@ -3250,7 +3330,7 @@ difference([1, 2, 3], [1, 2, 4]); // [3]
 
 <tr>
 <td>
-<strong>bbeo-pattern-27-differenceBy</strong>
+<strong>bbeo-js-pattern-27-differenceBy</strong>
 </td>
 <td>
 
@@ -3272,7 +3352,7 @@ differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 
 <tr>
 <td>
-<strong>bbeo-pattern-28-differenceWith</strong>
+<strong>bbeo-js-pattern-28-differenceWith</strong>
 </td>
 <td>
 
@@ -3291,7 +3371,7 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 
 <tr>
 <td>
-<strong>bbeo-pattern-29-digitize</strong>
+<strong>bbeo-js-pattern-29-digitize</strong>
 </td>
 <td>
 
@@ -3309,7 +3389,7 @@ digitize(431); // [4, 3, 1]
 
 <tr>
 <td>
-<strong>bbeo-pattern-30-distance</strong>
+<strong>bbeo-js-pattern-30-distance</strong>
 </td>
 <td>
 
@@ -3327,16 +3407,16 @@ distance(1, 1, 2, 3); // 2.23606797749979
 
 <tr>
 <td>
-<strong>bbeo-pattern-31-Drop Elements</strong>
+<strong>bbeo-js-pattern-31-DropLeft</strong>
 </td>
 <td>
 
 ```js
-const drop = (arr, n = 1) => arr.slice(n);
+const dropLeft = (arr, n = 1) => arr.slice(n);
 
-drop([1, 2, 3]); // [2,3]
-drop([1, 2, 3], 2); // [3]
-drop([1, 2, 3], 42); // []
+dropLeft([1, 2, 3]); // [2,3]
+dropLeft([1, 2, 3], 2); // [3]
+dropLeft([1, 2, 3], 42); // []
 ```
 </td>
 <td>
@@ -3347,7 +3427,7 @@ drop([1, 2, 3], 42); // []
 
 <tr>
 <td>
-<strong>bbeo-pattern-32-dropRight</strong>
+<strong>bbeo-js-pattern-32-dropRight</strong>
 </td>
 <td>
 
@@ -3367,7 +3447,7 @@ dropRight([1, 2, 3], 42); // []
 
 <tr>
 <td>
-<strong>bbeo-pattern-33-dropRightWhile</strong>
+<strong>bbeo-js-pattern-33-dropRightWhile</strong>
 </td>
 <td>
 
@@ -3388,7 +3468,7 @@ dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 
 <tr>
 <td>
-<strong>bbeo-pattern-34-dropWhile</strong>
+<strong>bbeo-js-pattern-34-dropWhile</strong>
 </td>
 <td>
 
@@ -3409,7 +3489,7 @@ dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 
 <tr>
 <td>
-<strong>bbeo-pattern-35-elementContains</strong>
+<strong>bbeo-js-pattern-35-elementContains</strong>
 </td>
 <td>
 
@@ -3428,7 +3508,7 @@ elementContains(document.querySelector('body'), document.querySelector('body'));
 
 <tr>
 <td>
-<strong>bbeo-pattern-36-Filter Duplicate Elements</strong>
+<strong>bbeo-js-pattern-36-Filter Duplicate Elements</strong>
 </td>
 <td>
 
@@ -3446,7 +3526,7 @@ filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 
 <tr>
 <td>
-<strong>bbeo-pattern-37-findKey</strong>
+<strong>bbeo-js-pattern-37-findKey</strong>
 </td>
 <td>
 
@@ -3471,7 +3551,7 @@ findKey(
 
 <tr>
 <td>
-<strong>bbeo-pattern-38-findLast</strong>
+<strong>bbeo-js-pattern-38-findLast</strong>
 </td>
 <td>
 
@@ -3489,7 +3569,7 @@ findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 
 <tr>
 <td>
-<strong>bbeo-pattern-39-flatten</strong>
+<strong>bbeo-js-pattern-39-flatten</strong>
 </td>
 <td>
 
@@ -3509,7 +3589,7 @@ flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 
 <tr>
 <td>
-<strong>bbeo-pattern-40-forEachRight</strong>
+<strong>bbeo-js-pattern-40-forEachRight</strong>
 </td>
 <td>
 
@@ -3531,7 +3611,7 @@ forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 
 <tr>
 <td>
-<strong>bbeo-pattern-41-forOwn</strong>
+<strong>bbeo-js-pattern-41-forOwn</strong>
 </td>
 <td>
 
@@ -3548,7 +3628,7 @@ forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 
 <tr>
 <td>
-<strong>bbeo-pattern-42-functionName</strong>
+<strong>bbeo-js-pattern-42-functionName</strong>
 </td>
 <td>
 
@@ -3566,7 +3646,7 @@ functionName(Math.max); // max (logged in debug channel of console)
 
 <tr>
 <td>
-<strong>bbeo-pattern-43-Get Time From Date</strong>
+<strong>bbeo-js-pattern-43-Get Time From Date</strong>
 </td>
 <td>
 
@@ -3584,7 +3664,7 @@ getColonTimeFromDate(new Date()); // "08:38:00"
 
 <tr>
 <td>
-<strong>bbeo-pattern-44-Get Days Between Dates</strong>
+<strong>bbeo-js-pattern-44-Get Days Between Dates</strong>
 </td>
 <td>
 
@@ -3603,7 +3683,7 @@ getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 
 <tr>
 <td>
-<strong>bbeo-pattern-45-getStyle</strong>
+<strong>bbeo-js-pattern-45-getStyle</strong>
 </td>
 <td>
 
@@ -3621,7 +3701,7 @@ getStyle(document.querySelector('p'), 'font-size'); // '16px'
 
 <tr>
 <td>
-<strong>bbeo-pattern-46-getType</strong>
+<strong>bbeo-js-pattern-46-getType</strong>
 </td>
 <td>
 
@@ -3640,7 +3720,7 @@ getType(new Set([1, 2, 3])); // 'set'
 
 <tr>
 <td>
-<strong>bbeo-pattern-47-hasClass</strong>
+<strong>bbeo-js-pattern-47-hasClass</strong>
 </td>
 <td>
 
@@ -3657,7 +3737,7 @@ hasClass(document.querySelector('p.special'), 'special'); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-48-head</strong>
+<strong>bbeo-js-pattern-48-head</strong>
 </td>
 <td>
 
@@ -3675,7 +3755,7 @@ head([1, 2, 3]); // 1
 
 <tr>
 <td>
-<strong>bbeo-pattern-49-hide</strong>
+<strong>bbeo-js-pattern-49-hide</strong>
 </td>
 <td>
 
@@ -3693,7 +3773,7 @@ hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 
 <tr>
 <td>
-<strong>bbeo-pattern-50-httpsRedirect</strong>
+<strong>bbeo-js-pattern-50-httpsRedirect</strong>
 </td>
 <td>
 
@@ -3713,7 +3793,7 @@ httpsRedirect(); // If you are on http://mydomain.com, you are redirected to htt
 
 <tr>
 <td>
-<strong>bbeo-pattern-51-indexOfAll</strong>
+<strong>bbeo-js-pattern-51-indexOfAll</strong>
 </td>
 <td>
 
@@ -3732,7 +3812,7 @@ indexOfAll([1, 2, 3], 4); // []
 
 <tr>
 <td>
-<strong>bbeo-pattern-52-initial</strong>
+<strong>bbeo-js-pattern-52-initial</strong>
 </td>
 <td>
 
@@ -3751,7 +3831,7 @@ initial([1, 2, 3]); // [1,2]
 
 <tr>
 <td>
-<strong>bbeo-pattern-53-insertAfter</strong>
+<strong>bbeo-js-pattern-53-insertAfter</strong>
 </td>
 <td>
 
@@ -3769,7 +3849,7 @@ insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">
 
 <tr>
 <td>
-<strong>bbeo-pattern-54-insertBefore</strong>
+<strong>bbeo-js-pattern-54-insertBefore</strong>
 </td>
 <td>
 
@@ -3787,7 +3867,7 @@ insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p>
 
 <tr>
 <td>
-<strong>bbeo-pattern-55-intersection</strong>
+<strong>bbeo-js-pattern-55-intersection</strong>
 </td>
 <td>
 
@@ -3808,7 +3888,7 @@ intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 
 <tr>
 <td>
-<strong>bbeo-pattern-56-intersectionBy</strong>
+<strong>bbeo-js-pattern-56-intersectionBy</strong>
 </td>
 <td>
 
@@ -3829,7 +3909,7 @@ intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 
 <tr>
 <td>
-<strong>bbeo-pattern-57-intersectionWith</strong>
+<strong>bbeo-js-pattern-57-intersectionWith</strong>
 </td>
 <td>
 
@@ -3847,7 +3927,7 @@ intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) 
 
 <tr>
 <td>
-<strong>bbeo-pattern-58-is</strong>
+<strong>bbeo-js-pattern-58-is</strong>
 </td>
 <td>
 
@@ -3877,7 +3957,7 @@ is(Boolean, new Boolean(true)); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-59-isAfterDate</strong>
+<strong>bbeo-js-pattern-59-isAfterDate</strong>
 </td>
 <td>
 
@@ -3895,7 +3975,7 @@ isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-60-isAnagram</strong>
+<strong>bbeo-js-pattern-60-isAnagram</strong>
 </td>
 <td>
 
@@ -3922,7 +4002,7 @@ isAnagram('iceman', 'cinema'); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-61-isArrayLike</strong>
+<strong>bbeo-js-pattern-61-isArrayLike</strong>
 </td>
 <td>
 
@@ -3942,7 +4022,7 @@ isArrayLike(null); // false
 
 <tr>
 <td>
-<strong>bbeo-pattern-62-isBeforeDate</strong>
+<strong>bbeo-js-pattern-62-isBeforeDate</strong>
 </td>
 <td>
 
@@ -3960,7 +4040,7 @@ isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-63-isBoolean</strong>
+<strong>bbeo-js-pattern-63-isBoolean</strong>
 </td>
 <td>
 
@@ -3979,7 +4059,7 @@ isBoolean(false); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-64-isBrowser</strong>
+<strong>bbeo-js-pattern-64-isBrowser</strong>
 </td>
 <td>
 
@@ -3998,7 +4078,7 @@ isBrowser(); // false (Node)
 
 <tr>
 <td>
-<strong>bbeo-pattern-65-isBrowserTabFocused</strong>
+<strong>bbeo-js-pattern-65-isBrowserTabFocused</strong>
 </td>
 <td>
 
@@ -4016,7 +4096,7 @@ isBrowserTabFocused(); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-66-isLowerCase</strong>
+<strong>bbeo-js-pattern-66-isLowerCase</strong>
 </td>
 <td>
 
@@ -4036,7 +4116,7 @@ isLowerCase('Ab4'); // false
 
 <tr>
 <td>
-<strong>bbeo-pattern-67-isNil</strong>
+<strong>bbeo-js-pattern-67-isNil</strong>
 </td>
 <td>
 
@@ -4055,7 +4135,7 @@ isNil(undefined); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-68-isNull</strong>
+<strong>bbeo-js-pattern-68-isNull</strong>
 </td>
 <td>
 
@@ -4073,7 +4153,7 @@ isNull(null); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-69-isNumber</strong>
+<strong>bbeo-js-pattern-69-isNumber</strong>
 </td>
 <td>
 
@@ -4092,7 +4172,7 @@ isNumber(1); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-70-isObject</strong>
+<strong>bbeo-js-pattern-70-isObject</strong>
 </td>
 <td>
 
@@ -4115,7 +4195,7 @@ isObject(true); // false
 
 <tr>
 <td>
-<strong>bbeo-pattern-71-isObjectLike</strong>
+<strong>bbeo-js-pattern-71-isObjectLike</strong>
 </td>
 <td>
 
@@ -4136,7 +4216,7 @@ isObjectLike(null); // false
 
 <tr>
 <td>
-<strong>bbeo-pattern-72-isPlainObject</strong>
+<strong>bbeo-js-pattern-72-isPlainObject</strong>
 </td>
 <td>
 
@@ -4155,7 +4235,7 @@ isPlainObject(new Map()); // false
 
 <tr>
 <td>
-<strong>bbeo-pattern-73-isPromiseLike</strong>
+<strong>bbeo-js-pattern-73-isPromiseLike</strong>
 </td>
 <td>
 
@@ -4182,7 +4262,7 @@ isPromiseLike({}); // false
 
 <tr>
 <td>
-<strong>bbeo-pattern-74-isSameDate</strong>
+<strong>bbeo-js-pattern-74-isSameDate</strong>
 </td>
 <td>
 
@@ -4200,7 +4280,7 @@ isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-75-isString</strong>
+<strong>bbeo-js-pattern-75-isString</strong>
 </td>
 <td>
 
@@ -4218,7 +4298,7 @@ isString('10'); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-76-isSymbol</strong>
+<strong>bbeo-js-pattern-76-isSymbol</strong>
 </td>
 <td>
 
@@ -4236,7 +4316,7 @@ isSymbol(Symbol('x')); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-77-isUndefined</strong>
+<strong>bbeo-js-pattern-77-isUndefined</strong>
 </td>
 <td>
 
@@ -4254,7 +4334,7 @@ isUndefined(undefined); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-78-isUpperCase</strong>
+<strong>bbeo-js-pattern-78-isUpperCase</strong>
 </td>
 <td>
 
@@ -4274,7 +4354,7 @@ isLowerCase('aB4'); // false
 
 <tr>
 <td>
-<strong>bbeo-pattern-79-isValidJSON</strong>
+<strong>bbeo-js-pattern-79-isValidJSON</strong>
 </td>
 <td>
 
@@ -4301,7 +4381,7 @@ isValidJSON(null); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-80-last</strong>
+<strong>bbeo-js-pattern-80-last</strong>
 </td>
 <td>
 
@@ -4319,7 +4399,7 @@ last([1, 2, 3]); // 3
 
 <tr>
 <td>
-<strong>bbeo-pattern-81-matches</strong>
+<strong>bbeo-js-pattern-81-matches</strong>
 </td>
 <td>
 
@@ -4339,7 +4419,7 @@ matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); 
 
 <tr>
 <td>
-<strong>bbeo-pattern-82-maxDate</strong>
+<strong>bbeo-js-pattern-82-maxDate</strong>
 </td>
 <td>
 
@@ -4363,7 +4443,7 @@ maxDate(array); // 2018-03-11T22:00:00.000Z
 
 <tr>
 <td>
-<strong>bbeo-pattern-83-maxN</strong>
+<strong>bbeo-js-pattern-83-maxN</strong>
 </td>
 <td>
 
@@ -4382,7 +4462,7 @@ maxN([1, 2, 3], 2); // [3,2]
 
 <tr>
 <td>
-<strong>bbeo-pattern-84-minDate</strong>
+<strong>bbeo-js-pattern-84-minDate</strong>
 </td>
 <td>
 
@@ -4406,7 +4486,7 @@ minDate(array); // 2016-01-08T22:00:00.000Z
 
 <tr>
 <td>
-<strong>bbeo-pattern-85-minN</strong>
+<strong>bbeo-js-pattern-85-minN</strong>
 </td>
 <td>
 
@@ -4425,7 +4505,7 @@ minN([1, 2, 3], 2); // [1,2]
 
 <tr>
 <td>
-<strong>bbeo-pattern-86-negate</strong>
+<strong>bbeo-js-pattern-86-negate</strong>
 </td>
 <td>
 
@@ -4443,7 +4523,7 @@ const negate = func => (...args) => !func(...args);
 
 <tr>
 <td>
-<strong>bbeo-pattern-87-nodeListToArray</strong>
+<strong>bbeo-js-pattern-87-nodeListToArray</strong>
 </td>
 <td>
 
@@ -4461,7 +4541,7 @@ nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 
 <tr>
 <td>
-<strong>bbeo-pattern-88-pad</strong>
+<strong>bbeo-js-pattern-88-pad</strong>
 </td>
 <td>
 
@@ -4482,7 +4562,7 @@ pad('foobar', 3); // 'foobar'
 
 <tr>
 <td>
-<strong>bbeo-pattern-89-radsToDegrees</strong>
+<strong>bbeo-js-pattern-89-radsToDegrees</strong>
 </td>
 <td>
 
@@ -4500,7 +4580,7 @@ radsToDegrees(Math.PI / 2); // 90
 
 <tr>
 <td>
-<strong>bbeo-pattern-90-Random Hexadecimal Color Code</strong>
+<strong>bbeo-js-pattern-90-Random Hexadecimal Color Code</strong>
 </td>
 <td>
 
@@ -4521,7 +4601,7 @@ randomHexColorCode(); // "#e34155"
 
 <tr>
 <td>
-<strong>bbeo-pattern-91-randomIntArrayInRange</strong>
+<strong>bbeo-js-pattern-91-randomIntArrayInRange</strong>
 </td>
 <td>
 
@@ -4540,7 +4620,7 @@ randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 
 <tr>
 <td>
-<strong>bbeo-pattern-92-randomIntegerInRange</strong>
+<strong>bbeo-js-pattern-92-randomIntegerInRange</strong>
 </td>
 <td>
 
@@ -4558,7 +4638,7 @@ randomIntegerInRange(0, 5); // 3
 
 <tr>
 <td>
-<strong>bbeo-pattern-93-randomNumberInRange</strong>
+<strong>bbeo-js-pattern-93-randomNumberInRange</strong>
 </td>
 <td>
 
@@ -4576,7 +4656,7 @@ randomNumberInRange(2, 10); // 6.0211363285087005
 
 <tr>
 <td>
-<strong>bbeo-pattern-94-readFileLines</strong>
+<strong>bbeo-js-pattern-94-readFileLines</strong>
 </td>
 <td>
 
@@ -4600,7 +4680,7 @@ console.log(arr); // ['line1', 'line2', 'line3']
 
 <tr>
 <td>
-<strong>bbeo-pattern-95-Redirect to a URL</strong>
+<strong>bbeo-js-pattern-95-Redirect to a URL</strong>
 </td>
 <td>
 
@@ -4619,7 +4699,7 @@ redirect('https://google.com');
 
 <tr>
 <td>
-<strong>bbeo-pattern-96-reverse</strong>
+<strong>bbeo-js-pattern-96-reverse</strong>
 </td>
 <td>
 
@@ -4637,7 +4717,7 @@ reverseString('foobar'); // 'raboof'
 
 <tr>
 <td>
-<strong>bbeo-pattern-97-round</strong>
+<strong>bbeo-js-pattern-97-round</strong>
 </td>
 <td>
 
@@ -4655,7 +4735,7 @@ round(1.005, 2); // 1.01
 
 <tr>
 <td>
-<strong>bbeo-pattern-98-runPromisesInSeries</strong>
+<strong>bbeo-js-pattern-98-runPromisesInSeries</strong>
 </td>
 <td>
 
@@ -4675,7 +4755,7 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 
 <tr>
 <td>
-<strong>bbeo-pattern-99-sample</strong>
+<strong>bbeo-js-pattern-99-sample</strong>
 </td>
 <td>
 
@@ -4693,7 +4773,7 @@ sample([3, 7, 9, 11]); // 9
 
 <tr>
 <td>
-<strong>bbeo-pattern-100-sampleSize</strong>
+<strong>bbeo-js-pattern-100-sampleSize</strong>
 </td>
 <td>
 
@@ -4719,7 +4799,7 @@ sampleSize([1, 2, 3], 4); // [2,3,1]
 
 <tr>
 <td>
-<strong>bbeo-pattern-101-scrollToTop</strong>
+<strong>bbeo-js-pattern-101-scrollToTop</strong>
 </td>
 <td>
 
@@ -4743,7 +4823,7 @@ scrollToTop();
 
 <tr>
 <td>
-<strong>bbeo-pattern-102-serializeCookie</strong>
+<strong>bbeo-js-pattern-102-serializeCookie</strong>
 </td>
 <td>
 
@@ -4761,7 +4841,7 @@ serializeCookie('foo', 'bar'); // 'foo=bar'
 
 <tr>
 <td>
-<strong>bbeo-pattern-103-setStyle</strong>
+<strong>bbeo-js-pattern-103-setStyle</strong>
 </td>
 <td>
 
@@ -4780,7 +4860,7 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 
 <tr>
 <td>
-<strong>bbeo-pattern-104-shallowClone</strong>
+<strong>bbeo-js-pattern-104-shallowClone</strong>
 </td>
 <td>
 
@@ -4799,7 +4879,7 @@ const b = shallowClone(a); // a !== b
 
 <tr>
 <td>
-<strong>bbeo-pattern-105-show</strong>
+<strong>bbeo-js-pattern-105-show</strong>
 </td>
 <td>
 
@@ -4817,7 +4897,7 @@ show(...document.querySelectorAll('img')); // Shows all <img> elements on the pa
 
 <tr>
 <td>
-<strong>bbeo-pattern-106-shuffle</strong>
+<strong>bbeo-js-pattern-106-shuffle</strong>
 </td>
 <td>
 
@@ -4843,7 +4923,7 @@ shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 
 <tr>
 <td>
-<strong>bbeo-pattern-107-similarity</strong>
+<strong>bbeo-js-pattern-107-similarity</strong>
 </td>
 <td>
 
@@ -4859,7 +4939,7 @@ https://medium.com/better-programming/127-helpful-javascript-snippets-you-can-le
 
 <tr>
 <td>
-<strong>bbeo-pattern-108-sleep</strong>
+<strong>bbeo-js-pattern-108-sleep</strong>
 </td>
 <td>
 
@@ -4881,7 +4961,7 @@ async function sleepyWork() {
 
 <tr>
 <td>
-<strong>bbeo-pattern-109-smoothScroll</strong>
+<strong>bbeo-js-pattern-109-smoothScroll</strong>
 </td>
 <td>
 
@@ -4903,7 +4983,7 @@ smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class o
 
 <tr>
 <td>
-<strong>bbeo-pattern-110-sortCharactersInString</strong>
+<strong>bbeo-js-pattern-110-sortCharactersInString</strong>
 </td>
 <td>
 
@@ -4921,7 +5001,7 @@ sortCharactersInString('cabbage'); // 'aabbceg'
 
 <tr>
 <td>
-<strong>bbeo-pattern-111-splitLines</strong>
+<strong>bbeo-js-pattern-111-splitLines</strong>
 </td>
 <td>
 
@@ -4939,7 +5019,7 @@ splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline',
 
 <tr>
 <td>
-<strong>bbeo-pattern-112-stripHTMLTags</strong>
+<strong>bbeo-js-pattern-112-stripHTMLTags</strong>
 </td>
 <td>
 
@@ -4957,7 +5037,7 @@ stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 
 <tr>
 <td>
-<strong>bbeo-pattern-113-sum</strong>
+<strong>bbeo-js-pattern-113-sum</strong>
 </td>
 <td>
 
@@ -4976,7 +5056,7 @@ sum(...[1, 2, 3, 4]); // 10
 
 <tr>
 <td>
-<strong>bbeo-pattern-114-tail</strong>
+<strong>bbeo-js-pattern-114-tail</strong>
 </td>
 <td>
 
@@ -4995,7 +5075,7 @@ tail([1]); // [1]
 
 <tr>
 <td>
-<strong>bbeo-pattern-115-take</strong>
+<strong>bbeo-js-pattern-115-take</strong>
 </td>
 <td>
 
@@ -5014,7 +5094,7 @@ take([1, 2, 3], 0); // []
 
 <tr>
 <td>
-<strong>bbeo-pattern-116-takeRight</strong>
+<strong>bbeo-js-pattern-116-takeRight</strong>
 </td>
 <td>
 
@@ -5033,7 +5113,7 @@ takeRight([1, 2, 3]); // [3]
 
 <tr>
 <td>
-<strong>bbeo-pattern-117-timeTaken</strong>
+<strong>bbeo-js-pattern-117-timeTaken</strong>
 </td>
 <td>
 
@@ -5056,7 +5136,7 @@ timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 
 <tr>
 <td>
-<strong>bbeo-pattern-118-times</strong>
+<strong>bbeo-js-pattern-118-times</strong>
 </td>
 <td>
 
@@ -5079,7 +5159,7 @@ console.log(output); // 01234
 
 <tr>
 <td>
-<strong>bbeo-pattern-119-toCurrency</strong>
+<strong>bbeo-js-pattern-119-toCurrency</strong>
 </td>
 <td>
 
@@ -5102,7 +5182,7 @@ toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Ja
 
 <tr>
 <td>
-<strong>bbeo-pattern-120-toDecimalMark</strong>
+<strong>bbeo-js-pattern-120-toDecimalMark</strong>
 </td>
 <td>
 
@@ -5120,7 +5200,7 @@ toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 
 <tr>
 <td>
-<strong>bbeo-pattern-121-toggleClass</strong>
+<strong>bbeo-js-pattern-121-toggleClass</strong>
 </td>
 <td>
 
@@ -5138,7 +5218,7 @@ toggleClass(document.querySelector('p.special'), 'special'); // The paragraph wi
 
 <tr>
 <td>
-<strong>bbeo-pattern-122-tomorrow</strong>
+<strong>bbeo-js-pattern-122-tomorrow</strong>
 </td>
 <td>
 
@@ -5160,7 +5240,7 @@ tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 
 <tr>
 <td>
-<strong>bbeo-pattern-123-unfold</strong>
+<strong>bbeo-js-pattern-123-unfold</strong>
 </td>
 <td>
 
@@ -5184,7 +5264,7 @@ unfold(f, 10); // [-10, -20, -30, -40, -50]
 
 <tr>
 <td>
-<strong>bbeo-pattern-124-union</strong>
+<strong>bbeo-js-pattern-124-union</strong>
 </td>
 <td>
 
@@ -5202,7 +5282,7 @@ union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 
 <tr>
 <td>
-<strong>bbeo-pattern-125-uniqueElements</strong>
+<strong>bbeo-js-pattern-125-uniqueElements</strong>
 </td>
 <td>
 
@@ -5220,7 +5300,7 @@ uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 
 <tr>
 <td>
-<strong>bbeo-pattern-126-validateNumber</strong>
+<strong>bbeo-js-pattern-126-validateNumber</strong>
 </td>
 <td>
 
@@ -5238,7 +5318,7 @@ validateNumber('10'); // true
 
 <tr>
 <td>
-<strong>bbeo-pattern-127-words</strong>
+<strong>bbeo-js-pattern-127-words</strong>
 </td>
 <td>
 
@@ -5257,17 +5337,205 @@ words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 
 </table>
 
+#### ◾ Javascript libraries
 
----
+<table>
+<th>prefix</th>
+<th>body</th>
+<th>description</th>
 
-### 📌 Contribution
-  
-- If you want to contribute to this project, here is a tool that will help you to generate snippets -> https://snippet-generator.app/
-- With each new code snippet added, you need to update `all snippets` file and regenerate the documentation, all in one command:
-```bash
-node boost-eo-engine.js > README.md
+<tr>
+<td>
+<strong>bbeo-js-libs-fs-deps</strong>
+</td>
+<td>
+
+```js
+import fs from 'fs';
 ```
-- Then you can make a PR.
+</td>
+<td>
+
+>[libs]: Import fs module
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-libs-fs-fsImport</strong>
+</td>
+<td>
+
+```js
+export function fsImport(filepath) {
+  return JSON.parse(
+	fs.readFileSync(filepath, 'utf8'),
+  );
+} 
+
+
+```
+</td>
+<td>
+
+>[libs]: Import all data type into variable with fs lib
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-libs-fs-fsExport</strong>
+</td>
+<td>
+
+```js
+export function fsExport(data, filepath) {
+	fs.writeFile(filepath, JSON.stringify(data), err => {
+		if (err) {
+			console.log(err);
+		}
+	});
+}
+
+```
+</td>
+<td>
+
+>[libs]: Export all data type into file with fs lib
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-libs-fs-fsReadDir</strong>
+</td>
+<td>
+
+```js
+export function fsReadDir(path) {
+  return fs.readdirSync(path);
+}
+```
+</td>
+<td>
+
+>[libs]: Get all file list in directory with fs lib
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-libs-traverse-deps</strong>
+</td>
+<td>
+
+```js
+import traverse from 'traverse';
+```
+</td>
+<td>
+
+>[libs]: Import traverse module
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-libs-traverse-props</strong>
+</td>
+<td>
+
+```js
+// this.node -> The present node on the recursive walk
+// this.path -> An array of string keys from the root to the present node
+// this.parent -> The context of the node's parent. This is undefined for the root node.
+// this.key -> The name of the key of the present node in its parent. This is undefined for the root node.
+```
+</td>
+<td>
+
+>[libs]: Get traverse properties
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-libs-traverse-leaves</strong>
+</td>
+<td>
+
+```js
+var obj = {
+    a : [1,2,3],
+    b : 4,
+    c : [5,6],
+    d : { e : [7,8], f : 9 },
+};
+ 
+var leaves = traverse(obj).reduce(function (acc, x) {
+    if (this.isLeaf) acc.push(x);
+    return acc;
+}, []);
+ 
+console.dir(leaves); // [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+```
+</td>
+<td>
+
+>[libs]: Leaves.js traverse pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-libs-traverse-traverseKeyValueByObject</strong>
+</td>
+<td>
+
+```js
+export function traverseKeyValueByObject(source, key) {
+	let traverseResult = [];
+	traverse(source).forEach(function (e) {
+		if (this.key == key) {
+			traverseResult.push(e);
+		}
+	});
+	return traverseResult;
+}
+```
+</td>
+<td>
+
+>[libs]: Get all key value from external object
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-libs-traverse-traverseKeyValueByJSON</strong>
+</td>
+<td>
+
+```js
+export function traverseKeyValueByJSON(source, key) {
+	let traverseResult = [];
+	traverse(JSON.parse(fs.readFileSync(source, 'utf8'))).forEach(function (e) {
+		if (this.key == key) {
+			traverseResult.push(e);
+		}
+	});
+	return traverseResult;
+}
+```
+</td>
+<td>
+
+>[libs]: Get all key value from external JSON file
+</td>
+</tr>
+
+</table>
+
 
 <div align="center">
 

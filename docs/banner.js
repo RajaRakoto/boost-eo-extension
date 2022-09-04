@@ -1,4 +1,4 @@
-export const header = `
+export const banner = `
 <div align="center">
 
 <img src="https://github.com/RajaRakoto/boost-eo/blob/master/assets/boost-eo-ico.png?raw=true" width=128>
@@ -17,46 +17,4 @@ export const header = `
 
 <br>
 
-### 📌 Description
-
-**BOOST-EO** is a set of custom code snippets & pattern available for VScode IDE to help you be more productive by providing helper methods 🚀.
-
----
-
-### 📌 Installation
-
-You can install it by typing \`boost-eo\` in the extension tab of your IDE
-
----
-
-### 📌 Usage
-
-<div align="center">
-
-| Snippets & patterns Index |
-| :-- |
-| [🔎 Javascript snippets](#-javascript-snippets) |
-| [🔎 Javascript patterns](#-javascript-patterns) |
-</div>
-
-> **Notation**: hybrid = string | array -- mixte = array | object
-
-`;
-
-export const footer = `
----
-
-### 📌 Contribution
-  
-- If you want to contribute to this project, here is a tool that will help you to generate snippets -> https://snippet-generator.app/
-- With each new code snippet added, you need to update \`all snippets\` file and regenerate the documentation, all in one command:
-\`\`\`bash
-node boost-eo-engine.js > README.md
-\`\`\`
-- Then you can make a PR.
-
-<div align="center">
-
-#### Enjoy it 😉
-</div>
 `;

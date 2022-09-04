@@ -1,7 +1,7 @@
 export const js_patterns = {
 	'[pattern]: This snippet returns  if the predicate function returns  for all elements in a collection and  otherwise. You can omit the second argument if you want to use as a default value.':
 		{
-			prefix: 'bbeo-pattern-1-all',
+			prefix: 'bbeo-js-pattern-1-all',
 			body: [
 				'const all = (arr, fn = Boolean) => arr.every(fn);',
 				'',
@@ -14,7 +14,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet checks whether all elements of the array are equal.':
 		{
-			prefix: 'bbeo-pattern-2-allEqual',
+			prefix: 'bbeo-js-pattern-2-allEqual',
 			body: [
 				'const allEqual = arr => arr.every(val => val === arr[0]);',
 				'',
@@ -27,7 +27,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet checks whether two numbers are approximately equal to each other, with a small difference.':
 		{
-			prefix: 'bbeo-pattern-3-approximatelyEqual',
+			prefix: 'bbeo-js-pattern-3-approximatelyEqual',
 			body: [
 				'const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsilon;',
 				'',
@@ -39,7 +39,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet converts the elements to strings with comma-separated values.':
 		{
-			prefix: 'bbeo-pattern-4-arrayToCSV',
+			prefix: 'bbeo-js-pattern-4-arrayToCSV',
 			body: [
 				"const arrayToCSV = (arr, delimiter = ',') =>",
 				'  arr.map(v => v.map(x => `"${x}"`).join(delimiter)).join(\'\\n\');',
@@ -53,7 +53,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet converts the elements of an array into  tags and appends them to the list of the given ID.':
 		{
-			prefix: 'bbeo-pattern-5-arrayToHtmlList',
+			prefix: 'bbeo-js-pattern-5-arrayToHtmlList',
 			body: [
 				'const arrayToHtmlList = (arr, listID) =>',
 				'  (el => (',
@@ -69,7 +69,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet executes a function, returning either the result or the caught error object.':
 		{
-			prefix: 'bbeo-pattern-6-attempt',
+			prefix: 'bbeo-js-pattern-6-attempt',
 			body: [
 				'const attempt = (fn, ...args) => {',
 				'  try {',
@@ -89,7 +89,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns the average of two or more numerical values.':
 		{
-			prefix: 'bbeo-pattern-7-average',
+			prefix: 'bbeo-js-pattern-7-average',
 			body: [
 				'const average = (...nums) => nums.reduce((acc, val) => acc + val, 0) / nums.length;',
 				'average(...[1, 2, 3]); // 2',
@@ -101,7 +101,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function.':
 		{
-			prefix: 'bbeo-pattern-8-averageBy',
+			prefix: 'bbeo-js-pattern-8-averageBy',
 			body: [
 				'const averageBy = (arr, fn) =>',
 				"  arr.map(typeof fn === 'function' ? fn : val => val[fn]).reduce((acc, val) => acc + val, 0) /",
@@ -116,7 +116,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise.':
 		{
-			prefix: 'bbeo-pattern-9-bifurcate',
+			prefix: 'bbeo-js-pattern-9-bifurcate',
 			body: [
 				'const bifurcate = (arr, filter) =>',
 				'  arr.reduce((acc, val, i) => (acc[filter[i] ? 0 : 1].push(val), acc), [[], []]);',
@@ -129,7 +129,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group.':
 		{
-			prefix: 'bbeo-pattern-10-bifurcateBy',
+			prefix: 'bbeo-js-pattern-10-bifurcateBy',
 			body: [
 				'const bifurcateBy = (arr, fn) =>',
 				'  arr.reduce((acc, val, i) => (acc[fn(val, i) ? 0 : 1].push(val), acc), [[], []]);',
@@ -142,7 +142,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet checks whether the bottom of a page is visible.': {
-		prefix: 'bbeo-pattern-11-bottomVisible',
+		prefix: 'bbeo-js-pattern-11-bottomVisible',
 		body: [
 			'const bottomVisible = () =>',
 			'  document.documentElement.clientHeight + window.scrollY >=',
@@ -155,7 +155,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet returns the length of a string in bytes.': {
-		prefix: 'bbeo-pattern-12-byteSize',
+		prefix: 'bbeo-js-pattern-12-byteSize',
 		body: [
 			'const byteSize = str => new Blob([str]).size;',
 			'',
@@ -167,7 +167,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet capitalizes the first letter of a string.': {
-		prefix: 'bbeo-pattern-13-capitalize',
+		prefix: 'bbeo-js-pattern-13-capitalize',
 		body: [
 			'const capitalize = ([first, ...rest]) =>',
 			"  first.toUpperCase() + rest.join('');",
@@ -181,7 +181,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet capitalizes the first letter of every word in a given string.':
 		{
-			prefix: 'bbeo-pattern-14-capitalizeEveryWord',
+			prefix: 'bbeo-js-pattern-14-capitalizeEveryWord',
 			body: [
 				'const capitalizeEveryWord = str => str.replace(/\\b[a-z]/g, char => char.toUpperCase());',
 				'',
@@ -192,7 +192,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet converts a non-array value into array.': {
-		prefix: 'bbeo-pattern-15-castArray',
+		prefix: 'bbeo-js-pattern-15-castArray',
 		body: [
 			'const castArray = val => (Array.isArray(val) ? val : [val]);',
 			'',
@@ -204,7 +204,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet removes false values from an array.': {
-		prefix: 'bbeo-pattern-16-compact',
+		prefix: 'bbeo-js-pattern-16-compact',
 		body: [
 			'const compact = arr => arr.filter(Boolean);',
 			'',
@@ -215,7 +215,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet counts the occurrences of a value in an array.': {
-		prefix: 'bbeo-pattern-17-countOccurrences',
+		prefix: 'bbeo-js-pattern-17-countOccurrences',
 		body: [
 			'const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 : a), 0);',
 			'countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3',
@@ -226,7 +226,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet uses  to check whether a directory exists and then  to create it if it doesn’t.':
 		{
-			prefix: 'bbeo-pattern-18-Create Directory',
+			prefix: 'bbeo-js-pattern-18-createDirIfNotExists',
 			body: [
 				"const fs = require('fs');",
 				'const createDirIfNotExists = dir => (!fs.existsSync(dir) ? fs.mkdirSync(dir) : undefined);',
@@ -238,7 +238,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet returns the current URL.': {
-		prefix: 'bbeo-pattern-19-currentURL',
+		prefix: 'bbeo-js-pattern-19-currentURL',
 		body: [
 			'const currentURL = () => window.location.href;',
 			'',
@@ -248,7 +248,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet gets the day of the year from a object.': {
-		prefix: 'bbeo-pattern-20-dayOfYear',
+		prefix: 'bbeo-js-pattern-20-dayOfYear',
 		body: [
 			'const dayOfYear = date =>',
 			'  Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);',
@@ -261,7 +261,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet turns the first letter of a string into lowercase.':
 		{
-			prefix: 'bbeo-pattern-21-decapitalize',
+			prefix: 'bbeo-js-pattern-21-decapitalize',
 			body: [
 				'const decapitalize = ([first, ...rest]) =>',
 				"  first.toLowerCase() + rest.join('')",
@@ -274,7 +274,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet flattens an array recursively.': {
-		prefix: 'bbeo-pattern-22-deepFlatten',
+		prefix: 'bbeo-js-pattern-22-deepFlatten',
 		body: [
 			'const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFlatten(v) : v)));',
 			'',
@@ -285,7 +285,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet assigns default values for all properties in an object that are .':
 		{
-			prefix: 'bbeo-pattern-23-default',
+			prefix: 'bbeo-js-pattern-23-default',
 			body: [
 				'const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj);',
 				'',
@@ -297,7 +297,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet delays the execution of a function until the current call stack is cleared.':
 		{
-			prefix: 'bbeo-pattern-24-defer',
+			prefix: 'bbeo-js-pattern-24-defer',
 			body: [
 				'const defer = (fn, ...args) => setTimeout(fn, 1, ...args);',
 				'',
@@ -309,7 +309,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to convert a value from degrees to radians.':
 		{
-			prefix: 'bbeo-pattern-25-degreesToRads',
+			prefix: 'bbeo-js-pattern-25-degreesToRads',
 			body: [
 				'const degreesToRads = deg => (deg * Math.PI) / 180.0;',
 				'',
@@ -320,7 +320,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet finds the difference between two arrays.': {
-		prefix: 'bbeo-pattern-26-difference',
+		prefix: 'bbeo-js-pattern-26-difference',
 		body: [
 			'const difference = (a, b) => {',
 			'  const s = new Set(b);',
@@ -335,7 +335,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns the difference between two arrays, after applying a given function to each element of both lists.':
 		{
-			prefix: 'bbeo-pattern-27-differenceBy',
+			prefix: 'bbeo-js-pattern-27-differenceBy',
 			body: [
 				'const differenceBy = (a, b, fn) => {',
 				'  const s = new Set(b.map(fn));',
@@ -351,7 +351,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet removes the values for which the comparator function returns .':
 		{
-			prefix: 'bbeo-pattern-28-differenceWith',
+			prefix: 'bbeo-js-pattern-28-differenceWith',
 			body: [
 				'const differenceWith = (arr, val, comp) => arr.filter(a => val.findIndex(b => comp(a, b)) === -1);',
 				'',
@@ -364,7 +364,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet gets a number as input and returns an array of its digits.':
 		{
-			prefix: 'bbeo-pattern-29-digitize',
+			prefix: 'bbeo-js-pattern-29-digitize',
 			body: [
 				'const digitize = n => [...`${n}`].map(i => parseInt(i));',
 				'',
@@ -376,7 +376,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns the distance between two points by calculating the Euclidean distance.':
 		{
-			prefix: 'bbeo-pattern-30-distance',
+			prefix: 'bbeo-js-pattern-30-distance',
 			body: [
 				'const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);',
 				'',
@@ -388,13 +388,13 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns a new array with  elements removed from the left.':
 		{
-			prefix: 'bbeo-pattern-31-Drop Elements',
+			prefix: 'bbeo-js-pattern-31-DropLeft',
 			body: [
-				'const drop = (arr, n = 1) => arr.slice(n);',
+				'const dropLeft = (arr, n = 1) => arr.slice(n);',
 				'',
-				'drop([1, 2, 3]); // [2,3]',
-				'drop([1, 2, 3], 2); // [3]',
-				'drop([1, 2, 3], 42); // []',
+				'dropLeft([1, 2, 3]); // [2,3]',
+				'dropLeft([1, 2, 3], 2); // [3]',
+				'dropLeft([1, 2, 3], 42); // []',
 			],
 			description:
 				'[pattern]: This snippet returns a new array with  elements removed from the left.',
@@ -402,7 +402,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns a new array with  elements removed from the right.':
 		{
-			prefix: 'bbeo-pattern-32-dropRight',
+			prefix: 'bbeo-js-pattern-32-dropRight',
 			body: [
 				'const dropRight = (arr, n = 1) => arr.slice(0, -n);',
 				'',
@@ -416,7 +416,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet removes elements from the right side of an array until the passed function returns .':
 		{
-			prefix: 'bbeo-pattern-33-dropRightWhile',
+			prefix: 'bbeo-js-pattern-33-dropRightWhile',
 			body: [
 				'const dropRightWhile = (arr, func) => {',
 				'  while (arr.length > 0 && !func(arr[arr.length - 1])) arr = arr.slice(0, -1);',
@@ -431,7 +431,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet removes elements from an array until the passed function returns .':
 		{
-			prefix: 'bbeo-pattern-34-dropWhile',
+			prefix: 'bbeo-js-pattern-34-dropWhile',
 			body: [
 				'const dropWhile = (arr, func) => {',
 				'  while (arr.length > 0 && !func(arr[0])) arr = arr.slice(1);',
@@ -446,7 +446,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet checks whether the parent element contains the child.':
 		{
-			prefix: 'bbeo-pattern-35-elementContains',
+			prefix: 'bbeo-js-pattern-35-elementContains',
 			body: [
 				'const elementContains = (parent, child) => parent !== child && parent.contains(child);',
 				'',
@@ -458,7 +458,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet removes duplicate values in an array.': {
-		prefix: 'bbeo-pattern-36-Filter Duplicate Elements',
+		prefix: 'bbeo-js-pattern-36-Filter Duplicate Elements',
 		body: [
 			'const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexOf(i));',
 			'',
@@ -470,7 +470,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns the first key that satisfies a given function.':
 		{
-			prefix: 'bbeo-pattern-37-findKey',
+			prefix: 'bbeo-js-pattern-37-findKey',
 			body: [
 				'const findKey = (obj, fn) => Object.keys(obj).find(key => fn(obj[key], key, obj));',
 				'',
@@ -489,7 +489,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns the last element for which a given function returns a truthy value.':
 		{
-			prefix: 'bbeo-pattern-38-findLast',
+			prefix: 'bbeo-js-pattern-38-findLast',
 			body: [
 				'const findLast = (arr, fn) => arr.filter(fn).pop();',
 				'',
@@ -501,7 +501,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet flattens an array up to a specified depth using recursion.':
 		{
-			prefix: 'bbeo-pattern-39-flatten',
+			prefix: 'bbeo-js-pattern-39-flatten',
 			body: [
 				'const flatten = (arr, depth = 1) =>',
 				'  arr.reduce((a, v) => a.concat(depth > 1 && Array.isArray(v) ? flatten(v, depth - 1) : v), []);',
@@ -515,7 +515,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet executes a function for each element of an array starting from the array’s last element.':
 		{
-			prefix: 'bbeo-pattern-40-forEachRight',
+			prefix: 'bbeo-js-pattern-40-forEachRight',
 			body: [
 				'const forEachRight = (arr, callback) =>',
 				'  arr',
@@ -531,7 +531,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet iterates on each property of an object and iterates a callback for each one respectively.':
 		{
-			prefix: 'bbeo-pattern-41-forOwn',
+			prefix: 'bbeo-js-pattern-41-forOwn',
 			body: [
 				'const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, obj));',
 				"forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1",
@@ -541,7 +541,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet prints the name of a function into the console.': {
-		prefix: 'bbeo-pattern-42-functionName',
+		prefix: 'bbeo-js-pattern-42-functionName',
 		body: [
 			'const functionName = fn => (console.debug(fn.name), fn);',
 			'',
@@ -553,7 +553,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to get the time from a object as a string.':
 		{
-			prefix: 'bbeo-pattern-43-Get Time From Date',
+			prefix: 'bbeo-js-pattern-43-Get Time From Date',
 			body: [
 				'const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);',
 				'',
@@ -565,7 +565,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to find the difference in days between two dates.':
 		{
-			prefix: 'bbeo-pattern-44-Get Days Between Dates',
+			prefix: 'bbeo-js-pattern-44-Get Days Between Dates',
 			body: [
 				'const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>',
 				'  (dateFinal - dateInitial) / (1000 * 3600 * 24);',
@@ -578,7 +578,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to get the value of a CSS rule for a particular element.':
 		{
-			prefix: 'bbeo-pattern-45-getStyle',
+			prefix: 'bbeo-js-pattern-45-getStyle',
 			body: [
 				'const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];',
 				'',
@@ -589,7 +589,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet can be used to get the type of a value.': {
-		prefix: 'bbeo-pattern-46-getType',
+		prefix: 'bbeo-js-pattern-46-getType',
 		body: [
 			'const getType = v =>',
 			"  v === undefined ? 'undefined' : v === null ? 'null' : v.constructor.name.toLowerCase();",
@@ -601,7 +601,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet checks whether an element has a particular class.': {
-		prefix: 'bbeo-pattern-47-hasClass',
+		prefix: 'bbeo-js-pattern-47-hasClass',
 		body: [
 			'const hasClass = (el, className) => el.classList.contains(className);',
 			"hasClass(document.querySelector('p.special'), 'special'); // true",
@@ -611,13 +611,13 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet returns the  of a list.': {
-		prefix: 'bbeo-pattern-48-head',
+		prefix: 'bbeo-js-pattern-48-head',
 		body: ['const head = arr => arr[0];', '', 'head([1, 2, 3]); // 1'],
 		description: '[pattern]: This snippet returns the  of a list.',
 	},
 
 	'[pattern]: This snippet can be used to hide all elements specified.': {
-		prefix: 'bbeo-pattern-49-hide',
+		prefix: 'bbeo-js-pattern-49-hide',
 		body: [
 			"const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));",
 			'',
@@ -629,7 +629,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to redirect from HTTP to HTTPS in a particular domain.':
 		{
-			prefix: 'bbeo-pattern-50-httpsRedirect',
+			prefix: 'bbeo-js-pattern-50-httpsRedirect',
 			body: [
 				'const httpsRedirect = () => {',
 				"  if (location.protocol !== 'https:') location.replace('https://' + location.href.split('//')[1]);",
@@ -643,7 +643,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to get all indexes of a value in an array, which returns an empty array, in case this value is not included in it.':
 		{
-			prefix: 'bbeo-pattern-51-indexOfAll',
+			prefix: 'bbeo-js-pattern-51-indexOfAll',
 			body: [
 				'const indexOfAll = (arr, val) => arr.reduce((acc, el, i) => (el === val ? [...acc, i] : acc), []);',
 				'',
@@ -656,7 +656,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns all elements of an array except the last one.':
 		{
-			prefix: 'bbeo-pattern-52-initial',
+			prefix: 'bbeo-js-pattern-52-initial',
 			body: [
 				'const initial = arr => arr.slice(0, -1);',
 				'',
@@ -669,7 +669,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to insert an HTML string after the end of a particular element.':
 		{
-			prefix: 'bbeo-pattern-53-insertAfter',
+			prefix: 'bbeo-js-pattern-53-insertAfter',
 			body: [
 				"const insertAfter = (el, htmlString) => el.insertAdjacentHTML('afterend', htmlString);",
 				'',
@@ -681,7 +681,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to insert an HTML string before a particular element.':
 		{
-			prefix: 'bbeo-pattern-54-insertBefore',
+			prefix: 'bbeo-js-pattern-54-insertBefore',
 			body: [
 				"const insertBefore = (el, htmlString) => el.insertAdjacentHTML('beforebegin', htmlString);",
 				'',
@@ -693,7 +693,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to get an array with elements that are included in two other arrays.':
 		{
-			prefix: 'bbeo-pattern-55-intersection',
+			prefix: 'bbeo-js-pattern-55-intersection',
 			body: [
 				'const intersection = (a, b) => {',
 				'  const s = new Set(b);',
@@ -708,7 +708,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to return a list of elements that exist in both arrays, after a particular function has been executed to each element of both arrays.':
 		{
-			prefix: 'bbeo-pattern-56-intersectionBy',
+			prefix: 'bbeo-js-pattern-56-intersectionBy',
 			body: [
 				'const intersectionBy = (a, b, fn) => {',
 				'  const s = new Set(b.map(fn));',
@@ -723,7 +723,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to return a list of elements that exist in both arrays by using a comparator function.':
 		{
-			prefix: 'bbeo-pattern-57-intersectionWith',
+			prefix: 'bbeo-js-pattern-57-intersectionWith',
 			body: [
 				'const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, y)) !== -1);',
 				'',
@@ -735,7 +735,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to check if a value is of a particular type.':
 		{
-			prefix: 'bbeo-pattern-58-is',
+			prefix: 'bbeo-js-pattern-58-is',
 			body: [
 				'const is = (type, val) => ![, null].includes(val) && val.constructor === type;',
 				'',
@@ -759,7 +759,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to check whether a date is after another date.':
 		{
-			prefix: 'bbeo-pattern-59-isAfterDate',
+			prefix: 'bbeo-js-pattern-59-isAfterDate',
 			body: [
 				'const isAfterDate = (dateA, dateB) => dateA > dateB;',
 				'',
@@ -771,7 +771,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to check whether a particular string is an anagram with another string.':
 		{
-			prefix: 'bbeo-pattern-60-isAnagram',
+			prefix: 'bbeo-js-pattern-60-isAnagram',
 			body: [
 				'const isAnagram = (str1, str2) => {',
 				'  const normalize = str =>',
@@ -792,7 +792,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to check if a provided argument is iterable like an array.':
 		{
-			prefix: 'bbeo-pattern-61-isArrayLike',
+			prefix: 'bbeo-js-pattern-61-isArrayLike',
 			body: [
 				"const isArrayLike = obj => obj != null && typeof obj[Symbol.iterator] === 'function';",
 				'',
@@ -806,7 +806,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to check whether a date is before another date.':
 		{
-			prefix: 'bbeo-pattern-62-isBeforeDate',
+			prefix: 'bbeo-js-pattern-62-isBeforeDate',
 			body: [
 				'const isBeforeDate = (dateA, dateB) => dateA < dateB;',
 				'',
@@ -818,7 +818,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to check whether an argument is a boolean.':
 		{
-			prefix: 'bbeo-pattern-63-isBoolean',
+			prefix: 'bbeo-js-pattern-63-isBoolean',
 			body: [
 				"const isBoolean = val => typeof val === 'boolean';",
 				'',
@@ -831,7 +831,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to determine whether the current runtime environment is a browser. This is helpful for avoiding errors when running front-end modules on the server (Node).':
 		{
-			prefix: 'bbeo-pattern-64-isBrowser',
+			prefix: 'bbeo-js-pattern-64-isBrowser',
 			body: [
 				"const isBrowser = () => ![typeof window, typeof document].includes('undefined');",
 				'',
@@ -844,7 +844,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to determine whether the browser tab is focused.':
 		{
-			prefix: 'bbeo-pattern-65-isBrowserTabFocused',
+			prefix: 'bbeo-js-pattern-65-isBrowserTabFocused',
 			body: [
 				'const isBrowserTabFocused = () => !document.hidden;',
 				'',
@@ -856,7 +856,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to determine whether a string is lower case.':
 		{
-			prefix: 'bbeo-pattern-66-isLowerCase',
+			prefix: 'bbeo-js-pattern-66-isLowerCase',
 			body: [
 				'const isLowerCase = str => str === str.toLowerCase();',
 				'',
@@ -869,7 +869,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet can be used to check whether a value is  or .': {
-		prefix: 'bbeo-pattern-67-isNil',
+		prefix: 'bbeo-js-pattern-67-isNil',
 		body: [
 			'const isNil = val => val === undefined || val === null;',
 			'',
@@ -881,7 +881,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet can be used to check whether a value is .': {
-		prefix: 'bbeo-pattern-68-isNull',
+		prefix: 'bbeo-js-pattern-68-isNull',
 		body: ['const isNull = val => val === null;', '', 'isNull(null); // true'],
 		description:
 			'[pattern]: This snippet can be used to check whether a value is .',
@@ -889,7 +889,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to check whether a provided value is a number.':
 		{
-			prefix: 'bbeo-pattern-69-isNumber',
+			prefix: 'bbeo-js-pattern-69-isNumber',
 			body: [
 				"const isNumber = val => typeof val === 'number';",
 				'',
@@ -902,7 +902,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to check whether a provided value is an object. It uses the Object constructor to create an object wrapper for the given value.':
 		{
-			prefix: 'bbeo-pattern-70-isObject',
+			prefix: 'bbeo-js-pattern-70-isObject',
 			body: [
 				'const isObject = obj => obj === Object(obj);',
 				'',
@@ -919,7 +919,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to check if a value is not and that its  is “object”.':
 		{
-			prefix: 'bbeo-pattern-71-isObjectLike',
+			prefix: 'bbeo-js-pattern-71-isObjectLike',
 			body: [
 				"const isObjectLike = val => val !== null && typeof val === 'object';",
 				'',
@@ -934,7 +934,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet checks whether a value is an object created by the Object constructor.':
 		{
-			prefix: 'bbeo-pattern-72-isPlainObject',
+			prefix: 'bbeo-js-pattern-72-isPlainObject',
 			body: [
 				"const isPlainObject = val => !!val && typeof val === 'object' && val.constructor === Object;",
 				'',
@@ -946,7 +946,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet checks whether an object looks like a .': {
-		prefix: 'bbeo-pattern-73-isPromiseLike',
+		prefix: 'bbeo-js-pattern-73-isPromiseLike',
 		body: [
 			'const isPromiseLike = obj =>',
 			'  obj !== null &&',
@@ -966,7 +966,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet can be used to check whether two dates are equal.': {
-		prefix: 'bbeo-pattern-74-isSameDate',
+		prefix: 'bbeo-js-pattern-74-isSameDate',
 		body: [
 			'const isSameDate = (dateA, dateB) => dateA.toISOString() === dateB.toISOString();',
 			'',
@@ -978,7 +978,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to check whether an argument is a string.':
 		{
-			prefix: 'bbeo-pattern-75-isString',
+			prefix: 'bbeo-js-pattern-75-isString',
 			body: [
 				"const isString = val => typeof val === 'string';",
 				'',
@@ -990,7 +990,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to check whether an argument is a symbol.':
 		{
-			prefix: 'bbeo-pattern-76-isSymbol',
+			prefix: 'bbeo-js-pattern-76-isSymbol',
 			body: [
 				"const isSymbol = val => typeof val === 'symbol';",
 				'',
@@ -1002,7 +1002,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to check whether a value is undefined.':
 		{
-			prefix: 'bbeo-pattern-77-isUndefined',
+			prefix: 'bbeo-js-pattern-77-isUndefined',
 			body: [
 				'const isUndefined = val => val === undefined;',
 				'',
@@ -1014,7 +1014,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to check whether a string is upper case.':
 		{
-			prefix: 'bbeo-pattern-78-isUpperCase',
+			prefix: 'bbeo-js-pattern-78-isUpperCase',
 			body: [
 				'const isUpperCase = str => str === str.toUpperCase();',
 				'',
@@ -1028,7 +1028,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to check whether a string is a valid JSON.':
 		{
-			prefix: 'bbeo-pattern-79-isValidJSON',
+			prefix: 'bbeo-js-pattern-79-isValidJSON',
 			body: [
 				'const isValidJSON = str => {',
 				'  try {',
@@ -1048,7 +1048,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet returns the last element of an array.': {
-		prefix: 'bbeo-pattern-80-last',
+		prefix: 'bbeo-js-pattern-80-last',
 		body: [
 			'const last = arr => arr[arr.length - 1];',
 			'',
@@ -1060,7 +1060,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet compares two objects to determine if the first one contains the same property values as the second one.':
 		{
-			prefix: 'bbeo-pattern-81-matches',
+			prefix: 'bbeo-js-pattern-81-matches',
 			body: [
 				'const matches = (obj, source) =>',
 				'  Object.keys(source).every(key => obj.hasOwnProperty(key) && obj[key] === source[key]);',
@@ -1073,7 +1073,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet can be used to get the latest date.': {
-		prefix: 'bbeo-pattern-82-maxDate',
+		prefix: 'bbeo-js-pattern-82-maxDate',
 		body: [
 			'const maxDate = (...dates) => new Date(Math.max.apply(null, ...dates));',
 			'',
@@ -1090,7 +1090,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns the  largest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in descending order).':
 		{
-			prefix: 'bbeo-pattern-83-maxN',
+			prefix: 'bbeo-js-pattern-83-maxN',
 			body: [
 				'const maxN = (arr, n = 1) => [...arr].sort((a, b) => b - a).slice(0, n);',
 				'',
@@ -1102,7 +1102,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet can be used to get the earliest date.': {
-		prefix: 'bbeo-pattern-84-minDate',
+		prefix: 'bbeo-js-pattern-84-minDate',
 		body: [
 			'const minDate = (...dates) => new Date(Math.min.apply(null, ...dates));',
 			'',
@@ -1120,7 +1120,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns the  smallest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in ascending order).':
 		{
-			prefix: 'bbeo-pattern-85-minN',
+			prefix: 'bbeo-js-pattern-85-minN',
 			body: [
 				'const minN = (arr, n = 1) => [...arr].sort((a, b) => a - b).slice(0, n);',
 				'',
@@ -1133,7 +1133,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to apply the not operator () to a predicate function with its arguments.':
 		{
-			prefix: 'bbeo-pattern-86-negate',
+			prefix: 'bbeo-js-pattern-86-negate',
 			body: [
 				'const negate = func => (...args) => !func(...args);',
 				'',
@@ -1144,7 +1144,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet can be used to convert a  to an array.': {
-		prefix: 'bbeo-pattern-87-nodeListToArray',
+		prefix: 'bbeo-js-pattern-87-nodeListToArray',
 		body: [
 			'const nodeListToArray = nodeList => [...nodeList];',
 			'',
@@ -1156,7 +1156,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to  a string on both sides with a specified character if it is shorter than the specified length.':
 		{
-			prefix: 'bbeo-pattern-88-pad',
+			prefix: 'bbeo-js-pattern-88-pad',
 			body: [
 				"const pad = (str, length, char = ' ') =>",
 				'  str.padStart((str.length + length) / 2, char).padEnd(length, char);',
@@ -1171,7 +1171,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to convert an angle from radians to degrees.':
 		{
-			prefix: 'bbeo-pattern-89-radsToDegrees',
+			prefix: 'bbeo-js-pattern-89-radsToDegrees',
 			body: [
 				'const radsToDegrees = rad => (rad * 180.0) / Math.PI;',
 				'',
@@ -1183,7 +1183,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to generate a random hexadecimal color code.':
 		{
-			prefix: 'bbeo-pattern-90-Random Hexadecimal Color Code',
+			prefix: 'bbeo-js-pattern-90-Random Hexadecimal Color Code',
 			body: [
 				'const randomHexColorCode = () => {',
 				'  let n = (Math.random() * 0xfffff * 1000000).toString(16);',
@@ -1198,7 +1198,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to generate an array with  random integers in a specified range.':
 		{
-			prefix: 'bbeo-pattern-91-randomIntArrayInRange',
+			prefix: 'bbeo-js-pattern-91-randomIntArrayInRange',
 			body: [
 				'const randomIntArrayInRange = (min, max, n = 1) =>',
 				'  Array.from({ length: n }, () => Math.floor(Math.random() * (max - min + 1)) + min);',
@@ -1211,7 +1211,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to generate a random integer in a specified range.':
 		{
-			prefix: 'bbeo-pattern-92-randomIntegerInRange',
+			prefix: 'bbeo-js-pattern-92-randomIntegerInRange',
 			body: [
 				'const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;',
 				'',
@@ -1223,7 +1223,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to return a random number in a specified range.':
 		{
-			prefix: 'bbeo-pattern-93-randomNumberInRange',
+			prefix: 'bbeo-js-pattern-93-randomNumberInRange',
 			body: [
 				'const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;',
 				'',
@@ -1235,7 +1235,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to read a file by getting an array of lines from a file.':
 		{
-			prefix: 'bbeo-pattern-94-readFileLines',
+			prefix: 'bbeo-js-pattern-94-readFileLines',
 			body: [
 				"const fs = require('fs');",
 				'const readFileLines = filename =>',
@@ -1252,7 +1252,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet can be used to do a redirect to a specified URL.': {
-		prefix: 'bbeo-pattern-95-Redirect to a URL',
+		prefix: 'bbeo-js-pattern-95-Redirect to a URL',
 		body: [
 			'const redirect = (url, asLink = true) =>',
 			'  asLink ? (window.location.href = url) : window.location.replace(url);',
@@ -1264,7 +1264,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet can be used to reverse a string.': {
-		prefix: 'bbeo-pattern-96-reverse',
+		prefix: 'bbeo-js-pattern-96-reverse',
 		body: [
 			"const reverseString = str => [...str].reverse().join('');",
 			'',
@@ -1275,7 +1275,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to round a number to a specified number of digits.':
 		{
-			prefix: 'bbeo-pattern-97-round',
+			prefix: 'bbeo-js-pattern-97-round',
 			body: [
 				'const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${decimals}`);',
 				'',
@@ -1287,7 +1287,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to run an array of promises in series.':
 		{
-			prefix: 'bbeo-pattern-98-runPromisesInSeries',
+			prefix: 'bbeo-js-pattern-98-runPromisesInSeries',
 			body: [
 				'const runPromisesInSeries = ps => ps.reduce((p, next) => p.then(next), Promise.resolve());',
 				'const delay = d => new Promise(r => setTimeout(r, d));',
@@ -1300,7 +1300,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet can be used to get a random number from an array.': {
-		prefix: 'bbeo-pattern-99-sample',
+		prefix: 'bbeo-js-pattern-99-sample',
 		body: [
 			'const sample = arr => arr[Math.floor(Math.random() * arr.length)];',
 			'',
@@ -1312,7 +1312,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to get random elements from unique positions from an array up to the size of the array. Elements in the array are shuffled using the .':
 		{
-			prefix: 'bbeo-pattern-100-sampleSize',
+			prefix: 'bbeo-js-pattern-100-sampleSize',
 			body: [
 				'const sampleSize = ([...arr], n = 1) => {',
 				'  let m = arr.length;',
@@ -1332,7 +1332,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to do a smooth scroll to the top of the current page.':
 		{
-			prefix: 'bbeo-pattern-101-scrollToTop',
+			prefix: 'bbeo-js-pattern-101-scrollToTop',
 			body: [
 				'const scrollToTop = () => {',
 				'  const c = document.documentElement.scrollTop || document.body.scrollTop;',
@@ -1350,7 +1350,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to serialize a cookie name-value pair into a Set-Cookie header string.':
 		{
-			prefix: 'bbeo-pattern-102-serializeCookie',
+			prefix: 'bbeo-js-pattern-102-serializeCookie',
 			body: [
 				'const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIComponent(val)}`;',
 				'',
@@ -1362,7 +1362,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to set the value of a CSS rule for a particular element.':
 		{
-			prefix: 'bbeo-pattern-103-setStyle',
+			prefix: 'bbeo-js-pattern-103-setStyle',
 			body: [
 				'const setStyle = (el, ruleName, val) => (el.style[ruleName] = val);',
 				'',
@@ -1375,7 +1375,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to create a shallow clone of an object.':
 		{
-			prefix: 'bbeo-pattern-104-shallowClone',
+			prefix: 'bbeo-js-pattern-104-shallowClone',
 			body: [
 				'const shallowClone = obj => Object.assign({}, obj);',
 				'',
@@ -1387,7 +1387,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet can be used to show all the elements specified.': {
-		prefix: 'bbeo-pattern-105-show',
+		prefix: 'bbeo-js-pattern-105-show',
 		body: [
 			"const show = (...el) => [...el].forEach(e => (e.style.display = ''));",
 			'',
@@ -1399,7 +1399,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to order the elements of an array randomly using the .':
 		{
-			prefix: 'bbeo-pattern-106-shuffle',
+			prefix: 'bbeo-js-pattern-106-shuffle',
 			body: [
 				'const shuffle = ([...arr]) => {',
 				'  let m = arr.length;',
@@ -1419,7 +1419,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to return an array of elements that appear in two arrays.':
 		{
-			prefix: 'bbeo-pattern-107-similarity',
+			prefix: 'bbeo-js-pattern-107-similarity',
 			body: [
 				'https://medium.com/better-programming/127-helpful-javascript-snippets-you-can-learn-in-30-seconds-or-less-part-6-of-6-862a6403d334',
 			],
@@ -1429,7 +1429,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to delay the execution of an asynchronous function by putting it into sleep.':
 		{
-			prefix: 'bbeo-pattern-108-sleep',
+			prefix: 'bbeo-js-pattern-108-sleep',
 			body: [
 				'const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));',
 				'',
@@ -1445,7 +1445,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window.':
 		{
-			prefix: 'bbeo-pattern-109-smoothScroll',
+			prefix: 'bbeo-js-pattern-109-smoothScroll',
 			body: [
 				'const smoothScroll = element =>',
 				'  document.querySelector(element).scrollIntoView({',
@@ -1461,7 +1461,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to alphabetically sort the characters in a string.':
 		{
-			prefix: 'bbeo-pattern-110-sortCharactersInString',
+			prefix: 'bbeo-js-pattern-110-sortCharactersInString',
 			body: [
 				"const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)).join('');",
 				'',
@@ -1473,7 +1473,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to split a multi-line string into an array of lines.':
 		{
-			prefix: 'bbeo-pattern-111-splitLines',
+			prefix: 'bbeo-js-pattern-111-splitLines',
 			body: [
 				'const splitLines = str => str.split(/\\r?\\n/);',
 				'',
@@ -1485,7 +1485,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to remove HTML/XML tags from a string.':
 		{
-			prefix: 'bbeo-pattern-112-stripHTMLTags',
+			prefix: 'bbeo-js-pattern-112-stripHTMLTags',
 			body: [
 				"const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');",
 				'',
@@ -1497,7 +1497,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to find the sum of two or more numbers or arrays.':
 		{
-			prefix: 'bbeo-pattern-113-sum',
+			prefix: 'bbeo-js-pattern-113-sum',
 			body: [
 				'const sum = (...arr) => [...arr].reduce((acc, val) => acc + val, 0);',
 				'',
@@ -1510,7 +1510,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to get an array with all the elements of an array except for the first one. If the array has only one element, then that an array with that element will be returned instead.':
 		{
-			prefix: 'bbeo-pattern-114-tail',
+			prefix: 'bbeo-js-pattern-114-tail',
 			body: [
 				'const tail = arr => (arr.length > 1 ? arr.slice(1) : arr);',
 				'',
@@ -1523,7 +1523,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to get an array with elements removed from the beginning.':
 		{
-			prefix: 'bbeo-pattern-115-take',
+			prefix: 'bbeo-js-pattern-115-take',
 			body: [
 				'const take = (arr, n = 1) => arr.slice(0, n);',
 				'',
@@ -1536,7 +1536,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to get an array with elements removed from the end.':
 		{
-			prefix: 'bbeo-pattern-116-takeRight',
+			prefix: 'bbeo-js-pattern-116-takeRight',
 			body: [
 				'const takeRight = (arr, n = 1) => arr.slice(arr.length - n, arr.length);',
 				'',
@@ -1549,7 +1549,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to find out the time it takes to execute a function.':
 		{
-			prefix: 'bbeo-pattern-117-timeTaken',
+			prefix: 'bbeo-js-pattern-117-timeTaken',
 			body: [
 				'const timeTaken = callback => {',
 				"  console.time('timeTaken');",
@@ -1565,7 +1565,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet can be used to iterate over a callback times.': {
-		prefix: 'bbeo-pattern-118-times',
+		prefix: 'bbeo-js-pattern-118-times',
 		body: [
 			'const times = (n, fn, context = undefined) => {',
 			'  let i = 0;',
@@ -1581,7 +1581,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet can be used to format a number like a currency.': {
-		prefix: 'bbeo-pattern-119-toCurrency',
+		prefix: 'bbeo-js-pattern-119-toCurrency',
 		body: [
 			'const toCurrency = (n, curr, LanguageFormat = undefined) =>',
 			"  Intl.NumberFormat(LanguageFormat, { style: 'currency', currency: curr }).format(n);",
@@ -1598,7 +1598,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet uses the function to convert float-point arithmetic to the decimal mark form by using a number to make a comma-separated string.':
 		{
-			prefix: 'bbeo-pattern-120-toDecimalMark',
+			prefix: 'bbeo-js-pattern-120-toDecimalMark',
 			body: [
 				"const toDecimalMark = num => num.toLocaleString('en-US');",
 				'',
@@ -1609,7 +1609,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet can be used to toggle a class for an element.': {
-		prefix: 'bbeo-pattern-121-toggleClass',
+		prefix: 'bbeo-js-pattern-121-toggleClass',
 		body: [
 			'const toggleClass = (el, className) => el.classList.toggle(className);',
 			'',
@@ -1621,7 +1621,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to get a string representation of tomorrow’s date.':
 		{
-			prefix: 'bbeo-pattern-122-tomorrow',
+			prefix: 'bbeo-js-pattern-122-tomorrow',
 			body: [
 				'const tomorrow = () => {',
 				'  let t = new Date();',
@@ -1637,7 +1637,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to build an array using an iterator function and an initial seed value.':
 		{
-			prefix: 'bbeo-pattern-123-unfold',
+			prefix: 'bbeo-js-pattern-123-unfold',
 			body: [
 				'const unfold = (fn, seed) => {',
 				'  let result = [],',
@@ -1655,7 +1655,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to find the  of two arrays, resulting in an array that has elements that come from both arrays but that do not repeat.':
 		{
-			prefix: 'bbeo-pattern-124-union',
+			prefix: 'bbeo-js-pattern-124-union',
 			body: [
 				'const union = (a, b) => Array.from(new Set([...a, ...b]));',
 				'',
@@ -1667,7 +1667,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet uses ES6 andtheoperator to get every element only once.':
 		{
-			prefix: 'bbeo-pattern-125-uniqueElements',
+			prefix: 'bbeo-js-pattern-125-uniqueElements',
 			body: [
 				'const uniqueElements = arr => [...new Set(arr)];',
 				'',
@@ -1678,7 +1678,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet can be used to check whether a value is a number.': {
-		prefix: 'bbeo-pattern-126-validateNumber',
+		prefix: 'bbeo-js-pattern-126-validateNumber',
 		body: [
 			'const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) == n;',
 			'',
@@ -1689,7 +1689,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet converts a string into an array of words.': {
-		prefix: 'bbeo-pattern-127-words',
+		prefix: 'bbeo-js-pattern-127-words',
 		body: [
 			'const words = (str, pattern = /[^a-zA-Z-]+/) => str.split(pattern).filter(Boolean);',
 			'',

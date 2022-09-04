@@ -1,18 +1,18 @@
 export const js_date = {
 	'[date]: Create a date object (null args)': {
-		prefix: 'bbeo-date-createNullDate',
+		prefix: 'bbeo-js-date-createNullDate',
 		body: ['const ${1:date_objVar} = new Date()'],
 		description: '[date]: Create a date object (null args)',
 	},
 	'[date]: Create a date object (full args)': {
-		prefix: 'bbeo-date-createFullDate',
+		prefix: 'bbeo-js-date-createFullDate',
 		body: [
 			'const ${1:date_objVar} = new Date(${2:year}, ${3:month}, ${4:day}, ${5:hour}, ${6:minute}, ${7:second}, ${8:millisecond})',
 		],
 		description: '[date]: Create a date object (full args)',
 	},
 	'[date]: Create a date object (string format)': {
-		prefix: 'bbeo-date-createStringDate',
+		prefix: 'bbeo-js-date-createStringDate',
 		body: ['const ${1:date_objVar} = new Date(${2:date_string})'],
 		description: '[date]: Create a date object (date string)',
 	},
