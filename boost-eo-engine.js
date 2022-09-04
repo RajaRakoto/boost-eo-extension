@@ -167,5 +167,4 @@ getOutput(
 	'#### ◾ Javascript libraries',
 	'javascript',
 );
-
 console.log(footer);
