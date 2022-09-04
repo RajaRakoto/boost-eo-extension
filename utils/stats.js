@@ -155,10 +155,16 @@ const listStatsDataTable = `
 
 // all stats exportation
 export const stats = `
+
+---
+
+### 📌 Stats
+
 #### ◾ Total stats
 ${totalStatsDataTable}
 
 #### ◾ List stats
 ${listStatsDataTable}
+
 `;
 
