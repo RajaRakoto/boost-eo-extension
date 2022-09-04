@@ -161,3 +161,4 @@ ${totalStatsDataTable}
 #### ◾ List stats
 ${listStatsDataTable}
 `;
+
