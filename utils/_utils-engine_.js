@@ -1,4 +1,5 @@
 import fs from 'fs';
+import traverse from 'traverse';
 
 // title expression checker
 export function titleRegex(input) {
@@ -23,7 +24,7 @@ export function fsExport(data, filename) {
 
 // get file list in directory
 export function fsReadDir(path) {
-  return fs.readdirSync(path);
+	return fs.readdirSync(path);
 }
 
 // pattern model getter
@@ -50,3 +51,36 @@ export function renderSnippets(input) {
 	return newSnippet.join('\n');
 }
 
+// get all key value from an object
+export function traverseKeyValueByObject(source, key) {
+	let traverseResult = [];
+	traverse(source).forEach(function (e) {
+		if (this.key == key) {
+			traverseResult.push(e);
+		}
+	});
+	return traverseResult;
+}
+
+// list stat data generator
+export function generateListStatsData(
+	source,
+	firstPrefix,
+	secondPrefix,
+	extension,
+) {
+	const listResult = fsReadDir(source)
+		.map(e => (e.includes(firstPrefix) ? e.replace(firstPrefix, '') : e))
+		.map(e => e.replace(extension, ''))
+		.map(e => e.replace(secondPrefix, ''))
+		.map(e => '`' + e + '`').join` `;
+	return listResult == '' ? '<div align="center"> n/a </div>' : '<div align="center">' + listResult + '</div>';
+}
+
+// patterns stat data generator
+export function generatePatternsStatsData(source, key, prefix) {
+	const patternsResult = traverseKeyValueByObject(source, key)
+		.map(e => (e.includes(prefix) ? e.replace(prefix, '') : e))
+		.map(e => '`' + e + '`').join` `;
+	return patternsResult == '' ? '<div align="center"> n/a </div>' : '<div align="center">' + patternsResult + '</div>';
+}
