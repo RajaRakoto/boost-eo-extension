@@ -17,6 +17,7 @@ npm run build
 grunt compress-all
 \`\`\`
 🏁 Here is a tool that will help you to generate snippets -> https://snippet-generator.app/
+
 🏁 Then you can make a PR.
 
 `;
