@@ -7,7 +7,7 @@ import { desc } from '../docs/desc.js';
 import { feats } from '../docs/feats.js';
 import { install } from '../docs/install.js';
 import { usage } from '../docs/usage.js';
-import { stats } from './stats.js'
+import { stats } from './stats.js';
 // javascript libraires importation
 import { js_fs } from '../src/libs/javascript/js-fs.js';
 import { js_traverse } from '../src/libs/javascript/js-traverse.js';
@@ -155,6 +155,13 @@ const javascriptPatternSourceList = refactorSourceList([js_patterns]);
 const javascriptLibrariesSourceList = refactorSourceList([js_fs, js_traverse]);
 
 // export docs & snippets & patterns
+console.log(banner);
+console.log(desc);
+console.log(install);
+console.log(feats);
+console.log(contrib);
+console.log(stats);
+console.log(usage);
 getOutput(
 	javascriptSourceList,
 	'../dist/boosteo-js.code-snippets',
@@ -173,3 +180,9 @@ getOutput(
 	'#### ◾ Javascript libraries',
 	'javascript',
 );
+console.log(`
+<div align="center">
+
+#### Enjoy it 😉
+</div>
+`)
