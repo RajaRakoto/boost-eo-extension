@@ -31,4 +31,13 @@ export const js_fs = {
 		],
 		description: '[libs]: Export all data type into file with fs lib',
 	},
+	'[libs]: Get all file list in directory with fs lib': {
+		prefix: 'bbeo-js-libs-fs-fsReadDir',
+		body: [
+			'export function fsReadDir(path) {',
+			'  return fs.readdirSync(path);',
+			'}',
+		],
+		description: '[libs]: Get all file list in directory with fs lib',
+	},
 };
