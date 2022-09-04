@@ -7,7 +7,8 @@
 	"icon": "assets/boost-eo-ico.png",
 	"type": "module",
 	"scripts": {
-		"build": "cd utils && node boost-eo.js > ../README.md && cd .."
+		"build": "cd utils && node boost-eo.js > ../README.md && cd ..",
+		"build-vsix": "sudo vsce package"
 	},
 	"engines": {
 		"vscode": "^1.49.0"
