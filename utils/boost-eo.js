@@ -71,7 +71,7 @@ console.log(stats);
 console.log(usage);
 getOutput(
 	javascriptSourceList,
-	'../dist/boosteo-js.code-snippets',
+	'../dist/boosteo-js-snippets.code-snippets',
 	'#### ◾ Javascript snippets',
 	'javascript',
 );
