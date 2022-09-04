@@ -388,13 +388,13 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns a new array with  elements removed from the left.':
 		{
-			prefix: 'bbeo-js-pattern-31-Drop Elements',
+			prefix: 'bbeo-js-pattern-31-DropLeft',
 			body: [
-				'const drop = (arr, n = 1) => arr.slice(n);',
+				'const dropLeft = (arr, n = 1) => arr.slice(n);',
 				'',
-				'drop([1, 2, 3]); // [2,3]',
-				'drop([1, 2, 3], 2); // [3]',
-				'drop([1, 2, 3], 42); // []',
+				'dropLeft([1, 2, 3]); // [2,3]',
+				'dropLeft([1, 2, 3], 2); // [3]',
+				'dropLeft([1, 2, 3], 42); // []',
 			],
 			description:
 				'[pattern]: This snippet returns a new array with  elements removed from the left.',
