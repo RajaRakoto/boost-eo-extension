@@ -25,7 +25,7 @@ export function fsExport(data, filename) {
 export function getPatternModel(title, description, body) {
 	return `
 	"[pattern]: ${description}": {
-	  "prefix": "bbeo-pattern-${title}",
+	  "prefix": "bbeo-js-pattern-${title}",
 	  "body": [${body}],
 	  "description": "[pattern]: ${description}"
 	},
