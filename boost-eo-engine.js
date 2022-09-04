@@ -6,10 +6,6 @@ import { js_fs } from './src/libs/javascript/js-fs.js';
 import { js_traverse } from './src/libs/javascript/js-traverse.js';
 // javascript patterns importation
 import { js_patterns } from './src/patterns/js-patterns.js';
-// python snippets importation
-import { py_basic } from './src/snippets/python/py-basic.js';
-// shellscript snippets importation
-import { sh_basic } from './src/snippets/shellscript/sh-basic.js';
 // javascript snippets importation
 import { js_console } from './src/snippets/javascript/js-console.js';
 import { js_module } from './src/snippets/javascript/js-module.js';
@@ -148,8 +144,6 @@ const javascriptSourceList = refactorSourceList([
 	js_string,
 	js_struct,
 ]);
-const pythonSourceList = refactorSourceList([py_basic]);
-const shellscriptSourceList = refactorSourceList([sh_basic]);
 const javascriptPatternSourceList = refactorSourceList([js_patterns]);
 const javascriptLibrariesSourceList = refactorSourceList([js_fs, js_traverse]);
 
@@ -160,18 +154,6 @@ getOutput(
 	'./dist/boosteo-js.code-snippets',
 	'#### ◾ Javascript snippets',
 	'javascript',
-);
-getOutput(
-	pythonSourceList,
-	'./dist/boosteo-py.code-snippets',
-	'#### ◾ Python snippets',
-	'python',
-);
-getOutput(
-	shellscriptSourceList,
-	'./dist/boosteo-sh.code-snippets',
-	'#### ◾ Shellscript snippets',
-	'shellscript',
 );
 getOutput(
 	javascriptPatternSourceList,
