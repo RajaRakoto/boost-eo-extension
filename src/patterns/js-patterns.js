@@ -226,7 +226,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet uses  to check whether a directory exists and then  to create it if it doesn’t.':
 		{
-			prefix: 'bbeo-js-pattern-18-Create Directory',
+			prefix: 'bbeo-js-pattern-18-createDirIfNotExists',
 			body: [
 				"const fs = require('fs');",
 				'const createDirIfNotExists = dir => (!fs.existsSync(dir) ? fs.mkdirSync(dir) : undefined);',
