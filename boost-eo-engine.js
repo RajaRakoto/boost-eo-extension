@@ -1,6 +1,12 @@
 import traverse from 'traverse';
 import fs from 'fs';
-import { header, footer } from './utils/docs.js';
+// docs importation
+import { banner } from './docs/banner.js';
+import { contrib } from './docs/contrib.js';
+import { desc } from './docs/desc.js';
+import { feats } from './docs/feats.js';
+import { install } from './docs/install.js';
+import { usage } from './docs/usage.js';
 // javascript libraires importation
 import { js_fs } from './src/libs/javascript/js-fs.js';
 import { js_traverse } from './src/libs/javascript/js-traverse.js';
@@ -148,7 +154,6 @@ const javascriptPatternSourceList = refactorSourceList([js_patterns]);
 const javascriptLibrariesSourceList = refactorSourceList([js_fs, js_traverse]);
 
 // output
-console.log(header);
 getOutput(
 	javascriptSourceList,
 	'./dist/boosteo-js.code-snippets',
@@ -167,4 +172,3 @@ getOutput(
 	'#### ◾ Javascript libraries',
 	'javascript',
 );
-console.log(footer);
