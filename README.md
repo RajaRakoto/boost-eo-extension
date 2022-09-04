@@ -116,7 +116,7 @@ grunt compress-all
 | :-- |
 | [🔎 Javascript snippets](#-javascript-snippets) |
 | [🔎 Javascript patterns](#-javascript-patterns) |
-| [🔎 Javascript libaries](#-javascript-libaries) |
+| [🔎 Javascript libaries](#-javascript-libraries) |
 </div>
 
 > **Notation**: hybrid = string | array -- mixte = array | object
@@ -5413,7 +5413,10 @@ export function fsExport(data, filepath) {
 
 ```js
 export function fsReadDir(path) {
-  return fs.readdirSync(path);
+	if (!fs.existsSync(path)){
+		fs.mkdirSync(path, { recursive: true });
+	}
+	return fs.readdirSync(path);
 }
 ```
 </td>
