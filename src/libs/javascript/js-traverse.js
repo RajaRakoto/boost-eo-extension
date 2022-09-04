@@ -1,0 +1,51 @@
+export const js_traverse = {
+	'[libs]: Import traverse module': {
+		prefix: 'bbeo-js-libs-traverse-deps',
+		body: ["import traverse from 'traverse';"],
+		description: '[libs]: Import traverse module',
+	},
+	'[libs]: Get traverse properties': {
+		prefix: 'bbeo-js-libs-traverse-props',
+		body: [
+			'// this.node -> The present node on the recursive walk',
+			'// this.path -> An array of string keys from the root to the present node',
+			"// this.parent -> The context of the node's parent. This is undefined for the root node.",
+			'// this.key -> The name of the key of the present node in its parent. This is undefined for the root node.',
+		],
+		description: '[libs]: Get traverse properties',
+	},
+	'[libs]: Leaves.js traverse pattern': {
+		prefix: 'bbeo-js-libs-traverse-leaves',
+		body: [
+			'var obj = {',
+			'    a : [1,2,3],',
+			'    b : 4,',
+			'    c : [5,6],',
+			'    d : { e : [7,8], f : 9 },',
+			'};',
+			' ',
+			'var leaves = traverse(obj).reduce(function (acc, x) {',
+			'    if (this.isLeaf) acc.push(x);',
+			'    return acc;',
+			'}, []);',
+			' ',
+			'console.dir(leaves); // [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]',
+		],
+		description: '[libs]: Leaves.js traverse pattern',
+	},
+	'[libs]: Basic traverse pattern': {
+		prefix: 'bbeo-js-libs-traverse-basic',
+		body: [
+			"traverse(JSON.parse(fs.readFileSync(distPath, 'utf8'))).forEach(function (e) {",
+			"	if (this.key == 'header') {",
+			'		headerList.push(e);',
+			"	} else if (this.key == 'body') {",
+			'		bodyList.push(e);',
+			"	} else if (this.key == 'footer') {",
+			'		footerList.push(e);',
+			'	}',
+			'});',
+		],
+		description: '[libs]: Basic traverse pattern',
+	},
+};

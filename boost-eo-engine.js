@@ -28,6 +28,8 @@ import { js_basic } from './src/snippets/javascript/js-basic.js';
 import { js_date } from './src/snippets/javascript/js-date.js';
 import { js_dom } from './src/snippets/javascript/js-dom.js';
 import { js_bom } from './src/snippets/javascript/js-bom.js';
+import { js_fs } from './src/libs/javascript/js-fs.js';
+import { js_traverse } from './src/libs/javascript/js-traverse.js';
 
 // table generator
 function generateTable(data, language) {
@@ -148,6 +150,7 @@ const javascriptSourceList = refactorSourceList([
 const pythonSourceList = refactorSourceList([py_basic]);
 const shellscriptSourceList = refactorSourceList([sh_basic]);
 const javascriptPatternSourceList = refactorSourceList([js_patterns]);
+const javascriptLibrariesSourceList = refactorSourceList([js_fs, js_traverse]);
 
 // output
 console.log(header);
@@ -173,6 +176,12 @@ getOutput(
 	javascriptPatternSourceList,
 	'./dist/boosteo-js-patterns.code-snippets',
 	'#### ◾ Javascript patterns',
+	'javascript',
+);
+getOutput(
+	javascriptLibrariesSourceList,
+	'./dist/boosteo-js-libs.code-snippets',
+	'#### ◾ Javascript libraries',
 	'javascript',
 );
 
