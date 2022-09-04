@@ -1,38 +1,39 @@
 import traverse from 'traverse';
 import fs from 'fs';
 // docs importation
-import { banner } from './docs/banner.js';
-import { contrib } from './docs/contrib.js';
-import { desc } from './docs/desc.js';
-import { feats } from './docs/feats.js';
-import { install } from './docs/install.js';
-import { usage } from './docs/usage.js';
+import { banner } from '../docs/banner.js';
+import { contrib } from '../docs/contrib.js';
+import { desc } from '../docs/desc.js';
+import { feats } from '../docs/feats.js';
+import { install } from '../docs/install.js';
+import { usage } from '../docs/usage.js';
+import { stats } from './stats.js'
 // javascript libraires importation
-import { js_fs } from './src/libs/javascript/js-fs.js';
-import { js_traverse } from './src/libs/javascript/js-traverse.js';
+import { js_fs } from '../src/libs/javascript/js-fs.js';
+import { js_traverse } from '../src/libs/javascript/js-traverse.js';
 // javascript patterns importation
-import { js_patterns } from './src/patterns/js-patterns.js';
+import { js_patterns } from '../src/patterns/js-patterns.js';
 // javascript snippets importation
-import { js_console } from './src/snippets/javascript/js-console.js';
-import { js_module } from './src/snippets/javascript/js-module.js';
-import { js_func } from './src/snippets/javascript/js-func.js';
-import { js_gen } from './src/snippets/javascript/js-gen.js';
-import { js_regex } from './src/snippets/javascript/js-regex.js';
-import { js_cast } from './src/snippets/javascript/js-cast.js';
-import { js_math } from './src/snippets/javascript/js-math.js';
-import { js_string } from './src/snippets/javascript/js-string.js';
-import { js_hybrid } from './src/snippets/javascript/js-hybrid.js';
-import { js_mixte } from './src/snippets/javascript/js-mixte.js';
-import { js_array } from './src/snippets/javascript/js-array.js';
-import { js_destruct } from './src/snippets/javascript/js-destruct.js';
-import { js_spread } from './src/snippets/javascript/js-spread.js';
-import { js_struct } from './src/snippets/javascript/js-struct.js';
-import { js_class } from './src/snippets/javascript/js-class.js';
-import { js_object } from './src/snippets/javascript/js-object.js';
-import { js_basic } from './src/snippets/javascript/js-basic.js';
-import { js_date } from './src/snippets/javascript/js-date.js';
-import { js_dom } from './src/snippets/javascript/js-dom.js';
-import { js_bom } from './src/snippets/javascript/js-bom.js';
+import { js_console } from '../src/snippets/javascript/js-console.js';
+import { js_module } from '../src/snippets/javascript/js-module.js';
+import { js_func } from '../src/snippets/javascript/js-func.js';
+import { js_gen } from '../src/snippets/javascript/js-gen.js';
+import { js_regex } from '../src/snippets/javascript/js-regex.js';
+import { js_cast } from '../src/snippets/javascript/js-cast.js';
+import { js_math } from '../src/snippets/javascript/js-math.js';
+import { js_string } from '../src/snippets/javascript/js-string.js';
+import { js_hybrid } from '../src/snippets/javascript/js-hybrid.js';
+import { js_mixte } from '../src/snippets/javascript/js-mixte.js';
+import { js_array } from '../src/snippets/javascript/js-array.js';
+import { js_destruct } from '../src/snippets/javascript/js-destruct.js';
+import { js_spread } from '../src/snippets/javascript/js-spread.js';
+import { js_struct } from '../src/snippets/javascript/js-struct.js';
+import { js_class } from '../src/snippets/javascript/js-class.js';
+import { js_object } from '../src/snippets/javascript/js-object.js';
+import { js_basic } from '../src/snippets/javascript/js-basic.js';
+import { js_date } from '../src/snippets/javascript/js-date.js';
+import { js_dom } from '../src/snippets/javascript/js-dom.js';
+import { js_bom } from '../src/snippets/javascript/js-bom.js';
 
 // table generator
 function generateTable(data, language) {
@@ -153,22 +154,22 @@ const javascriptSourceList = refactorSourceList([
 const javascriptPatternSourceList = refactorSourceList([js_patterns]);
 const javascriptLibrariesSourceList = refactorSourceList([js_fs, js_traverse]);
 
-// output
+// export docs & snippets & patterns
 getOutput(
 	javascriptSourceList,
-	'./dist/boosteo-js.code-snippets',
+	'../dist/boosteo-js.code-snippets',
 	'#### ◾ Javascript snippets',
 	'javascript',
 );
 getOutput(
 	javascriptPatternSourceList,
-	'./dist/boosteo-js-patterns.code-snippets',
+	'../dist/boosteo-js-patterns.code-snippets',
 	'#### ◾ Javascript patterns',
 	'javascript',
 );
 getOutput(
 	javascriptLibrariesSourceList,
-	'./dist/boosteo-js-libs.code-snippets',
+	'../dist/boosteo-js-libs.code-snippets',
 	'#### ◾ Javascript libraries',
 	'javascript',
 );
