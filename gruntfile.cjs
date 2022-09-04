@@ -83,6 +83,15 @@ module.exports = function (grunt) {
 				src: includeAllFiles,
 				dest: 'assets',
 			},
+			docs: {
+				options: {
+					archive: backupsDestination + 'docs.tar.gz',
+				},
+				expand: true,
+				cwd: './docs/',
+				src: includeAllFiles,
+				dest: 'docs',
+			},
 		},
 	});
 
@@ -95,13 +104,16 @@ module.exports = function (grunt) {
 		'compress:dist',
 		'compress:utils',
 		'compress:assets',
+		'compress:docs',
 	]);
 
 	// all tasks lists
 	const myTasksNames = ['compress-all'];
 
 	// tasks status (description)
-	const myTasksStatus = ['compress: main | node_modules | src | test | dist | utils | assets'];
+	const myTasksStatus = [
+		'compress: main | node_modules | src | test | dist | utils | assets | docs',
+	];
 
 	// default tasks
 	grunt.registerTask('default', () => {
