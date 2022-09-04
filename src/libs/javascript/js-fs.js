@@ -35,7 +35,10 @@ export const js_fs = {
 		prefix: 'bbeo-js-libs-fs-fsReadDir',
 		body: [
 			'export function fsReadDir(path) {',
-			'  return fs.readdirSync(path);',
+			'	if (!fs.existsSync(path)){',
+			'		fs.mkdirSync(path, { recursive: true });',
+			'	}',
+			'	return fs.readdirSync(path);',
 			'}',
 		],
 		description: '[libs]: Get all file list in directory with fs lib',
