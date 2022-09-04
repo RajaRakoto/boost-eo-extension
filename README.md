@@ -22,7 +22,7 @@
 
 ### 📌 Description
 
-**BOOST-EO** is a set of custom code snippets & pattern available for VScode IDE to help you be more productive by providing helper methods 🚀.
+**BOOST-EO** is a set of custom code `snippets` & `pattern` available for VScode IDE to help you be more productive by providing helper methods 🚀.
 
 
 
@@ -58,13 +58,21 @@ You can install it by typing `boost-eo` in the extension tab of your IDE
 ---
 
 ### 📌 Contribution
-  
-- If you want to contribute to this project, here is a tool that will help you to generate snippets -> https://snippet-generator.app/
-- With each new code snippet added, you need to update all `snippets` & `patterns` file and regenerate the documentation, all in one command (in root directory):
+
+🏁 Before contributing, be sure to `install all dependencies` needed to work in this project by running the following command (in root directory):
+```bash
+npm install
+```
+🏁 With each new code snippet added, you need to update all `snippets` & `patterns` file and regenerate the documentation, all in one command (in root directory):
 ```bash
 cd utils && node boost-eo.js > ../README.md && cd ..
 ```
-- Then you can make a PR.
+🏁 You can run a `grunt task` to make a `local backup` of this project by running the following command (in root directory):
+```bash
+grunt compress-all
+```
+🏁 Here is a tool that will help you to generate snippets -> https://snippet-generator.app/
+🏁 Then you can make a PR.
 
 
 
