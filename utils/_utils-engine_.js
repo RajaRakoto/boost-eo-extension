@@ -24,6 +24,9 @@ export function fsExport(data, filename) {
 
 // get file list in directory
 export function fsReadDir(path) {
+	if (!fs.existsSync(path)){
+		fs.mkdirSync(path, { recursive: true });
+	}
 	return fs.readdirSync(path);
 }
 
