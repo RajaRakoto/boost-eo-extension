@@ -10,7 +10,7 @@ export const usage = `
 | :-- |
 | [🔎 Javascript snippets](#-javascript-snippets) |
 | [🔎 Javascript patterns](#-javascript-patterns) |
-| [🔎 Javascript libaries](#-javascript-libaries) |
+| [🔎 Javascript libaries](#-javascript-libraries) |
 </div>
 
 > **Notation**: hybrid = string | array -- mixte = array | object

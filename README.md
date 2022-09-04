@@ -65,7 +65,7 @@ npm install
 ```
 🏁 With each new code snippet added, you need to update all `snippets` & `patterns` file and regenerate the documentation, all in one command (in root directory):
 ```bash
-cd utils && node boost-eo.js > ../README.md && cd ..
+npm run build
 ```
 🏁 You can run a `grunt task` to make a `local backup` of this project by running the following command (in root directory):
 ```bash
@@ -116,7 +116,7 @@ grunt compress-all
 | :-- |
 | [🔎 Javascript snippets](#-javascript-snippets) |
 | [🔎 Javascript patterns](#-javascript-patterns) |
-| [🔎 Javascript libaries](#-javascript-libaries) |
+| [🔎 Javascript libaries](#-javascript-libraries) |
 </div>
 
 > **Notation**: hybrid = string | array -- mixte = array | object
@@ -5413,7 +5413,10 @@ export function fsExport(data, filepath) {
 
 ```js
 export function fsReadDir(path) {
-  return fs.readdirSync(path);
+	if (!fs.existsSync(path)){
+		fs.mkdirSync(path, { recursive: true });
+	}
+	return fs.readdirSync(path);
 }
 ```
 </td>
