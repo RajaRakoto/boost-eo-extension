@@ -1,6 +1,9 @@
 import traverse from 'traverse';
 import fs from 'fs';
 import { header, footer } from './utils/docs.js';
+// javascript libraires importation
+import { js_fs } from './src/libs/javascript/js-fs.js';
+import { js_traverse } from './src/libs/javascript/js-traverse.js';
 // javascript patterns importation
 import { js_patterns } from './src/patterns/js-patterns.js';
 // python snippets importation
@@ -28,8 +31,6 @@ import { js_basic } from './src/snippets/javascript/js-basic.js';
 import { js_date } from './src/snippets/javascript/js-date.js';
 import { js_dom } from './src/snippets/javascript/js-dom.js';
 import { js_bom } from './src/snippets/javascript/js-bom.js';
-import { js_fs } from './src/libs/javascript/js-fs.js';
-import { js_traverse } from './src/libs/javascript/js-traverse.js';
 
 // table generator
 function generateTable(data, language) {
