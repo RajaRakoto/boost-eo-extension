@@ -2,7 +2,6 @@ tmp
 test
 backups
 node_modules
-.vscodeignore
 .vscode/launch.json
 *.vsix
 utils/*.json
