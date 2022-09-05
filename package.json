@@ -6,9 +6,14 @@
 	"version": "1.1.0",
 	"icon": "assets/boost-eo-ico.png",
 	"type": "module",
+	"license": "MIT",
 	"scripts": {
 		"build": "cd utils && node boost-eo.js > ../README.md && cd ..",
 		"build-vsix": "sudo vsce package"
+	},
+        "repository": {
+		"type": "git",
+		"url": "git+https://github.com/RajaRakoto/sass-eo.git"
 	},
 	"engines": {
 		"vscode": "^1.49.0"
