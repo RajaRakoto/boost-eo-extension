@@ -3,7 +3,7 @@
 	"displayName": "boost-eo",
 	"publisher": "raja",
 	"description": "A set of custom code snippets & pattern available for VScode IDE to help you be more productive by providing helper methods 🚀",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"icon": "assets/boost-eo-ico.png",
 	"type": "module",
 	"license": "MIT",
@@ -11,7 +11,7 @@
 		"build": "cd utils && node boost-eo.js > ../README.md && cd ..",
 		"build-vsix": "sudo vsce package"
 	},
-        "repository": {
+	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/RajaRakoto/sass-eo.git"
 	},
