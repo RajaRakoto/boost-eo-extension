@@ -14,7 +14,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet checks whether all elements of the array are equal.':
 		{
-			prefix: 'bbeo-js-pattern-2-allEqual',
+			prefix: 'bbeo-js-pattern-array-2-allEqual',
 			body: [
 				'const allEqual = arr => arr.every(val => val === arr[0]);',
 				'',
@@ -27,7 +27,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet checks whether two numbers are approximately equal to each other, with a small difference.':
 		{
-			prefix: 'bbeo-js-pattern-3-approximatelyEqual',
+			prefix: 'bbeo-js-pattern-math-3-approximatelyEqual',
 			body: [
 				'const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsilon;',
 				'',
@@ -39,7 +39,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet converts the elements to strings with comma-separated values.':
 		{
-			prefix: 'bbeo-js-pattern-4-arrayToCSV',
+			prefix: 'bbeo-js-pattern-cast-4-arrayToCSV',
 			body: [
 				"const arrayToCSV = (arr, delimiter = ',') =>",
 				'  arr.map(v => v.map(x => `"${x}"`).join(delimiter)).join(\'\\n\');',
@@ -53,7 +53,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet converts the elements of an array into  tags and appends them to the list of the given ID.':
 		{
-			prefix: 'bbeo-js-pattern-5-arrayToHtmlList',
+			prefix: 'bbeo-js-pattern-cast-5-arrayToHtmlList',
 			body: [
 				'const arrayToHtmlList = (arr, listID) =>',
 				'  (el => (',
@@ -69,7 +69,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet executes a function, returning either the result or the caught error object.':
 		{
-			prefix: 'bbeo-js-pattern-6-attempt',
+			prefix: 'bbeo-js-pattern-func-6-attempt',
 			body: [
 				'const attempt = (fn, ...args) => {',
 				'  try {',
@@ -89,7 +89,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns the average of two or more numerical values.':
 		{
-			prefix: 'bbeo-js-pattern-7-average',
+			prefix: 'bbeo-js-pattern-array-7-average',
 			body: [
 				'const average = (...nums) => nums.reduce((acc, val) => acc + val, 0) / nums.length;',
 				'average(...[1, 2, 3]); // 2',
@@ -101,7 +101,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function.':
 		{
-			prefix: 'bbeo-js-pattern-8-averageBy',
+			prefix: 'bbeo-js-pattern-mixte-8-averageBy',
 			body: [
 				'const averageBy = (arr, fn) =>',
 				"  arr.map(typeof fn === 'function' ? fn : val => val[fn]).reduce((acc, val) => acc + val, 0) /",
@@ -116,7 +116,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise.':
 		{
-			prefix: 'bbeo-js-pattern-9-bifurcate',
+			prefix: 'bbeo-js-pattern-array-9-bifurcate',
 			body: [
 				'const bifurcate = (arr, filter) =>',
 				'  arr.reduce((acc, val, i) => (acc[filter[i] ? 0 : 1].push(val), acc), [[], []]);',
@@ -129,7 +129,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group.':
 		{
-			prefix: 'bbeo-js-pattern-10-bifurcateBy',
+			prefix: 'bbeo-js-pattern-array-10-bifurcateBy',
 			body: [
 				'const bifurcateBy = (arr, fn) =>',
 				'  arr.reduce((acc, val, i) => (acc[fn(val, i) ? 0 : 1].push(val), acc), [[], []]);',
@@ -142,7 +142,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet checks whether the bottom of a page is visible.': {
-		prefix: 'bbeo-js-pattern-11-bottomVisible',
+		prefix: 'bbeo-js-pattern-dom-11-bottomVisible',
 		body: [
 			'const bottomVisible = () =>',
 			'  document.documentElement.clientHeight + window.scrollY >=',
@@ -155,7 +155,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet returns the length of a string in bytes.': {
-		prefix: 'bbeo-js-pattern-12-byteSize',
+		prefix: 'bbeo-js-pattern-cast-12-byteSize',
 		body: [
 			'const byteSize = str => new Blob([str]).size;',
 			'',
@@ -167,7 +167,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet capitalizes the first letter of a string.': {
-		prefix: 'bbeo-js-pattern-13-capitalize',
+		prefix: 'bbeo-js-pattern-string-13-capitalize',
 		body: [
 			'const capitalize = ([first, ...rest]) =>',
 			"  first.toUpperCase() + rest.join('');",
@@ -181,7 +181,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet capitalizes the first letter of every word in a given string.':
 		{
-			prefix: 'bbeo-js-pattern-14-capitalizeEveryWord',
+			prefix: 'bbeo-js-pattern-string-14-capitalizeEveryWord',
 			body: [
 				'const capitalizeEveryWord = str => str.replace(/\\b[a-z]/g, char => char.toUpperCase());',
 				'',
@@ -192,7 +192,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet converts a non-array value into array.': {
-		prefix: 'bbeo-js-pattern-15-castArray',
+		prefix: 'bbeo-js-pattern-cast-15-castArray',
 		body: [
 			'const castArray = val => (Array.isArray(val) ? val : [val]);',
 			'',
@@ -204,7 +204,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet removes false values from an array.': {
-		prefix: 'bbeo-js-pattern-16-compact',
+		prefix: 'bbeo-js-pattern-array-16-compact',
 		body: [
 			'const compact = arr => arr.filter(Boolean);',
 			'',
@@ -215,7 +215,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet counts the occurrences of a value in an array.': {
-		prefix: 'bbeo-js-pattern-17-countOccurrences',
+		prefix: 'bbeo-js-pattern-array-17-countOccurrences',
 		body: [
 			'const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 : a), 0);',
 			'countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3',
@@ -226,7 +226,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet uses  to check whether a directory exists and then  to create it if it doesn’t.':
 		{
-			prefix: 'bbeo-js-pattern-18-createDirIfNotExists',
+			prefix: 'bbeo-js-pattern-lib-18-createDirIfNotExists',
 			body: [
 				"const fs = require('fs');",
 				'const createDirIfNotExists = dir => (!fs.existsSync(dir) ? fs.mkdirSync(dir) : undefined);',
@@ -238,7 +238,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet returns the current URL.': {
-		prefix: 'bbeo-js-pattern-19-currentURL',
+		prefix: 'bbeo-js-pattern-bom-19-currentURL',
 		body: [
 			'const currentURL = () => window.location.href;',
 			'',
@@ -248,7 +248,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet gets the day of the year from a object.': {
-		prefix: 'bbeo-js-pattern-20-dayOfYear',
+		prefix: 'bbeo-js-pattern-date-20-dayOfYear',
 		body: [
 			'const dayOfYear = date =>',
 			'  Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);',
@@ -261,7 +261,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet turns the first letter of a string into lowercase.':
 		{
-			prefix: 'bbeo-js-pattern-21-decapitalize',
+			prefix: 'bbeo-js-pattern-string-21-decapitalize',
 			body: [
 				'const decapitalize = ([first, ...rest]) =>',
 				"  first.toLowerCase() + rest.join('')",
@@ -274,7 +274,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet flattens an array recursively.': {
-		prefix: 'bbeo-js-pattern-22-deepFlatten',
+		prefix: 'bbeo-js-pattern-array-22-deepFlatten',
 		body: [
 			'const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFlatten(v) : v)));',
 			'',
@@ -285,7 +285,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet assigns default values for all properties in an object that are .':
 		{
-			prefix: 'bbeo-js-pattern-23-default',
+			prefix: 'bbeo-js-pattern-object-23-default',
 			body: [
 				'const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj);',
 				'',
@@ -297,7 +297,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet delays the execution of a function until the current call stack is cleared.':
 		{
-			prefix: 'bbeo-js-pattern-24-defer',
+			prefix: 'bbeo-js-pattern-func-24-defer',
 			body: [
 				'const defer = (fn, ...args) => setTimeout(fn, 1, ...args);',
 				'',
@@ -309,7 +309,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to convert a value from degrees to radians.':
 		{
-			prefix: 'bbeo-js-pattern-25-degreesToRads',
+			prefix: 'bbeo-js-pattern-cast-25-degreesToRads',
 			body: [
 				'const degreesToRads = deg => (deg * Math.PI) / 180.0;',
 				'',
@@ -320,7 +320,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet finds the difference between two arrays.': {
-		prefix: 'bbeo-js-pattern-26-difference',
+		prefix: 'bbeo-js-pattern-array-26-difference',
 		body: [
 			'const difference = (a, b) => {',
 			'  const s = new Set(b);',
@@ -335,7 +335,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns the difference between two arrays, after applying a given function to each element of both lists.':
 		{
-			prefix: 'bbeo-js-pattern-27-differenceBy',
+			prefix: 'bbeo-js-pattern-mixte-27-differenceBy',
 			body: [
 				'const differenceBy = (a, b, fn) => {',
 				'  const s = new Set(b.map(fn));',
@@ -351,7 +351,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet removes the values for which the comparator function returns .':
 		{
-			prefix: 'bbeo-js-pattern-28-differenceWith',
+			prefix: 'bbeo-js-pattern-array-28-differenceWith',
 			body: [
 				'const differenceWith = (arr, val, comp) => arr.filter(a => val.findIndex(b => comp(a, b)) === -1);',
 				'',
@@ -364,7 +364,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet gets a number as input and returns an array of its digits.':
 		{
-			prefix: 'bbeo-js-pattern-29-digitize',
+			prefix: 'bbeo-js-pattern-cast-29-digitize',
 			body: [
 				'const digitize = n => [...`${n}`].map(i => parseInt(i));',
 				'',
@@ -376,7 +376,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns the distance between two points by calculating the Euclidean distance.':
 		{
-			prefix: 'bbeo-js-pattern-30-distance',
+			prefix: 'bbeo-js-pattern-math-30-distance',
 			body: [
 				'const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);',
 				'',
@@ -388,7 +388,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns a new array with  elements removed from the left.':
 		{
-			prefix: 'bbeo-js-pattern-31-DropLeft',
+			prefix: 'bbeo-js-pattern-array-31-DropLeft',
 			body: [
 				'const dropLeft = (arr, n = 1) => arr.slice(n);',
 				'',
@@ -402,7 +402,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns a new array with  elements removed from the right.':
 		{
-			prefix: 'bbeo-js-pattern-32-dropRight',
+			prefix: 'bbeo-js-pattern-array-32-dropRight',
 			body: [
 				'const dropRight = (arr, n = 1) => arr.slice(0, -n);',
 				'',
@@ -416,7 +416,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet removes elements from the right side of an array until the passed function returns .':
 		{
-			prefix: 'bbeo-js-pattern-33-dropRightWhile',
+			prefix: 'bbeo-js-pattern-array-33-dropRightWhile',
 			body: [
 				'const dropRightWhile = (arr, func) => {',
 				'  while (arr.length > 0 && !func(arr[arr.length - 1])) arr = arr.slice(0, -1);',
@@ -431,7 +431,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet removes elements from an array until the passed function returns .':
 		{
-			prefix: 'bbeo-js-pattern-34-dropWhile',
+			prefix: 'bbeo-js-pattern-array-34-dropWhile',
 			body: [
 				'const dropWhile = (arr, func) => {',
 				'  while (arr.length > 0 && !func(arr[0])) arr = arr.slice(1);',
