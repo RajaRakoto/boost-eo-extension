@@ -1,7 +1,7 @@
 export const js_patterns = {
 	'[pattern]: This snippet returns  if the predicate function returns  for all elements in a collection and  otherwise. You can omit the second argument if you want to use as a default value.':
 		{
-			prefix: 'bbeo-js-pattern-1-all',
+			prefix: 'bbeo-js-pattern-array-1-all',
 			body: [
 				'const all = (arr, fn = Boolean) => arr.every(fn);',
 				'',
@@ -1698,5 +1698,50 @@ export const js_patterns = {
 		],
 		description:
 			'[pattern]: This snippet converts a string into an array of words.',
+	},
+	'[pattern]: Get all ES6 modules syntax from the source directory': {
+		prefix: 'bbeo-js-pattern-128-getES6moduleSyntaxBySource',
+		body: [
+			'export function getES6moduleSyntaxBySource(source, extension) {',
+			"	const fixVarName = varName => varName.replace(/-/g, '_');",
+			'	const dropRight = (arr, n = 1) => arr.slice(0, -n); ',
+			'	let sourceList = fsReadDir(source);',
+			'	let sourceES6 = [];',
+			'	sourceList.forEach(source => {',
+			'		if (source.endsWith(extension)) {',
+			'			sourceES6.push(dropRight(source, 3));',
+			'		}',
+			'	});',
+			'	return sourceES6.map(',
+			"		source => `import { ${fixVarName(source)} } from './${source}.js';`,",
+			'	);',
+			'}',
+		],
+		description:
+			'[pattern]: Get all ES6 modules syntax from the source directory',
+	},
+	'[pattern]: Concat & export all external JSON sources to one JSON file': {
+		prefix: 'bbeo-js-pattern-129-concatJSONsourcesToOneFile',
+		body: [
+			'export function concatJSONsourcesToOneFile(sourcesList, distPath) {',
+			'	const refactorSourceList = sourceList => {',
+			'		let objRefactored = {};',
+			'		sourceList.forEach(source => {',
+			'			objRefactored = { ...objRefactored, ...source };',
+			'		});',
+			'		return objRefactored;',
+			'	};',
+			'',
+			'	const JSONexportation = (sourceList, distPath) => {',
+			"		fs.writeFileSync(distPath, JSON.stringify(sourceList), 'utf8', err => {",
+			"			console.log(err ? err : 'The file was saved!');",
+			'		});',
+			'	};',
+			'',
+			'	JSONexportation(refactorSourceList(sourcesList), distPath);',
+			'}',
+		],
+		description:
+			'[pattern]: Concat & export all external JSON sources to one JSON file',
 	},
 };

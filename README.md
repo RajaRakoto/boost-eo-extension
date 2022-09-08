@@ -93,7 +93,7 @@ grunt compress-all
 
 | Languages | Patterns | Libraries | Snippets |
 | --- | --- | --- | --- |
-| JavaScript | <div align='center'>127</div> | <div align='center'>2</div> | <div align='center'>20</div> |
+| JavaScript | <div align='center'>129</div> | <div align='center'>2</div> | <div align='center'>20</div> |
 | Python | <div align='center'>0</div> | <div align='center'>0</div> | <div align='center'>0</div> |
 | React | <div align='center'>0</div> | <div align='center'>-</div> | <div align='center'>0</div> |
 | Shell Script | <div align='center'>0</div> | <div align='center'>-</div> | <div align='center'>0</div> |
@@ -104,7 +104,7 @@ grunt compress-all
 
 | Languages | Patterns | Libraries | Snippets |
 | --- | --- | --- | --- |
-| JavaScript | <div align="center">`1-all` `2-allEqual` `3-approximatelyEqual` `4-arrayToCSV` `5-arrayToHtmlList` `6-attempt` `7-average` `8-averageBy` `9-bifurcate` `10-bifurcateBy` `11-bottomVisible` `12-byteSize` `13-capitalize` `14-capitalizeEveryWord` `15-castArray` `16-compact` `17-countOccurrences` `18-createDirIfNotExists` `19-currentURL` `20-dayOfYear` `21-decapitalize` `22-deepFlatten` `23-default` `24-defer` `25-degreesToRads` `26-difference` `27-differenceBy` `28-differenceWith` `29-digitize` `30-distance` `31-DropLeft` `32-dropRight` `33-dropRightWhile` `34-dropWhile` `35-elementContains` `36-Filter Duplicate Elements` `37-findKey` `38-findLast` `39-flatten` `40-forEachRight` `41-forOwn` `42-functionName` `43-Get Time From Date` `44-Get Days Between Dates` `45-getStyle` `46-getType` `47-hasClass` `48-head` `49-hide` `50-httpsRedirect` `51-indexOfAll` `52-initial` `53-insertAfter` `54-insertBefore` `55-intersection` `56-intersectionBy` `57-intersectionWith` `58-is` `59-isAfterDate` `60-isAnagram` `61-isArrayLike` `62-isBeforeDate` `63-isBoolean` `64-isBrowser` `65-isBrowserTabFocused` `66-isLowerCase` `67-isNil` `68-isNull` `69-isNumber` `70-isObject` `71-isObjectLike` `72-isPlainObject` `73-isPromiseLike` `74-isSameDate` `75-isString` `76-isSymbol` `77-isUndefined` `78-isUpperCase` `79-isValidJSON` `80-last` `81-matches` `82-maxDate` `83-maxN` `84-minDate` `85-minN` `86-negate` `87-nodeListToArray` `88-pad` `89-radsToDegrees` `90-Random Hexadecimal Color Code` `91-randomIntArrayInRange` `92-randomIntegerInRange` `93-randomNumberInRange` `94-readFileLines` `95-Redirect to a URL` `96-reverse` `97-round` `98-runPromisesInSeries` `99-sample` `100-sampleSize` `101-scrollToTop` `102-serializeCookie` `103-setStyle` `104-shallowClone` `105-show` `106-shuffle` `107-similarity` `108-sleep` `109-smoothScroll` `110-sortCharactersInString` `111-splitLines` `112-stripHTMLTags` `113-sum` `114-tail` `115-take` `116-takeRight` `117-timeTaken` `118-times` `119-toCurrency` `120-toDecimalMark` `121-toggleClass` `122-tomorrow` `123-unfold` `124-union` `125-uniqueElements` `126-validateNumber` `127-words`</div> | <div align="center">`fs` `traverse`</div> | <div align="center">`array` `basic` `bom` `cast` `class` `console` `date` `destruct` `dom` `func` `gen` `hybrid` `math` `mixte` `module` `object` `regex` `spread` `string` `struct`</div> |
+| JavaScript | <div align="center">`array-1-all` `2-allEqual` `3-approximatelyEqual` `4-arrayToCSV` `5-arrayToHtmlList` `6-attempt` `7-average` `8-averageBy` `9-bifurcate` `10-bifurcateBy` `11-bottomVisible` `12-byteSize` `13-capitalize` `14-capitalizeEveryWord` `15-castArray` `16-compact` `17-countOccurrences` `18-createDirIfNotExists` `19-currentURL` `20-dayOfYear` `21-decapitalize` `22-deepFlatten` `23-default` `24-defer` `25-degreesToRads` `26-difference` `27-differenceBy` `28-differenceWith` `29-digitize` `30-distance` `31-DropLeft` `32-dropRight` `33-dropRightWhile` `34-dropWhile` `35-elementContains` `36-Filter Duplicate Elements` `37-findKey` `38-findLast` `39-flatten` `40-forEachRight` `41-forOwn` `42-functionName` `43-Get Time From Date` `44-Get Days Between Dates` `45-getStyle` `46-getType` `47-hasClass` `48-head` `49-hide` `50-httpsRedirect` `51-indexOfAll` `52-initial` `53-insertAfter` `54-insertBefore` `55-intersection` `56-intersectionBy` `57-intersectionWith` `58-is` `59-isAfterDate` `60-isAnagram` `61-isArrayLike` `62-isBeforeDate` `63-isBoolean` `64-isBrowser` `65-isBrowserTabFocused` `66-isLowerCase` `67-isNil` `68-isNull` `69-isNumber` `70-isObject` `71-isObjectLike` `72-isPlainObject` `73-isPromiseLike` `74-isSameDate` `75-isString` `76-isSymbol` `77-isUndefined` `78-isUpperCase` `79-isValidJSON` `80-last` `81-matches` `82-maxDate` `83-maxN` `84-minDate` `85-minN` `86-negate` `87-nodeListToArray` `88-pad` `89-radsToDegrees` `90-Random Hexadecimal Color Code` `91-randomIntArrayInRange` `92-randomIntegerInRange` `93-randomNumberInRange` `94-readFileLines` `95-Redirect to a URL` `96-reverse` `97-round` `98-runPromisesInSeries` `99-sample` `100-sampleSize` `101-scrollToTop` `102-serializeCookie` `103-setStyle` `104-shallowClone` `105-show` `106-shuffle` `107-similarity` `108-sleep` `109-smoothScroll` `110-sortCharactersInString` `111-splitLines` `112-stripHTMLTags` `113-sum` `114-tail` `115-take` `116-takeRight` `117-timeTaken` `118-times` `119-toCurrency` `120-toDecimalMark` `121-toggleClass` `122-tomorrow` `123-unfold` `124-union` `125-uniqueElements` `126-validateNumber` `127-words` `128-getES6moduleSyntaxBySource` `129-concatJSONsourcesToOneFile`</div> | <div align="center">`fs` `traverse`</div> | <div align="center">`array` `basic` `bom` `cast` `class` `console` `date` `destruct` `dom` `func` `gen` `hybrid` `math` `mixte` `module` `object` `regex` `spread` `string` `struct`</div> |
 | Python | <div align="center"> n/a </div> | <div align="center"> n/a </div> | <div align="center"> n/a </div> |
 | React | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
 | Shell Script | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
@@ -2835,7 +2835,7 @@ ${1:array_var}.shift(${2:e})
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-1-all</strong>
+<strong>bbeo-js-pattern-array-1-all</strong>
 </td>
 <td>
 
@@ -5340,6 +5340,67 @@ words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 <td>
 
 >[pattern]: This snippet converts a string into an array of words.
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-pattern-128-getES6moduleSyntaxBySource</strong>
+</td>
+<td>
+
+```js
+export function getES6moduleSyntaxBySource(source, extension) {
+	const fixVarName = varName => varName.replace(/-/g, '_');
+	const dropRight = (arr, n = 1) => arr.slice(0, -n); 
+	let sourceList = fsReadDir(source);
+	let sourceES6 = [];
+	sourceList.forEach(source => {
+		if (source.endsWith(extension)) {
+			sourceES6.push(dropRight(source, 3));
+		}
+	});
+	return sourceES6.map(
+		source => `import { ${fixVarName(source)} } from './${source}.js';`,
+	);
+}
+```
+</td>
+<td>
+
+>[pattern]: Get all ES6 modules syntax from the source directory
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-pattern-129-concatJSONsourcesToOneFile</strong>
+</td>
+<td>
+
+```js
+export function concatJSONsourcesToOneFile(sourcesList, distPath) {
+	const refactorSourceList = sourceList => {
+		let objRefactored = {};
+		sourceList.forEach(source => {
+			objRefactored = { ...objRefactored, ...source };
+		});
+		return objRefactored;
+	};
+
+	const JSONexportation = (sourceList, distPath) => {
+		fs.writeFileSync(distPath, JSON.stringify(sourceList), 'utf8', err => {
+			console.log(err ? err : 'The file was saved!');
+		});
+	};
+
+	JSONexportation(refactorSourceList(sourcesList), distPath);
+}
+```
+</td>
+<td>
+
+>[pattern]: Concat & export all external JSON sources to one JSON file
 </td>
 </tr>
 
