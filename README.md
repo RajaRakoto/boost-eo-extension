@@ -104,7 +104,7 @@ grunt compress-all
 
 | Languages | Patterns | Libraries | Snippets |
 | --- | --- | --- | --- |
-| JavaScript | <div align="center">`array-1-all` `array-2-allEqual` `math-3-approximatelyEqual` `cast-4-arrayToCSV` `cast-5-arrayToHtmlList` `func-6-attempt` `array-7-average` `mixte-8-averageBy` `array-9-bifurcate` `array-10-bifurcateBy` `dom-11-bottomVisible` `cast-12-byteSize` `string-13-capitalize` `string-14-capitalizeEveryWord` `cast-15-castArray` `array-16-compact` `array-17-countOccurrences` `lib-18-createDirIfNotExists` `bom-19-currentURL` `date-20-dayOfYear` `string-21-decapitalize` `array-22-deepFlatten` `object-23-default` `func-24-defer` `cast-25-degreesToRads` `array-26-difference` `mixte-27-differenceBy` `array-28-differenceWith` `cast-29-digitize` `math-30-distance` `array-31-DropLeft` `array-32-dropRight` `array-33-dropRightWhile` `array-34-dropWhile` `dom-35-elementContains` `array-36-Filter Duplicate Elements` `object-37-findKey` `array-38-findLast` `array-39-flatten` `array-40-forEachRight` `object-41-forOwn` `func-42-functionName` `date-43-Get Time From Date` `date-44-Get Days Between Dates` `dom-45-getStyle` `test-46-getType` `dom-47-hasClass` `48-head` `49-hide` `50-httpsRedirect` `51-indexOfAll` `52-initial` `53-insertAfter` `54-insertBefore` `55-intersection` `56-intersectionBy` `57-intersectionWith` `58-is` `59-isAfterDate` `60-isAnagram` `61-isArrayLike` `62-isBeforeDate` `63-isBoolean` `64-isBrowser` `65-isBrowserTabFocused` `66-isLowerCase` `67-isNil` `68-isNull` `69-isNumber` `70-isObject` `71-isObjectLike` `72-isPlainObject` `73-isPromiseLike` `74-isSameDate` `75-isString` `76-isSymbol` `77-isUndefined` `78-isUpperCase` `79-isValidJSON` `80-last` `81-matches` `82-maxDate` `83-maxN` `84-minDate` `85-minN` `86-negate` `87-nodeListToArray` `88-pad` `89-radsToDegrees` `90-Random Hexadecimal Color Code` `91-randomIntArrayInRange` `92-randomIntegerInRange` `93-randomNumberInRange` `94-readFileLines` `95-Redirect to a URL` `96-reverse` `97-round` `98-runPromisesInSeries` `99-sample` `100-sampleSize` `101-scrollToTop` `102-serializeCookie` `103-setStyle` `104-shallowClone` `105-show` `106-shuffle` `107-similarity` `108-sleep` `109-smoothScroll` `110-sortCharactersInString` `111-splitLines` `112-stripHTMLTags` `113-sum` `114-tail` `115-take` `116-takeRight` `117-timeTaken` `118-times` `119-toCurrency` `120-toDecimalMark` `121-toggleClass` `122-tomorrow` `123-unfold` `124-union` `125-uniqueElements` `126-validateNumber` `127-words` `128-getES6moduleSyntaxBySource` `129-concatJSONsourcesToOneFile`</div> | <div align="center">`fs` `traverse`</div> | <div align="center">`array` `basic` `bom` `cast` `class` `console` `date` `destruct` `dom` `func` `gen` `hybrid` `math` `mixte` `module` `object` `regex` `spread` `string` `struct`</div> |
+| JavaScript | <div align="center">`array-1-all` `array-2-allEqual` `math-3-approximatelyEqual` `cast-4-arrayToCSV` `cast-5-arrayToHtmlList` `func-6-attempt` `array-7-average` `mixte-8-averageBy` `array-9-bifurcate` `array-10-bifurcateBy` `dom-11-bottomVisible` `cast-12-byteSize` `string-13-capitalize` `string-14-capitalizeEveryWord` `cast-15-castArray` `array-16-compact` `array-17-countOccurrences` `lib-18-createDirIfNotExists` `bom-19-currentURL` `date-20-dayOfYear` `string-21-decapitalize` `array-22-deepFlatten` `object-23-default` `func-24-defer` `cast-25-degreesToRads` `array-26-difference` `mixte-27-differenceBy` `array-28-differenceWith` `cast-29-digitize` `math-30-distance` `array-31-DropLeft` `array-32-dropRight` `array-33-dropRightWhile` `array-34-dropWhile` `dom-35-elementContains` `array-36-Filter Duplicate Elements` `object-37-findKey` `array-38-findLast` `array-39-flatten` `array-40-forEachRight` `object-41-forOwn` `func-42-functionName` `date-43-Get Time From Date` `date-44-Get Days Between Dates` `dom-45-getStyle` `test-46-getType` `dom-47-hasClass` `array-48-head` `dom-49-hide` `bom-50-httpsRedirect` `array-51-indexOfAll` `array-52-initial` `dom-53-insertAfter` `dom-54-insertBefore` `array-55-intersection` `array-56-intersectionBy` `array-57-intersectionWith` `test-58-is` `test-59-isAfterDate` `test-60-isAnagram` `test-61-isArrayLike` `test-62-isBeforeDate` `test-63-isBoolean` `test-64-isBrowser` `test-65-isBrowserTabFocused` `test-66-isLowerCase` `test-67-isNil` `test-68-isNull` `test-69-isNumber` `test-70-isObject` `test-71-isObjectLike` `test-72-isPlainObject` `test-73-isPromiseLike` `test-74-isSameDate` `test-75-isString` `test-76-isSymbol` `test-77-isUndefined` `test-78-isUpperCase` `test-79-isValidJSON` `array-80-last` `object-81-matches` `date-82-maxDate` `array-83-maxN` `date-84-minDate` `array-85-minN` `func-86-negate` `dom-87-nodeListToArray` `string-88-pad` `cast-89-radsToDegrees` `gen-90-randomHexColorCode` `gen-91-randomIntArrayInRange` `gen-92-randomIntegerInRange` `gen-93-randomNumberInRange` `lib-94-readFileLines` `bom-95-redirect` `string-96-reverse` `math-97-round` `promise-98-runPromisesInSeries` `array-99-sample` `array-100-sampleSize` `dom-101-scrollToTop` `string-102-serializeCookie` `dom-103-setStyle` `gen-104-shallowClone` `dom-105-show` `array-106-shuffle` `array-107-similarity` `promise-108-sleep` `dom-109-smoothScroll` `string-110-sortCharactersInString` `cast-111-splitLines` `dom-112-stripHTMLTags` `array-113-sum` `array-114-tail` `array-115-take` `array-116-takeRight` `func-117-timeTaken` `func-118-times` `cast-119-toCurrency` `cast-120-toDecimalMark` `dom-121-toggleClass` `date-122-tomorrow` `func-123-unfold` `array-124-union` `array-125-uniqueElements` `test-126-validateNumber` `cast-127-words` `gen-128-getES6moduleSyntaxBySource` `gen-129-concatJSONsourcesToOneFile`</div> | <div align="center">`fs` `traverse`</div> | <div align="center">`array` `basic` `bom` `cast` `class` `console` `date` `destruct` `dom` `func` `gen` `hybrid` `math` `mixte` `module` `object` `regex` `spread` `string` `struct`</div> |
 | Python | <div align="center"> n/a </div> | <div align="center"> n/a </div> | <div align="center"> n/a </div> |
 | React | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
 | Shell Script | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
@@ -115,7 +115,7 @@ grunt compress-all
 
 | Languages | Patterns |
 | --- | --- |
-| JavaScript | <div align='center'>array - object - func - test - math - dom - bom - date - cast - mixte - hybrid - string</div> |
+| JavaScript | <div align='center'>array - object - func - test - math - dom - bom - date - cast - mixte - hybrid - string - gen (tools) - lib - promise</div> |
 | Python | <div align='center'>-</div> |
 | React | <div align='center'>-</div> |
 | Shell Script | <div align='center'>-</div> |
@@ -3756,7 +3756,7 @@ hasClass(document.querySelector('p.special'), 'special'); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-48-head</strong>
+<strong>bbeo-js-pattern-array-48-head</strong>
 </td>
 <td>
 
@@ -3774,7 +3774,7 @@ head([1, 2, 3]); // 1
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-49-hide</strong>
+<strong>bbeo-js-pattern-dom-49-hide</strong>
 </td>
 <td>
 
@@ -3792,7 +3792,7 @@ hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-50-httpsRedirect</strong>
+<strong>bbeo-js-pattern-bom-50-httpsRedirect</strong>
 </td>
 <td>
 
@@ -3812,7 +3812,7 @@ httpsRedirect(); // If you are on http://mydomain.com, you are redirected to htt
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-51-indexOfAll</strong>
+<strong>bbeo-js-pattern-array-51-indexOfAll</strong>
 </td>
 <td>
 
@@ -3831,7 +3831,7 @@ indexOfAll([1, 2, 3], 4); // []
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-52-initial</strong>
+<strong>bbeo-js-pattern-array-52-initial</strong>
 </td>
 <td>
 
@@ -3850,7 +3850,7 @@ initial([1, 2, 3]); // [1,2]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-53-insertAfter</strong>
+<strong>bbeo-js-pattern-dom-53-insertAfter</strong>
 </td>
 <td>
 
@@ -3868,7 +3868,7 @@ insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-54-insertBefore</strong>
+<strong>bbeo-js-pattern-dom-54-insertBefore</strong>
 </td>
 <td>
 
@@ -3886,7 +3886,7 @@ insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p>
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-55-intersection</strong>
+<strong>bbeo-js-pattern-array-55-intersection</strong>
 </td>
 <td>
 
@@ -3907,7 +3907,7 @@ intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-56-intersectionBy</strong>
+<strong>bbeo-js-pattern-array-56-intersectionBy</strong>
 </td>
 <td>
 
@@ -3928,7 +3928,7 @@ intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-57-intersectionWith</strong>
+<strong>bbeo-js-pattern-array-57-intersectionWith</strong>
 </td>
 <td>
 
@@ -3946,7 +3946,7 @@ intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) 
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-58-is</strong>
+<strong>bbeo-js-pattern-test-58-is</strong>
 </td>
 <td>
 
@@ -3976,7 +3976,7 @@ is(Boolean, new Boolean(true)); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-59-isAfterDate</strong>
+<strong>bbeo-js-pattern-test-59-isAfterDate</strong>
 </td>
 <td>
 
@@ -3994,7 +3994,7 @@ isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-60-isAnagram</strong>
+<strong>bbeo-js-pattern-test-60-isAnagram</strong>
 </td>
 <td>
 
@@ -4021,7 +4021,7 @@ isAnagram('iceman', 'cinema'); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-61-isArrayLike</strong>
+<strong>bbeo-js-pattern-test-61-isArrayLike</strong>
 </td>
 <td>
 
@@ -4041,7 +4041,7 @@ isArrayLike(null); // false
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-62-isBeforeDate</strong>
+<strong>bbeo-js-pattern-test-62-isBeforeDate</strong>
 </td>
 <td>
 
@@ -4059,7 +4059,7 @@ isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-63-isBoolean</strong>
+<strong>bbeo-js-pattern-test-63-isBoolean</strong>
 </td>
 <td>
 
@@ -4078,7 +4078,7 @@ isBoolean(false); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-64-isBrowser</strong>
+<strong>bbeo-js-pattern-test-64-isBrowser</strong>
 </td>
 <td>
 
@@ -4097,7 +4097,7 @@ isBrowser(); // false (Node)
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-65-isBrowserTabFocused</strong>
+<strong>bbeo-js-pattern-test-65-isBrowserTabFocused</strong>
 </td>
 <td>
 
@@ -4115,7 +4115,7 @@ isBrowserTabFocused(); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-66-isLowerCase</strong>
+<strong>bbeo-js-pattern-test-66-isLowerCase</strong>
 </td>
 <td>
 
@@ -4135,7 +4135,7 @@ isLowerCase('Ab4'); // false
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-67-isNil</strong>
+<strong>bbeo-js-pattern-test-67-isNil</strong>
 </td>
 <td>
 
@@ -4154,7 +4154,7 @@ isNil(undefined); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-68-isNull</strong>
+<strong>bbeo-js-pattern-test-68-isNull</strong>
 </td>
 <td>
 
@@ -4172,7 +4172,7 @@ isNull(null); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-69-isNumber</strong>
+<strong>bbeo-js-pattern-test-69-isNumber</strong>
 </td>
 <td>
 
@@ -4191,7 +4191,7 @@ isNumber(1); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-70-isObject</strong>
+<strong>bbeo-js-pattern-test-70-isObject</strong>
 </td>
 <td>
 
@@ -4214,7 +4214,7 @@ isObject(true); // false
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-71-isObjectLike</strong>
+<strong>bbeo-js-pattern-test-71-isObjectLike</strong>
 </td>
 <td>
 
@@ -4235,7 +4235,7 @@ isObjectLike(null); // false
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-72-isPlainObject</strong>
+<strong>bbeo-js-pattern-test-72-isPlainObject</strong>
 </td>
 <td>
 
@@ -4254,7 +4254,7 @@ isPlainObject(new Map()); // false
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-73-isPromiseLike</strong>
+<strong>bbeo-js-pattern-test-73-isPromiseLike</strong>
 </td>
 <td>
 
@@ -4281,7 +4281,7 @@ isPromiseLike({}); // false
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-74-isSameDate</strong>
+<strong>bbeo-js-pattern-test-74-isSameDate</strong>
 </td>
 <td>
 
@@ -4299,7 +4299,7 @@ isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-75-isString</strong>
+<strong>bbeo-js-pattern-test-75-isString</strong>
 </td>
 <td>
 
@@ -4317,7 +4317,7 @@ isString('10'); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-76-isSymbol</strong>
+<strong>bbeo-js-pattern-test-76-isSymbol</strong>
 </td>
 <td>
 
@@ -4335,7 +4335,7 @@ isSymbol(Symbol('x')); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-77-isUndefined</strong>
+<strong>bbeo-js-pattern-test-77-isUndefined</strong>
 </td>
 <td>
 
@@ -4353,7 +4353,7 @@ isUndefined(undefined); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-78-isUpperCase</strong>
+<strong>bbeo-js-pattern-test-78-isUpperCase</strong>
 </td>
 <td>
 
@@ -4373,7 +4373,7 @@ isLowerCase('aB4'); // false
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-79-isValidJSON</strong>
+<strong>bbeo-js-pattern-test-79-isValidJSON</strong>
 </td>
 <td>
 
@@ -4400,7 +4400,7 @@ isValidJSON(null); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-80-last</strong>
+<strong>bbeo-js-pattern-array-80-last</strong>
 </td>
 <td>
 
@@ -4418,7 +4418,7 @@ last([1, 2, 3]); // 3
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-81-matches</strong>
+<strong>bbeo-js-pattern-object-81-matches</strong>
 </td>
 <td>
 
@@ -4438,7 +4438,7 @@ matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); 
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-82-maxDate</strong>
+<strong>bbeo-js-pattern-date-82-maxDate</strong>
 </td>
 <td>
 
@@ -4462,7 +4462,7 @@ maxDate(array); // 2018-03-11T22:00:00.000Z
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-83-maxN</strong>
+<strong>bbeo-js-pattern-array-83-maxN</strong>
 </td>
 <td>
 
@@ -4481,7 +4481,7 @@ maxN([1, 2, 3], 2); // [3,2]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-84-minDate</strong>
+<strong>bbeo-js-pattern-date-84-minDate</strong>
 </td>
 <td>
 
@@ -4505,7 +4505,7 @@ minDate(array); // 2016-01-08T22:00:00.000Z
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-85-minN</strong>
+<strong>bbeo-js-pattern-array-85-minN</strong>
 </td>
 <td>
 
@@ -4524,7 +4524,7 @@ minN([1, 2, 3], 2); // [1,2]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-86-negate</strong>
+<strong>bbeo-js-pattern-func-86-negate</strong>
 </td>
 <td>
 
@@ -4542,7 +4542,7 @@ const negate = func => (...args) => !func(...args);
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-87-nodeListToArray</strong>
+<strong>bbeo-js-pattern-dom-87-nodeListToArray</strong>
 </td>
 <td>
 
@@ -4560,7 +4560,7 @@ nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-88-pad</strong>
+<strong>bbeo-js-pattern-string-88-pad</strong>
 </td>
 <td>
 
@@ -4581,7 +4581,7 @@ pad('foobar', 3); // 'foobar'
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-89-radsToDegrees</strong>
+<strong>bbeo-js-pattern-cast-89-radsToDegrees</strong>
 </td>
 <td>
 
@@ -4599,7 +4599,7 @@ radsToDegrees(Math.PI / 2); // 90
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-90-Random Hexadecimal Color Code</strong>
+<strong>bbeo-js-pattern-gen-90-randomHexColorCode</strong>
 </td>
 <td>
 
@@ -4620,7 +4620,7 @@ randomHexColorCode(); // "#e34155"
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-91-randomIntArrayInRange</strong>
+<strong>bbeo-js-pattern-gen-91-randomIntArrayInRange</strong>
 </td>
 <td>
 
@@ -4639,7 +4639,7 @@ randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-92-randomIntegerInRange</strong>
+<strong>bbeo-js-pattern-gen-92-randomIntegerInRange</strong>
 </td>
 <td>
 
@@ -4657,7 +4657,7 @@ randomIntegerInRange(0, 5); // 3
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-93-randomNumberInRange</strong>
+<strong>bbeo-js-pattern-gen-93-randomNumberInRange</strong>
 </td>
 <td>
 
@@ -4675,7 +4675,7 @@ randomNumberInRange(2, 10); // 6.0211363285087005
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-94-readFileLines</strong>
+<strong>bbeo-js-pattern-lib-94-readFileLines</strong>
 </td>
 <td>
 
@@ -4699,7 +4699,7 @@ console.log(arr); // ['line1', 'line2', 'line3']
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-95-Redirect to a URL</strong>
+<strong>bbeo-js-pattern-bom-95-redirect</strong>
 </td>
 <td>
 
@@ -4718,7 +4718,7 @@ redirect('https://google.com');
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-96-reverse</strong>
+<strong>bbeo-js-pattern-string-96-reverse</strong>
 </td>
 <td>
 
@@ -4736,7 +4736,7 @@ reverseString('foobar'); // 'raboof'
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-97-round</strong>
+<strong>bbeo-js-pattern-math-97-round</strong>
 </td>
 <td>
 
@@ -4754,7 +4754,7 @@ round(1.005, 2); // 1.01
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-98-runPromisesInSeries</strong>
+<strong>bbeo-js-pattern-promise-98-runPromisesInSeries</strong>
 </td>
 <td>
 
@@ -4774,7 +4774,7 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-99-sample</strong>
+<strong>bbeo-js-pattern-array-99-sample</strong>
 </td>
 <td>
 
@@ -4792,7 +4792,7 @@ sample([3, 7, 9, 11]); // 9
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-100-sampleSize</strong>
+<strong>bbeo-js-pattern-array-100-sampleSize</strong>
 </td>
 <td>
 
@@ -4818,7 +4818,7 @@ sampleSize([1, 2, 3], 4); // [2,3,1]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-101-scrollToTop</strong>
+<strong>bbeo-js-pattern-dom-101-scrollToTop</strong>
 </td>
 <td>
 
@@ -4842,7 +4842,7 @@ scrollToTop();
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-102-serializeCookie</strong>
+<strong>bbeo-js-pattern-string-102-serializeCookie</strong>
 </td>
 <td>
 
@@ -4860,7 +4860,7 @@ serializeCookie('foo', 'bar'); // 'foo=bar'
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-103-setStyle</strong>
+<strong>bbeo-js-pattern-dom-103-setStyle</strong>
 </td>
 <td>
 
@@ -4879,7 +4879,7 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-104-shallowClone</strong>
+<strong>bbeo-js-pattern-gen-104-shallowClone</strong>
 </td>
 <td>
 
@@ -4898,7 +4898,7 @@ const b = shallowClone(a); // a !== b
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-105-show</strong>
+<strong>bbeo-js-pattern-dom-105-show</strong>
 </td>
 <td>
 
@@ -4916,7 +4916,7 @@ show(...document.querySelectorAll('img')); // Shows all <img> elements on the pa
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-106-shuffle</strong>
+<strong>bbeo-js-pattern-array-106-shuffle</strong>
 </td>
 <td>
 
@@ -4942,12 +4942,14 @@ shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-107-similarity</strong>
+<strong>bbeo-js-pattern-array-107-similarity</strong>
 </td>
 <td>
 
 ```js
-https://medium.com/better-programming/127-helpful-javascript-snippets-you-can-learn-in-30-seconds-or-less-part-6-of-6-862a6403d334
+const similarity = (arr, values) => arr.filter(v => values.includes(v))
+
+similarity([1, 2, 3], [1, 2, 4]); // [1, 2]
 ```
 </td>
 <td>
@@ -4958,7 +4960,7 @@ https://medium.com/better-programming/127-helpful-javascript-snippets-you-can-le
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-108-sleep</strong>
+<strong>bbeo-js-pattern-promise-108-sleep</strong>
 </td>
 <td>
 
@@ -4980,7 +4982,7 @@ async function sleepyWork() {
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-109-smoothScroll</strong>
+<strong>bbeo-js-pattern-dom-109-smoothScroll</strong>
 </td>
 <td>
 
@@ -5002,7 +5004,7 @@ smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class o
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-110-sortCharactersInString</strong>
+<strong>bbeo-js-pattern-string-110-sortCharactersInString</strong>
 </td>
 <td>
 
@@ -5020,7 +5022,7 @@ sortCharactersInString('cabbage'); // 'aabbceg'
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-111-splitLines</strong>
+<strong>bbeo-js-pattern-cast-111-splitLines</strong>
 </td>
 <td>
 
@@ -5038,7 +5040,7 @@ splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline',
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-112-stripHTMLTags</strong>
+<strong>bbeo-js-pattern-dom-112-stripHTMLTags</strong>
 </td>
 <td>
 
@@ -5056,7 +5058,7 @@ stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-113-sum</strong>
+<strong>bbeo-js-pattern-array-113-sum</strong>
 </td>
 <td>
 
@@ -5075,7 +5077,7 @@ sum(...[1, 2, 3, 4]); // 10
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-114-tail</strong>
+<strong>bbeo-js-pattern-array-114-tail</strong>
 </td>
 <td>
 
@@ -5094,7 +5096,7 @@ tail([1]); // [1]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-115-take</strong>
+<strong>bbeo-js-pattern-array-115-take</strong>
 </td>
 <td>
 
@@ -5113,7 +5115,7 @@ take([1, 2, 3], 0); // []
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-116-takeRight</strong>
+<strong>bbeo-js-pattern-array-116-takeRight</strong>
 </td>
 <td>
 
@@ -5132,7 +5134,7 @@ takeRight([1, 2, 3]); // [3]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-117-timeTaken</strong>
+<strong>bbeo-js-pattern-func-117-timeTaken</strong>
 </td>
 <td>
 
@@ -5155,7 +5157,7 @@ timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-118-times</strong>
+<strong>bbeo-js-pattern-func-118-times</strong>
 </td>
 <td>
 
@@ -5178,7 +5180,7 @@ console.log(output); // 01234
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-119-toCurrency</strong>
+<strong>bbeo-js-pattern-cast-119-toCurrency</strong>
 </td>
 <td>
 
@@ -5201,7 +5203,7 @@ toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Ja
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-120-toDecimalMark</strong>
+<strong>bbeo-js-pattern-cast-120-toDecimalMark</strong>
 </td>
 <td>
 
@@ -5219,7 +5221,7 @@ toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-121-toggleClass</strong>
+<strong>bbeo-js-pattern-dom-121-toggleClass</strong>
 </td>
 <td>
 
@@ -5237,7 +5239,7 @@ toggleClass(document.querySelector('p.special'), 'special'); // The paragraph wi
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-122-tomorrow</strong>
+<strong>bbeo-js-pattern-date-122-tomorrow</strong>
 </td>
 <td>
 
@@ -5259,7 +5261,7 @@ tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-123-unfold</strong>
+<strong>bbeo-js-pattern-func-123-unfold</strong>
 </td>
 <td>
 
@@ -5283,7 +5285,7 @@ unfold(f, 10); // [-10, -20, -30, -40, -50]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-124-union</strong>
+<strong>bbeo-js-pattern-array-124-union</strong>
 </td>
 <td>
 
@@ -5301,7 +5303,7 @@ union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-125-uniqueElements</strong>
+<strong>bbeo-js-pattern-array-125-uniqueElements</strong>
 </td>
 <td>
 
@@ -5319,7 +5321,7 @@ uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-126-validateNumber</strong>
+<strong>bbeo-js-pattern-test-126-validateNumber</strong>
 </td>
 <td>
 
@@ -5337,7 +5339,7 @@ validateNumber('10'); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-127-words</strong>
+<strong>bbeo-js-pattern-cast-127-words</strong>
 </td>
 <td>
 
@@ -5356,7 +5358,7 @@ words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-128-getES6moduleSyntaxBySource</strong>
+<strong>bbeo-js-pattern-gen-128-getES6moduleSyntaxBySource</strong>
 </td>
 <td>
 
@@ -5385,7 +5387,7 @@ export function getES6moduleSyntaxBySource(source, extension) {
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-129-concatJSONsourcesToOneFile</strong>
+<strong>bbeo-js-pattern-gen-129-concatJSONsourcesToOneFile</strong>
 </td>
 <td>
 
