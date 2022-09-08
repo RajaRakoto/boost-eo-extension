@@ -446,7 +446,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet checks whether the parent element contains the child.':
 		{
-			prefix: 'bbeo-js-pattern-35-elementContains',
+			prefix: 'bbeo-js-pattern-dom-35-elementContains',
 			body: [
 				'const elementContains = (parent, child) => parent !== child && parent.contains(child);',
 				'',
@@ -458,7 +458,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet removes duplicate values in an array.': {
-		prefix: 'bbeo-js-pattern-36-Filter Duplicate Elements',
+		prefix: 'bbeo-js-pattern-array-36-Filter Duplicate Elements',
 		body: [
 			'const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexOf(i));',
 			'',
@@ -470,7 +470,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns the first key that satisfies a given function.':
 		{
-			prefix: 'bbeo-js-pattern-37-findKey',
+			prefix: 'bbeo-js-pattern-object-37-findKey',
 			body: [
 				'const findKey = (obj, fn) => Object.keys(obj).find(key => fn(obj[key], key, obj));',
 				'',
@@ -489,7 +489,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet returns the last element for which a given function returns a truthy value.':
 		{
-			prefix: 'bbeo-js-pattern-38-findLast',
+			prefix: 'bbeo-js-pattern-array-38-findLast',
 			body: [
 				'const findLast = (arr, fn) => arr.filter(fn).pop();',
 				'',
@@ -501,7 +501,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet flattens an array up to a specified depth using recursion.':
 		{
-			prefix: 'bbeo-js-pattern-39-flatten',
+			prefix: 'bbeo-js-pattern-array-39-flatten',
 			body: [
 				'const flatten = (arr, depth = 1) =>',
 				'  arr.reduce((a, v) => a.concat(depth > 1 && Array.isArray(v) ? flatten(v, depth - 1) : v), []);',
@@ -515,7 +515,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet executes a function for each element of an array starting from the array’s last element.':
 		{
-			prefix: 'bbeo-js-pattern-40-forEachRight',
+			prefix: 'bbeo-js-pattern-array-40-forEachRight',
 			body: [
 				'const forEachRight = (arr, callback) =>',
 				'  arr',
@@ -531,7 +531,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet iterates on each property of an object and iterates a callback for each one respectively.':
 		{
-			prefix: 'bbeo-js-pattern-41-forOwn',
+			prefix: 'bbeo-js-pattern-object-41-forOwn',
 			body: [
 				'const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, obj));',
 				"forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1",
@@ -541,7 +541,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet prints the name of a function into the console.': {
-		prefix: 'bbeo-js-pattern-42-functionName',
+		prefix: 'bbeo-js-pattern-func-42-functionName',
 		body: [
 			'const functionName = fn => (console.debug(fn.name), fn);',
 			'',
@@ -553,7 +553,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to get the time from a object as a string.':
 		{
-			prefix: 'bbeo-js-pattern-43-Get Time From Date',
+			prefix: 'bbeo-js-pattern-date-43-Get Time From Date',
 			body: [
 				'const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);',
 				'',
@@ -565,7 +565,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to find the difference in days between two dates.':
 		{
-			prefix: 'bbeo-js-pattern-44-Get Days Between Dates',
+			prefix: 'bbeo-js-pattern-date-44-Get Days Between Dates',
 			body: [
 				'const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>',
 				'  (dateFinal - dateInitial) / (1000 * 3600 * 24);',
@@ -578,7 +578,7 @@ export const js_patterns = {
 
 	'[pattern]: This snippet can be used to get the value of a CSS rule for a particular element.':
 		{
-			prefix: 'bbeo-js-pattern-45-getStyle',
+			prefix: 'bbeo-js-pattern-dom-45-getStyle',
 			body: [
 				'const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];',
 				'',
@@ -589,7 +589,7 @@ export const js_patterns = {
 		},
 
 	'[pattern]: This snippet can be used to get the type of a value.': {
-		prefix: 'bbeo-js-pattern-46-getType',
+		prefix: 'bbeo-js-pattern-test-46-getType',
 		body: [
 			'const getType = v =>',
 			"  v === undefined ? 'undefined' : v === null ? 'null' : v.constructor.name.toLowerCase();",
@@ -601,7 +601,7 @@ export const js_patterns = {
 	},
 
 	'[pattern]: This snippet checks whether an element has a particular class.': {
-		prefix: 'bbeo-js-pattern-47-hasClass',
+		prefix: 'bbeo-js-pattern-dom-47-hasClass',
 		body: [
 			'const hasClass = (el, className) => el.classList.contains(className);',
 			"hasClass(document.querySelector('p.special'), 'special'); // true",
