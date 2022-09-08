@@ -153,6 +153,21 @@ const listStatsDataTable = `
 | TypeScript | ${tsPatternsList} | ${none} | ${tsSnippetsList} |
 `;
 
+// generate patterns triggers categories lists
+const patternsTriggersListForJavascript =
+	"<div align='center'>" +
+	'array - object - func - test - math - dom - bom - date - cast - mixte - hybrid - string' +
+	'</div>';
+const patternsTriggersTable = `
+| Languages | Patterns |
+| --- | --- |
+| JavaScript | ${patternsTriggersListForJavascript} |
+| Python | ${none} |
+| React | ${none} |
+| Shell Script | ${none} |
+| TypeScript | ${none} |
+`;
+
 // all stats exportation
 export const stats = `
 
@@ -166,5 +181,7 @@ ${totalStatsDataTable}
 #### ◾ List stats
 ${listStatsDataTable}
 
-`;
+#### ◾ Patterns triggers categories
+${patternsTriggersTable}
 
+`;

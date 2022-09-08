@@ -104,11 +104,22 @@ grunt compress-all
 
 | Languages | Patterns | Libraries | Snippets |
 | --- | --- | --- | --- |
-| JavaScript | <div align="center">`array-1-all` `2-allEqual` `3-approximatelyEqual` `4-arrayToCSV` `5-arrayToHtmlList` `6-attempt` `7-average` `8-averageBy` `9-bifurcate` `10-bifurcateBy` `11-bottomVisible` `12-byteSize` `13-capitalize` `14-capitalizeEveryWord` `15-castArray` `16-compact` `17-countOccurrences` `18-createDirIfNotExists` `19-currentURL` `20-dayOfYear` `21-decapitalize` `22-deepFlatten` `23-default` `24-defer` `25-degreesToRads` `26-difference` `27-differenceBy` `28-differenceWith` `29-digitize` `30-distance` `31-DropLeft` `32-dropRight` `33-dropRightWhile` `34-dropWhile` `35-elementContains` `36-Filter Duplicate Elements` `37-findKey` `38-findLast` `39-flatten` `40-forEachRight` `41-forOwn` `42-functionName` `43-Get Time From Date` `44-Get Days Between Dates` `45-getStyle` `46-getType` `47-hasClass` `48-head` `49-hide` `50-httpsRedirect` `51-indexOfAll` `52-initial` `53-insertAfter` `54-insertBefore` `55-intersection` `56-intersectionBy` `57-intersectionWith` `58-is` `59-isAfterDate` `60-isAnagram` `61-isArrayLike` `62-isBeforeDate` `63-isBoolean` `64-isBrowser` `65-isBrowserTabFocused` `66-isLowerCase` `67-isNil` `68-isNull` `69-isNumber` `70-isObject` `71-isObjectLike` `72-isPlainObject` `73-isPromiseLike` `74-isSameDate` `75-isString` `76-isSymbol` `77-isUndefined` `78-isUpperCase` `79-isValidJSON` `80-last` `81-matches` `82-maxDate` `83-maxN` `84-minDate` `85-minN` `86-negate` `87-nodeListToArray` `88-pad` `89-radsToDegrees` `90-Random Hexadecimal Color Code` `91-randomIntArrayInRange` `92-randomIntegerInRange` `93-randomNumberInRange` `94-readFileLines` `95-Redirect to a URL` `96-reverse` `97-round` `98-runPromisesInSeries` `99-sample` `100-sampleSize` `101-scrollToTop` `102-serializeCookie` `103-setStyle` `104-shallowClone` `105-show` `106-shuffle` `107-similarity` `108-sleep` `109-smoothScroll` `110-sortCharactersInString` `111-splitLines` `112-stripHTMLTags` `113-sum` `114-tail` `115-take` `116-takeRight` `117-timeTaken` `118-times` `119-toCurrency` `120-toDecimalMark` `121-toggleClass` `122-tomorrow` `123-unfold` `124-union` `125-uniqueElements` `126-validateNumber` `127-words` `128-getES6moduleSyntaxBySource` `129-concatJSONsourcesToOneFile`</div> | <div align="center">`fs` `traverse`</div> | <div align="center">`array` `basic` `bom` `cast` `class` `console` `date` `destruct` `dom` `func` `gen` `hybrid` `math` `mixte` `module` `object` `regex` `spread` `string` `struct`</div> |
+| JavaScript | <div align="center">`array-1-all` `array-2-allEqual` `math-3-approximatelyEqual` `cast-4-arrayToCSV` `cast-5-arrayToHtmlList` `func-6-attempt` `array-7-average` `mixte-8-averageBy` `array-9-bifurcate` `array-10-bifurcateBy` `dom-11-bottomVisible` `cast-12-byteSize` `string-13-capitalize` `string-14-capitalizeEveryWord` `cast-15-castArray` `array-16-compact` `array-17-countOccurrences` `lib-18-createDirIfNotExists` `bom-19-currentURL` `date-20-dayOfYear` `string-21-decapitalize` `array-22-deepFlatten` `object-23-default` `func-24-defer` `cast-25-degreesToRads` `array-26-difference` `mixte-27-differenceBy` `array-28-differenceWith` `cast-29-digitize` `math-30-distance` `array-31-DropLeft` `array-32-dropRight` `array-33-dropRightWhile` `array-34-dropWhile` `dom-35-elementContains` `array-36-Filter Duplicate Elements` `object-37-findKey` `array-38-findLast` `array-39-flatten` `array-40-forEachRight` `object-41-forOwn` `func-42-functionName` `date-43-Get Time From Date` `date-44-Get Days Between Dates` `dom-45-getStyle` `test-46-getType` `dom-47-hasClass` `48-head` `49-hide` `50-httpsRedirect` `51-indexOfAll` `52-initial` `53-insertAfter` `54-insertBefore` `55-intersection` `56-intersectionBy` `57-intersectionWith` `58-is` `59-isAfterDate` `60-isAnagram` `61-isArrayLike` `62-isBeforeDate` `63-isBoolean` `64-isBrowser` `65-isBrowserTabFocused` `66-isLowerCase` `67-isNil` `68-isNull` `69-isNumber` `70-isObject` `71-isObjectLike` `72-isPlainObject` `73-isPromiseLike` `74-isSameDate` `75-isString` `76-isSymbol` `77-isUndefined` `78-isUpperCase` `79-isValidJSON` `80-last` `81-matches` `82-maxDate` `83-maxN` `84-minDate` `85-minN` `86-negate` `87-nodeListToArray` `88-pad` `89-radsToDegrees` `90-Random Hexadecimal Color Code` `91-randomIntArrayInRange` `92-randomIntegerInRange` `93-randomNumberInRange` `94-readFileLines` `95-Redirect to a URL` `96-reverse` `97-round` `98-runPromisesInSeries` `99-sample` `100-sampleSize` `101-scrollToTop` `102-serializeCookie` `103-setStyle` `104-shallowClone` `105-show` `106-shuffle` `107-similarity` `108-sleep` `109-smoothScroll` `110-sortCharactersInString` `111-splitLines` `112-stripHTMLTags` `113-sum` `114-tail` `115-take` `116-takeRight` `117-timeTaken` `118-times` `119-toCurrency` `120-toDecimalMark` `121-toggleClass` `122-tomorrow` `123-unfold` `124-union` `125-uniqueElements` `126-validateNumber` `127-words` `128-getES6moduleSyntaxBySource` `129-concatJSONsourcesToOneFile`</div> | <div align="center">`fs` `traverse`</div> | <div align="center">`array` `basic` `bom` `cast` `class` `console` `date` `destruct` `dom` `func` `gen` `hybrid` `math` `mixte` `module` `object` `regex` `spread` `string` `struct`</div> |
 | Python | <div align="center"> n/a </div> | <div align="center"> n/a </div> | <div align="center"> n/a </div> |
 | React | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
 | Shell Script | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
 | TypeScript | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
+
+
+#### ◾ Patterns triggers categories
+
+| Languages | Patterns |
+| --- | --- |
+| JavaScript | <div align='center'>array - object - func - test - math - dom - bom - date - cast - mixte - hybrid - string</div> |
+| Python | <div align='center'>-</div> |
+| React | <div align='center'>-</div> |
+| Shell Script | <div align='center'>-</div> |
+| TypeScript | <div align='center'>-</div> |
 
 
 
@@ -2854,7 +2865,7 @@ all([1, 2, 3]); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-2-allEqual</strong>
+<strong>bbeo-js-pattern-array-2-allEqual</strong>
 </td>
 <td>
 
@@ -2873,7 +2884,7 @@ allEqual([1, 1, 1, 1]); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-3-approximatelyEqual</strong>
+<strong>bbeo-js-pattern-math-3-approximatelyEqual</strong>
 </td>
 <td>
 
@@ -2891,7 +2902,7 @@ approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-4-arrayToCSV</strong>
+<strong>bbeo-js-pattern-cast-4-arrayToCSV</strong>
 </td>
 <td>
 
@@ -2911,7 +2922,7 @@ arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-5-arrayToHtmlList</strong>
+<strong>bbeo-js-pattern-cast-5-arrayToHtmlList</strong>
 </td>
 <td>
 
@@ -2933,7 +2944,7 @@ arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-6-attempt</strong>
+<strong>bbeo-js-pattern-func-6-attempt</strong>
 </td>
 <td>
 
@@ -2959,7 +2970,7 @@ if (elements instanceof Error) elements = []; // elements = []
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-7-average</strong>
+<strong>bbeo-js-pattern-array-7-average</strong>
 </td>
 <td>
 
@@ -2977,7 +2988,7 @@ average(1, 2, 3); // 2
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-8-averageBy</strong>
+<strong>bbeo-js-pattern-mixte-8-averageBy</strong>
 </td>
 <td>
 
@@ -2998,7 +3009,7 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-9-bifurcate</strong>
+<strong>bbeo-js-pattern-array-9-bifurcate</strong>
 </td>
 <td>
 
@@ -3017,7 +3028,7 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-10-bifurcateBy</strong>
+<strong>bbeo-js-pattern-array-10-bifurcateBy</strong>
 </td>
 <td>
 
@@ -3037,7 +3048,7 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-11-bottomVisible</strong>
+<strong>bbeo-js-pattern-dom-11-bottomVisible</strong>
 </td>
 <td>
 
@@ -3057,7 +3068,7 @@ bottomVisible(); // true
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-12-byteSize</strong>
+<strong>bbeo-js-pattern-cast-12-byteSize</strong>
 </td>
 <td>
 
@@ -3076,7 +3087,7 @@ byteSize('Hello World'); // 11
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-13-capitalize</strong>
+<strong>bbeo-js-pattern-string-13-capitalize</strong>
 </td>
 <td>
 
@@ -3096,7 +3107,7 @@ capitalize('fooBar', true); // 'Foobar'
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-14-capitalizeEveryWord</strong>
+<strong>bbeo-js-pattern-string-14-capitalizeEveryWord</strong>
 </td>
 <td>
 
@@ -3114,7 +3125,7 @@ capitalizeEveryWord('hello world!'); // 'Hello World!'
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-15-castArray</strong>
+<strong>bbeo-js-pattern-cast-15-castArray</strong>
 </td>
 <td>
 
@@ -3133,7 +3144,7 @@ castArray([1]); // [1]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-16-compact</strong>
+<strong>bbeo-js-pattern-array-16-compact</strong>
 </td>
 <td>
 
@@ -3152,7 +3163,7 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-17-countOccurrences</strong>
+<strong>bbeo-js-pattern-array-17-countOccurrences</strong>
 </td>
 <td>
 
@@ -3169,7 +3180,7 @@ countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-18-createDirIfNotExists</strong>
+<strong>bbeo-js-pattern-lib-18-createDirIfNotExists</strong>
 </td>
 <td>
 
@@ -3188,7 +3199,7 @@ createDirIfNotExists('test');
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-19-currentURL</strong>
+<strong>bbeo-js-pattern-bom-19-currentURL</strong>
 </td>
 <td>
 
@@ -3206,7 +3217,7 @@ currentURL(); // 'https://medium.com/@fatosmorina'
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-20-dayOfYear</strong>
+<strong>bbeo-js-pattern-date-20-dayOfYear</strong>
 </td>
 <td>
 
@@ -3225,7 +3236,7 @@ dayOfYear(new Date()); // 272
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-21-decapitalize</strong>
+<strong>bbeo-js-pattern-string-21-decapitalize</strong>
 </td>
 <td>
 
@@ -3245,7 +3256,7 @@ decapitalize('FooBar'); // 'fooBar'
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-22-deepFlatten</strong>
+<strong>bbeo-js-pattern-array-22-deepFlatten</strong>
 </td>
 <td>
 
@@ -3263,7 +3274,7 @@ deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-23-default</strong>
+<strong>bbeo-js-pattern-object-23-default</strong>
 </td>
 <td>
 
@@ -3281,7 +3292,7 @@ defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-24-defer</strong>
+<strong>bbeo-js-pattern-func-24-defer</strong>
 </td>
 <td>
 
@@ -3299,7 +3310,7 @@ defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-25-degreesToRads</strong>
+<strong>bbeo-js-pattern-cast-25-degreesToRads</strong>
 </td>
 <td>
 
@@ -3317,7 +3328,7 @@ degreesToRads(90.0); // ~1.5708
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-26-difference</strong>
+<strong>bbeo-js-pattern-array-26-difference</strong>
 </td>
 <td>
 
@@ -3338,7 +3349,7 @@ difference([1, 2, 3], [1, 2, 4]); // [3]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-27-differenceBy</strong>
+<strong>bbeo-js-pattern-mixte-27-differenceBy</strong>
 </td>
 <td>
 
@@ -3360,7 +3371,7 @@ differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-28-differenceWith</strong>
+<strong>bbeo-js-pattern-array-28-differenceWith</strong>
 </td>
 <td>
 
@@ -3379,7 +3390,7 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-29-digitize</strong>
+<strong>bbeo-js-pattern-cast-29-digitize</strong>
 </td>
 <td>
 
@@ -3397,7 +3408,7 @@ digitize(431); // [4, 3, 1]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-30-distance</strong>
+<strong>bbeo-js-pattern-math-30-distance</strong>
 </td>
 <td>
 
@@ -3415,7 +3426,7 @@ distance(1, 1, 2, 3); // 2.23606797749979
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-31-DropLeft</strong>
+<strong>bbeo-js-pattern-array-31-DropLeft</strong>
 </td>
 <td>
 
@@ -3435,7 +3446,7 @@ dropLeft([1, 2, 3], 42); // []
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-32-dropRight</strong>
+<strong>bbeo-js-pattern-array-32-dropRight</strong>
 </td>
 <td>
 
@@ -3455,7 +3466,7 @@ dropRight([1, 2, 3], 42); // []
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-33-dropRightWhile</strong>
+<strong>bbeo-js-pattern-array-33-dropRightWhile</strong>
 </td>
 <td>
 
@@ -3476,7 +3487,7 @@ dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-34-dropWhile</strong>
+<strong>bbeo-js-pattern-array-34-dropWhile</strong>
 </td>
 <td>
 
@@ -3497,7 +3508,7 @@ dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-35-elementContains</strong>
+<strong>bbeo-js-pattern-dom-35-elementContains</strong>
 </td>
 <td>
 
@@ -3516,7 +3527,7 @@ elementContains(document.querySelector('body'), document.querySelector('body'));
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-36-Filter Duplicate Elements</strong>
+<strong>bbeo-js-pattern-array-36-Filter Duplicate Elements</strong>
 </td>
 <td>
 
@@ -3534,7 +3545,7 @@ filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-37-findKey</strong>
+<strong>bbeo-js-pattern-object-37-findKey</strong>
 </td>
 <td>
 
@@ -3559,7 +3570,7 @@ findKey(
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-38-findLast</strong>
+<strong>bbeo-js-pattern-array-38-findLast</strong>
 </td>
 <td>
 
@@ -3577,7 +3588,7 @@ findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-39-flatten</strong>
+<strong>bbeo-js-pattern-array-39-flatten</strong>
 </td>
 <td>
 
@@ -3597,7 +3608,7 @@ flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-40-forEachRight</strong>
+<strong>bbeo-js-pattern-array-40-forEachRight</strong>
 </td>
 <td>
 
@@ -3619,7 +3630,7 @@ forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-41-forOwn</strong>
+<strong>bbeo-js-pattern-object-41-forOwn</strong>
 </td>
 <td>
 
@@ -3636,7 +3647,7 @@ forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-42-functionName</strong>
+<strong>bbeo-js-pattern-func-42-functionName</strong>
 </td>
 <td>
 
@@ -3654,7 +3665,7 @@ functionName(Math.max); // max (logged in debug channel of console)
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-43-Get Time From Date</strong>
+<strong>bbeo-js-pattern-date-43-Get Time From Date</strong>
 </td>
 <td>
 
@@ -3672,7 +3683,7 @@ getColonTimeFromDate(new Date()); // "08:38:00"
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-44-Get Days Between Dates</strong>
+<strong>bbeo-js-pattern-date-44-Get Days Between Dates</strong>
 </td>
 <td>
 
@@ -3691,7 +3702,7 @@ getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-45-getStyle</strong>
+<strong>bbeo-js-pattern-dom-45-getStyle</strong>
 </td>
 <td>
 
@@ -3709,7 +3720,7 @@ getStyle(document.querySelector('p'), 'font-size'); // '16px'
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-46-getType</strong>
+<strong>bbeo-js-pattern-test-46-getType</strong>
 </td>
 <td>
 
@@ -3728,7 +3739,7 @@ getType(new Set([1, 2, 3])); // 'set'
 
 <tr>
 <td>
-<strong>bbeo-js-pattern-47-hasClass</strong>
+<strong>bbeo-js-pattern-dom-47-hasClass</strong>
 </td>
 <td>
 
