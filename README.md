@@ -724,7 +724,7 @@ ${1:dec_var}.toString(2)
 
 <tr>
 <td>
-<strong>bbeo-js-object-getter</strong>
+<strong>bbeo-js-class-getter</strong>
 </td>
 <td>
 
@@ -740,7 +740,7 @@ get ${1:property_name} () { return this.${1:property_name}; }
 
 <tr>
 <td>
-<strong>bbeo-js-object-setter</strong>
+<strong>bbeo-js-class-setter</strong>
 </td>
 <td>
 
@@ -756,7 +756,7 @@ set ${1:property_name} (${2:value}) { this.${1:property_name} = ${2:value}; }
 
 <tr>
 <td>
-<strong>bbeo-js-object-method</strong>
+<strong>bbeo-js-class-method</strong>
 </td>
 <td>
 
@@ -772,7 +772,7 @@ ${1:method_name} () { ${2:method_body} }
 
 <tr>
 <td>
-<strong>bbeo-js-object-constructor</strong>
+<strong>bbeo-js-class-constructor</strong>
 </td>
 <td>
 
@@ -788,7 +788,7 @@ constructor () { ${1:constructor_body} }
 
 <tr>
 <td>
-<strong>bbeo-js-object-staticMethod</strong>
+<strong>bbeo-js-class-staticMethod</strong>
 </td>
 <td>
 
@@ -804,7 +804,7 @@ static ${1:method_name} () { ${2:method_body} }
 
 <tr>
 <td>
-<strong>bbeo-js-object-staticProperty</strong>
+<strong>bbeo-js-class-staticProperty</strong>
 </td>
 <td>
 
@@ -820,7 +820,7 @@ static ${1:property_name} = ${2:property_value}
 
 <tr>
 <td>
-<strong>bbeo-js-object-staticGetter</strong>
+<strong>bbeo-js-class-staticGetter</strong>
 </td>
 <td>
 
@@ -836,7 +836,7 @@ static get ${1:property_name} () { return this.${1:property_name}; }
 
 <tr>
 <td>
-<strong>bbeo-js-object-staticSetter</strong>
+<strong>bbeo-js-class-staticSetter</strong>
 </td>
 <td>
 
@@ -2431,6 +2431,22 @@ Object.entries(${1:object_var})
 <td>
 
 >[object]: Extract object entries
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-object-length</strong>
+</td>
+<td>
+
+```js
+Object.keys(${1:object_var}).length
+```
+</td>
+<td>
+
+>[object]: Get object length
 </td>
 </tr>
 
@@ -4992,7 +5008,7 @@ const smoothScroll = element =>
     behavior: 'smooth'
   });
   
-smoothScroll('#fooBar'); // scrolls smoothly to the element with the id fooBar
+smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
 </td>
