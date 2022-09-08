@@ -1755,7 +1755,7 @@ export const js_patterns = {
 				"    behavior: 'smooth'",
 				'  });',
 				'  ',
-				"smoothScroll('#fooBar'); // scrolls smoothly to the element with the id fooBar",
+				"smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id",
 				"smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar",
 			],
 			description:

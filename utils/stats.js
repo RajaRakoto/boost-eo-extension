@@ -21,7 +21,7 @@ const typescriptSnippetsListSource = '../src/snippets/typescript';
 
 // patterns total stats data
 const jsPatternsTotal =
-	"<div align='center'>" + Object.keys(js_patterns).length + '</div>';
+	"<div align='center'>" + `${1 + Object.keys(js_patterns).length}` + '</div>';
 const pyPatternsTotal =
 	"<div align='center'>" + Object.keys(py_patterns).length + '</div>';
 const reactPatternsTotal =

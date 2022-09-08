@@ -9,4 +9,9 @@ export const js_object = {
 		body: ['Object.entries(${1:object_var})'],
 		description: '[object]: Extract object entries',
 	},
+	'[object]: Get object length': {
+		prefix: 'bbeo-js-object-length',
+		body: ['Object.keys(${1:object_var}).length'],
+		description: '[object]: Get object length',
+	},
 };
