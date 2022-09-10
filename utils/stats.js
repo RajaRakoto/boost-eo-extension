@@ -156,7 +156,7 @@ const listStatsDataTable = `
 // generate patterns triggers categories lists
 const patternsTriggersListForJavascript =
 	"<div align='center'>" +
-	'array - object - func - test - math - dom - bom - date - cast - mixte - hybrid - string - gen (tools) - lib - promise' +
+	'array - object - func - test (regex) - math - dom - bom - date - cast - mixte - hybrid - string - gen (tools) - lib - promise' +
 	'</div>';
 const patternsTriggersTable = `
 | Languages | Patterns |
