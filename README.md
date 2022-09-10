@@ -93,7 +93,7 @@ grunt compress-all
 
 | Languages | Patterns | Libraries | Snippets |
 | --- | --- | --- | --- |
-| JavaScript | <div align='center'>130</div> | <div align='center'>2</div> | <div align='center'>20</div> |
+| JavaScript | <div align='center'>131</div> | <div align='center'>2</div> | <div align='center'>20</div> |
 | Python | <div align='center'>0</div> | <div align='center'>0</div> | <div align='center'>0</div> |
 | React | <div align='center'>0</div> | <div align='center'>-</div> | <div align='center'>0</div> |
 | Shell Script | <div align='center'>0</div> | <div align='center'>-</div> | <div align='center'>0</div> |
@@ -104,7 +104,7 @@ grunt compress-all
 
 | Languages | Patterns | Libraries | Snippets |
 | --- | --- | --- | --- |
-| JavaScript | <div align="center">`array-1-all` `array-2-allEqual` `math-3-approximatelyEqual` `cast-4-arrayToCSV` `cast-5-arrayToHtmlList` `func-6-attempt` `array-7-average` `mixte-8-averageBy` `array-9-bifurcate` `array-10-bifurcateBy` `dom-11-bottomVisible` `cast-12-byteSize` `string-13-capitalize` `string-14-capitalizeEveryWord` `cast-15-castArray` `array-16-compact` `array-17-countOccurrences` `lib-18-createDirIfNotExists` `bom-19-currentURL` `date-20-dayOfYear` `string-21-decapitalize` `array-22-deepFlatten` `object-23-default` `func-24-defer` `cast-25-degreesToRads` `array-26-difference` `mixte-27-differenceBy` `array-28-differenceWith` `cast-29-digitize` `math-30-distance` `array-31-DropLeft` `array-32-dropRight` `array-33-dropRightWhile` `array-34-dropWhile` `dom-35-elementContains` `array-36-Filter Duplicate Elements` `object-37-findKey` `array-38-findLast` `array-39-flatten` `array-40-forEachRight` `object-41-forOwn` `func-42-functionName` `date-43-Get Time From Date` `date-44-Get Days Between Dates` `dom-45-getStyle` `test-46-getType` `dom-47-hasClass` `array-48-head` `dom-49-hide` `bom-50-httpsRedirect` `array-51-indexOfAll` `array-52-initial` `dom-53-insertAfter` `dom-54-insertBefore` `array-55-intersection` `array-56-intersectionBy` `array-57-intersectionWith` `test-58-is` `test-59-isAfterDate` `test-60-isAnagram` `test-61-isArrayLike` `test-62-isBeforeDate` `test-63-isBoolean` `test-64-isBrowser` `test-65-isBrowserTabFocused` `test-66-isLowerCase` `test-67-isNil` `test-68-isNull` `test-69-isNumber` `test-70-isObject` `test-71-isObjectLike` `test-72-isPlainObject` `test-73-isPromiseLike` `test-74-isSameDate` `test-75-isString` `test-76-isSymbol` `test-77-isUndefined` `test-78-isUpperCase` `test-79-isValidJSON` `array-80-last` `object-81-matches` `date-82-maxDate` `array-83-maxN` `date-84-minDate` `array-85-minN` `func-86-negate` `dom-87-nodeListToArray` `string-88-pad` `cast-89-radsToDegrees` `gen-90-randomHexColorCode` `gen-91-randomIntArrayInRange` `gen-92-randomIntegerInRange` `gen-93-randomNumberInRange` `lib-94-readFileLines` `bom-95-redirect` `string-96-reverse` `math-97-round` `promise-98-runPromisesInSeries` `array-99-sample` `array-100-sampleSize` `dom-101-scrollToTop` `string-102-serializeCookie` `dom-103-setStyle` `gen-104-shallowClone` `dom-105-show` `array-106-shuffle` `array-107-similarity` `promise-108-sleep` `dom-130-smoothScroll` `string-110-sortCharactersInString` `cast-111-splitLines` `dom-112-stripHTMLTags` `array-113-sum` `array-114-tail` `array-115-take` `array-116-takeRight` `func-117-timeTaken` `func-118-times` `cast-119-toCurrency` `cast-120-toDecimalMark` `dom-121-toggleClass` `date-122-tomorrow` `func-123-unfold` `array-124-union` `array-125-uniqueElements` `test-126-validateNumber` `cast-127-words` `gen-128-getES6moduleSyntaxBySource` `gen-129-concatJSONsourcesToOneFile`</div> | <div align="center">`fs` `traverse`</div> | <div align="center">`array` `basic` `bom` `cast` `class` `console` `date` `destruct` `dom` `func` `gen` `hybrid` `math` `mixte` `module` `object` `regex` `spread` `string` `struct`</div> |
+| JavaScript | <div align="center">`array-1-all` `array-2-allEqual` `math-3-approximatelyEqual` `cast-4-arrayToCSV` `cast-5-arrayToHtmlList` `func-6-attempt` `array-7-average` `mixte-8-averageBy` `array-9-bifurcate` `array-10-bifurcateBy` `dom-11-bottomVisible` `cast-12-byteSize` `string-13-capitalize` `string-14-capitalizeEveryWord` `cast-15-castArray` `array-16-compact` `array-17-countOccurrences` `lib-18-createDirIfNotExists` `bom-19-currentURL` `date-20-dayOfYear` `string-21-decapitalize` `array-22-deepFlatten` `object-23-default` `func-24-defer` `cast-25-degreesToRads` `array-26-difference` `mixte-27-differenceBy` `array-28-differenceWith` `cast-29-digitize` `math-30-distance` `array-31-DropLeft` `array-32-dropRight` `array-33-dropRightWhile` `array-34-dropWhile` `dom-35-elementContains` `array-36-Filter Duplicate Elements` `object-37-findKey` `array-38-findLast` `array-39-flatten` `array-40-forEachRight` `object-41-forOwn` `func-42-functionName` `date-43-Get Time From Date` `date-44-Get Days Between Dates` `dom-45-getStyle` `test-46-getType` `dom-47-hasClass` `array-48-head` `dom-49-hide` `bom-50-httpsRedirect` `array-51-indexOfAll` `array-52-initial` `dom-53-insertAfter` `dom-54-insertBefore` `array-55-intersection` `array-56-intersectionBy` `array-57-intersectionWith` `test-58-is` `test-59-isAfterDate` `test-60-isAnagram` `test-61-isArrayLike` `test-62-isBeforeDate` `test-63-isBoolean` `test-64-isBrowser` `test-65-isBrowserTabFocused` `test-66-isLowerCase` `test-67-isNil` `test-68-isNull` `test-69-isNumber` `test-70-isObject` `test-71-isObjectLike` `test-72-isPlainObject` `test-73-isPromiseLike` `test-74-isSameDate` `test-75-isString` `test-76-isSymbol` `test-77-isUndefined` `test-78-isUpperCase` `test-79-isValidJSON` `array-80-last` `object-81-matches` `date-82-maxDate` `array-83-maxN` `date-84-minDate` `array-85-minN` `func-86-negate` `dom-87-nodeListToArray` `string-88-pad` `cast-89-radsToDegrees` `gen-90-randomHexColorCode` `gen-91-randomIntArrayInRange` `gen-92-randomIntegerInRange` `gen-93-randomNumberInRange` `lib-94-readFileLines` `bom-95-redirect` `string-96-reverse` `math-97-round` `promise-98-runPromisesInSeries` `array-99-sample` `array-100-sampleSize` `dom-101-scrollToTop` `string-102-serializeCookie` `dom-103-setStyle` `gen-104-shallowClone` `dom-105-show` `array-106-shuffle` `array-107-similarity` `promise-108-sleep` `dom-130-smoothScroll` `string-110-sortCharactersInString` `cast-111-splitLines` `dom-112-stripHTMLTags` `array-113-sum` `array-114-tail` `array-115-take` `array-116-takeRight` `func-117-timeTaken` `func-118-times` `cast-119-toCurrency` `cast-120-toDecimalMark` `dom-121-toggleClass` `date-122-tomorrow` `func-123-unfold` `array-124-union` `array-125-uniqueElements` `test-126-validateNumber` `cast-127-words` `gen-128-getES6moduleSyntaxBySource` `gen-129-concatJSONsourcesToOneFile` `test-131-validateEmail`</div> | <div align="center">`fs` `traverse`</div> | <div align="center">`array` `basic` `bom` `cast` `class` `console` `date` `destruct` `dom` `func` `gen` `hybrid` `math` `mixte` `module` `object` `regex` `spread` `string` `struct`</div> |
 | Python | <div align="center"> n/a </div> | <div align="center"> n/a </div> | <div align="center"> n/a </div> |
 | React | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
 | Shell Script | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
@@ -115,7 +115,7 @@ grunt compress-all
 
 | Languages | Patterns |
 | --- | --- |
-| JavaScript | <div align='center'>array - object - func - test - math - dom - bom - date - cast - mixte - hybrid - string - gen (tools) - lib - promise</div> |
+| JavaScript | <div align='center'>array - object - func - test (regex) - math - dom - bom - date - cast - mixte - hybrid - string - gen (tools) - lib - promise</div> |
 | Python | <div align='center'>-</div> |
 | React | <div align='center'>-</div> |
 | Shell Script | <div align='center'>-</div> |
@@ -5430,6 +5430,25 @@ export function concatJSONsourcesToOneFile(sourcesList, distPath) {
 <td>
 
 >[pattern]: Concat & export all external JSON sources to one JSON file
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-js-pattern-test-131-validateEmail</strong>
+</td>
+<td>
+
+```js
+const validateEmail = email => {      
+  var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  return emailPattern.test(email); 
+};
+```
+</td>
+<td>
+
+>[pattern]: Email validator with regex 
 </td>
 </tr>
 
