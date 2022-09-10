@@ -1761,4 +1761,14 @@ export const js_patterns = {
 			description:
 				'[pattern]: This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window.',
 		},
+	'[pattern]: Email validator with regex ': {
+		prefix: 'bbeo-js-pattern-test-131-validateEmail',
+		body: [
+			'const validateEmail = email => {      ',
+			'  var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$/;',
+			'  return emailPattern.test(email); ',
+			'};',
+		],
+		description: '[pattern]: Email validator with regex ',
+	},
 };
