@@ -11,6 +11,7 @@ export const usage = `
 | [🔎 Javascript snippets](#-javascript-snippets) |
 | [🔎 Javascript patterns](#-javascript-patterns) |
 | [🔎 Javascript libaries](#-javascript-libraries) |
+| [🔎 React snippets](#-react-snippets) |
 | [🔎 React patterns](#-react-patterns) |
 | [🔎 CSS patterns](#-css-patterns) |
 </div>
