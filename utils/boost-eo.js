@@ -14,6 +14,10 @@ import { js_fs } from '../src/libs/javascript/js-fs.js';
 import { js_traverse } from '../src/libs/javascript/js-traverse.js';
 // javascript patterns importation
 import { js_patterns } from '../src/patterns/js-patterns.js';
+// react patterns importation
+import { react_patterns } from '../src/patterns/react-patterns.js';
+// css patterns importation
+import { css_patterns } from '../src/patterns/css-patterns.js';
 // javascript snippets importation
 import { js_console } from '../src/snippets/javascript/js-console.js';
 import { js_module } from '../src/snippets/javascript/js-module.js';
@@ -61,6 +65,8 @@ const javascriptSourceList = refactorSourceList([
 ]);
 const javascriptPatternSourceList = refactorSourceList([js_patterns]);
 const javascriptLibrariesSourceList = refactorSourceList([js_fs, js_traverse]);
+const reactPatternSourceList = refactorSourceList([react_patterns]);
+const cssPatternSourceList = refactorSourceList([css_patterns]);
 
 // export docs & snippets & patterns
 console.log(banner);
@@ -88,6 +94,18 @@ getOutput(
 	'../dist/boosteo-js-libs.code-snippets',
 	'#### ◾ Javascript libraries',
 	'javascript',
+);
+getOutput(
+	reactPatternSourceList,
+	'../dist/boosteo-react-patterns.code-snippets',
+	'#### ◾ React patterns',
+	'jsx',
+);
+getOutput(
+	cssPatternSourceList,
+	'../dist/boosteo-css-patterns.code-snippets',
+	'#### ◾ CSS patterns',
+	'css',
 );
 console.log(`
 <div align="center">
