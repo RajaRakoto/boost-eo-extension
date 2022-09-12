@@ -97,6 +97,10 @@ export function generateTable(data, language) {
 		languageSyntax = 'py';
 	} else if (language == 'shellscript') {
 		languageSyntax = 'sh';
+	} else if (language == 'react') {
+		languageSyntax = 'jsx';
+	} else {
+		languageSyntax = language;
 	}
 	let table = `
 <table>

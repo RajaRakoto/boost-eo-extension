@@ -320,7 +320,7 @@ export const react_patterns = {
 		],
 		description: '[pattern]: Renders a component with collapsible content.',
 	},
-	"[pattern]: CSS -> Restitue une arborescence d'un objet ou d'un tableau JSON avec un contenu réductible":
+	"[pattern]: CSS -> Renders a tree view of a JSON object or array with collapsible content":
 		{
 			prefix: 'bbeo-react-pattern-10-treeView',
 			body: [

@@ -41,7 +41,7 @@ export const css_patterns = {
 				"[pattern]: Restitue une arborescence d'un objet ou d'un tableau JSON avec un contenu réductible",
 		},
 	'[pattern]: React -> Renders a tooltip component.': {
-		prefix: 'bbeo-css-pattern-toolTip',
+		prefix: 'bbeo-css-pattern-toolTipCSS',
 		body: [
 			'.tooltip {',
 			'  position: relative;',

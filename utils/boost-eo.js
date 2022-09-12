@@ -99,7 +99,7 @@ getOutput(
 	reactPatternSourceList,
 	'../dist/boosteo-react-patterns.code-snippets',
 	'#### ◾ React patterns',
-	'jsx',
+	'react',
 );
 getOutput(
 	cssPatternSourceList,
