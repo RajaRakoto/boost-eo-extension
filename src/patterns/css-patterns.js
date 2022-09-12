@@ -1,5 +1,5 @@
 export const css_patterns = {
-	"[pattern]: React -> Restitue une arborescence d'un objet ou d'un tableau JSON avec un contenu réductible":
+	"[pattern]: React -> Renders a tree view of a JSON object or array with collapsible content":
 		{
 			prefix: 'bbeo-css-pattern-treeviewCSS',
 			body: [

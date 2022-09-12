@@ -615,7 +615,7 @@ export const react_patterns = {
 		description: '[pattern]: onChange() event for React',
 	},
 	'[pattern]: onSubmit() event for React': {
-		prefix: 'bbeo-react-pattern-event-17-onSubmit',
+		prefix: 'bbeo-react-pattern-event-18-onSubmit',
 		body: [
 			'export default function SampleForm() {',
 			'	const handleSubmit = e => {',
