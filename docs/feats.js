@@ -10,7 +10,7 @@ export const feats = `
 - [ ] Typescript snippets collection
 - [ ] Typescript patterns collection
 - [ ] React snippets collection
-- [ ] React patterns collection
+- [x] React patterns collection (components)
 - [ ] Python snippets collection
 - [ ] Python patterns collection
 - [ ] Shell script snippets collection
