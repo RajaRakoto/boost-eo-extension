@@ -38,7 +38,7 @@ export const css_patterns = {
 				'}',
 			],
 			description:
-				"[pattern]: Restitue une arborescence d'un objet ou d'un tableau JSON avec un contenu réductible",
+				"[pattern]: Renders a tree view of a JSON object or array with collapsible content",
 		},
 	'[pattern]: React -> Renders a tooltip component.': {
 		prefix: 'bbeo-css-pattern-toolTipCSS',

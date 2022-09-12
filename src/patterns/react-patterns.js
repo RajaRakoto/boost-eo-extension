@@ -398,7 +398,7 @@ export const react_patterns = {
 				'ReactDOM.render(<TreeView data={data} name=\'data\'/>, document.getElementById("root"));',
 			],
 			description:
-				"[pattern]: Restitue une arborescence d'un objet ou d'un tableau JSON avec un contenu réductible",
+				"[pattern]: Renders a tree view of a JSON object or array with collapsible content",
 		},
 	'[pattern]: Renders a link formatted to send email': {
 		prefix: 'bbeo-react-pattern-comp-11-mailTo',
