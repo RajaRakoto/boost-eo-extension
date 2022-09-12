@@ -48,6 +48,14 @@
 			{
 				"language": "javascript",
 				"path": "./dist/boosteo-js-libs.code-snippets"
+			},
+			{
+				"language": "jsx",
+				"path": "./dist/boosteo-react-patterns.code-snippets"
+			},
+			{
+				"language": "css",
+				"path": "./dist/boosteo-css-patterns.code-snippets"
 			}
 		]
 	},
