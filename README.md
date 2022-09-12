@@ -53,11 +53,12 @@ You can install it by typing `boost-eo` in the extension tab of your IDE
 - [ ] Typescript snippets collection
 - [ ] Typescript patterns collection
 - [ ] React snippets collection
-- [ ] React patterns collection
+- [x] React patterns collection (components)
 - [ ] Python snippets collection
 - [ ] Python patterns collection
 - [ ] Shell script snippets collection
 - [ ] Shell script patterns collection
+- [x] CSS patterns collection
 
 
 
@@ -95,9 +96,10 @@ grunt compress-all
 | --- | --- | --- | --- |
 | JavaScript | <div align='center'>131</div> | <div align='center'>2</div> | <div align='center'>20</div> |
 | Python | <div align='center'>0</div> | <div align='center'>0</div> | <div align='center'>0</div> |
-| React | <div align='center'>0</div> | <div align='center'>-</div> | <div align='center'>0</div> |
+| React | <div align='center'>13</div> | <div align='center'>-</div> | <div align='center'>0</div> |
 | Shell Script | <div align='center'>0</div> | <div align='center'>-</div> | <div align='center'>0</div> |
 | TypeScript | <div align='center'>0</div> | <div align='center'>-</div> | <div align='center'>0</div> |
+| CSS | <div align='center'>2</div> | <div align='center'>-</div> | <div align='center'>-</div> |
 
 
 #### ◾ List stats
@@ -106,9 +108,10 @@ grunt compress-all
 | --- | --- | --- | --- |
 | JavaScript | <div align="center">`array-1-all` `array-2-allEqual` `math-3-approximatelyEqual` `cast-4-arrayToCSV` `cast-5-arrayToHtmlList` `func-6-attempt` `array-7-average` `mixte-8-averageBy` `array-9-bifurcate` `array-10-bifurcateBy` `dom-11-bottomVisible` `cast-12-byteSize` `string-13-capitalize` `string-14-capitalizeEveryWord` `cast-15-castArray` `array-16-compact` `array-17-countOccurrences` `lib-18-createDirIfNotExists` `bom-19-currentURL` `date-20-dayOfYear` `string-21-decapitalize` `array-22-deepFlatten` `object-23-default` `func-24-defer` `cast-25-degreesToRads` `array-26-difference` `mixte-27-differenceBy` `array-28-differenceWith` `cast-29-digitize` `math-30-distance` `array-31-DropLeft` `array-32-dropRight` `array-33-dropRightWhile` `array-34-dropWhile` `dom-35-elementContains` `array-36-Filter Duplicate Elements` `object-37-findKey` `array-38-findLast` `array-39-flatten` `array-40-forEachRight` `object-41-forOwn` `func-42-functionName` `date-43-Get Time From Date` `date-44-Get Days Between Dates` `dom-45-getStyle` `test-46-getType` `dom-47-hasClass` `array-48-head` `dom-49-hide` `bom-50-httpsRedirect` `array-51-indexOfAll` `array-52-initial` `dom-53-insertAfter` `dom-54-insertBefore` `array-55-intersection` `array-56-intersectionBy` `array-57-intersectionWith` `test-58-is` `test-59-isAfterDate` `test-60-isAnagram` `test-61-isArrayLike` `test-62-isBeforeDate` `test-63-isBoolean` `test-64-isBrowser` `test-65-isBrowserTabFocused` `test-66-isLowerCase` `test-67-isNil` `test-68-isNull` `test-69-isNumber` `test-70-isObject` `test-71-isObjectLike` `test-72-isPlainObject` `test-73-isPromiseLike` `test-74-isSameDate` `test-75-isString` `test-76-isSymbol` `test-77-isUndefined` `test-78-isUpperCase` `test-79-isValidJSON` `array-80-last` `object-81-matches` `date-82-maxDate` `array-83-maxN` `date-84-minDate` `array-85-minN` `func-86-negate` `dom-87-nodeListToArray` `string-88-pad` `cast-89-radsToDegrees` `gen-90-randomHexColorCode` `gen-91-randomIntArrayInRange` `gen-92-randomIntegerInRange` `gen-93-randomNumberInRange` `lib-94-readFileLines` `bom-95-redirect` `string-96-reverse` `math-97-round` `promise-98-runPromisesInSeries` `array-99-sample` `array-100-sampleSize` `dom-101-scrollToTop` `string-102-serializeCookie` `dom-103-setStyle` `gen-104-shallowClone` `dom-105-show` `array-106-shuffle` `array-107-similarity` `promise-108-sleep` `dom-130-smoothScroll` `string-110-sortCharactersInString` `cast-111-splitLines` `dom-112-stripHTMLTags` `array-113-sum` `array-114-tail` `array-115-take` `array-116-takeRight` `func-117-timeTaken` `func-118-times` `cast-119-toCurrency` `cast-120-toDecimalMark` `dom-121-toggleClass` `date-122-tomorrow` `func-123-unfold` `array-124-union` `array-125-uniqueElements` `test-126-validateNumber` `cast-127-words` `gen-128-getES6moduleSyntaxBySource` `gen-129-concatJSONsourcesToOneFile` `test-131-validateEmail`</div> | <div align="center">`fs` `traverse`</div> | <div align="center">`array` `basic` `bom` `cast` `class` `console` `date` `destruct` `dom` `func` `gen` `hybrid` `math` `mixte` `module` `object` `regex` `spread` `string` `struct`</div> |
 | Python | <div align="center"> n/a </div> | <div align="center"> n/a </div> | <div align="center"> n/a </div> |
-| React | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
+| React | <div align="center">`1-useId` `2-setState` `4-jsxConfitionals2` `5-dataList` `6-limitedWordTextarea` `7-accordionItem` `8-carousel` `9-collapse` `10-treeView` `11-mailTo` `12-toolTip` `bbeo-css-pattern-13-ticker` `bbeo-css-pattern-14-input`</div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
 | Shell Script | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
 | TypeScript | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
+| CSS | <div align="center">`treeviewCSS` `toolTipCSS`</div> | <div align='center'>-</div> | <div align='center'>-</div> |
 
 
 #### ◾ Patterns triggers categories
@@ -120,6 +123,7 @@ grunt compress-all
 | React | <div align='center'>-</div> |
 | Shell Script | <div align='center'>-</div> |
 | TypeScript | <div align='center'>-</div> |
+| CSS | <div align='center'>-</div> |
 
 
 
@@ -136,6 +140,8 @@ grunt compress-all
 | [🔎 Javascript snippets](#-javascript-snippets) |
 | [🔎 Javascript patterns](#-javascript-patterns) |
 | [🔎 Javascript libaries](#-javascript-libraries) |
+| [🔎 React patterns](#-react-patterns) |
+| [🔎 CSS patterns](#-css-patterns) |
 </div>
 
 > **Notation**: hybrid = string | array -- mixte = array | object
@@ -5651,6 +5657,719 @@ export function traverseKeyValueByJSON(source, key) {
 <td>
 
 >[libs]: Get all key value from external JSON file
+</td>
+</tr>
+
+</table>
+
+#### ◾ React patterns
+
+<table>
+<th>prefix</th>
+<th>body</th>
+<th>description</th>
+
+<tr>
+<td>
+<strong>bbeo-react-pattern-1-useId</strong>
+</td>
+<td>
+
+```jsx
+import { useId } from 'react';
+
+export default function App() {
+	const Users = [
+		{
+			id: useId(),
+			name: 'Rakoto',
+		},
+		{
+			id: useId(),
+			name: 'Rasoa',
+		},
+	];
+
+	return (
+		<div className="app">
+			{Users.map(user => (
+				<p key={user.id}>{user.name}</p>
+			))}
+		</div>
+	);
+}
+```
+</td>
+<td>
+
+>[pattern]: Generate id with useId hook from react 18
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-pattern-2-setState</strong>
+</td>
+<td>
+
+```jsx
+const myComponent = () => {
+	const [object, setObject] = useState({
+		name: 'MacGuffin',
+		click: 0,
+	});
+
+	const handleClick = () => {
+		setObject({ ...object, click: object.click + 1 });
+	};
+
+	return <div onClick={handleClick}>{object.click}</div>;
+};
+```
+</td>
+<td>
+
+>[pattern]: Set state hook pattern
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-pattern-4-jsxConfitionals2</strong>
+</td>
+<td>
+
+```jsx
+const sampleComponent = () => {
+  return (
+    <div>
+      {
+        do => {
+          if (flag && flag2 && !flag3) {
+            if (flag4) {
+              <p>Blah</p>
+            } else if (flag5) {
+              <p>Meh</p>
+            } else {
+              <p>Herp</p>
+            }
+          } else {
+            <p>Derp</p>
+          }
+        }
+      }
+    </div>
+  )
+};
+```
+</td>
+<td>
+
+>[pattern]: JSX conditionals pattern 
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-pattern-5-dataList</strong>
+</td>
+<td>
+
+```jsx
+function DataList({ isOrdered, data }) {
+  const list = data.map((val, i) => (
+    <li key={`${i}_${val}`}>{val}</li>
+  ));
+  return isOrdered ? <ol>{list}</ol> : <ul>{list}</ul>;
+}
+
+const names = ['John', 'Paul', 'Mary'];
+ReactDOM.render(<DataList data={names}/>, document.getElementById('root'));
+ReactDOM.render(<DataList data={names} isOrdered/>, document.getElementById('root'));
+```
+</td>
+<td>
+
+>[pattern]: Conditionally restore a list from a data
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-pattern-6-limitedWordTextarea</strong>
+</td>
+<td>
+
+```jsx
+function LimitedWordTextarea({ rows, cols, value, limit }) {
+  const [content, setContent] = React.useState(value);
+  const [wordCount, setWordCount] = React.useState(0);
+
+  const setFormattedContent = text => {
+    let words = text.split(' ');
+    if (words.filter(Boolean).length > limit) {
+      setContent(
+        text
+          .split(' ')
+          .slice(0, limit)
+          .join(' ')
+      );
+      setWordCount(limit);
+    } else {
+      setContent(text);
+      setWordCount(words.filter(Boolean).length);
+    }
+  };
+
+  React.useEffect(() => {
+    setFormattedContent(content);
+  }, []);
+
+  return (
+    <div>
+      <textarea
+        rows={rows}
+        cols={cols}
+        onChange={event => setFormattedContent(event.target.value)}
+        value={content}
+      />
+      <p>
+        {wordCount}/{limit}
+      </p>
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <LimitedWordTextArea limit={5} value="Hello there!" />,
+  document.getElementById('root')
+);
+```
+</td>
+<td>
+
+>[pattern]: Renders a textarea component with a word limit.
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-pattern-7-accordionItem</strong>
+</td>
+<td>
+
+```jsx
+function AccordionItem(props) {
+  const style = {
+    collapsed: {
+      display: 'none'
+    },
+    expanded: {
+      display: 'block'
+    },
+    buttonStyle: {
+      display: 'block',
+      width: '100%'
+    }
+  };
+
+  return (
+    <div>
+      <button style={style.buttonStyle} onClick={() => props.handleClick()}>
+        {props.label}
+      </button>
+      <div
+        className="collapse-content"
+        style={props.isCollapsed ? style.collapsed : style.expanded}
+        aria-expanded={props.isCollapsed}
+      >
+        {props.children}
+      </div>
+    </div>
+  );
+}
+
+function Accordion(props) {
+  const [bindIndex, setBindIndex] = React.useState(props.defaultIndex);
+
+  const changeItem = itemIndex => {
+    if (typeof props.onItemClick === 'function') props.onItemClick(itemIndex);
+    if (itemIndex !== bindIndex) setBindIndex(itemIndex);
+  };
+  const items = props.children.filter(item => item.type.name === 'AccordionItem');
+
+  return (
+    <div className="wrapper">
+      {items.map(({ props }) => (
+        <AccordionItem
+          isCollapsed={bindIndex === props.index}
+          label={props.label}
+          handleClick={() => changeItem(props.index)}
+          children={props.children}
+        />
+      ))}
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <Accordion defaultIndex="1" onItemClick={console.log}>
+    <AccordionItem label="A" index="1">
+      Lorem ipsum
+    </AccordionItem>
+    <AccordionItem label="B" index="2">
+      Dolor sit amet
+    </AccordionItem>
+  </Accordion>,
+  document.getElementById('root')
+);
+```
+</td>
+<td>
+
+>[pattern]: Renders an accordion menu with multiple collapsible content components.
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-pattern-8-carousel</strong>
+</td>
+<td>
+
+```jsx
+function Carousel(props) {
+  const [active, setActive] = React.useState(0);
+  let scrollInterval = null;
+  const style = {
+    carousel: {
+      position: "relative"
+    },
+    carouselItem: {
+      position: "absolute",
+      visibility: "hidden"
+    },
+    visible: {
+      visibility: "visible"
+    }
+  };
+  React.useEffect(() => {
+    scrollInterval = setTimeout(() => {
+      const { carouselItems } = props;
+      setActive((active + 1) % carouselItems.length);
+    }, 2000);
+  });
+  const { carouselItems, ...rest } = props;
+  return (
+    <div style={style.carousel}>
+      {carouselItems.map((item, index) => {
+        const activeStyle = active === index ? style.visible : {};
+        return React.cloneElement(item, {
+          ...rest,
+          style: {
+            ...style.carouselItem,
+            ...activeStyle
+          }
+        });
+      })}
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <Carousel
+    carouselItems={[
+      <div>carousel item 1</div>,
+      <div>carousel item 2</div>,
+      <div>carousel item 3</div>
+    ]}
+  />,
+  document.getElementById("root")
+);
+```
+</td>
+<td>
+
+>[pattern]: Renders a carousel component.
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-pattern-9-collapse</strong>
+</td>
+<td>
+
+```jsx
+function Collapse(props) {
+  const [isCollapsed, setIsCollapsed] = React.useState(props.collapsed);
+
+  const style = {
+    collapsed: {
+      display: "none"
+    },
+    expanded: {
+      display: "block"
+    },
+    buttonStyle: {
+      display: "block",
+      width: "100%"
+    }
+  };
+
+  return (
+    <div>
+      <button
+        style={style.buttonStyle}
+        onClick={() => setIsCollapsed(!isCollapsed)}
+      >
+        {isCollapsed ? "Show" : "Hide"} content
+      </button>
+      <div
+        className="collapse-content"
+        style={isCollapsed ? style.collapsed : style.expanded}
+        aria-expanded={isCollapsed}
+      >
+        {props.children}
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <Collapse>
+    <h1>This is a collapse</h1>
+    <p>Hello world!</p>
+  </Collapse>,
+  document.getElementById('root')
+);
+```
+</td>
+<td>
+
+>[pattern]: Renders a component with collapsible content.
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-pattern-10-treeView</strong>
+</td>
+<td>
+
+```jsx
+function TreeView({
+  data,
+  toggled = true,
+  name = null,
+  isLast = true,
+  isChildElement = false,
+  isParentToggled = true
+}) {
+  const [isToggled, setIsToggled] = React.useState(toggled);
+
+  return (
+    <div
+      style={{ marginLeft: isChildElement ? 16 : 4 + "px" }}
+      className={isParentToggled ? "tree-element" : "tree-element collapsed"}
+    >
+      <span
+        className={isToggled ? "toggler" : "toggler closed"}
+        onClick={() => setIsToggled(!isToggled)}
+      />
+      {name ? <strong>&nbsp;&nbsp;{name}: </strong> : <span>&nbsp;&nbsp;</span>}
+      {Array.isArray(data) ? "[" : "{"}
+      {!isToggled && "..."}
+      {Object.keys(data).map(
+        (v, i, a) =>
+          typeof data[v] == "object" ? (
+            <TreeView
+              data={data[v]}
+              isLast={i === a.length - 1}
+              name={Array.isArray(data) ? null : v}
+              isChildElement
+              isParentToggled={isParentToggled && isToggled}
+            />
+          ) : (
+            <p
+              style={{ marginLeft: 16 + "px" }}
+              className={isToggled ? "tree-element" : "tree-element collapsed"}
+            >
+              {Array.isArray(data) ? "" : <strong>{v}: </strong>}
+              {data[v]}
+              {i === a.length - 1 ? "" : ","}
+            </p>
+          )
+      )}
+      {Array.isArray(data) ? "]" : "}"}
+      {!isLast ? "," : ""}
+    </div>
+  );
+}
+
+let data = {
+  lorem: {
+    ipsum: "dolor sit",
+    amet: {
+      consectetur: "adipiscing",
+      elit: [
+        "duis",
+        "vitae",
+        {
+          semper: "orci"
+        },
+        {
+          est: "sed ornare"
+        },
+        "etiam",
+        ["laoreet", "tincidunt"],
+        ["vestibulum", "ante"]
+      ]
+    },
+    ipsum: "primis"
+  }
+};
+ReactDOM.render(<TreeView data={data} name='data'/>, document.getElementById("root"));
+```
+</td>
+<td>
+
+>[pattern]: Restitue une arborescence d'un objet ou d'un tableau JSON avec un contenu réductible
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-pattern-11-mailTo</strong>
+</td>
+<td>
+
+```jsx
+function Mailto({ email, subject, body, ...props }) {
+  return (
+    <a href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
+      {props.children}
+    </a>
+  );
+}
+
+ReactDOM.render(
+  <Mailto email="foo@bar.baz" subject="Hello" body="Hello world!">
+    Mail me!
+  </Mailto>,
+  document.getElementById("root")
+);
+```
+</td>
+<td>
+
+>[pattern]: Renders a link formatted to send email
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-pattern-12-toolTip</strong>
+</td>
+<td>
+
+```jsx
+function Tooltip({ children, text, ...rest }) {
+  const [show, setShow] = React.useState(false);
+
+  return (
+    <div>
+      <div className="tooltip" style={show ? { visibility: "visible" } : {}}>
+        {text}
+        <span className="tooltip-arrow" />
+      </div>
+      <div
+        {...rest}
+        onMouseEnter={() => setShow(true)}
+        onMouseLeave={() => setShow(false)}
+      >
+        {children}
+      </div>
+    </div>
+  );
+}
+```
+</td>
+<td>
+
+>[pattern]: Renders a ticker component.
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-css-pattern-13-ticker</strong>
+</td>
+<td>
+
+```jsx
+function Ticker(props) {
+  const [ticker, setTicker] = React.useState(0);
+  let interval = null;
+
+  const tick = () => {
+    reset();
+    interval = setInterval(() => {
+      if (ticker < props.times) 
+        setTicker(ticker + 1);
+      else 
+        clearInterval(interval);
+    }, props.interval);
+  }
+
+  const reset = () => {
+    setTicker(0);
+    clearInterval(interval);
+  }
+
+  return (
+    <div>
+      <span style={{ fontSize: 100 }}>{ticker}</span>
+      <button onClick={tick}>Tick!</button>
+      <button onClick={reset}>Reset</button>
+    </div>
+  );
+}
+```
+</td>
+<td>
+
+>[pattern]: Renders a ticker component.
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-css-pattern-14-input</strong>
+</td>
+<td>
+
+```jsx
+function Ticker(props) {
+  const [ticker, setTicker] = React.useState(0);
+  let interval = null;
+
+  const tick = () => {
+    reset();
+    interval = setInterval(() => {
+      if (ticker < props.times) 
+        setTicker(ticker + 1);
+      else 
+        clearInterval(interval);
+    }, props.interval);
+  }
+
+  const reset = () => {
+    setTicker(0);
+    clearInterval(interval);
+  }
+
+  return (
+    <div>
+      <span style={{ fontSize: 100 }}>{ticker}</span>
+      <button onClick={tick}>Tick!</button>
+      <button onClick={reset}>Reset</button>
+    </div>
+  );
+}
+```
+</td>
+<td>
+
+>[pattern]: Displays an input element that uses a callback function to pass its value to the parent component.
+</td>
+</tr>
+
+</table>
+
+#### ◾ CSS patterns
+
+<table>
+<th>prefix</th>
+<th>body</th>
+<th>description</th>
+
+<tr>
+<td>
+<strong>bbeo-css-pattern-treeviewCSS</strong>
+</td>
+<td>
+
+```css
+.tree-element {
+  margin: 0;
+  position: relative;
+}
+
+div.tree-element:before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: 1px;
+  height: calc(100% - 48px);
+  border-left: 1px solid gray;
+}
+
+.toggler {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 0; 
+  height: 0; 
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 5px solid gray;
+  cursor: pointer;
+}
+
+.toggler.closed {
+  transform: rotate(90deg);
+}
+
+.collapsed {
+  display: none;
+}
+```
+</td>
+<td>
+
+>[pattern]: Restitue une arborescence d'un objet ou d'un tableau JSON avec un contenu réductible
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-css-pattern-toolTipCSS</strong>
+</td>
+<td>
+
+```css
+.tooltip {
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  visibility: hidden;
+  padding: 5px;
+  border-radius: 5px;
+}
+.tooltip-arrow {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.7) transparent transparent;
+}
+```
+</td>
+<td>
+
+>[pattern]: Renders a ticker component.
 </td>
 </tr>
 
