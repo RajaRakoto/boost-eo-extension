@@ -52,13 +52,13 @@ You can install it by typing `boost-eo` in the extension tab of your IDE
 - [x] Some snippets on frequently used javascript libraries
 - [ ] Typescript snippets collection
 - [ ] Typescript patterns collection
-- [ ] React snippets collection
-- [x] React patterns collection (components)
+- [x] React snippets collection (beta)
+- [x] React patterns collection (beta)
 - [ ] Python snippets collection
 - [ ] Python patterns collection
 - [ ] Shell script snippets collection
 - [ ] Shell script patterns collection
-- [x] CSS patterns collection
+- [x] CSS patterns collection (beta)
 
 
 
@@ -96,7 +96,7 @@ grunt compress-all
 | --- | --- | --- | --- |
 | JavaScript | <div align='center'>131</div> | <div align='center'>2</div> | <div align='center'>20</div> |
 | Python | <div align='center'>0</div> | <div align='center'>0</div> | <div align='center'>0</div> |
-| React | <div align='center'>13</div> | <div align='center'>-</div> | <div align='center'>0</div> |
+| React | <div align='center'>18</div> | <div align='center'>-</div> | <div align='center'>3</div> |
 | Shell Script | <div align='center'>0</div> | <div align='center'>-</div> | <div align='center'>0</div> |
 | TypeScript | <div align='center'>0</div> | <div align='center'>-</div> | <div align='center'>0</div> |
 | CSS | <div align='center'>2</div> | <div align='center'>-</div> | <div align='center'>-</div> |
@@ -108,7 +108,7 @@ grunt compress-all
 | --- | --- | --- | --- |
 | JavaScript | <div align="center">`array-1-all` `array-2-allEqual` `math-3-approximatelyEqual` `cast-4-arrayToCSV` `cast-5-arrayToHtmlList` `func-6-attempt` `array-7-average` `mixte-8-averageBy` `array-9-bifurcate` `array-10-bifurcateBy` `dom-11-bottomVisible` `cast-12-byteSize` `string-13-capitalize` `string-14-capitalizeEveryWord` `cast-15-castArray` `array-16-compact` `array-17-countOccurrences` `lib-18-createDirIfNotExists` `bom-19-currentURL` `date-20-dayOfYear` `string-21-decapitalize` `array-22-deepFlatten` `object-23-default` `func-24-defer` `cast-25-degreesToRads` `array-26-difference` `mixte-27-differenceBy` `array-28-differenceWith` `cast-29-digitize` `math-30-distance` `array-31-DropLeft` `array-32-dropRight` `array-33-dropRightWhile` `array-34-dropWhile` `dom-35-elementContains` `array-36-Filter Duplicate Elements` `object-37-findKey` `array-38-findLast` `array-39-flatten` `array-40-forEachRight` `object-41-forOwn` `func-42-functionName` `date-43-Get Time From Date` `date-44-Get Days Between Dates` `dom-45-getStyle` `test-46-getType` `dom-47-hasClass` `array-48-head` `dom-49-hide` `bom-50-httpsRedirect` `array-51-indexOfAll` `array-52-initial` `dom-53-insertAfter` `dom-54-insertBefore` `array-55-intersection` `array-56-intersectionBy` `array-57-intersectionWith` `test-58-is` `test-59-isAfterDate` `test-60-isAnagram` `test-61-isArrayLike` `test-62-isBeforeDate` `test-63-isBoolean` `test-64-isBrowser` `test-65-isBrowserTabFocused` `test-66-isLowerCase` `test-67-isNil` `test-68-isNull` `test-69-isNumber` `test-70-isObject` `test-71-isObjectLike` `test-72-isPlainObject` `test-73-isPromiseLike` `test-74-isSameDate` `test-75-isString` `test-76-isSymbol` `test-77-isUndefined` `test-78-isUpperCase` `test-79-isValidJSON` `array-80-last` `object-81-matches` `date-82-maxDate` `array-83-maxN` `date-84-minDate` `array-85-minN` `func-86-negate` `dom-87-nodeListToArray` `string-88-pad` `cast-89-radsToDegrees` `gen-90-randomHexColorCode` `gen-91-randomIntArrayInRange` `gen-92-randomIntegerInRange` `gen-93-randomNumberInRange` `lib-94-readFileLines` `bom-95-redirect` `string-96-reverse` `math-97-round` `promise-98-runPromisesInSeries` `array-99-sample` `array-100-sampleSize` `dom-101-scrollToTop` `string-102-serializeCookie` `dom-103-setStyle` `gen-104-shallowClone` `dom-105-show` `array-106-shuffle` `array-107-similarity` `promise-108-sleep` `dom-130-smoothScroll` `string-110-sortCharactersInString` `cast-111-splitLines` `dom-112-stripHTMLTags` `array-113-sum` `array-114-tail` `array-115-take` `array-116-takeRight` `func-117-timeTaken` `func-118-times` `cast-119-toCurrency` `cast-120-toDecimalMark` `dom-121-toggleClass` `date-122-tomorrow` `func-123-unfold` `array-124-union` `array-125-uniqueElements` `test-126-validateNumber` `cast-127-words` `gen-128-getES6moduleSyntaxBySource` `gen-129-concatJSONsourcesToOneFile` `test-131-validateEmail`</div> | <div align="center">`fs` `traverse`</div> | <div align="center">`array` `basic` `bom` `cast` `class` `console` `date` `destruct` `dom` `func` `gen` `hybrid` `math` `mixte` `module` `object` `regex` `spread` `string` `struct`</div> |
 | Python | <div align="center"> n/a </div> | <div align="center"> n/a </div> | <div align="center"> n/a </div> |
-| React | <div align="center">`1-useId` `2-setState` `4-jsxConfitionals2` `5-dataList` `6-limitedWordTextarea` `7-accordionItem` `8-carousel` `9-collapse` `10-treeView` `11-mailTo` `12-toolTip` `bbeo-css-pattern-13-ticker` `bbeo-css-pattern-14-input`</div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
+| React | <div align="center">`gen-1-useId` `state-2-setState` `jsx-4-confitionals2` `comp-5-dataList` `comp-6-limitedWordTextarea` `comp-7-accordionItem` `comp-8-carousel` `comp-9-collapse` `comp-10-treeView` `comp-11-mailTo` `comp-12-toolTip` `bbeo-css-pattern-comp-13-ticker` `bbeo-css-pattern-comp-14-input` `state-15-propsDrillingState` `state-15-callbackFuncState` `event-16-onClick` `event-17-onChange` `event-18-onSubmit`</div> | <div align='center'>-</div> | <div align="center">`gen` `module` `version`</div> |
 | Shell Script | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
 | TypeScript | <div align="center"> n/a </div> | <div align='center'>-</div> | <div align="center"> n/a </div> |
 | CSS | <div align="center">`treeviewCSS` `toolTipCSS`</div> | <div align='center'>-</div> | <div align='center'>-</div> |
@@ -120,7 +120,7 @@ grunt compress-all
 | --- | --- |
 | JavaScript | <div align='center'>array - object - func - test (regex) - math - dom - bom - date - cast - mixte - hybrid - string - gen (tools) - lib - promise</div> |
 | Python | <div align='center'>-</div> |
-| React | <div align='center'>-</div> |
+| React | <div align='center'>gen - state - jsx - comp (component)</div> |
 | Shell Script | <div align='center'>-</div> |
 | TypeScript | <div align='center'>-</div> |
 | CSS | <div align='center'>-</div> |
@@ -140,6 +140,7 @@ grunt compress-all
 | [🔎 Javascript snippets](#-javascript-snippets) |
 | [🔎 Javascript patterns](#-javascript-patterns) |
 | [🔎 Javascript libaries](#-javascript-libraries) |
+| [🔎 React snippets](#-react-snippets) |
 | [🔎 React patterns](#-react-patterns) |
 | [🔎 CSS patterns](#-css-patterns) |
 </div>
@@ -5662,6 +5663,114 @@ export function traverseKeyValueByJSON(source, key) {
 
 </table>
 
+#### ◾ React snippets
+
+<table>
+<th>prefix</th>
+<th>body</th>
+<th>description</th>
+
+<tr>
+<td>
+<strong>bbeo-react-gen-classComponent</strong>
+</td>
+<td>
+
+```jsx
+export default class ${1:component_name} extends React.Component {
+	render() {
+		return (
+     // code JSX ...
+		);
+	}
+}
+```
+</td>
+<td>
+
+>[gen]: Generate react class component structure
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-gen-functionComponent</strong>
+</td>
+<td>
+
+```jsx
+export default function ${1:component_name}(${2{...props | ...children}}) {
+  return
+  (
+    // code JSX ...
+  )
+}
+```
+</td>
+<td>
+
+>[gen]: Generate react function component structure
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-module-react</strong>
+</td>
+<td>
+
+```jsx
+import React from 'react';
+```
+</td>
+<td>
+
+>[module]: Import react
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-version-18</strong>
+</td>
+<td>
+
+```jsx
+import ReactDOM from 'react-dom/client';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+```
+</td>
+<td>
+
+>[version]: Generate react 18 index.js version
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-version-17</strong>
+</td>
+<td>
+
+```jsx
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+	<App />
+	document.getElementById('root'),
+);
+```
+</td>
+<td>
+
+>[version]: Generate react 17 index.js version
+</td>
+</tr>
+
+</table>
+
 #### ◾ React patterns
 
 <table>
@@ -5671,7 +5780,7 @@ export function traverseKeyValueByJSON(source, key) {
 
 <tr>
 <td>
-<strong>bbeo-react-pattern-1-useId</strong>
+<strong>bbeo-react-pattern-gen-1-useId</strong>
 </td>
 <td>
 
@@ -5708,7 +5817,7 @@ export default function App() {
 
 <tr>
 <td>
-<strong>bbeo-react-pattern-2-setState</strong>
+<strong>bbeo-react-pattern-state-2-setState</strong>
 </td>
 <td>
 
@@ -5735,7 +5844,7 @@ const myComponent = () => {
 
 <tr>
 <td>
-<strong>bbeo-react-pattern-4-jsxConfitionals2</strong>
+<strong>bbeo-react-pattern-jsx-4-confitionals2</strong>
 </td>
 <td>
 
@@ -5771,7 +5880,7 @@ const sampleComponent = () => {
 
 <tr>
 <td>
-<strong>bbeo-react-pattern-5-dataList</strong>
+<strong>bbeo-react-pattern-comp-5-dataList</strong>
 </td>
 <td>
 
@@ -5796,7 +5905,7 @@ ReactDOM.render(<DataList data={names} isOrdered/>, document.getElementById('roo
 
 <tr>
 <td>
-<strong>bbeo-react-pattern-6-limitedWordTextarea</strong>
+<strong>bbeo-react-pattern-comp-6-limitedWordTextarea</strong>
 </td>
 <td>
 
@@ -5854,7 +5963,7 @@ ReactDOM.render(
 
 <tr>
 <td>
-<strong>bbeo-react-pattern-7-accordionItem</strong>
+<strong>bbeo-react-pattern-comp-7-accordionItem</strong>
 </td>
 <td>
 
@@ -5933,7 +6042,7 @@ ReactDOM.render(
 
 <tr>
 <td>
-<strong>bbeo-react-pattern-8-carousel</strong>
+<strong>bbeo-react-pattern-comp-8-carousel</strong>
 </td>
 <td>
 
@@ -5996,7 +6105,7 @@ ReactDOM.render(
 
 <tr>
 <td>
-<strong>bbeo-react-pattern-9-collapse</strong>
+<strong>bbeo-react-pattern-comp-9-collapse</strong>
 </td>
 <td>
 
@@ -6053,7 +6162,7 @@ ReactDOM.render(
 
 <tr>
 <td>
-<strong>bbeo-react-pattern-10-treeView</strong>
+<strong>bbeo-react-pattern-comp-10-treeView</strong>
 </td>
 <td>
 
@@ -6140,7 +6249,7 @@ ReactDOM.render(<TreeView data={data} name='data'/>, document.getElementById("ro
 
 <tr>
 <td>
-<strong>bbeo-react-pattern-11-mailTo</strong>
+<strong>bbeo-react-pattern-comp-11-mailTo</strong>
 </td>
 <td>
 
@@ -6169,7 +6278,7 @@ ReactDOM.render(
 
 <tr>
 <td>
-<strong>bbeo-react-pattern-12-toolTip</strong>
+<strong>bbeo-react-pattern-comp-12-toolTip</strong>
 </td>
 <td>
 
@@ -6203,7 +6312,7 @@ function Tooltip({ children, text, ...rest }) {
 
 <tr>
 <td>
-<strong>bbeo-css-pattern-13-ticker</strong>
+<strong>bbeo-css-pattern-comp-13-ticker</strong>
 </td>
 <td>
 
@@ -6245,7 +6354,7 @@ function Ticker(props) {
 
 <tr>
 <td>
-<strong>bbeo-css-pattern-14-input</strong>
+<strong>bbeo-css-pattern-comp-14-input</strong>
 </td>
 <td>
 
@@ -6282,6 +6391,178 @@ function Ticker(props) {
 <td>
 
 >[pattern]: Displays an input element that uses a callback function to pass its value to the parent component.
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-pattern-state-15-propsDrillingState</strong>
+</td>
+<td>
+
+```jsx
+function Child({ parentData }) {
+	return (
+		<div>
+			<span>Child data: {parentData}</span>
+		</div>
+	);
+}
+
+export default function Parent() {
+	const [state, setState] = React.useState(null);
+
+	const externalData = 'Ceci est un donnee venant du composant parent';
+
+	return (
+		<div>
+			<p>Parent data: {state}</p>
+			<Child parentData={state} />
+			<br />
+			<button onClick={() => setState(externalData)}>Send</button>
+		</div>
+	);
+}
+```
+</td>
+<td>
+
+>[pattern]: Data transmission from parent to children
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-pattern-state-15-callbackFuncState</strong>
+</td>
+<td>
+
+```jsx
+function Child({ sendDatatoParent }) {
+	const externalData = 'Ceci est un donnee venant du composant enfant';
+
+	return (
+		<div>
+			<span>Child data: {externalData}</span>
+			<br />
+			<button onClick={() => sendDatatoParent(externalData)}>Send</button>
+		</div>
+	);
+}
+
+export default function Parent() {
+	const [state, setState] = React.useState(null);
+
+	const sendDatatoParent = childData => {
+		setState(childData);
+	};
+
+	return (
+		<div>
+			<p>Parent data: {state}</p>
+			<Child sendDatatoParent={sendDatatoParent} />
+		</div>
+	);
+}
+```
+</td>
+<td>
+
+>[pattern]: Data transmission from children to parent
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-pattern-event-16-onClick</strong>
+</td>
+<td>
+
+```jsx
+export default function Age() {
+	let [state, setState] = React.useState();
+	state = { Users };
+
+	const setAge = value => {
+		setState((state.Users.user1.age += value)); 
+	};
+
+	return (
+		<React.Fragment>
+			<p>Age (user1): {Users.user1.age}</p>
+			<button onClick={() => setAge(2)}>Viellir</button>
+		</React.Fragment>
+	);
+}
+```
+</td>
+<td>
+
+>[pattern]: onClick() event for React
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-pattern-event-17-onChange</strong>
+</td>
+<td>
+
+```jsx
+export default function Message() {
+	const [message, setMessageValue] = React.useState('default message');
+
+	return (
+		<React.Fragment>
+			<textarea
+				cols="30"
+				rows="10"
+				placeholder={message}
+				onChange={e => setMessageValue(e.target.value)} // ecouteur d'evenement qui fait appel a la methode setMessageValue() a chaque modification et mettre a jour le state
+			></textarea>
+		</React.Fragment>
+	);
+}
+```
+</td>
+<td>
+
+>[pattern]: onChange() event for React
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>bbeo-react-pattern-event-18-onSubmit</strong>
+</td>
+<td>
+
+```jsx
+export default function SampleForm() {
+	const handleSubmit = e => {
+		e.preventDefault();
+		alert(e.target['sample-input'].value); // get sample-input value
+	};
+
+	return (
+		<React.Fragment>
+			<form id="sample-form" onSubmit={handleSubmit}>
+				<h5>Sample form</h5>
+				<input
+					type="text"
+					name="sample-input"
+					placeholder="Entrer un texte ici ..."
+				/>
+				<ValidBtn />
+			</form>
+		</React.Fragment>
+	);
+}
+```
+</td>
+<td>
+
+>[pattern]: onSubmit() event for React
 </td>
 </tr>
 
