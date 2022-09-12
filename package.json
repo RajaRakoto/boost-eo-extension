@@ -51,6 +51,10 @@
 			},
 			{
 				"language": "jsx",
+				"path": "./dist/boosteo-react-snippets.code-snippets"
+			},
+			{
+				"language": "jsx",
 				"path": "./dist/boosteo-react-patterns.code-snippets"
 			},
 			{
