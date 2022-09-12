@@ -39,6 +39,10 @@ import { js_basic } from '../src/snippets/javascript/js-basic.js';
 import { js_date } from '../src/snippets/javascript/js-date.js';
 import { js_dom } from '../src/snippets/javascript/js-dom.js';
 import { js_bom } from '../src/snippets/javascript/js-bom.js';
+// react snippets importation
+import { react_gen } from '../src/snippets/react/react-gen.js';
+import { react_module } from '../src/snippets/react/react-module.js';
+import { react_version } from '../src/snippets/react/react-version.js';
 
 // source list data
 const javascriptSourceList = refactorSourceList([
@@ -65,6 +69,11 @@ const javascriptSourceList = refactorSourceList([
 ]);
 const javascriptPatternSourceList = refactorSourceList([js_patterns]);
 const javascriptLibrariesSourceList = refactorSourceList([js_fs, js_traverse]);
+const reactSourceList = refactorSourceList([
+	react_gen,
+	react_module,
+	react_version,
+]);
 const reactPatternSourceList = refactorSourceList([react_patterns]);
 const cssPatternSourceList = refactorSourceList([css_patterns]);
 
@@ -94,6 +103,12 @@ getOutput(
 	'../dist/boosteo-js-libs.code-snippets',
 	'#### ◾ Javascript libraries',
 	'javascript',
+);
+getOutput(
+	reactSourceList,
+	'../dist/boosteo-react-snippets.code-snippets',
+	'#### ◾ React snippets',
+	'react',
 );
 getOutput(
 	reactPatternSourceList,
