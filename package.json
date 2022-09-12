@@ -9,7 +9,8 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "cd utils && node boost-eo.js > ../README.md && cd ..",
-		"build-vsix": "sudo vsce package && mv *.vsix backups/vsix"
+		"build-vsix": "sudo vsce package && mv *.vsix backups/vsix",
+		"backups": "grunt compress-all"
 	},
 	"repository": {
 		"type": "git",
