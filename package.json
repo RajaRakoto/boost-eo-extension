@@ -3,13 +3,14 @@
 	"displayName": "boost-eo",
 	"publisher": "raja",
 	"description": "A set of custom code snippets & pattern available for VScode IDE to help you be more productive by providing helper methods 🚀",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"icon": "assets/boost-eo-ico.png",
 	"type": "module",
 	"license": "MIT",
 	"scripts": {
 		"build": "cd utils && node boost-eo.js > ../README.md && cd ..",
-		"build-vsix": "sudo vsce package && mv *.vsix backups/vsix"
+		"build-vsix": "sudo vsce package && mv *.vsix backups/vsix",
+		"backups": "grunt compress-all"
 	},
 	"repository": {
 		"type": "git",

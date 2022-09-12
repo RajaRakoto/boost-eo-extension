@@ -77,7 +77,7 @@ npm run build
 ```
 🏁 You can run a `grunt task` to make a `local backup` of this project by running the following command (in root directory):
 ```bash
-grunt compress-all
+npm run backups
 ```
 🏁 Here is a tool that will help you to generate snippets -> https://snippet-generator.app/
 
