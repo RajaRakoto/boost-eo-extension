@@ -9,6 +9,7 @@ import { py_patterns } from '../src/patterns/py-patterns.js';
 import { react_patterns } from '../src/patterns/react-patterns.js';
 import { sh_patterns } from '../src/patterns/sh-patterns.js';
 import { ts_patterns } from '../src/patterns/ts-patterns.js';
+import { css_patterns } from '../src/patterns/css-patterns.js';
 // librairies importation
 const javascriptLibsList = '../src/libs/javascript';
 const pythonLibsList = '../src/libs/python';
@@ -30,6 +31,8 @@ const shPatternsTotal =
 	"<div align='center'>" + Object.keys(sh_patterns).length + '</div>';
 const tsPatternsTotal =
 	"<div align='center'>" + Object.keys(ts_patterns).length + '</div>';
+const cssPatternsTotal =
+	"<div align='center'>" + Object.keys(css_patterns).length + '</div>';
 
 // librairies total stats data
 const jsLibsTotal =
@@ -82,6 +85,11 @@ const tsPatternsList = generatePatternsStatsData(
 	ts_patterns,
 	'prefix',
 	'bbeo-ts-pattern-',
+);
+const cssPatternsList = generatePatternsStatsData(
+	css_patterns,
+	'prefix',
+	'bbeo-css-pattern-',
 );
 
 // librairies list stats data
@@ -140,6 +148,7 @@ const totalStatsDataTable = `
 | React | ${reactPatternsTotal} | ${none} | ${reactSnippetsTotal} |
 | Shell Script | ${shPatternsTotal} | ${none} | ${shSnippetsTotal} |
 | TypeScript | ${tsPatternsTotal} | ${none} | ${tsSnippetsTotal} |
+| CSS | ${cssPatternsTotal} | ${none} | ${none} |
 `;
 
 // generate HTML table for patterns, libraries and snippets list stats data
@@ -151,6 +160,7 @@ const listStatsDataTable = `
 | React | ${reactPatternsList} | ${none} | ${reactSnippetsList} |
 | Shell Script | ${shPatternsList} | ${none} | ${shSnippetsList} |
 | TypeScript | ${tsPatternsList} | ${none} | ${tsSnippetsList} |
+| CSS | ${cssPatternsList} | ${none} | ${none} |
 `;
 
 // generate patterns triggers categories lists
@@ -166,6 +176,7 @@ const patternsTriggersTable = `
 | React | ${none} |
 | Shell Script | ${none} |
 | TypeScript | ${none} |
+| CSS | ${none} |
 `;
 
 // all stats exportation
