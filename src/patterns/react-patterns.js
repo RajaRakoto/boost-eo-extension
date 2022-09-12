@@ -1,6 +1,6 @@
 export const react_patterns = {
 	'[pattern]: Generate id with useId hook from react 18': {
-		prefix: 'bbeo-react-pattern-1-useId',
+		prefix: 'bbeo-react-pattern-gen-1-useId',
 		body: [
 			"import { useId } from 'react';",
 			'',
@@ -28,7 +28,7 @@ export const react_patterns = {
 		description: '[pattern]: Generate id with useId hook from react 18',
 	},
 	'[pattern]: Set state pattern': {
-		prefix: 'bbeo-react-pattern-2-setState',
+		prefix: 'bbeo-react-pattern-state-2-setState',
 		body: [
 			'const myComponent = () => {',
 			'	const [object, setObject] = useState({',
@@ -46,7 +46,7 @@ export const react_patterns = {
 		description: '[pattern]: Set state hook pattern',
 	},
 	'[pattern]: JSX conditionals pattern ': {
-		prefix: 'bbeo-react-pattern-3-jsxConfitionals1',
+		prefix: 'bbeo-react-pattern-jsx-3-confitionals1',
 		body: [
 			'const sampleComponent = () => {',
 			'	return isTrue && <p>True!</p>; // IDEM -> return isTrue ? <p>True!</p> : null;',
@@ -55,7 +55,7 @@ export const react_patterns = {
 		description: '[pattern]: JSX conditionals pattern ',
 	},
 	'[pattern]: JSX conditionals pattern ': {
-		prefix: 'bbeo-react-pattern-4-jsxConfitionals2',
+		prefix: 'bbeo-react-pattern-jsx-4-confitionals2',
 		body: [
 			'const sampleComponent = () => {',
 			'  return (',
@@ -82,7 +82,7 @@ export const react_patterns = {
 		description: '[pattern]: JSX conditionals pattern ',
 	},
 	'[pattern]: Conditionally restore a list from a data': {
-		prefix: 'bbeo-react-pattern-5-dataList',
+		prefix: 'bbeo-react-pattern-comp-5-dataList',
 		body: [
 			'function DataList({ isOrdered, data }) {',
 			'  const list = data.map((val, i) => (',
@@ -98,7 +98,7 @@ export const react_patterns = {
 		description: '[pattern]: Conditionally restore a list from a data',
 	},
 	'[pattern]: Renders a textarea component with a word limit.': {
-		prefix: 'bbeo-react-pattern-6-limitedWordTextarea',
+		prefix: 'bbeo-react-pattern-comp-6-limitedWordTextarea',
 		body: [
 			'function LimitedWordTextarea({ rows, cols, value, limit }) {',
 			'  const [content, setContent] = React.useState(value);',
@@ -148,7 +148,7 @@ export const react_patterns = {
 	},
 	'[pattern]: Renders an accordion menu with multiple collapsible content components.':
 		{
-			prefix: 'bbeo-react-pattern-7-accordionItem',
+			prefix: 'bbeo-react-pattern-comp-7-accordionItem',
 			body: [
 				'function AccordionItem(props) {',
 				'  const style = {',
@@ -219,7 +219,7 @@ export const react_patterns = {
 				'[pattern]: Renders an accordion menu with multiple collapsible content components.',
 		},
 	'[pattern]: Renders a carousel component.': {
-		prefix: 'bbeo-react-pattern-8-carousel',
+		prefix: 'bbeo-react-pattern-comp-8-carousel',
 		body: [
 			'function Carousel(props) {',
 			'  const [active, setActive] = React.useState(0);',
@@ -273,7 +273,7 @@ export const react_patterns = {
 		description: '[pattern]: Renders a carousel component.',
 	},
 	'[pattern]: Renders a component with collapsible content.': {
-		prefix: 'bbeo-react-pattern-9-collapse',
+		prefix: 'bbeo-react-pattern-comp-9-collapse',
 		body: [
 			'function Collapse(props) {',
 			'  const [isCollapsed, setIsCollapsed] = React.useState(props.collapsed);',
@@ -320,9 +320,9 @@ export const react_patterns = {
 		],
 		description: '[pattern]: Renders a component with collapsible content.',
 	},
-	"[pattern]: CSS -> Renders a tree view of a JSON object or array with collapsible content":
+	'[pattern]: CSS -> Renders a tree view of a JSON object or array with collapsible content':
 		{
-			prefix: 'bbeo-react-pattern-10-treeView',
+			prefix: 'bbeo-react-pattern-comp-10-treeView',
 			body: [
 				'function TreeView({',
 				'  data,',
@@ -401,7 +401,7 @@ export const react_patterns = {
 				"[pattern]: Restitue une arborescence d'un objet ou d'un tableau JSON avec un contenu réductible",
 		},
 	'[pattern]: Renders a link formatted to send email': {
-		prefix: 'bbeo-react-pattern-11-mailTo',
+		prefix: 'bbeo-react-pattern-comp-11-mailTo',
 		body: [
 			'function Mailto({ email, subject, body, ...props }) {',
 			'  return (',
@@ -421,7 +421,7 @@ export const react_patterns = {
 		description: '[pattern]: Renders a link formatted to send email',
 	},
 	'[pattern]: CSS -> Renders a tooltip component.': {
-		prefix: 'bbeo-react-pattern-12-toolTip',
+		prefix: 'bbeo-react-pattern-comp-12-toolTip',
 		body: [
 			'function Tooltip({ children, text, ...rest }) {',
 			'  const [show, setShow] = React.useState(false);',
@@ -446,7 +446,7 @@ export const react_patterns = {
 		description: '[pattern]: Renders a ticker component.',
 	},
 	'[pattern]: Renders a ticker component.': {
-		prefix: 'bbeo-css-pattern-13-ticker',
+		prefix: 'bbeo-css-pattern-comp-13-ticker',
 		body: [
 			'function Ticker(props) {',
 			'  const [ticker, setTicker] = React.useState(0);',
@@ -480,7 +480,7 @@ export const react_patterns = {
 	},
 	'[pattern]: Displays an input element that uses a callback function to pass its value to the parent component.':
 		{
-			prefix: 'bbeo-css-pattern-14-input',
+			prefix: 'bbeo-css-pattern-comp-14-input',
 			body: [
 				'function Ticker(props) {',
 				'  const [ticker, setTicker] = React.useState(0);',
@@ -513,4 +513,131 @@ export const react_patterns = {
 			description:
 				'[pattern]: Displays an input element that uses a callback function to pass its value to the parent component.',
 		},
+	'[pattern]: Data transmission from parent to children': {
+		prefix: 'bbeo-react-pattern-state-15-propsDrillingState',
+		body: [
+			'function Child({ parentData }) {',
+			'	return (',
+			'		<div>',
+			'			<span>Child data: {parentData}</span>',
+			'		</div>',
+			'	);',
+			'}',
+			'',
+			'export default function Parent() {',
+			'	const [state, setState] = React.useState(null);',
+			'',
+			"	const externalData = 'Ceci est un donnee venant du composant parent';",
+			'',
+			'	return (',
+			'		<div>',
+			'			<p>Parent data: {state}</p>',
+			'			<Child parentData={state} />',
+			'			<br />',
+			'			<button onClick={() => setState(externalData)}>Send</button>',
+			'		</div>',
+			'	);',
+			'}',
+		],
+		description: '[pattern]: Data transmission from parent to children',
+	},
+	'[pattern]: Data transmission from children to parent': {
+		prefix: 'bbeo-react-pattern-state-15-callbackFuncState',
+		body: [
+			'function Child({ sendDatatoParent }) {',
+			"	const externalData = 'Ceci est un donnee venant du composant enfant';",
+			'',
+			'	return (',
+			'		<div>',
+			'			<span>Child data: {externalData}</span>',
+			'			<br />',
+			'			<button onClick={() => sendDatatoParent(externalData)}>Send</button>',
+			'		</div>',
+			'	);',
+			'}',
+			'',
+			'export default function Parent() {',
+			'	const [state, setState] = React.useState(null);',
+			'',
+			'	const sendDatatoParent = childData => {',
+			'		setState(childData);',
+			'	};',
+			'',
+			'	return (',
+			'		<div>',
+			'			<p>Parent data: {state}</p>',
+			'			<Child sendDatatoParent={sendDatatoParent} />',
+			'		</div>',
+			'	);',
+			'}',
+		],
+		description: '[pattern]: Data transmission from children to parent',
+	},
+	'[pattern]: onClick() event for React': {
+		prefix: 'bbeo-react-pattern-event-16-onClick',
+		body: [
+			'export default function Age() {',
+			'	let [state, setState] = React.useState();',
+			'	state = { Users };',
+			'',
+			'	const setAge = value => {',
+			'		setState((state.Users.user1.age += value)); ',
+			'	};',
+			'',
+			'	return (',
+			'		<React.Fragment>',
+			'			<p>Age (user1): {Users.user1.age}</p>',
+			'			<button onClick={() => setAge(2)}>Viellir</button>',
+			'		</React.Fragment>',
+			'	);',
+			'}',
+		],
+		description: '[pattern]: onClick() event for React',
+	},
+	'[pattern]: onChange() event for React': {
+		prefix: 'bbeo-react-pattern-event-17-onChange',
+		body: [
+			'export default function Message() {',
+			"	const [message, setMessageValue] = React.useState('default message');",
+			'',
+			'	return (',
+			'		<React.Fragment>',
+			'			<textarea',
+			'				cols="30"',
+			'				rows="10"',
+			'				placeholder={message}',
+			"				onChange={e => setMessageValue(e.target.value)} // ecouteur d'evenement qui fait appel a la methode setMessageValue() a chaque modification et mettre a jour le state",
+			'			></textarea>',
+			'		</React.Fragment>',
+			'	);',
+			'}',
+		],
+		description: '[pattern]: onChange() event for React',
+	},
+	'[pattern]: onSubmit() event for React': {
+		prefix: 'bbeo-react-pattern-event-17-onSubmit',
+		body: [
+			'export default function SampleForm() {',
+			'	const handleSubmit = e => {',
+			'		e.preventDefault();',
+			"		alert(e.target['sample-input'].value); // get sample-input value",
+			'	};',
+			'',
+			'	return (',
+			'		<React.Fragment>',
+			'			<form id="sample-form" onSubmit={handleSubmit}>',
+			'				<h5>Sample form</h5>',
+			'				<input',
+			'					type="text"',
+			'					name="sample-input"',
+			'					placeholder="Entrer un texte ici ..."',
+			'				/>',
+			'				<ValidBtn />',
+			'			</form>',
+			'		</React.Fragment>',
+			'	);',
+			'}',
+		],
+		description: '[pattern]: onSubmit() event for React',
+	},
 };

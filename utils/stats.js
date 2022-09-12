@@ -168,12 +168,16 @@ const patternsTriggersListForJavascript =
 	"<div align='center'>" +
 	'array - object - func - test (regex) - math - dom - bom - date - cast - mixte - hybrid - string - gen (tools) - lib - promise' +
 	'</div>';
+const patternsTriggersListForReact = 
+	"<div align='center'>" +
+	'gen - state - jsx - comp (component)' +
+	'</div>';
 const patternsTriggersTable = `
 | Languages | Patterns |
 | --- | --- |
 | JavaScript | ${patternsTriggersListForJavascript} |
 | Python | ${none} |
-| React | ${none} |
+| React | ${patternsTriggersListForReact} |
 | Shell Script | ${none} |
 | TypeScript | ${none} |
 | CSS | ${none} |
