@@ -15,5 +15,6 @@ export const feats = `
 - [ ] Python patterns collection
 - [ ] Shell script snippets collection
 - [ ] Shell script patterns collection
+- [x] CSS patterns collection
 
 `;
