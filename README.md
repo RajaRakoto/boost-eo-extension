@@ -6243,7 +6243,7 @@ ReactDOM.render(<TreeView data={data} name='data'/>, document.getElementById("ro
 </td>
 <td>
 
->[pattern]: Restitue une arborescence d'un objet ou d'un tableau JSON avec un contenu réductible
+>[pattern]: Renders a tree view of a JSON object or array with collapsible content
 </td>
 </tr>
 
@@ -6619,7 +6619,7 @@ div.tree-element:before {
 </td>
 <td>
 
->[pattern]: Restitue une arborescence d'un objet ou d'un tableau JSON avec un contenu réductible
+>[pattern]: Renders a tree view of a JSON object or array with collapsible content
 </td>
 </tr>
 
