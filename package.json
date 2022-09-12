@@ -51,11 +51,11 @@
 				"path": "./dist/boosteo-js-libs.code-snippets"
 			},
 			{
-				"language": "jsx",
+				"language": "javascript",
 				"path": "./dist/boosteo-react-snippets.code-snippets"
 			},
 			{
-				"language": "jsx",
+				"language": "javascript",
 				"path": "./dist/boosteo-react-patterns.code-snippets"
 			},
 			{
