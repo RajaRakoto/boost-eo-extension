@@ -59,6 +59,70 @@
 				"path": "./dist/boosteo-react-patterns.code-snippets"
 			},
 			{
+				"language": "typescript",
+				"path": "./dist/boosteo-js-snippets.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./dist/boosteo-js-patterns.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./dist/boosteo-js-libs.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./dist/boosteo-react-snippets.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./dist/boosteo-react-patterns.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./dist/boosteo-js-snippets.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./dist/boosteo-js-patterns.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./dist/boosteo-js-libs.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./dist/boosteo-react-snippets.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./dist/boosteo-react-patterns.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./dist/boosteo-js-snippets.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./dist/boosteo-js-patterns.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./dist/boosteo-js-libs.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./dist/boosteo-react-snippets.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./dist/boosteo-react-patterns.code-snippets"
+			},
+			{
+				"language": "scss",
+				"path": "./dist/boosteo-css-patterns.code-snippets"
+			},
+			{
 				"language": "css",
 				"path": "./dist/boosteo-css-patterns.code-snippets"
 			}
