@@ -3,7 +3,7 @@
 	"displayName": "boost-eo",
 	"publisher": "raja",
 	"description": "A set of custom code snippets & pattern available for VScode IDE to help you be more productive by providing helper methods 🚀",
-	"version": "1.2.2",
+	"version": "1.2.3",
 	"icon": "assets/boost-eo-ico.png",
 	"type": "module",
 	"license": "MIT",
@@ -57,6 +57,70 @@
 			{
 				"language": "javascript",
 				"path": "./dist/boosteo-react-patterns.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./dist/boosteo-js-snippets.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./dist/boosteo-js-patterns.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./dist/boosteo-js-libs.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./dist/boosteo-react-snippets.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./dist/boosteo-react-patterns.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./dist/boosteo-js-snippets.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./dist/boosteo-js-patterns.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./dist/boosteo-js-libs.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./dist/boosteo-react-snippets.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./dist/boosteo-react-patterns.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./dist/boosteo-js-snippets.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./dist/boosteo-js-patterns.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./dist/boosteo-js-libs.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./dist/boosteo-react-snippets.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./dist/boosteo-react-patterns.code-snippets"
+			},
+			{
+				"language": "scss",
+				"path": "./dist/boosteo-css-patterns.code-snippets"
 			},
 			{
 				"language": "css",
