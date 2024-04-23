@@ -1,138 +1,72 @@
 {
 	"name": "boost-eo",
 	"displayName": "boost-eo",
+	"version": "1.0.0",
+	"description": "A collection of handy code snippets and design tricks to boost productivity for JavaScript developers, accessible within VSCode 🚀",
 	"publisher": "raja",
-	"description": "A set of custom code snippets & pattern available for VScode IDE to help you be more productive by providing helper methods 🚀",
-	"version": "1.2.3",
-	"icon": "assets/boost-eo-ico.png",
-	"type": "module",
+	"author": "Raja Rakotonirina <raja.rakoto7@gmail.com>",
 	"license": "MIT",
-	"scripts": {
-		"build": "cd utils && node boost-eo.js > ../README.md && cd ..",
-		"build-vsix": "sudo vsce package && mv *.vsix backups/vsix",
-		"backups": "grunt compress-all"
-	},
+	"icon": "./assets/boost-eo-extension.png",
+	"readme": "./README.md",
+	"type": "module",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/RajaRakoto/sass-eo.git"
+		"url": "git+https://github.com/RajaRakoto/boost-eo.git"
 	},
-	"engines": {
-		"vscode": "^1.49.0"
-	},
-	"categories": [
-		"Snippets"
+	"homepage": "https://github.com/RajaRakoto/boost-eo#readme",
+	"bugs": "https://github.com/RajaRakoto/boost-eo/issues",
+	"files": [
+		"dist"
 	],
 	"keywords": [
-		"react",
+		"extension",
+		"vscode",
 		"javascript",
-		"python",
 		"productivity",
 		"snippets",
 		"helper",
 		"patterns",
-		"vscode",
-		"vscode-extension",
-		"shell-script",
-		"snippets-collection",
-		"nodejs"
+		"collection"
 	],
+	"engines": {
+		"vscode": "^1.39.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"scripts": {
+		"script:es6": "bun es6.js",
+		"clean": "rimraf build dist coverage",
+		"build": "bun run clean && cd utils && bun boost-eo.js > ../README.md && bun build.js && vsce package && mv my-*.vsix dist",
+		"test": "bun test",
+		"eslint": "eslint --config .eslintrc --report-unused-disable-directives --max-warnings 0",
+		"prettier": "prettier --config .prettierrc --write .",
+		"backup": "grunt backup",
+		"pkg-check": "depcheck",
+		"pkg-upgrade": "ncu --interactive --format group --packageManager bun",
+		"versioning": "ungit",
+		"npm-version:major": "npm version major",
+		"npm-version:minor": "npm version minor",
+		"npm-version:patch": "npm version patch",
+		"nvm": "nvm use"
+	},
 	"contributes": {
 		"snippets": [
 			{
 				"language": "javascript",
-				"path": "./dist/boosteo-js-snippets.code-snippets"
-			},
-			{
-				"language": "javascript",
-				"path": "./dist/boosteo-js-patterns.code-snippets"
-			},
-			{
-				"language": "javascript",
-				"path": "./dist/boosteo-js-libs.code-snippets"
-			},
-			{
-				"language": "javascript",
-				"path": "./dist/boosteo-react-snippets.code-snippets"
-			},
-			{
-				"language": "javascript",
-				"path": "./dist/boosteo-react-patterns.code-snippets"
-			},
-			{
-				"language": "typescript",
-				"path": "./dist/boosteo-js-snippets.code-snippets"
-			},
-			{
-				"language": "typescript",
-				"path": "./dist/boosteo-js-patterns.code-snippets"
-			},
-			{
-				"language": "typescript",
-				"path": "./dist/boosteo-js-libs.code-snippets"
-			},
-			{
-				"language": "typescript",
-				"path": "./dist/boosteo-react-snippets.code-snippets"
-			},
-			{
-				"language": "typescript",
-				"path": "./dist/boosteo-react-patterns.code-snippets"
-			},
-			{
-				"language": "javascriptreact",
-				"path": "./dist/boosteo-js-snippets.code-snippets"
-			},
-			{
-				"language": "javascriptreact",
-				"path": "./dist/boosteo-js-patterns.code-snippets"
-			},
-			{
-				"language": "javascriptreact",
-				"path": "./dist/boosteo-js-libs.code-snippets"
-			},
-			{
-				"language": "javascriptreact",
-				"path": "./dist/boosteo-react-snippets.code-snippets"
-			},
-			{
-				"language": "javascriptreact",
-				"path": "./dist/boosteo-react-patterns.code-snippets"
-			},
-			{
-				"language": "typescriptreact",
-				"path": "./dist/boosteo-js-snippets.code-snippets"
-			},
-			{
-				"language": "typescriptreact",
-				"path": "./dist/boosteo-js-patterns.code-snippets"
-			},
-			{
-				"language": "typescriptreact",
-				"path": "./dist/boosteo-js-libs.code-snippets"
-			},
-			{
-				"language": "typescriptreact",
-				"path": "./dist/boosteo-react-snippets.code-snippets"
-			},
-			{
-				"language": "typescriptreact",
-				"path": "./dist/boosteo-react-patterns.code-snippets"
-			},
-			{
-				"language": "scss",
-				"path": "./dist/boosteo-css-patterns.code-snippets"
-			},
-			{
-				"language": "css",
-				"path": "./dist/boosteo-css-patterns.code-snippets"
+				"path": "./dist/boost-eo-extension.code-snippets"
 			}
 		]
 	},
 	"devDependencies": {
-		"fs": "^0.0.1-security",
-		"grunt": "^1.5.3",
+		"depcheck": "^1.4.7",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"grunt": "^1.6.1",
 		"grunt-contrib-compress": "^2.0.0",
 		"load-grunt-tasks": "^5.1.0",
-		"traverse": "^0.6.6"
+		"npm-check-updates": "^16.14.15",
+		"prettier": "^3.2.5",
+		"rimraf": "^5.0.5"
 	}
 }
