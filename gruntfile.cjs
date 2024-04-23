@@ -136,7 +136,7 @@ module.exports = function (grunt) {
 
 		// task resume
 		getTaskResume(
-			"== BOOST-EO BOILERPLATE TASKS ==",
+			"== BOOST-EO TASKS ==",
 			plumTaskNames,
 			plumTaskStatus,
 			"yellow",
