@@ -1,20 +1,20 @@
 {
-	"name": "boost-eo",
+	"name": "boost-eo-extension",
 	"displayName": "boost-eo",
 	"version": "1.0.0",
-	"description": "A collection of handy code snippets and design tricks to boost productivity for JavaScript developers, accessible within VSCode 🚀",
+	"description": "A collection of handy code snippets and design tricks to boost productivity for JavaScript developers, accessible within VSCode ✨",
 	"publisher": "raja",
 	"author": "Raja Rakotonirina <raja.rakoto7@gmail.com>",
 	"license": "MIT",
-	"icon": "./assets/boost-eo-extension.png",
+	"icon": "./assets/boost-eo.png",
 	"readme": "./README.md",
 	"type": "module",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/RajaRakoto/boost-eo.git"
+		"url": "git+https://github.com/RajaRakoto/boost-eo-extension.git"
 	},
-	"homepage": "https://github.com/RajaRakoto/boost-eo#readme",
-	"bugs": "https://github.com/RajaRakoto/boost-eo/issues",
+	"homepage": "https://github.com/RajaRakoto/boost-eo-extension#readme",
+	"bugs": "https://github.com/RajaRakoto/boost-eo-extension/issues",
 	"files": [
 		"dist"
 	],
