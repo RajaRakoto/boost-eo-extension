@@ -1,26 +1,26 @@
 export const js_console = {
 	'[console]: console log': {
-		prefix: 'bbeo-js-console-clg',
+		prefix: 'bbeo-console-clg',
 		body: ['console.log(${1:object})'],
 		description: '[console]: console log',
 	},
 	'[console]: console error': {
-		prefix: 'bbeo-js-console-clr',
+		prefix: 'bbeo-console-clr',
 		body: ['console.error(${1:object})'],
 		description: '[console]: console error',
 	},
 	'[console]: console table': {
-		prefix: 'bbeo-js-console-clt',
+		prefix: 'bbeo-console-clt',
 		body: ['console.table(${1:object})'],
 		description: '[console]: console table',
 	},
 	'[console]: console info': {
-		prefix: 'bbeo-js-console-cli',
+		prefix: 'bbeo-console-cli',
 		body: ['console.info(${1:object})'],
 		description: '[console]: console info',
 	},
 	'[console]: console warn': {
-		prefix: 'bbeo-js-console-clw',
+		prefix: 'bbeo-console-clw',
 		body: ['console.warn(${1:object})'],
 		description: '[console]: console warn',
 	},

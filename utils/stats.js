@@ -64,7 +64,7 @@ const tsSnippetsTotal =
 const jsPatternsList = generatePatternsStatsData(
 	js_patterns,
 	'prefix',
-	'bbeo-js-pattern-',
+	'bbeo-pattern-',
 );
 const pyPatternsList = generatePatternsStatsData(
 	py_patterns,
@@ -95,7 +95,7 @@ const cssPatternsList = generatePatternsStatsData(
 // librairies list stats data
 const jsLibsList = generateListStatsData(
 	javascriptLibsList,
-	'bbeo-js-lib-',
+	'bbeo-lib-',
 	'js-',
 	'.js',
 );
@@ -107,7 +107,7 @@ const pyLibsList = generateListStatsData(
 );
 const jsSnippetsList = generateListStatsData(
 	javascriptSnippetsListSource,
-	'bbeo-js-snippet-',
+	'bbeo-snippet-',
 	'js-',
 	'.js',
 );

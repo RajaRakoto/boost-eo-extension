@@ -34,7 +34,7 @@ export function fsReadDir(path) {
 export function getPatternModel(title, description, body) {
 	return `
 	"[pattern]: ${description}": {
-	  "prefix": "bbeo-js-pattern-${title}",
+	  "prefix": "bbeo-pattern-${title}",
 	  "body": [${body}],
 	  "description": "[pattern]: ${description}"
 	},
