@@ -6,4 +6,4 @@ export const install = `
 
 You can install it by typing \`boost-eo\` in the extension tab of your IDE
 
-`
+`;
