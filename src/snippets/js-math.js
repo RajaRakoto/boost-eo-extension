@@ -1,6 +1,6 @@
 export const js_math = {
 	"[math]: Format a number in fixed-dot notation -> number": {
-		prefix: "bbeo-math-dot",
+		prefix: "bbeo-math-fixedDot",
 		body: ["${1:number_var}.toFixed(${2:decal})"],
 		description: "[math]: Format a number in fixed-dot notation -> number",
 	},
