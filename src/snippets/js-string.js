@@ -56,4 +56,24 @@ export const js_string = {
 		body: ["${1:string_var}.toUpperCase()"],
 		description: "[string]: String to upper case -> string",
 	},
+	"[string]: Find index of element -> number": {
+		prefix: "bbeo-string-indexOfElement",
+		body: ["${1:string_var}.indexOf(${2:e})"],
+		description: "[string]: Find index of element",
+	},
+	"[string]: Check the existence of an element -> boolean": {
+		prefix: "bbeo-string-includesElement",
+		body: ["${1:string_var}.includes(${2:e})"],
+		description: "[string]: Check the existence of an element",
+	},
+	"[string]: Length of string -> number": {
+		prefix: "bbeo-string-length",
+		body: ["${1:string_var}.length"],
+		description: "[string]: Length of string",
+	},
+	"[string]: Concatenate with another string -> string": {
+		prefix: "bbeo-string-concat",
+		body: ["${1:string_var}.concat(${2:string_var})"],
+		description: "[string]: Concatenate with another string",
+	},
 };

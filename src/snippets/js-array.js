@@ -42,4 +42,73 @@ export const js_array = {
 		body: ["${1:array_var}.reverse()"],
 		description: "[array]: Reverse all element in an array -> array",
 	},
+	"[array]: Search a specific element -> array": {
+		prefix: "bbeo-array-findElement",
+		body: ["${1:array_var}.find(${2:e} => ${2:e} ${3:===} ${4:foo})"],
+		description: "[array]: Search a specific element -> array",
+	},
+	"[array]: Check one or more specific element.s of an array (no size modification) -> boolean":
+		{
+			prefix: "bbeo-array-someElement",
+			body: ["${1:array_var}.some(${2:e} => ${2:e} ${3:===} ${4:foo})"],
+			description:
+				"[array]: Check one or more specific element.s of an array (no size modification) -> boolean",
+		},
+	"[array]: Check the integrity of the elements of an array (no size modification) -> boolean":
+		{
+			prefix: "bbeo-array-everyElement",
+			body: ["${1:array_var}.every(${2:e} => ${2:e} ${3:===} ${4:foo})"],
+			description:
+				"[array]: Check the integrity of the elements of an array (no size modification) -> boolean",
+		},
+	"[array]: Processing of different element of the array (no modification of the size) -> array":
+		{
+			prefix: "bbeo-array-mapElement",
+			body: ["${1:array_var}.map(${2:e} => {${3:expression}})"],
+			description:
+				"[array]: Processing of different element of the array (no modification of the size) -> array",
+		},
+	"[array]: Filter the element of an array (size modification) -> array": {
+		prefix: "bbeo-array-filterElement",
+		body: ["${1:array_var}.filter(${2:e} => {${3:condition}})"],
+		description:
+			"[array]: Filter the element of an array (size modification) -> array",
+	},
+	"[array]: Processing each element of the array to obtain a single value -> number":
+		{
+			prefix: "bbeo-array-reduceElement",
+			body: ["${1:array_var}.reduce((${2:total, e}) => {${3:total + e}})"],
+			description:
+				"[array]: Processing each element of the array to obtain a single value -> number",
+		},
+	"[array]: Fill an array with a static value -> array": {
+		prefix: "bbeo-array-fillElement",
+		body: ["${1:array_var}.fill(${2:start_index},${3:foo})"],
+		description: "[array]: Fill an array with a static value -> array",
+	},
+	"[array]: Browse the elements of an array -> any": {
+		prefix: "bbeo-array-foreachElement",
+		body: ["${1:array_var}.forEach((${2:e}) => {", "    ${3:expression}", "})"],
+		description: "[array]: Browse the elements of an array -> any",
+	},
+	"[array]: Find index of element -> number": {
+		prefix: "bbeo-array-indexOfElement",
+		body: ["${1:array_var}.indexOf(${2:e})"],
+		description: "[array]: Find index of element",
+	},
+	"[array]: Check the existence of an element -> boolean": {
+		prefix: "bbeo-array-includesElement",
+		body: ["${1:array_var}.includes(${2:e})"],
+		description: "[array]: Check the existence of an element",
+	},
+	"[array]: Length of array -> number": {
+		prefix: "bbeo-array-length",
+		body: ["${1:array_var}.length"],
+		description: "[array]: Length of array",
+	},
+	"[array]: Concatenate with another array -> array": {
+		prefix: "bbeo-array-concat",
+		body: ["${1:array_var}.concat(${2:array_var})"],
+		description: "[array]: Concatenate with another array",
+	},
 };
