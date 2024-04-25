@@ -14,4 +14,9 @@ export const js_hybrid = {
 		body: ["${1:hybr_var}.length"],
 		description: "[hybrid]: Length of string/array",
 	},
+	"[hybrid]: Concatenate with another string/array -> hybrid": {
+		prefix: "bbeo-hybrid-concat",
+		body: ["${1:hybr_var}.concat(${2:other_hybr})"],
+		description: "[hybrid]: Concatenate with another string/array",
+	},
 };
