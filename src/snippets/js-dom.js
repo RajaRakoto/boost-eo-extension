@@ -122,39 +122,39 @@ export const js_dom = {
 		],
 		description: "[dom]: Get element by id and replace child",
 	},
-	"[dom]: Get element by id and retrieve all child nodes]": {
+	"[dom]: Get element by id and retrieve all child nodes": {
 		prefix: "bbeo-dom-id-childNodes",
 		body: ["document.getElementById(${1:id}).childNodes"],
-		description: "[dom]: Get element by id and retrieve all child nodes]",
+		description: "[dom]: Get element by id and retrieve all child nodes",
 	},
-	"[dom]: Get element by id and retrieve first child node]": {
+	"[dom]: Get element by id and retrieve first child node": {
 		prefix: "bbeo-dom-id-firstChild",
 		body: ["document.getElementById(${1:id}).firstChild"],
-		description: "[dom]: Get element by id and retrieve first child node]",
+		description: "[dom]: Get element by id and retrieve first child node",
 	},
-	"[dom]: Get element by id and retrieve last child node]": {
+	"[dom]: Get element by id and retrieve last child node": {
 		prefix: "bbeo-dom-id-lastChild",
 		body: ["document.getElementById(${1:id}).lastChild"],
-		description: "[dom]: Get element by id and retrieve last child node]",
+		description: "[dom]: Get element by id and retrieve last child node",
 	},
-	"[dom]: Get element by id and retrieve parent node]": {
+	"[dom]: Get element by id and retrieve parent node": {
 		prefix: "bbeo-dom-id-parentNode",
 		body: ["document.getElementById(${1:id}).parentNode"],
-		description: "[dom]: Get element by id and retrieve parent node]",
+		description: "[dom]: Get element by id and retrieve parent node",
 	},
-	"[dom]: Get element by id and add event listener]": {
+	"[dom]: Get element by id and add event listener": {
 		prefix: "bbeo-dom-id-addEventListener",
 		body: [
 			"document.getElementById(${1:id}).addEventListener(${2:click, 'keypress, scroll, mouseenter, mouseout, input, submit, load'}, ${3:callback})",
 		],
-		description: "[dom]: Get element by id and add event listener]",
+		description: "[dom]: Get element by id and add event listener",
 	},
-	"[dom]: Get target value from event]": {
+	"[dom]: Get target value from event": {
 		prefix: "bbeo-dom-eventTargetValue",
 		body: ["${1:e}.target.value"],
-		description: "[dom]: Get target value from event]",
+		description: "[dom]: Get target value from event",
 	},
-	"[dom]: Get element by id and add event listener with prevent default]": {
+	"[dom]: Get element by id and add event listener with prevent default": {
 		prefix: "bbeo-dom-id-addEventListenerWithpreventDefault",
 		body: [
 			"document.getElementById(${1:id}).addEventListener(${2:'submit'}, ${3:e} => {",
@@ -162,9 +162,9 @@ export const js_dom = {
 			"})",
 		],
 		description:
-			"[dom]: Get element by id and add event listener with prevent default]",
+			"[dom]: Get element by id and add event listener with prevent default",
 	},
-	"[dom]: Get element by id and add event listener with stop propagation]": {
+	"[dom]: Get element by id and add event listener with stop propagation": {
 		prefix: "bbeo-dom-id-addEventListenerWithstopPropagation",
 		body: [
 			"document.getElementById(${1:id}).addEventListener(${2:click, 'keypress, scroll, mouseenter, mouseout, input, submit, load'}, ${3:e} => {",
@@ -172,6 +172,6 @@ export const js_dom = {
 			"})",
 		],
 		description:
-			"[dom]: Get element by id and add event listener with stop propagation]",
+			"[dom]: Get element by id and add event listener with stop propagation",
 	},
 };
