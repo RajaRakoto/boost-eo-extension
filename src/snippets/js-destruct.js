@@ -6,7 +6,7 @@ export const js_destruct = {
 	},
 	"[destruct]: Object destructuring assignment -> object": {
 		prefix: "bbeo-destruct-object",
-		body: ["const {${1:attrib1}, ${2:attrib2}} = ${3:object_container}"],
+		body: ["const {${1:attrib1}, ${2:attrib2}} = ${3:object}"],
 		description: "[destruct]: Object destructuring assignment -> object",
 	},
 };

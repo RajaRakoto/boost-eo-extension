@@ -1,12 +1,12 @@
 export const js_math = {
 	"[math]: Format a number in fixed-dot notation -> number": {
 		prefix: "bbeo-math-fixedDot",
-		body: ["${1:number_var}.toFixed(${2:decal})"],
+		body: ["${1:number}.toFixed(${2:decal})"],
 		description: "[math]: Format a number in fixed-dot notation -> number",
 	},
 	"[math]: Power of number": {
 		prefix: "bbeo-math-pow",
-		body: ["${1:number_var} ** ${2:exp}"],
+		body: ["${1:number} ** ${2:exp}"],
 		description: "[math]: Power of number",
 	},
 	"[math]: Get MAX element": {
