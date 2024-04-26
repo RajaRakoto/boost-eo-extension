@@ -17,11 +17,11 @@ export const js_math = {
 	"[math]: Get MIN element": {
 		prefix: "bbeo-math-min",
 		body: ["Math.min(... ${1: element})"],
-		description: "[math]: Get MAX element",
+		description: "[math]: Get MIN element",
 	},
 	"[math]: Get exponent of a number": {
 		prefix: "bbeo-math-expOfNumber",
-		body: ["Math.log(${solution})/Math.log(${base})"],
+		body: ["Math.log(${1:number})/Math.log(${2:base})"],
 		description: "[math]: Get exponent of a number",
 	},
 	"[math]: Get square of a number": {

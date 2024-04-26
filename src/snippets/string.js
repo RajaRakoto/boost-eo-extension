@@ -31,10 +31,10 @@ export const js_string = {
 			description:
 				"[string]: Remove the white space at the beginning and at the end of a string -> string",
 		},
-	"[string]: Get chatAt index -> string": {
+	"[string]: Get charAt index -> string": {
 		prefix: "bbeo-string-charAt",
 		body: ["${1:string}.charAt(${2:index})"],
-		description: "[string]: Get chatAt index -> string",
+		description: "[string]: Get charAt index -> string",
 	},
 	"[string]: Check start of a string -> boolean": {
 		prefix: "bbeo-string-startsWith",
@@ -59,7 +59,7 @@ export const js_string = {
 	"[string]: Find index of element -> number": {
 		prefix: "bbeo-string-indexOfElement",
 		body: ["${1:string}.indexOf(${2:e})"],
-		description: "[string]: Find index of element",
+		description: "[string]: Find index of element -> number",
 	},
 	"[string]: Check the existence of an element -> boolean": {
 		prefix: "bbeo-string-includesElement",
