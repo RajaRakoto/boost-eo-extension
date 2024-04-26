@@ -139,4 +139,59 @@ export const js_array = {
 		body: ["${1:array}.shift(${2:element})"],
 		description: "[array]: Delete at head -> array",
 	},
+	"[array]: Find element index using findIndex -> number": {
+		prefix: "bbeo-array-findIndex",
+		body: ["${1:array}.findIndex(${2:element} => ${3:condition})"],
+		description: "[array]: Find element index using findIndex -> number",
+	},
+	"[array]: Remove element at specific index -> array": {
+		prefix: "bbeo-array-removeAtIndex",
+		body: ["${1:array}.splice(${2:index}, 1)"],
+		description: "[array]: Remove element at specific index -> array",
+	},
+	"[array]: Slice array from specific index to end -> array": {
+		prefix: "bbeo-array-sliceToEnd",
+		body: ["${1:array}.slice(${2:index})"],
+		description: "[array]: Slice array from specific index to end -> array",
+	},
+	"[array]: Insert element at specific index -> array": {
+		prefix: "bbeo-array-insertAtIndex",
+		body: ["${1:array}.splice(${2:index}, 0, ${3:element})"],
+		description: "[array]: Insert element at specific index -> array",
+	},
+	"[array]: Check if array contains only specified type of elements -> boolean":
+		{
+			prefix: "bbeo-array-allOfType",
+			body: [
+				"${1:array}.every(${2:element} => typeof ${2:element} === '${3:type}')",
+			],
+			description:
+				"[array]: Check if array contains only specified type of elements -> boolean",
+		},
+	"[array]: Rotate array elements to the right -> array": {
+		prefix: "bbeo-array-rotateRight",
+		body: ["${1:array}.unshift(${1:array}.pop())"],
+		description: "[array]: Rotate array elements to the right -> array",
+	},
+	"[array]: Group array elements by a criterion -> object": {
+		prefix: "bbeo-array-groupBy",
+		body: [
+			"${1:array}.reduce((result, ${2:element}) => { (result[${3:condition}] = result[${3:condition}] || []).push(${2:element}); return result; }, {})",
+		],
+		description: "[array]: Group array elements by a criterion -> object",
+	},
+	"[array]: Remove element by value -> array": {
+		prefix: "bbeo-array-removeByValue",
+		body: ["${1:array}.filter(${2:element} => ${2:element} !== ${3:value})"],
+		description: "[array]: Remove element by value -> array",
+	},
+	"[array]: Partition array into two based on a condition -> [array1, array2]":
+		{
+			prefix: "bbeo-array-partition",
+			body: [
+				"${1:array}.reduce((result, ${2:element}) => { result[${3:condition} ? 0 : 1].push(${2:element}); return result; }, [[], []])",
+			],
+			description:
+				"[array]: Partition array into two based on a condition -> [array1, array2]",
+		},
 };
