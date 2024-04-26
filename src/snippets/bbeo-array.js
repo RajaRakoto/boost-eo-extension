@@ -1,4 +1,4 @@
-export const js_array = {
+export const bbeo_array = {
 	"[array]: (a0 -> b1) sort in ascending order -> array": {
 		prefix: "bbeo-array-asc",
 		body: ["${1:array}.sort((${2:a},${3:b}) => ${2:a} - ${3:b})"],

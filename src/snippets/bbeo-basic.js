@@ -1,4 +1,4 @@
-export const js_basic = {
+export const bbeo_basic = {
 	"[basic]: Swap 2 values ​​from 2 variables": {
 		prefix: "bbeo-basic-permut",
 		body: ["[${1:a},${2:b}] = [${2:b},${1:a}]"],

@@ -1,4 +1,4 @@
-export const js_func = {
+export const bbeo_func = {
 	"[function]: Create arrow function": {
 		prefix: "bbeo-function-arrow",
 		body: ["const ${1:func_name} = (${2:args}) => {", "  ${3:code...}", "}"],

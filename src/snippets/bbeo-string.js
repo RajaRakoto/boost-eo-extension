@@ -1,4 +1,4 @@
-export const js_string = {
+export const bbeo_string = {
 	"[string]: Replace single occurrence of value -> string": {
 		prefix: "bbeo-string-replace",
 		body: ["${1:string}.replace(${2:'input'}, ${3:'output'})"],

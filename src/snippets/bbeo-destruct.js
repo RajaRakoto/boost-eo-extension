@@ -1,4 +1,4 @@
-export const js_destruct = {
+export const bbeo_destruct = {
 	"[destruct]: Destructuring assignment -> array": {
 		prefix: "bbeo-destruct-array",
 		body: ["const [${1:var1}, ${2:var2}] = [${3:value1}, ${4:value2}]"],

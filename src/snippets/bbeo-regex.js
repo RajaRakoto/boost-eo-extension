@@ -1,4 +1,4 @@
-export const js_regex = {
+export const bbeo_regex = {
 	"[regex]: Extract number in string": {
 		prefix: "bbeo-regex-numExtract",
 		body: ["${1:string}.match(/\\d/g);"],

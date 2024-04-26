@@ -1,4 +1,4 @@
-export const js_object = {
+export const bbeo_object = {
 	"[object]: Extract object values -> object": {
 		prefix: "bbeo-object-extractValues",
 		body: ["Object.values(${1:object})"],

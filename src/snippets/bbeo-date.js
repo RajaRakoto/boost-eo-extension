@@ -1,4 +1,4 @@
-export const js_date = {
+export const bbeo_date = {
 	"[date]: Create a date object (null args)": {
 		prefix: "bbeo-date-createNullDate",
 		body: ["const ${1:date} = new Date()"],

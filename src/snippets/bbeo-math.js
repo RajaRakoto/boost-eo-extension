@@ -1,4 +1,4 @@
-export const js_math = {
+export const bbeo_math = {
 	"[math]: Format a number in fixed-dot notation -> number": {
 		prefix: "bbeo-math-fixedDot",
 		body: ["${1:number}.toFixed(${2:decal})"],

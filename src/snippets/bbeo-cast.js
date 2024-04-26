@@ -1,4 +1,4 @@
-export const js_cast = {
+export const bbeo_cast = {
 	"[cast]: method 1 - Convert any object to string -> string": {
 		prefix: "bbeo-cast-objectToString1",
 		body: ["${1:object}.toString()"],

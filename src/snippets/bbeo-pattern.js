@@ -1,4 +1,4 @@
-export const js_patterns = {
+export const bbeo_patterns = {
 	"[pattern]: This snippet returns  if the predicate function returns  for all elements in a collection and  otherwise. You can omit the second argument if you want to use as a default value":
 		{
 			prefix: "bbeo-pattern-array-1-all",

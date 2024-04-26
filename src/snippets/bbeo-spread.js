@@ -1,4 +1,4 @@
-export const js_spread = {
+export const bbeo_spread = {
 	"[spread]: Merge several arrays (concat() alternative) -> array": {
 		prefix: "bbeo-spread-mergeArrays",
 		body: ["[...${1:array1}, ...${2:array2}]"],

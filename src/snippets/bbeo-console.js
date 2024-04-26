@@ -1,4 +1,4 @@
-export const js_console = {
+export const bbeo_console = {
 	"[console]: Display a message with console.log()": {
 		prefix: "bbeo-console-clg",
 		body: ["console.log(${1:object})"],

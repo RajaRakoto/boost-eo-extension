@@ -1,4 +1,4 @@
-export const js_dom = {
+export const bbeo_dom = {
 	"[dom]: Get element by id": {
 		prefix: "bbeo-dom-id",
 		body: ["document.getElementById(${1:id})"],

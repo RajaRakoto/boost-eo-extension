@@ -1,4 +1,4 @@
-export const js_class = {
+export const bbeo_class = {
 	"[class]: Create getter": {
 		prefix: "bbeo-class-getter",
 		body: ["get ${1:property} () { return this.${1:property}; }"],
