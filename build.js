@@ -2,12 +2,6 @@
 import fs from "fs";
 import path from "path";
 
-/* constants */
-// import { index } from "./src/constants/index.js";
-
-/* utils */
-// import { index } from "./src/utils/index.js";
-
 /* snippets */
 import { bbeo_array } from "./src/snippets/bbeo-array.js";
 import { bbeo_object } from "./src/snippets/bbeo-object.js";
