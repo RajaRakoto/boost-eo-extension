@@ -31,20 +31,13 @@
       <td>bbeo-pattern-gen-128-getES6moduleSyntaxBySource</td>
       <td>
         <code
-          >export function getES6moduleSyntaxBySource(source, extension) {<br />
-          const fixVarName = varName => varName.replace(/-/g, '_');<br />
-          const dropRight = (arr, n = 1) => arr.slice(0, -n); <br />
-          let sourceList = fsReadDir(source);<br />
-          let sourceES6 = [];<br />
-          sourceList.forEach(source => {<br />
-          if (source.endsWith(extension)) {<br />
-          sourceES6.push(dropRight(source, 3));<br />
-          }<br />
-          });<br />
-          return sourceES6.map(<br />
-          source => `import { ${fixVarName(source)} } from
-          './${source}.js';`,<br />
-          );<br />}</code
+          >export function getES6moduleSyntaxBySource(source, extension) { const
+          fixVarName = varName => varName.replace(/-/g, '_'); const dropRight =
+          (arr, n = 1) => arr.slice(0, -n); let sourceList = fsReadDir(source);
+          let sourceES6 = []; sourceList.forEach(source => { if
+          (source.endsWith(extension)) { sourceES6.push(dropRight(source, 3)); }
+          }); return sourceES6.map( source => `import { ${fixVarName(source)} }
+          from './${source}.js';`, ); }</code
         >
       </td>
       <td>[pattern]: Get all ES6 modules syntax from the source directory</td>
@@ -53,10 +46,9 @@
       <td>bbeo-pattern-test-131-validateEmail</td>
       <td>
         <code
-          >const validateEmail = email => { <br />
-          var emailPattern =
-          /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;<br />
-          return emailPattern.test(email); <br />};</code
+          >const validateEmail = email => { var emailPattern =
+          /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/; return
+          emailPattern.test(email); };</code
         >
       </td>
       <td>[pattern]: Email validator with regex</td>
