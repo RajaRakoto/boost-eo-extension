@@ -34,6 +34,10 @@ all([4, 2, 3], x => x > 1); // true
 all([1, 2, 3]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-2-allEqual |  This snippet checks whether all elements of the array are equal |
@@ -45,6 +49,10 @@ allEqual([1, 2, 3, 4, 5, 6]); // false
 allEqual([1, 1, 1, 1]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-3-approximatelyEqual |  This snippet checks whether two numbers are approximately equal to each other, with a small difference |
@@ -55,6 +63,10 @@ const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsi
 approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-4-arrayToCSV |  This snippet converts the elements to strings with comma-separated values |
@@ -67,6 +79,10 @@ arrayToCSV([['a', 'b'], ['c', 'd']]); // '"a","b"\n"c","d"'
 arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-5-arrayToHtmlList |  This snippet converts the elements of an array into  tags and appends them to the list of the given ID |
@@ -81,6 +97,10 @@ const arrayToHtmlList = (arr, listID) =>
 arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-6-attempt |  This snippet executes a function, returning either the result or the caught error object |
@@ -99,6 +119,10 @@ var elements = attempt(function(selector) {
 if (elements instanceof Error) elements = []; // elements = []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-7-average |  This snippet returns the average of two or more numerical values |
@@ -109,6 +133,10 @@ average(...[1, 2, 3]); // 2
 average(1, 2, 3); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-8-averageBy |  This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function |
@@ -122,6 +150,10 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o => o.n); // 5
 averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-9-bifurcate |  This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise |
@@ -133,6 +165,10 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-10-bifurcateBy |  This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group |
@@ -145,6 +181,10 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-11-bottomVisible |  This snippet checks whether the bottom of a page is visible |
@@ -157,6 +197,10 @@ const bottomVisible = () =>
 bottomVisible(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-12-byteSize |  This snippet returns the length of a string in bytes |
@@ -168,6 +212,10 @@ byteSize('😀'); // 4
 byteSize('Hello World'); // 11
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-13-capitalize |  This snippet capitalizes the first letter of a string |
@@ -180,6 +228,10 @@ capitalize('fooBar'); // 'FooBar'
 capitalize('fooBar', true); // 'Foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-14-capitalizeEveryWord |  This snippet capitalizes the first letter of every word in a given string |
@@ -190,6 +242,10 @@ const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperC
 capitalizeEveryWord('hello world!'); // 'Hello World!'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-15-castArray |  This snippet converts a non-array value into array |
@@ -201,6 +257,10 @@ castArray('foo'); // ['foo']
 castArray([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-16-compact |  This snippet removes false values from an array |
@@ -212,6 +272,10 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 // [ 1, 2, 3, 'a', 's', 34 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-17-countOccurrences |  This snippet counts the occurrences of a value in an array |
@@ -221,6 +285,10 @@ const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 :
 countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-18-createDirIfNotExists |  This snippet uses  to check whether a directory exists and then  to create it if it doesn’t |
@@ -232,6 +300,10 @@ createDirIfNotExists('test');
 // creates the directory 'test', if it doesn't exist
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-19-currentURL |  This snippet returns the current URL |
@@ -242,6 +314,10 @@ const currentURL = () => window.location.href;
 currentURL(); // 'https://medium.com/@fatosmorina'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-20-dayOfYear |  This snippet gets the day of the year from a object |
@@ -253,6 +329,10 @@ const dayOfYear = date =>
 dayOfYear(new Date()); // 272
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-21-decapitalize |  This snippet turns the first letter of a string into lowercase |
@@ -265,6 +345,10 @@ decapitalize('FooBar'); // 'fooBar'
 decapitalize('FooBar'); // 'fooBar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-22-deepFlatten |  This snippet flattens an array recursively |
@@ -275,6 +359,10 @@ const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFla
 deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-23-default |  This snippet assigns default values for all properties in an object that are  |
@@ -285,6 +373,10 @@ const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj
 defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-24-defer |  This snippet delays the execution of a function until the current call stack is cleared |
@@ -295,6 +387,10 @@ const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
 defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-25-degreesToRads |  This snippet can be used to convert a value from degrees to radians |
@@ -305,6 +401,10 @@ const degreesToRads = deg => (deg * Math.PI) / 180.0;
 degreesToRads(90.0); // ~1.5708
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-26-difference |  This snippet finds the difference between two arrays |
@@ -318,6 +418,10 @@ const difference = (a, b) => {
 difference([1, 2, 3], [1, 2, 4]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-27-differenceBy |  This snippet returns the difference between two arrays, after applying a given function to each element of both lists |
@@ -332,6 +436,10 @@ differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [1.2]
 differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-28-differenceWith |  This snippet removes the values for which the comparator function returns  |
@@ -343,6 +451,10 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 // [1, 1.2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-29-digitize |  This snippet gets a number as input and returns an array of its digits |
@@ -353,6 +465,10 @@ const digitize = n => [...`${n}`].map(i => parseInt(i));
 digitize(431); // [4, 3, 1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-30-distance |  This snippet returns the distance between two points by calculating the Euclidean distance |
@@ -363,6 +479,10 @@ const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);
 distance(1, 1, 2, 3); // 2.23606797749979
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-31-DropLeft |  This snippet returns a new array with  elements removed from the left |
@@ -375,6 +495,10 @@ dropLeft([1, 2, 3], 2); // [3]
 dropLeft([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-32-dropRight |  This snippet returns a new array with  elements removed from the right |
@@ -387,6 +511,10 @@ dropRight([1, 2, 3], 2); // [1]
 dropRight([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-33-dropRightWhile |  This snippet removes elements from the right side of an array until the passed function returns  |
@@ -400,6 +528,10 @@ const dropRightWhile = (arr, func) => {
 dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-34-dropWhile |  This snippet removes elements from an array until the passed function returns  |
@@ -413,6 +545,10 @@ const dropWhile = (arr, func) => {
 dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-35-elementContains |  This snippet checks whether the parent element contains the child |
@@ -424,6 +560,10 @@ elementContains(document.querySelector('head'), document.querySelector('title'))
 elementContains(document.querySelector('body'), document.querySelector('body')); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-36-Filter Duplicate Elements |  This snippet removes duplicate values in an array |
@@ -434,6 +574,10 @@ const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexO
 filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-37-findKey |  This snippet returns the first key that satisfies a given function |
@@ -451,6 +595,10 @@ findKey(
 ); // 'barney'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-38-findLast |  This snippet returns the last element for which a given function returns a truthy value |
@@ -461,6 +609,10 @@ const findLast = (arr, fn) => arr.filter(fn).pop();
 findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-39-flatten |  This snippet flattens an array up to a specified depth using recursion |
@@ -473,6 +625,10 @@ flatten([1, [2], 3, 4]); // [1, 2, 3, 4]
 flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-40-forEachRight |  This snippet executes a function for each element of an array starting from the array’s last element |
@@ -487,6 +643,10 @@ const forEachRight = (arr, callback) =>
 forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-41-forOwn |  This snippet iterates on each property of an object and iterates a callback for each one respectively |
@@ -496,6 +656,10 @@ const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, ob
 forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-42-functionName |  This snippet prints the name of a function into the console |
@@ -506,6 +670,10 @@ const functionName = fn => (console.debug(fn.name), fn);
 functionName(Math.max); // max (logged in debug channel of console)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-43-Get Time From Date |  This snippet can be used to get the time from a object as a string |
@@ -516,6 +684,10 @@ const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);
 getColonTimeFromDate(new Date()); // "08:38:00"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-44-Get Days Between Dates |  This snippet can be used to find the difference in days between two dates |
@@ -527,6 +699,10 @@ const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
 getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-45-getStyle |  This snippet can be used to get the value of a CSS rule for a particular element |
@@ -537,6 +713,10 @@ const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];
 getStyle(document.querySelector('p'), 'font-size'); // '16px'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-46-getType |  This snippet can be used to get the type of a value |
@@ -548,6 +728,10 @@ const getType = v =>
 getType(new Set([1, 2, 3])); // 'set'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-47-hasClass |  This snippet checks whether an element has a particular class |
@@ -557,6 +741,10 @@ const hasClass = (el, className) => el.classList.contains(className);
 hasClass(document.querySelector('p.special'), 'special'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-48-head |  This snippet returns the  of a list |
@@ -567,6 +755,10 @@ const head = arr => arr[0];
 head([1, 2, 3]); // 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-49-hide |  This snippet can be used to hide all elements specified |
@@ -577,6 +769,10 @@ const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
 hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-50-httpsRedirect |  This snippet can be used to redirect from HTTP to HTTPS in a particular domain |
@@ -589,6 +785,10 @@ const httpsRedirect = () => {
 httpsRedirect(); // If you are on http://mydomain.com, you are redirected to https://mydomain.com
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-51-indexOfAll |  This snippet can be used to get all indexes of a value in an array, which returns an empty array, in case this value is not included in it |
@@ -600,6 +800,10 @@ indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
 indexOfAll([1, 2, 3], 4); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-52-initial |  This snippet returns all elements of an array except the last one |
@@ -611,6 +815,10 @@ initial([1, 2, 3]); // [1,2]const initial = arr => arr.slice(0, -1);
 initial([1, 2, 3]); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-53-insertAfter |  This snippet can be used to insert an HTML string after the end of a particular element |
@@ -621,6 +829,10 @@ const insertAfter = (el, htmlString) => el.insertAdjacentHTML('afterend', htmlSt
 insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">...</div> <p>after</p>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-54-insertBefore |  This snippet can be used to insert an HTML string before a particular element |
@@ -631,6 +843,10 @@ const insertBefore = (el, htmlString) => el.insertAdjacentHTML('beforebegin', ht
 insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p> <div id="myId">...</div>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-55-intersection |  This snippet can be used to get an array with elements that are included in two other arrays |
@@ -644,6 +860,10 @@ const intersection = (a, b) => {
 intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-56-intersectionBy |  This snippet can be used to return a list of elements that exist in both arrays, after a particular function has been executed to each element of both arrays |
@@ -657,6 +877,10 @@ const intersectionBy = (a, b, fn) => {
 intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-57-intersectionWith |  This snippet can be used to return a list of elements that exist in both arrays by using a comparator function |
@@ -667,6 +891,10 @@ const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, 
 intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)); // [1.5, 3, 0]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-58-is |  This snippet can be used to check if a value is of a particular type |
@@ -689,6 +917,10 @@ is(Boolean, true); // true
 is(Boolean, new Boolean(true)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-59-isAfterDate |  This snippet can be used to check whether a date is after another date |
@@ -699,6 +931,10 @@ const isAfterDate = (dateA, dateB) => dateA > dateB;
 isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-60-isAnagram |  This snippet can be used to check whether a particular string is an anagram with another string |
@@ -718,6 +954,10 @@ const isAnagram = (str1, str2) => {
 isAnagram('iceman', 'cinema'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-61-isArrayLike |  This snippet can be used to check if a provided argument is iterable like an array |
@@ -730,6 +970,10 @@ isArrayLike('abc'); // true
 isArrayLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-62-isBeforeDate |  This snippet can be used to check whether a date is before another date |
@@ -740,6 +984,10 @@ const isBeforeDate = (dateA, dateB) => dateA < dateB;
 isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-63-isBoolean |  This snippet can be used to check whether an argument is a boolean |
@@ -751,6 +999,10 @@ isBoolean(null); // false
 isBoolean(false); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-64-isBrowser |  This snippet can be used to determine whether the current runtime environment is a browser. This is helpful for avoiding errors when running front-end modules on the server (Node) |
@@ -762,6 +1014,10 @@ isBrowser(); // true (browser)
 isBrowser(); // false (Node)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-65-isBrowserTabFocused |  This snippet can be used to determine whether the browser tab is focused |
@@ -772,6 +1028,10 @@ const isBrowserTabFocused = () => !document.hidden;
 isBrowserTabFocused(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-66-isLowerCase |  This snippet can be used to determine whether a string is lower case |
@@ -784,6 +1044,10 @@ isLowerCase('a3@$'); // true
 isLowerCase('Ab4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-67-isNil |  This snippet can be used to check whether a value is  or  |
@@ -795,6 +1059,10 @@ isNil(null); // true
 isNil(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-68-isNull |  This snippet can be used to check whether a value is  |
@@ -805,6 +1073,10 @@ const isNull = val => val === null;
 isNull(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-69-isNumber |  This snippet can be used to check whether a provided value is a number |
@@ -816,6 +1088,10 @@ isNumber('1'); // false
 isNumber(1); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-70-isObject |  This snippet can be used to check whether a provided value is an object. It uses the Object constructor to create an object wrapper for the given value |
@@ -831,6 +1107,10 @@ isObject({}); // true
 isObject(true); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-71-isObjectLike |  This snippet can be used to check if a value is not and that its  is “object” |
@@ -844,6 +1124,10 @@ isObjectLike(x => x); // false
 isObjectLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-72-isPlainObject |  This snippet checks whether a value is an object created by the Object constructor |
@@ -855,6 +1139,10 @@ isPlainObject({ a: 1 }); // true
 isPlainObject(new Map()); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-73-isPromiseLike |  This snippet checks whether an object looks like a  |
@@ -874,6 +1162,10 @@ isPromiseLike(null); // false
 isPromiseLike({}); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-74-isSameDate |  This snippet can be used to check whether two dates are equal |
@@ -884,6 +1176,10 @@ const isSameDate = (dateA, dateB) => dateA.toISOString() === dateB.toISOString()
 isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-75-isString |  This snippet can be used to check whether an argument is a string |
@@ -894,6 +1190,10 @@ const isString = val => typeof val === 'string';
 isString('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-76-isSymbol |  This snippet can be used to check whether an argument is a symbol |
@@ -904,6 +1204,10 @@ const isSymbol = val => typeof val === 'symbol';
 isSymbol(Symbol('x')); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-77-isUndefined |  This snippet can be used to check whether a value is undefined |
@@ -914,6 +1218,10 @@ const isUndefined = val => val === undefined;
 isUndefined(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-78-isUpperCase |  This snippet can be used to check whether a string is upper case |
@@ -926,6 +1234,10 @@ isLowerCase('A3@$'); // true
 isLowerCase('aB4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-79-isValidJSON |  This snippet can be used to check whether a string is a valid JSON |
@@ -945,6 +1257,10 @@ isValidJSON('{"name":"Adam",age:"20"}'); // false
 isValidJSON(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-80-last |  This snippet returns the last element of an array |
@@ -955,6 +1271,10 @@ const last = arr => arr[arr.length - 1];
 last([1, 2, 3]); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-81-matches |  This snippet compares two objects to determine if the first one contains the same property values as the second one |
@@ -967,6 +1287,10 @@ matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true }); 
 matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-82-maxDate |  This snippet can be used to get the latest date |
@@ -983,6 +1307,10 @@ const array = [
 maxDate(array); // 2018-03-11T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-83-maxN |  This snippet returns the  largest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in descending order) |
@@ -994,6 +1322,10 @@ maxN([1, 2, 3]); // [3]
 maxN([1, 2, 3], 2); // [3,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-84-minDate |  This snippet can be used to get the earliest date |
@@ -1010,6 +1342,10 @@ const array = [
 minDate(array); // 2016-01-08T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-85-minN |  This snippet returns the  smallest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in ascending order) |
@@ -1021,6 +1357,10 @@ minN([1, 2, 3]); // [1]
 minN([1, 2, 3], 2); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-86-negate |  This snippet can be used to apply the not operator () to a predicate function with its arguments |
@@ -1031,6 +1371,10 @@ const negate = func => (...args) => !func(...args);
 [1, 2, 3, 4, 5, 6].filter(negate(n => n % 2 === 0)); // [ 1, 3, 5 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-87-nodeListToArray |  This snippet can be used to convert a  to an array |
@@ -1041,6 +1385,10 @@ const nodeListToArray = nodeList => [...nodeList];
 nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-88-pad |  This snippet can be used to  a string on both sides with a specified character if it is shorter than the specified length |
@@ -1054,6 +1402,10 @@ pad(String(42), 6, '0'); // '004200'
 pad('foobar', 3); // 'foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-89-radsToDegrees |  This snippet can be used to convert an angle from radians to degrees |
@@ -1064,6 +1416,10 @@ const radsToDegrees = rad => (rad * 180.0) / Math.PI;
 radsToDegrees(Math.PI / 2); // 90
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-90-randomHexColorCode |  This snippet can be used to generate a random hexadecimal color code |
@@ -1077,6 +1433,10 @@ const randomHexColorCode = () => {
 randomHexColorCode(); // "#e34155"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-91-randomIntArrayInRange |  This snippet can be used to generate an array with  random integers in a specified range |
@@ -1088,6 +1448,10 @@ const randomIntArrayInRange = (min, max, n = 1) =>
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-92-randomIntegerInRange |  This snippet can be used to generate a random integer in a specified range |
@@ -1098,6 +1462,10 @@ const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min
 randomIntegerInRange(0, 5); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-93-randomNumberInRange |  This snippet can be used to return a random number in a specified range |
@@ -1108,6 +1476,10 @@ const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;
 randomNumberInRange(2, 10); // 6.0211363285087005
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-94-readFileLines |  This snippet can be used to read a file by getting an array of lines from a file |
@@ -1124,6 +1496,10 @@ let arr = readFileLines('test.txt');
 console.log(arr); // ['line1', 'line2', 'line3']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-95-redirect |  This snippet can be used to do a redirect to a specified URL |
@@ -1135,6 +1511,10 @@ const redirect = (url, asLink = true) =>
 redirect('https://google.com');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-96-reverse |  This snippet can be used to reverse a string |
@@ -1145,6 +1525,10 @@ const reverseString = str => [...str].reverse().join('');
 reverseString('foobar'); // 'raboof'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-97-round |  This snippet can be used to round a number to a specified number of digits |
@@ -1155,6 +1539,10 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.005, 2); // 1.01
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-98-runPromisesInSeries |  This snippet can be used to run an array of promises in series |
@@ -1167,6 +1555,10 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 // Executes each promise sequentially, taking a total of 3 seconds to complete
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-99-sample |  This snippet can be used to get a random number from an array |
@@ -1177,6 +1569,10 @@ const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 sample([3, 7, 9, 11]); // 9
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-100-sampleSize |  This snippet can be used to get random elements from unique positions from an array up to the size of the array. Elements in the array are shuffled using the  |
@@ -1195,6 +1591,10 @@ sampleSize([1, 2, 3], 2); // [3,1]
 sampleSize([1, 2, 3], 4); // [2,3,1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-101-scrollToTop |  This snippet can be used to do a smooth scroll to the top of the current page |
@@ -1211,6 +1611,10 @@ const scrollToTop = () => {
 scrollToTop();
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-102-serializeCookie |  This snippet can be used to serialize a cookie name-value pair into a Set-Cookie header string |
@@ -1221,6 +1625,10 @@ const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIC
 serializeCookie('foo', 'bar'); // 'foo=bar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-103-setStyle |  This snippet can be used to set the value of a CSS rule for a particular element |
@@ -1232,6 +1640,10 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 // The first <p> element on the page will have a font-size of 20px
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-104-shallowClone |  This snippet can be used to create a shallow clone of an object |
@@ -1243,6 +1655,10 @@ const a = { x: true, y: 1 };
 const b = shallowClone(a); // a !== b
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-105-show |  This snippet can be used to show all the elements specified |
@@ -1253,6 +1669,10 @@ const show = (...el) => [...el].forEach(e => (e.style.display = ''));
 show(...document.querySelectorAll('img')); // Shows all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-106-shuffle |  This snippet can be used to order the elements of an array randomly using the  |
@@ -1271,6 +1691,10 @@ const foo = [1, 2, 3];
 shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-107-similarity |  This snippet can be used to return an array of elements that appear in two arrays |
@@ -1281,6 +1705,10 @@ const similarity = (arr, values) => arr.filter(v => values.includes(v))
 similarity([1, 2, 3], [1, 2, 4]); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-108-sleep |  This snippet can be used to delay the execution of an asynchronous function by putting it into sleep |
@@ -1295,6 +1723,10 @@ async function sleepyWork() {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-130-smoothScroll |  This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
@@ -1309,6 +1741,10 @@ smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-110-sortCharactersInString |  This snippet can be used to alphabetically sort the characters in a string |
@@ -1319,6 +1755,10 @@ const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)
 sortCharactersInString('cabbage'); // 'aabbceg'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-111-splitLines |  This snippet can be used to split a multi-line string into an array of lines |
@@ -1329,6 +1769,10 @@ const splitLines = str => str.split(/\r?\n/);
 splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline', 'string.' , '']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-112-stripHTMLTags |  This snippet can be used to remove HTML/XML tags from a string |
@@ -1339,6 +1783,10 @@ const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
 stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-113-sum |  This snippet can be used to find the sum of two or more numbers or arrays |
@@ -1350,6 +1798,10 @@ sum(1, 2, 3, 4); // 10
 sum(...[1, 2, 3, 4]); // 10
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-114-tail |  This snippet can be used to get an array with all the elements of an array except for the first one. If the array has only one element, then that an array with that element will be returned instead |
@@ -1361,6 +1813,10 @@ tail([1, 2, 3]); // [2,3]
 tail([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-115-take |  This snippet can be used to get an array with elements removed from the beginning |
@@ -1372,6 +1828,10 @@ take([1, 2, 3], 5); // [1, 2, 3]
 take([1, 2, 3], 0); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-116-takeRight |  This snippet can be used to get an array with elements removed from the end |
@@ -1383,6 +1843,10 @@ takeRight([1, 2, 3], 2); // [ 2, 3 ]
 takeRight([1, 2, 3]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-117-timeTaken |  This snippet can be used to find out the time it takes to execute a function |
@@ -1398,6 +1862,10 @@ const timeTaken = callback => {
 timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-118-times |  This snippet can be used to iterate over a callback times |
@@ -1413,6 +1881,10 @@ times(5, i => (output += i));
 console.log(output); // 01234
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-119-toCurrency |  This snippet can be used to format a number like a currency |
@@ -1428,6 +1900,10 @@ toCurrency(322342436423.2435, 'JPY'); // ¥322,342,436,423 | currency: Japanese 
 toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Japanese Yen | currencyLangFormat: Finnish
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-120-toDecimalMark |  This snippet uses the function to convert float-point arithmetic to the decimal mark form by using a number to make a comma-separated string |
@@ -1438,6 +1914,10 @@ const toDecimalMark = num => num.toLocaleString('en-US');
 toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-121-toggleClass |  This snippet can be used to toggle a class for an element |
@@ -1448,6 +1928,10 @@ const toggleClass = (el, className) => el.classList.toggle(className);
 toggleClass(document.querySelector('p.special'), 'special'); // The paragraph will not have the 'special' class anymore
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-122-tomorrow |  This snippet can be used to get a string representation of tomorrow’s date |
@@ -1462,6 +1946,10 @@ const tomorrow = () => {
 tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-123-unfold |  This snippet can be used to build an array using an iterator function and an initial seed value |
@@ -1478,6 +1966,10 @@ var f = n => (n > 50 ? false : [-n, n + 10]);
 unfold(f, 10); // [-10, -20, -30, -40, -50]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-124-union |  This snippet can be used to find the  of two arrays, resulting in an array that has elements that come from both arrays but that do not repeat |
@@ -1488,6 +1980,10 @@ const union = (a, b) => Array.from(new Set([...a, ...b]));
 union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-125-uniqueElements |  This snippet uses ES6 andtheoperator to get every element only once |
@@ -1498,6 +1994,10 @@ const uniqueElements = arr => [...new Set(arr)];
 uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-126-validateNumber |  This snippet can be used to check whether a value is a number |
@@ -1508,6 +2008,10 @@ const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) ==
 validateNumber('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-127-words |  This snippet converts a string into an array of words |
@@ -1519,6 +2023,10 @@ words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-128-getES6moduleSyntaxBySource |  Get all ES6 modules syntax from the source directory |
@@ -1540,6 +2048,10 @@ export function getES6moduleSyntaxBySource(source, extension) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-129-concatJSONsourcesToOneFile |  Concat & export all external JSON sources to one JSON file |
@@ -1564,6 +2076,10 @@ export function concatJSONsourcesToOneFile(sourcesList, distPath) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-131-validateEmail |  Email validator with regex |
@@ -1592,6 +2108,10 @@ all([4, 2, 3], x => x > 1); // true
 all([1, 2, 3]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-2-allEqual |  This snippet checks whether all elements of the array are equal |
@@ -1603,6 +2123,10 @@ allEqual([1, 2, 3, 4, 5, 6]); // false
 allEqual([1, 1, 1, 1]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-3-approximatelyEqual |  This snippet checks whether two numbers are approximately equal to each other, with a small difference |
@@ -1613,6 +2137,10 @@ const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsi
 approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-4-arrayToCSV |  This snippet converts the elements to strings with comma-separated values |
@@ -1625,6 +2153,10 @@ arrayToCSV([['a', 'b'], ['c', 'd']]); // '"a","b"\n"c","d"'
 arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-5-arrayToHtmlList |  This snippet converts the elements of an array into  tags and appends them to the list of the given ID |
@@ -1639,6 +2171,10 @@ const arrayToHtmlList = (arr, listID) =>
 arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-6-attempt |  This snippet executes a function, returning either the result or the caught error object |
@@ -1657,6 +2193,10 @@ var elements = attempt(function(selector) {
 if (elements instanceof Error) elements = []; // elements = []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-7-average |  This snippet returns the average of two or more numerical values |
@@ -1667,6 +2207,10 @@ average(...[1, 2, 3]); // 2
 average(1, 2, 3); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-8-averageBy |  This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function |
@@ -1680,6 +2224,10 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o => o.n); // 5
 averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-9-bifurcate |  This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise |
@@ -1691,6 +2239,10 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-10-bifurcateBy |  This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group |
@@ -1703,6 +2255,10 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-11-bottomVisible |  This snippet checks whether the bottom of a page is visible |
@@ -1715,6 +2271,10 @@ const bottomVisible = () =>
 bottomVisible(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-12-byteSize |  This snippet returns the length of a string in bytes |
@@ -1726,6 +2286,10 @@ byteSize('😀'); // 4
 byteSize('Hello World'); // 11
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-13-capitalize |  This snippet capitalizes the first letter of a string |
@@ -1738,6 +2302,10 @@ capitalize('fooBar'); // 'FooBar'
 capitalize('fooBar', true); // 'Foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-14-capitalizeEveryWord |  This snippet capitalizes the first letter of every word in a given string |
@@ -1748,6 +2316,10 @@ const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperC
 capitalizeEveryWord('hello world!'); // 'Hello World!'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-15-castArray |  This snippet converts a non-array value into array |
@@ -1759,6 +2331,10 @@ castArray('foo'); // ['foo']
 castArray([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-16-compact |  This snippet removes false values from an array |
@@ -1770,6 +2346,10 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 // [ 1, 2, 3, 'a', 's', 34 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-17-countOccurrences |  This snippet counts the occurrences of a value in an array |
@@ -1779,6 +2359,10 @@ const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 :
 countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-18-createDirIfNotExists |  This snippet uses  to check whether a directory exists and then  to create it if it doesn’t |
@@ -1790,6 +2374,10 @@ createDirIfNotExists('test');
 // creates the directory 'test', if it doesn't exist
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-19-currentURL |  This snippet returns the current URL |
@@ -1800,6 +2388,10 @@ const currentURL = () => window.location.href;
 currentURL(); // 'https://medium.com/@fatosmorina'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-20-dayOfYear |  This snippet gets the day of the year from a object |
@@ -1811,6 +2403,10 @@ const dayOfYear = date =>
 dayOfYear(new Date()); // 272
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-21-decapitalize |  This snippet turns the first letter of a string into lowercase |
@@ -1823,6 +2419,10 @@ decapitalize('FooBar'); // 'fooBar'
 decapitalize('FooBar'); // 'fooBar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-22-deepFlatten |  This snippet flattens an array recursively |
@@ -1833,6 +2433,10 @@ const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFla
 deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-23-default |  This snippet assigns default values for all properties in an object that are  |
@@ -1843,6 +2447,10 @@ const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj
 defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-24-defer |  This snippet delays the execution of a function until the current call stack is cleared |
@@ -1853,6 +2461,10 @@ const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
 defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-25-degreesToRads |  This snippet can be used to convert a value from degrees to radians |
@@ -1863,6 +2475,10 @@ const degreesToRads = deg => (deg * Math.PI) / 180.0;
 degreesToRads(90.0); // ~1.5708
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-26-difference |  This snippet finds the difference between two arrays |
@@ -1876,6 +2492,10 @@ const difference = (a, b) => {
 difference([1, 2, 3], [1, 2, 4]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-27-differenceBy |  This snippet returns the difference between two arrays, after applying a given function to each element of both lists |
@@ -1890,6 +2510,10 @@ differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [1.2]
 differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-28-differenceWith |  This snippet removes the values for which the comparator function returns  |
@@ -1901,6 +2525,10 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 // [1, 1.2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-29-digitize |  This snippet gets a number as input and returns an array of its digits |
@@ -1911,6 +2539,10 @@ const digitize = n => [...`${n}`].map(i => parseInt(i));
 digitize(431); // [4, 3, 1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-30-distance |  This snippet returns the distance between two points by calculating the Euclidean distance |
@@ -1921,6 +2553,10 @@ const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);
 distance(1, 1, 2, 3); // 2.23606797749979
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-31-DropLeft |  This snippet returns a new array with  elements removed from the left |
@@ -1933,6 +2569,10 @@ dropLeft([1, 2, 3], 2); // [3]
 dropLeft([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-32-dropRight |  This snippet returns a new array with  elements removed from the right |
@@ -1945,6 +2585,10 @@ dropRight([1, 2, 3], 2); // [1]
 dropRight([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-33-dropRightWhile |  This snippet removes elements from the right side of an array until the passed function returns  |
@@ -1958,6 +2602,10 @@ const dropRightWhile = (arr, func) => {
 dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-34-dropWhile |  This snippet removes elements from an array until the passed function returns  |
@@ -1971,6 +2619,10 @@ const dropWhile = (arr, func) => {
 dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-35-elementContains |  This snippet checks whether the parent element contains the child |
@@ -1982,6 +2634,10 @@ elementContains(document.querySelector('head'), document.querySelector('title'))
 elementContains(document.querySelector('body'), document.querySelector('body')); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-36-Filter Duplicate Elements |  This snippet removes duplicate values in an array |
@@ -1992,6 +2648,10 @@ const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexO
 filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-37-findKey |  This snippet returns the first key that satisfies a given function |
@@ -2009,6 +2669,10 @@ findKey(
 ); // 'barney'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-38-findLast |  This snippet returns the last element for which a given function returns a truthy value |
@@ -2019,6 +2683,10 @@ const findLast = (arr, fn) => arr.filter(fn).pop();
 findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-39-flatten |  This snippet flattens an array up to a specified depth using recursion |
@@ -2031,6 +2699,10 @@ flatten([1, [2], 3, 4]); // [1, 2, 3, 4]
 flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-40-forEachRight |  This snippet executes a function for each element of an array starting from the array’s last element |
@@ -2045,6 +2717,10 @@ const forEachRight = (arr, callback) =>
 forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-41-forOwn |  This snippet iterates on each property of an object and iterates a callback for each one respectively |
@@ -2054,6 +2730,10 @@ const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, ob
 forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-42-functionName |  This snippet prints the name of a function into the console |
@@ -2064,6 +2744,10 @@ const functionName = fn => (console.debug(fn.name), fn);
 functionName(Math.max); // max (logged in debug channel of console)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-43-Get Time From Date |  This snippet can be used to get the time from a object as a string |
@@ -2074,6 +2758,10 @@ const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);
 getColonTimeFromDate(new Date()); // "08:38:00"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-44-Get Days Between Dates |  This snippet can be used to find the difference in days between two dates |
@@ -2085,6 +2773,10 @@ const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
 getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-45-getStyle |  This snippet can be used to get the value of a CSS rule for a particular element |
@@ -2095,6 +2787,10 @@ const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];
 getStyle(document.querySelector('p'), 'font-size'); // '16px'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-46-getType |  This snippet can be used to get the type of a value |
@@ -2106,6 +2802,10 @@ const getType = v =>
 getType(new Set([1, 2, 3])); // 'set'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-47-hasClass |  This snippet checks whether an element has a particular class |
@@ -2115,6 +2815,10 @@ const hasClass = (el, className) => el.classList.contains(className);
 hasClass(document.querySelector('p.special'), 'special'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-48-head |  This snippet returns the  of a list |
@@ -2125,6 +2829,10 @@ const head = arr => arr[0];
 head([1, 2, 3]); // 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-49-hide |  This snippet can be used to hide all elements specified |
@@ -2135,6 +2843,10 @@ const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
 hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-50-httpsRedirect |  This snippet can be used to redirect from HTTP to HTTPS in a particular domain |
@@ -2147,6 +2859,10 @@ const httpsRedirect = () => {
 httpsRedirect(); // If you are on http://mydomain.com, you are redirected to https://mydomain.com
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-51-indexOfAll |  This snippet can be used to get all indexes of a value in an array, which returns an empty array, in case this value is not included in it |
@@ -2158,6 +2874,10 @@ indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
 indexOfAll([1, 2, 3], 4); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-52-initial |  This snippet returns all elements of an array except the last one |
@@ -2169,6 +2889,10 @@ initial([1, 2, 3]); // [1,2]const initial = arr => arr.slice(0, -1);
 initial([1, 2, 3]); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-53-insertAfter |  This snippet can be used to insert an HTML string after the end of a particular element |
@@ -2179,6 +2903,10 @@ const insertAfter = (el, htmlString) => el.insertAdjacentHTML('afterend', htmlSt
 insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">...</div> <p>after</p>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-54-insertBefore |  This snippet can be used to insert an HTML string before a particular element |
@@ -2189,6 +2917,10 @@ const insertBefore = (el, htmlString) => el.insertAdjacentHTML('beforebegin', ht
 insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p> <div id="myId">...</div>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-55-intersection |  This snippet can be used to get an array with elements that are included in two other arrays |
@@ -2202,6 +2934,10 @@ const intersection = (a, b) => {
 intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-56-intersectionBy |  This snippet can be used to return a list of elements that exist in both arrays, after a particular function has been executed to each element of both arrays |
@@ -2215,6 +2951,10 @@ const intersectionBy = (a, b, fn) => {
 intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-57-intersectionWith |  This snippet can be used to return a list of elements that exist in both arrays by using a comparator function |
@@ -2225,6 +2965,10 @@ const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, 
 intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)); // [1.5, 3, 0]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-58-is |  This snippet can be used to check if a value is of a particular type |
@@ -2247,6 +2991,10 @@ is(Boolean, true); // true
 is(Boolean, new Boolean(true)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-59-isAfterDate |  This snippet can be used to check whether a date is after another date |
@@ -2257,6 +3005,10 @@ const isAfterDate = (dateA, dateB) => dateA > dateB;
 isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-60-isAnagram |  This snippet can be used to check whether a particular string is an anagram with another string |
@@ -2276,6 +3028,10 @@ const isAnagram = (str1, str2) => {
 isAnagram('iceman', 'cinema'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-61-isArrayLike |  This snippet can be used to check if a provided argument is iterable like an array |
@@ -2288,6 +3044,10 @@ isArrayLike('abc'); // true
 isArrayLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-62-isBeforeDate |  This snippet can be used to check whether a date is before another date |
@@ -2298,6 +3058,10 @@ const isBeforeDate = (dateA, dateB) => dateA < dateB;
 isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-63-isBoolean |  This snippet can be used to check whether an argument is a boolean |
@@ -2309,6 +3073,10 @@ isBoolean(null); // false
 isBoolean(false); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-64-isBrowser |  This snippet can be used to determine whether the current runtime environment is a browser. This is helpful for avoiding errors when running front-end modules on the server (Node) |
@@ -2320,6 +3088,10 @@ isBrowser(); // true (browser)
 isBrowser(); // false (Node)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-65-isBrowserTabFocused |  This snippet can be used to determine whether the browser tab is focused |
@@ -2330,6 +3102,10 @@ const isBrowserTabFocused = () => !document.hidden;
 isBrowserTabFocused(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-66-isLowerCase |  This snippet can be used to determine whether a string is lower case |
@@ -2342,6 +3118,10 @@ isLowerCase('a3@$'); // true
 isLowerCase('Ab4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-67-isNil |  This snippet can be used to check whether a value is  or  |
@@ -2353,6 +3133,10 @@ isNil(null); // true
 isNil(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-68-isNull |  This snippet can be used to check whether a value is  |
@@ -2363,6 +3147,10 @@ const isNull = val => val === null;
 isNull(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-69-isNumber |  This snippet can be used to check whether a provided value is a number |
@@ -2374,6 +3162,10 @@ isNumber('1'); // false
 isNumber(1); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-70-isObject |  This snippet can be used to check whether a provided value is an object. It uses the Object constructor to create an object wrapper for the given value |
@@ -2389,6 +3181,10 @@ isObject({}); // true
 isObject(true); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-71-isObjectLike |  This snippet can be used to check if a value is not and that its  is “object” |
@@ -2402,6 +3198,10 @@ isObjectLike(x => x); // false
 isObjectLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-72-isPlainObject |  This snippet checks whether a value is an object created by the Object constructor |
@@ -2413,6 +3213,10 @@ isPlainObject({ a: 1 }); // true
 isPlainObject(new Map()); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-73-isPromiseLike |  This snippet checks whether an object looks like a  |
@@ -2432,6 +3236,10 @@ isPromiseLike(null); // false
 isPromiseLike({}); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-74-isSameDate |  This snippet can be used to check whether two dates are equal |
@@ -2442,6 +3250,10 @@ const isSameDate = (dateA, dateB) => dateA.toISOString() === dateB.toISOString()
 isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-75-isString |  This snippet can be used to check whether an argument is a string |
@@ -2452,6 +3264,10 @@ const isString = val => typeof val === 'string';
 isString('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-76-isSymbol |  This snippet can be used to check whether an argument is a symbol |
@@ -2462,6 +3278,10 @@ const isSymbol = val => typeof val === 'symbol';
 isSymbol(Symbol('x')); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-77-isUndefined |  This snippet can be used to check whether a value is undefined |
@@ -2472,6 +3292,10 @@ const isUndefined = val => val === undefined;
 isUndefined(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-78-isUpperCase |  This snippet can be used to check whether a string is upper case |
@@ -2484,6 +3308,10 @@ isLowerCase('A3@$'); // true
 isLowerCase('aB4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-79-isValidJSON |  This snippet can be used to check whether a string is a valid JSON |
@@ -2503,6 +3331,10 @@ isValidJSON('{"name":"Adam",age:"20"}'); // false
 isValidJSON(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-80-last |  This snippet returns the last element of an array |
@@ -2513,6 +3345,10 @@ const last = arr => arr[arr.length - 1];
 last([1, 2, 3]); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-81-matches |  This snippet compares two objects to determine if the first one contains the same property values as the second one |
@@ -2525,6 +3361,10 @@ matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true }); 
 matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-82-maxDate |  This snippet can be used to get the latest date |
@@ -2541,6 +3381,10 @@ const array = [
 maxDate(array); // 2018-03-11T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-83-maxN |  This snippet returns the  largest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in descending order) |
@@ -2552,6 +3396,10 @@ maxN([1, 2, 3]); // [3]
 maxN([1, 2, 3], 2); // [3,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-84-minDate |  This snippet can be used to get the earliest date |
@@ -2568,6 +3416,10 @@ const array = [
 minDate(array); // 2016-01-08T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-85-minN |  This snippet returns the  smallest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in ascending order) |
@@ -2579,6 +3431,10 @@ minN([1, 2, 3]); // [1]
 minN([1, 2, 3], 2); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-86-negate |  This snippet can be used to apply the not operator () to a predicate function with its arguments |
@@ -2589,6 +3445,10 @@ const negate = func => (...args) => !func(...args);
 [1, 2, 3, 4, 5, 6].filter(negate(n => n % 2 === 0)); // [ 1, 3, 5 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-87-nodeListToArray |  This snippet can be used to convert a  to an array |
@@ -2599,6 +3459,10 @@ const nodeListToArray = nodeList => [...nodeList];
 nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-88-pad |  This snippet can be used to  a string on both sides with a specified character if it is shorter than the specified length |
@@ -2612,6 +3476,10 @@ pad(String(42), 6, '0'); // '004200'
 pad('foobar', 3); // 'foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-89-radsToDegrees |  This snippet can be used to convert an angle from radians to degrees |
@@ -2622,6 +3490,10 @@ const radsToDegrees = rad => (rad * 180.0) / Math.PI;
 radsToDegrees(Math.PI / 2); // 90
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-90-randomHexColorCode |  This snippet can be used to generate a random hexadecimal color code |
@@ -2635,6 +3507,10 @@ const randomHexColorCode = () => {
 randomHexColorCode(); // "#e34155"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-91-randomIntArrayInRange |  This snippet can be used to generate an array with  random integers in a specified range |
@@ -2646,6 +3522,10 @@ const randomIntArrayInRange = (min, max, n = 1) =>
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-92-randomIntegerInRange |  This snippet can be used to generate a random integer in a specified range |
@@ -2656,6 +3536,10 @@ const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min
 randomIntegerInRange(0, 5); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-93-randomNumberInRange |  This snippet can be used to return a random number in a specified range |
@@ -2666,6 +3550,10 @@ const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;
 randomNumberInRange(2, 10); // 6.0211363285087005
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-94-readFileLines |  This snippet can be used to read a file by getting an array of lines from a file |
@@ -2682,6 +3570,10 @@ let arr = readFileLines('test.txt');
 console.log(arr); // ['line1', 'line2', 'line3']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-95-redirect |  This snippet can be used to do a redirect to a specified URL |
@@ -2693,6 +3585,10 @@ const redirect = (url, asLink = true) =>
 redirect('https://google.com');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-96-reverse |  This snippet can be used to reverse a string |
@@ -2703,6 +3599,10 @@ const reverseString = str => [...str].reverse().join('');
 reverseString('foobar'); // 'raboof'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-97-round |  This snippet can be used to round a number to a specified number of digits |
@@ -2713,6 +3613,10 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.005, 2); // 1.01
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-98-runPromisesInSeries |  This snippet can be used to run an array of promises in series |
@@ -2725,6 +3629,10 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 // Executes each promise sequentially, taking a total of 3 seconds to complete
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-99-sample |  This snippet can be used to get a random number from an array |
@@ -2735,6 +3643,10 @@ const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 sample([3, 7, 9, 11]); // 9
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-100-sampleSize |  This snippet can be used to get random elements from unique positions from an array up to the size of the array. Elements in the array are shuffled using the  |
@@ -2753,6 +3665,10 @@ sampleSize([1, 2, 3], 2); // [3,1]
 sampleSize([1, 2, 3], 4); // [2,3,1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-101-scrollToTop |  This snippet can be used to do a smooth scroll to the top of the current page |
@@ -2769,6 +3685,10 @@ const scrollToTop = () => {
 scrollToTop();
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-102-serializeCookie |  This snippet can be used to serialize a cookie name-value pair into a Set-Cookie header string |
@@ -2779,6 +3699,10 @@ const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIC
 serializeCookie('foo', 'bar'); // 'foo=bar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-103-setStyle |  This snippet can be used to set the value of a CSS rule for a particular element |
@@ -2790,6 +3714,10 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 // The first <p> element on the page will have a font-size of 20px
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-104-shallowClone |  This snippet can be used to create a shallow clone of an object |
@@ -2801,6 +3729,10 @@ const a = { x: true, y: 1 };
 const b = shallowClone(a); // a !== b
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-105-show |  This snippet can be used to show all the elements specified |
@@ -2811,6 +3743,10 @@ const show = (...el) => [...el].forEach(e => (e.style.display = ''));
 show(...document.querySelectorAll('img')); // Shows all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-106-shuffle |  This snippet can be used to order the elements of an array randomly using the  |
@@ -2829,6 +3765,10 @@ const foo = [1, 2, 3];
 shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-107-similarity |  This snippet can be used to return an array of elements that appear in two arrays |
@@ -2839,6 +3779,10 @@ const similarity = (arr, values) => arr.filter(v => values.includes(v))
 similarity([1, 2, 3], [1, 2, 4]); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-108-sleep |  This snippet can be used to delay the execution of an asynchronous function by putting it into sleep |
@@ -2853,6 +3797,10 @@ async function sleepyWork() {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-130-smoothScroll |  This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
@@ -2867,6 +3815,10 @@ smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-110-sortCharactersInString |  This snippet can be used to alphabetically sort the characters in a string |
@@ -2877,6 +3829,10 @@ const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)
 sortCharactersInString('cabbage'); // 'aabbceg'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-111-splitLines |  This snippet can be used to split a multi-line string into an array of lines |
@@ -2887,6 +3843,10 @@ const splitLines = str => str.split(/\r?\n/);
 splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline', 'string.' , '']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-112-stripHTMLTags |  This snippet can be used to remove HTML/XML tags from a string |
@@ -2897,6 +3857,10 @@ const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
 stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-113-sum |  This snippet can be used to find the sum of two or more numbers or arrays |
@@ -2908,6 +3872,10 @@ sum(1, 2, 3, 4); // 10
 sum(...[1, 2, 3, 4]); // 10
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-114-tail |  This snippet can be used to get an array with all the elements of an array except for the first one. If the array has only one element, then that an array with that element will be returned instead |
@@ -2919,6 +3887,10 @@ tail([1, 2, 3]); // [2,3]
 tail([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-115-take |  This snippet can be used to get an array with elements removed from the beginning |
@@ -2930,6 +3902,10 @@ take([1, 2, 3], 5); // [1, 2, 3]
 take([1, 2, 3], 0); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-116-takeRight |  This snippet can be used to get an array with elements removed from the end |
@@ -2941,6 +3917,10 @@ takeRight([1, 2, 3], 2); // [ 2, 3 ]
 takeRight([1, 2, 3]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-117-timeTaken |  This snippet can be used to find out the time it takes to execute a function |
@@ -2956,6 +3936,10 @@ const timeTaken = callback => {
 timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-118-times |  This snippet can be used to iterate over a callback times |
@@ -2971,6 +3955,10 @@ times(5, i => (output += i));
 console.log(output); // 01234
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-119-toCurrency |  This snippet can be used to format a number like a currency |
@@ -2986,6 +3974,10 @@ toCurrency(322342436423.2435, 'JPY'); // ¥322,342,436,423 | currency: Japanese 
 toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Japanese Yen | currencyLangFormat: Finnish
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-120-toDecimalMark |  This snippet uses the function to convert float-point arithmetic to the decimal mark form by using a number to make a comma-separated string |
@@ -2996,6 +3988,10 @@ const toDecimalMark = num => num.toLocaleString('en-US');
 toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-121-toggleClass |  This snippet can be used to toggle a class for an element |
@@ -3006,6 +4002,10 @@ const toggleClass = (el, className) => el.classList.toggle(className);
 toggleClass(document.querySelector('p.special'), 'special'); // The paragraph will not have the 'special' class anymore
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-122-tomorrow |  This snippet can be used to get a string representation of tomorrow’s date |
@@ -3020,6 +4020,10 @@ const tomorrow = () => {
 tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-123-unfold |  This snippet can be used to build an array using an iterator function and an initial seed value |
@@ -3036,6 +4040,10 @@ var f = n => (n > 50 ? false : [-n, n + 10]);
 unfold(f, 10); // [-10, -20, -30, -40, -50]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-124-union |  This snippet can be used to find the  of two arrays, resulting in an array that has elements that come from both arrays but that do not repeat |
@@ -3046,6 +4054,10 @@ const union = (a, b) => Array.from(new Set([...a, ...b]));
 union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-125-uniqueElements |  This snippet uses ES6 andtheoperator to get every element only once |
@@ -3056,6 +4068,10 @@ const uniqueElements = arr => [...new Set(arr)];
 uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-126-validateNumber |  This snippet can be used to check whether a value is a number |
@@ -3066,6 +4082,10 @@ const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) ==
 validateNumber('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-127-words |  This snippet converts a string into an array of words |
@@ -3077,6 +4097,10 @@ words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-128-getES6moduleSyntaxBySource |  Get all ES6 modules syntax from the source directory |
@@ -3098,6 +4122,10 @@ export function getES6moduleSyntaxBySource(source, extension) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-129-concatJSONsourcesToOneFile |  Concat & export all external JSON sources to one JSON file |
@@ -3122,6 +4150,10 @@ export function concatJSONsourcesToOneFile(sourcesList, distPath) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-131-validateEmail |  Email validator with regex |
@@ -3150,6 +4182,10 @@ all([4, 2, 3], x => x > 1); // true
 all([1, 2, 3]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-2-allEqual |  This snippet checks whether all elements of the array are equal |
@@ -3161,6 +4197,10 @@ allEqual([1, 2, 3, 4, 5, 6]); // false
 allEqual([1, 1, 1, 1]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-3-approximatelyEqual |  This snippet checks whether two numbers are approximately equal to each other, with a small difference |
@@ -3171,6 +4211,10 @@ const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsi
 approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-4-arrayToCSV |  This snippet converts the elements to strings with comma-separated values |
@@ -3183,6 +4227,10 @@ arrayToCSV([['a', 'b'], ['c', 'd']]); // '"a","b"\n"c","d"'
 arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-5-arrayToHtmlList |  This snippet converts the elements of an array into  tags and appends them to the list of the given ID |
@@ -3197,6 +4245,10 @@ const arrayToHtmlList = (arr, listID) =>
 arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-6-attempt |  This snippet executes a function, returning either the result or the caught error object |
@@ -3215,6 +4267,10 @@ var elements = attempt(function(selector) {
 if (elements instanceof Error) elements = []; // elements = []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-7-average |  This snippet returns the average of two or more numerical values |
@@ -3225,6 +4281,10 @@ average(...[1, 2, 3]); // 2
 average(1, 2, 3); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-8-averageBy |  This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function |
@@ -3238,6 +4298,10 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o => o.n); // 5
 averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-9-bifurcate |  This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise |
@@ -3249,6 +4313,10 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-10-bifurcateBy |  This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group |
@@ -3261,6 +4329,10 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-11-bottomVisible |  This snippet checks whether the bottom of a page is visible |
@@ -3273,6 +4345,10 @@ const bottomVisible = () =>
 bottomVisible(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-12-byteSize |  This snippet returns the length of a string in bytes |
@@ -3284,6 +4360,10 @@ byteSize('😀'); // 4
 byteSize('Hello World'); // 11
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-13-capitalize |  This snippet capitalizes the first letter of a string |
@@ -3296,6 +4376,10 @@ capitalize('fooBar'); // 'FooBar'
 capitalize('fooBar', true); // 'Foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-14-capitalizeEveryWord |  This snippet capitalizes the first letter of every word in a given string |
@@ -3306,6 +4390,10 @@ const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperC
 capitalizeEveryWord('hello world!'); // 'Hello World!'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-15-castArray |  This snippet converts a non-array value into array |
@@ -3317,6 +4405,10 @@ castArray('foo'); // ['foo']
 castArray([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-16-compact |  This snippet removes false values from an array |
@@ -3328,6 +4420,10 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 // [ 1, 2, 3, 'a', 's', 34 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-17-countOccurrences |  This snippet counts the occurrences of a value in an array |
@@ -3337,6 +4433,10 @@ const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 :
 countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-18-createDirIfNotExists |  This snippet uses  to check whether a directory exists and then  to create it if it doesn’t |
@@ -3348,6 +4448,10 @@ createDirIfNotExists('test');
 // creates the directory 'test', if it doesn't exist
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-19-currentURL |  This snippet returns the current URL |
@@ -3358,6 +4462,10 @@ const currentURL = () => window.location.href;
 currentURL(); // 'https://medium.com/@fatosmorina'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-20-dayOfYear |  This snippet gets the day of the year from a object |
@@ -3369,6 +4477,10 @@ const dayOfYear = date =>
 dayOfYear(new Date()); // 272
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-21-decapitalize |  This snippet turns the first letter of a string into lowercase |
@@ -3381,6 +4493,10 @@ decapitalize('FooBar'); // 'fooBar'
 decapitalize('FooBar'); // 'fooBar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-22-deepFlatten |  This snippet flattens an array recursively |
@@ -3391,6 +4507,10 @@ const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFla
 deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-23-default |  This snippet assigns default values for all properties in an object that are  |
@@ -3401,6 +4521,10 @@ const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj
 defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-24-defer |  This snippet delays the execution of a function until the current call stack is cleared |
@@ -3411,6 +4535,10 @@ const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
 defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-25-degreesToRads |  This snippet can be used to convert a value from degrees to radians |
@@ -3421,6 +4549,10 @@ const degreesToRads = deg => (deg * Math.PI) / 180.0;
 degreesToRads(90.0); // ~1.5708
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-26-difference |  This snippet finds the difference between two arrays |
@@ -3434,6 +4566,10 @@ const difference = (a, b) => {
 difference([1, 2, 3], [1, 2, 4]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-27-differenceBy |  This snippet returns the difference between two arrays, after applying a given function to each element of both lists |
@@ -3448,6 +4584,10 @@ differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [1.2]
 differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-28-differenceWith |  This snippet removes the values for which the comparator function returns  |
@@ -3459,6 +4599,10 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 // [1, 1.2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-29-digitize |  This snippet gets a number as input and returns an array of its digits |
@@ -3469,6 +4613,10 @@ const digitize = n => [...`${n}`].map(i => parseInt(i));
 digitize(431); // [4, 3, 1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-30-distance |  This snippet returns the distance between two points by calculating the Euclidean distance |
@@ -3479,6 +4627,10 @@ const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);
 distance(1, 1, 2, 3); // 2.23606797749979
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-31-DropLeft |  This snippet returns a new array with  elements removed from the left |
@@ -3491,6 +4643,10 @@ dropLeft([1, 2, 3], 2); // [3]
 dropLeft([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-32-dropRight |  This snippet returns a new array with  elements removed from the right |
@@ -3503,6 +4659,10 @@ dropRight([1, 2, 3], 2); // [1]
 dropRight([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-33-dropRightWhile |  This snippet removes elements from the right side of an array until the passed function returns  |
@@ -3516,6 +4676,10 @@ const dropRightWhile = (arr, func) => {
 dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-34-dropWhile |  This snippet removes elements from an array until the passed function returns  |
@@ -3529,6 +4693,10 @@ const dropWhile = (arr, func) => {
 dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-35-elementContains |  This snippet checks whether the parent element contains the child |
@@ -3540,6 +4708,10 @@ elementContains(document.querySelector('head'), document.querySelector('title'))
 elementContains(document.querySelector('body'), document.querySelector('body')); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-36-Filter Duplicate Elements |  This snippet removes duplicate values in an array |
@@ -3550,6 +4722,10 @@ const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexO
 filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-37-findKey |  This snippet returns the first key that satisfies a given function |
@@ -3567,6 +4743,10 @@ findKey(
 ); // 'barney'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-38-findLast |  This snippet returns the last element for which a given function returns a truthy value |
@@ -3577,6 +4757,10 @@ const findLast = (arr, fn) => arr.filter(fn).pop();
 findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-39-flatten |  This snippet flattens an array up to a specified depth using recursion |
@@ -3589,6 +4773,10 @@ flatten([1, [2], 3, 4]); // [1, 2, 3, 4]
 flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-40-forEachRight |  This snippet executes a function for each element of an array starting from the array’s last element |
@@ -3603,6 +4791,10 @@ const forEachRight = (arr, callback) =>
 forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-41-forOwn |  This snippet iterates on each property of an object and iterates a callback for each one respectively |
@@ -3612,6 +4804,10 @@ const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, ob
 forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-42-functionName |  This snippet prints the name of a function into the console |
@@ -3622,6 +4818,10 @@ const functionName = fn => (console.debug(fn.name), fn);
 functionName(Math.max); // max (logged in debug channel of console)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-43-Get Time From Date |  This snippet can be used to get the time from a object as a string |
@@ -3632,6 +4832,10 @@ const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);
 getColonTimeFromDate(new Date()); // "08:38:00"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-44-Get Days Between Dates |  This snippet can be used to find the difference in days between two dates |
@@ -3643,6 +4847,10 @@ const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
 getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-45-getStyle |  This snippet can be used to get the value of a CSS rule for a particular element |
@@ -3653,6 +4861,10 @@ const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];
 getStyle(document.querySelector('p'), 'font-size'); // '16px'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-46-getType |  This snippet can be used to get the type of a value |
@@ -3664,6 +4876,10 @@ const getType = v =>
 getType(new Set([1, 2, 3])); // 'set'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-47-hasClass |  This snippet checks whether an element has a particular class |
@@ -3673,6 +4889,10 @@ const hasClass = (el, className) => el.classList.contains(className);
 hasClass(document.querySelector('p.special'), 'special'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-48-head |  This snippet returns the  of a list |
@@ -3683,6 +4903,10 @@ const head = arr => arr[0];
 head([1, 2, 3]); // 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-49-hide |  This snippet can be used to hide all elements specified |
@@ -3693,6 +4917,10 @@ const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
 hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-50-httpsRedirect |  This snippet can be used to redirect from HTTP to HTTPS in a particular domain |
@@ -3705,6 +4933,10 @@ const httpsRedirect = () => {
 httpsRedirect(); // If you are on http://mydomain.com, you are redirected to https://mydomain.com
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-51-indexOfAll |  This snippet can be used to get all indexes of a value in an array, which returns an empty array, in case this value is not included in it |
@@ -3716,6 +4948,10 @@ indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
 indexOfAll([1, 2, 3], 4); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-52-initial |  This snippet returns all elements of an array except the last one |
@@ -3727,6 +4963,10 @@ initial([1, 2, 3]); // [1,2]const initial = arr => arr.slice(0, -1);
 initial([1, 2, 3]); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-53-insertAfter |  This snippet can be used to insert an HTML string after the end of a particular element |
@@ -3737,6 +4977,10 @@ const insertAfter = (el, htmlString) => el.insertAdjacentHTML('afterend', htmlSt
 insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">...</div> <p>after</p>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-54-insertBefore |  This snippet can be used to insert an HTML string before a particular element |
@@ -3747,6 +4991,10 @@ const insertBefore = (el, htmlString) => el.insertAdjacentHTML('beforebegin', ht
 insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p> <div id="myId">...</div>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-55-intersection |  This snippet can be used to get an array with elements that are included in two other arrays |
@@ -3760,6 +5008,10 @@ const intersection = (a, b) => {
 intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-56-intersectionBy |  This snippet can be used to return a list of elements that exist in both arrays, after a particular function has been executed to each element of both arrays |
@@ -3773,6 +5025,10 @@ const intersectionBy = (a, b, fn) => {
 intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-57-intersectionWith |  This snippet can be used to return a list of elements that exist in both arrays by using a comparator function |
@@ -3783,6 +5039,10 @@ const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, 
 intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)); // [1.5, 3, 0]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-58-is |  This snippet can be used to check if a value is of a particular type |
@@ -3805,6 +5065,10 @@ is(Boolean, true); // true
 is(Boolean, new Boolean(true)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-59-isAfterDate |  This snippet can be used to check whether a date is after another date |
@@ -3815,6 +5079,10 @@ const isAfterDate = (dateA, dateB) => dateA > dateB;
 isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-60-isAnagram |  This snippet can be used to check whether a particular string is an anagram with another string |
@@ -3834,6 +5102,10 @@ const isAnagram = (str1, str2) => {
 isAnagram('iceman', 'cinema'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-61-isArrayLike |  This snippet can be used to check if a provided argument is iterable like an array |
@@ -3846,6 +5118,10 @@ isArrayLike('abc'); // true
 isArrayLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-62-isBeforeDate |  This snippet can be used to check whether a date is before another date |
@@ -3856,6 +5132,10 @@ const isBeforeDate = (dateA, dateB) => dateA < dateB;
 isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-63-isBoolean |  This snippet can be used to check whether an argument is a boolean |
@@ -3867,6 +5147,10 @@ isBoolean(null); // false
 isBoolean(false); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-64-isBrowser |  This snippet can be used to determine whether the current runtime environment is a browser. This is helpful for avoiding errors when running front-end modules on the server (Node) |
@@ -3878,6 +5162,10 @@ isBrowser(); // true (browser)
 isBrowser(); // false (Node)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-65-isBrowserTabFocused |  This snippet can be used to determine whether the browser tab is focused |
@@ -3888,6 +5176,10 @@ const isBrowserTabFocused = () => !document.hidden;
 isBrowserTabFocused(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-66-isLowerCase |  This snippet can be used to determine whether a string is lower case |
@@ -3900,6 +5192,10 @@ isLowerCase('a3@$'); // true
 isLowerCase('Ab4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-67-isNil |  This snippet can be used to check whether a value is  or  |
@@ -3911,6 +5207,10 @@ isNil(null); // true
 isNil(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-68-isNull |  This snippet can be used to check whether a value is  |
@@ -3921,6 +5221,10 @@ const isNull = val => val === null;
 isNull(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-69-isNumber |  This snippet can be used to check whether a provided value is a number |
@@ -3932,6 +5236,10 @@ isNumber('1'); // false
 isNumber(1); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-70-isObject |  This snippet can be used to check whether a provided value is an object. It uses the Object constructor to create an object wrapper for the given value |
@@ -3947,6 +5255,10 @@ isObject({}); // true
 isObject(true); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-71-isObjectLike |  This snippet can be used to check if a value is not and that its  is “object” |
@@ -3960,6 +5272,10 @@ isObjectLike(x => x); // false
 isObjectLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-72-isPlainObject |  This snippet checks whether a value is an object created by the Object constructor |
@@ -3971,6 +5287,10 @@ isPlainObject({ a: 1 }); // true
 isPlainObject(new Map()); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-73-isPromiseLike |  This snippet checks whether an object looks like a  |
@@ -3990,6 +5310,10 @@ isPromiseLike(null); // false
 isPromiseLike({}); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-74-isSameDate |  This snippet can be used to check whether two dates are equal |
@@ -4000,6 +5324,10 @@ const isSameDate = (dateA, dateB) => dateA.toISOString() === dateB.toISOString()
 isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-75-isString |  This snippet can be used to check whether an argument is a string |
@@ -4010,6 +5338,10 @@ const isString = val => typeof val === 'string';
 isString('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-76-isSymbol |  This snippet can be used to check whether an argument is a symbol |
@@ -4020,6 +5352,10 @@ const isSymbol = val => typeof val === 'symbol';
 isSymbol(Symbol('x')); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-77-isUndefined |  This snippet can be used to check whether a value is undefined |
@@ -4030,6 +5366,10 @@ const isUndefined = val => val === undefined;
 isUndefined(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-78-isUpperCase |  This snippet can be used to check whether a string is upper case |
@@ -4042,6 +5382,10 @@ isLowerCase('A3@$'); // true
 isLowerCase('aB4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-79-isValidJSON |  This snippet can be used to check whether a string is a valid JSON |
@@ -4061,6 +5405,10 @@ isValidJSON('{"name":"Adam",age:"20"}'); // false
 isValidJSON(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-80-last |  This snippet returns the last element of an array |
@@ -4071,6 +5419,10 @@ const last = arr => arr[arr.length - 1];
 last([1, 2, 3]); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-81-matches |  This snippet compares two objects to determine if the first one contains the same property values as the second one |
@@ -4083,6 +5435,10 @@ matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true }); 
 matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-82-maxDate |  This snippet can be used to get the latest date |
@@ -4099,6 +5455,10 @@ const array = [
 maxDate(array); // 2018-03-11T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-83-maxN |  This snippet returns the  largest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in descending order) |
@@ -4110,6 +5470,10 @@ maxN([1, 2, 3]); // [3]
 maxN([1, 2, 3], 2); // [3,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-84-minDate |  This snippet can be used to get the earliest date |
@@ -4126,6 +5490,10 @@ const array = [
 minDate(array); // 2016-01-08T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-85-minN |  This snippet returns the  smallest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in ascending order) |
@@ -4137,6 +5505,10 @@ minN([1, 2, 3]); // [1]
 minN([1, 2, 3], 2); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-86-negate |  This snippet can be used to apply the not operator () to a predicate function with its arguments |
@@ -4147,6 +5519,10 @@ const negate = func => (...args) => !func(...args);
 [1, 2, 3, 4, 5, 6].filter(negate(n => n % 2 === 0)); // [ 1, 3, 5 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-87-nodeListToArray |  This snippet can be used to convert a  to an array |
@@ -4157,6 +5533,10 @@ const nodeListToArray = nodeList => [...nodeList];
 nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-88-pad |  This snippet can be used to  a string on both sides with a specified character if it is shorter than the specified length |
@@ -4170,6 +5550,10 @@ pad(String(42), 6, '0'); // '004200'
 pad('foobar', 3); // 'foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-89-radsToDegrees |  This snippet can be used to convert an angle from radians to degrees |
@@ -4180,6 +5564,10 @@ const radsToDegrees = rad => (rad * 180.0) / Math.PI;
 radsToDegrees(Math.PI / 2); // 90
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-90-randomHexColorCode |  This snippet can be used to generate a random hexadecimal color code |
@@ -4193,6 +5581,10 @@ const randomHexColorCode = () => {
 randomHexColorCode(); // "#e34155"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-91-randomIntArrayInRange |  This snippet can be used to generate an array with  random integers in a specified range |
@@ -4204,6 +5596,10 @@ const randomIntArrayInRange = (min, max, n = 1) =>
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-92-randomIntegerInRange |  This snippet can be used to generate a random integer in a specified range |
@@ -4214,6 +5610,10 @@ const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min
 randomIntegerInRange(0, 5); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-93-randomNumberInRange |  This snippet can be used to return a random number in a specified range |
@@ -4224,6 +5624,10 @@ const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;
 randomNumberInRange(2, 10); // 6.0211363285087005
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-94-readFileLines |  This snippet can be used to read a file by getting an array of lines from a file |
@@ -4240,6 +5644,10 @@ let arr = readFileLines('test.txt');
 console.log(arr); // ['line1', 'line2', 'line3']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-95-redirect |  This snippet can be used to do a redirect to a specified URL |
@@ -4251,6 +5659,10 @@ const redirect = (url, asLink = true) =>
 redirect('https://google.com');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-96-reverse |  This snippet can be used to reverse a string |
@@ -4261,6 +5673,10 @@ const reverseString = str => [...str].reverse().join('');
 reverseString('foobar'); // 'raboof'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-97-round |  This snippet can be used to round a number to a specified number of digits |
@@ -4271,6 +5687,10 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.005, 2); // 1.01
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-98-runPromisesInSeries |  This snippet can be used to run an array of promises in series |
@@ -4283,6 +5703,10 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 // Executes each promise sequentially, taking a total of 3 seconds to complete
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-99-sample |  This snippet can be used to get a random number from an array |
@@ -4293,6 +5717,10 @@ const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 sample([3, 7, 9, 11]); // 9
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-100-sampleSize |  This snippet can be used to get random elements from unique positions from an array up to the size of the array. Elements in the array are shuffled using the  |
@@ -4311,6 +5739,10 @@ sampleSize([1, 2, 3], 2); // [3,1]
 sampleSize([1, 2, 3], 4); // [2,3,1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-101-scrollToTop |  This snippet can be used to do a smooth scroll to the top of the current page |
@@ -4327,6 +5759,10 @@ const scrollToTop = () => {
 scrollToTop();
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-102-serializeCookie |  This snippet can be used to serialize a cookie name-value pair into a Set-Cookie header string |
@@ -4337,6 +5773,10 @@ const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIC
 serializeCookie('foo', 'bar'); // 'foo=bar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-103-setStyle |  This snippet can be used to set the value of a CSS rule for a particular element |
@@ -4348,6 +5788,10 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 // The first <p> element on the page will have a font-size of 20px
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-104-shallowClone |  This snippet can be used to create a shallow clone of an object |
@@ -4359,6 +5803,10 @@ const a = { x: true, y: 1 };
 const b = shallowClone(a); // a !== b
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-105-show |  This snippet can be used to show all the elements specified |
@@ -4369,6 +5817,10 @@ const show = (...el) => [...el].forEach(e => (e.style.display = ''));
 show(...document.querySelectorAll('img')); // Shows all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-106-shuffle |  This snippet can be used to order the elements of an array randomly using the  |
@@ -4387,6 +5839,10 @@ const foo = [1, 2, 3];
 shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-107-similarity |  This snippet can be used to return an array of elements that appear in two arrays |
@@ -4397,6 +5853,10 @@ const similarity = (arr, values) => arr.filter(v => values.includes(v))
 similarity([1, 2, 3], [1, 2, 4]); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-108-sleep |  This snippet can be used to delay the execution of an asynchronous function by putting it into sleep |
@@ -4411,6 +5871,10 @@ async function sleepyWork() {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-130-smoothScroll |  This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
@@ -4425,6 +5889,10 @@ smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-110-sortCharactersInString |  This snippet can be used to alphabetically sort the characters in a string |
@@ -4435,6 +5903,10 @@ const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)
 sortCharactersInString('cabbage'); // 'aabbceg'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-111-splitLines |  This snippet can be used to split a multi-line string into an array of lines |
@@ -4445,6 +5917,10 @@ const splitLines = str => str.split(/\r?\n/);
 splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline', 'string.' , '']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-112-stripHTMLTags |  This snippet can be used to remove HTML/XML tags from a string |
@@ -4455,6 +5931,10 @@ const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
 stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-113-sum |  This snippet can be used to find the sum of two or more numbers or arrays |
@@ -4466,6 +5946,10 @@ sum(1, 2, 3, 4); // 10
 sum(...[1, 2, 3, 4]); // 10
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-114-tail |  This snippet can be used to get an array with all the elements of an array except for the first one. If the array has only one element, then that an array with that element will be returned instead |
@@ -4477,6 +5961,10 @@ tail([1, 2, 3]); // [2,3]
 tail([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-115-take |  This snippet can be used to get an array with elements removed from the beginning |
@@ -4488,6 +5976,10 @@ take([1, 2, 3], 5); // [1, 2, 3]
 take([1, 2, 3], 0); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-116-takeRight |  This snippet can be used to get an array with elements removed from the end |
@@ -4499,6 +5991,10 @@ takeRight([1, 2, 3], 2); // [ 2, 3 ]
 takeRight([1, 2, 3]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-117-timeTaken |  This snippet can be used to find out the time it takes to execute a function |
@@ -4514,6 +6010,10 @@ const timeTaken = callback => {
 timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-118-times |  This snippet can be used to iterate over a callback times |
@@ -4529,6 +6029,10 @@ times(5, i => (output += i));
 console.log(output); // 01234
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-119-toCurrency |  This snippet can be used to format a number like a currency |
@@ -4544,6 +6048,10 @@ toCurrency(322342436423.2435, 'JPY'); // ¥322,342,436,423 | currency: Japanese 
 toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Japanese Yen | currencyLangFormat: Finnish
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-120-toDecimalMark |  This snippet uses the function to convert float-point arithmetic to the decimal mark form by using a number to make a comma-separated string |
@@ -4554,6 +6062,10 @@ const toDecimalMark = num => num.toLocaleString('en-US');
 toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-121-toggleClass |  This snippet can be used to toggle a class for an element |
@@ -4564,6 +6076,10 @@ const toggleClass = (el, className) => el.classList.toggle(className);
 toggleClass(document.querySelector('p.special'), 'special'); // The paragraph will not have the 'special' class anymore
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-122-tomorrow |  This snippet can be used to get a string representation of tomorrow’s date |
@@ -4578,6 +6094,10 @@ const tomorrow = () => {
 tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-123-unfold |  This snippet can be used to build an array using an iterator function and an initial seed value |
@@ -4594,6 +6114,10 @@ var f = n => (n > 50 ? false : [-n, n + 10]);
 unfold(f, 10); // [-10, -20, -30, -40, -50]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-124-union |  This snippet can be used to find the  of two arrays, resulting in an array that has elements that come from both arrays but that do not repeat |
@@ -4604,6 +6128,10 @@ const union = (a, b) => Array.from(new Set([...a, ...b]));
 union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-125-uniqueElements |  This snippet uses ES6 andtheoperator to get every element only once |
@@ -4614,6 +6142,10 @@ const uniqueElements = arr => [...new Set(arr)];
 uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-126-validateNumber |  This snippet can be used to check whether a value is a number |
@@ -4624,6 +6156,10 @@ const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) ==
 validateNumber('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-127-words |  This snippet converts a string into an array of words |
@@ -4635,6 +6171,10 @@ words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-128-getES6moduleSyntaxBySource |  Get all ES6 modules syntax from the source directory |
@@ -4656,6 +6196,10 @@ export function getES6moduleSyntaxBySource(source, extension) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-129-concatJSONsourcesToOneFile |  Concat & export all external JSON sources to one JSON file |
@@ -4680,6 +6224,10 @@ export function concatJSONsourcesToOneFile(sourcesList, distPath) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-131-validateEmail |  Email validator with regex |
@@ -4708,6 +6256,10 @@ all([4, 2, 3], x => x > 1); // true
 all([1, 2, 3]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-2-allEqual |  This snippet checks whether all elements of the array are equal |
@@ -4719,6 +6271,10 @@ allEqual([1, 2, 3, 4, 5, 6]); // false
 allEqual([1, 1, 1, 1]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-3-approximatelyEqual |  This snippet checks whether two numbers are approximately equal to each other, with a small difference |
@@ -4729,6 +6285,10 @@ const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsi
 approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-4-arrayToCSV |  This snippet converts the elements to strings with comma-separated values |
@@ -4741,6 +6301,10 @@ arrayToCSV([['a', 'b'], ['c', 'd']]); // '"a","b"\n"c","d"'
 arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-5-arrayToHtmlList |  This snippet converts the elements of an array into  tags and appends them to the list of the given ID |
@@ -4755,6 +6319,10 @@ const arrayToHtmlList = (arr, listID) =>
 arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-6-attempt |  This snippet executes a function, returning either the result or the caught error object |
@@ -4773,6 +6341,10 @@ var elements = attempt(function(selector) {
 if (elements instanceof Error) elements = []; // elements = []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-7-average |  This snippet returns the average of two or more numerical values |
@@ -4783,6 +6355,10 @@ average(...[1, 2, 3]); // 2
 average(1, 2, 3); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-8-averageBy |  This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function |
@@ -4796,6 +6372,10 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o => o.n); // 5
 averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-9-bifurcate |  This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise |
@@ -4807,6 +6387,10 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-10-bifurcateBy |  This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group |
@@ -4819,6 +6403,10 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-11-bottomVisible |  This snippet checks whether the bottom of a page is visible |
@@ -4831,6 +6419,10 @@ const bottomVisible = () =>
 bottomVisible(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-12-byteSize |  This snippet returns the length of a string in bytes |
@@ -4842,6 +6434,10 @@ byteSize('😀'); // 4
 byteSize('Hello World'); // 11
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-13-capitalize |  This snippet capitalizes the first letter of a string |
@@ -4854,6 +6450,10 @@ capitalize('fooBar'); // 'FooBar'
 capitalize('fooBar', true); // 'Foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-14-capitalizeEveryWord |  This snippet capitalizes the first letter of every word in a given string |
@@ -4864,6 +6464,10 @@ const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperC
 capitalizeEveryWord('hello world!'); // 'Hello World!'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-15-castArray |  This snippet converts a non-array value into array |
@@ -4875,6 +6479,10 @@ castArray('foo'); // ['foo']
 castArray([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-16-compact |  This snippet removes false values from an array |
@@ -4886,6 +6494,10 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 // [ 1, 2, 3, 'a', 's', 34 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-17-countOccurrences |  This snippet counts the occurrences of a value in an array |
@@ -4895,6 +6507,10 @@ const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 :
 countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-18-createDirIfNotExists |  This snippet uses  to check whether a directory exists and then  to create it if it doesn’t |
@@ -4906,6 +6522,10 @@ createDirIfNotExists('test');
 // creates the directory 'test', if it doesn't exist
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-19-currentURL |  This snippet returns the current URL |
@@ -4916,6 +6536,10 @@ const currentURL = () => window.location.href;
 currentURL(); // 'https://medium.com/@fatosmorina'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-20-dayOfYear |  This snippet gets the day of the year from a object |
@@ -4927,6 +6551,10 @@ const dayOfYear = date =>
 dayOfYear(new Date()); // 272
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-21-decapitalize |  This snippet turns the first letter of a string into lowercase |
@@ -4939,6 +6567,10 @@ decapitalize('FooBar'); // 'fooBar'
 decapitalize('FooBar'); // 'fooBar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-22-deepFlatten |  This snippet flattens an array recursively |
@@ -4949,6 +6581,10 @@ const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFla
 deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-23-default |  This snippet assigns default values for all properties in an object that are  |
@@ -4959,6 +6595,10 @@ const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj
 defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-24-defer |  This snippet delays the execution of a function until the current call stack is cleared |
@@ -4969,6 +6609,10 @@ const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
 defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-25-degreesToRads |  This snippet can be used to convert a value from degrees to radians |
@@ -4979,6 +6623,10 @@ const degreesToRads = deg => (deg * Math.PI) / 180.0;
 degreesToRads(90.0); // ~1.5708
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-26-difference |  This snippet finds the difference between two arrays |
@@ -4992,6 +6640,10 @@ const difference = (a, b) => {
 difference([1, 2, 3], [1, 2, 4]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-27-differenceBy |  This snippet returns the difference between two arrays, after applying a given function to each element of both lists |
@@ -5006,6 +6658,10 @@ differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [1.2]
 differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-28-differenceWith |  This snippet removes the values for which the comparator function returns  |
@@ -5017,6 +6673,10 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 // [1, 1.2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-29-digitize |  This snippet gets a number as input and returns an array of its digits |
@@ -5027,6 +6687,10 @@ const digitize = n => [...`${n}`].map(i => parseInt(i));
 digitize(431); // [4, 3, 1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-30-distance |  This snippet returns the distance between two points by calculating the Euclidean distance |
@@ -5037,6 +6701,10 @@ const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);
 distance(1, 1, 2, 3); // 2.23606797749979
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-31-DropLeft |  This snippet returns a new array with  elements removed from the left |
@@ -5049,6 +6717,10 @@ dropLeft([1, 2, 3], 2); // [3]
 dropLeft([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-32-dropRight |  This snippet returns a new array with  elements removed from the right |
@@ -5061,6 +6733,10 @@ dropRight([1, 2, 3], 2); // [1]
 dropRight([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-33-dropRightWhile |  This snippet removes elements from the right side of an array until the passed function returns  |
@@ -5074,6 +6750,10 @@ const dropRightWhile = (arr, func) => {
 dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-34-dropWhile |  This snippet removes elements from an array until the passed function returns  |
@@ -5087,6 +6767,10 @@ const dropWhile = (arr, func) => {
 dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-35-elementContains |  This snippet checks whether the parent element contains the child |
@@ -5098,6 +6782,10 @@ elementContains(document.querySelector('head'), document.querySelector('title'))
 elementContains(document.querySelector('body'), document.querySelector('body')); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-36-Filter Duplicate Elements |  This snippet removes duplicate values in an array |
@@ -5108,6 +6796,10 @@ const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexO
 filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-37-findKey |  This snippet returns the first key that satisfies a given function |
@@ -5125,6 +6817,10 @@ findKey(
 ); // 'barney'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-38-findLast |  This snippet returns the last element for which a given function returns a truthy value |
@@ -5135,6 +6831,10 @@ const findLast = (arr, fn) => arr.filter(fn).pop();
 findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-39-flatten |  This snippet flattens an array up to a specified depth using recursion |
@@ -5147,6 +6847,10 @@ flatten([1, [2], 3, 4]); // [1, 2, 3, 4]
 flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-40-forEachRight |  This snippet executes a function for each element of an array starting from the array’s last element |
@@ -5161,6 +6865,10 @@ const forEachRight = (arr, callback) =>
 forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-41-forOwn |  This snippet iterates on each property of an object and iterates a callback for each one respectively |
@@ -5170,6 +6878,10 @@ const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, ob
 forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-42-functionName |  This snippet prints the name of a function into the console |
@@ -5180,6 +6892,10 @@ const functionName = fn => (console.debug(fn.name), fn);
 functionName(Math.max); // max (logged in debug channel of console)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-43-Get Time From Date |  This snippet can be used to get the time from a object as a string |
@@ -5190,6 +6906,10 @@ const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);
 getColonTimeFromDate(new Date()); // "08:38:00"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-44-Get Days Between Dates |  This snippet can be used to find the difference in days between two dates |
@@ -5201,6 +6921,10 @@ const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
 getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-45-getStyle |  This snippet can be used to get the value of a CSS rule for a particular element |
@@ -5211,6 +6935,10 @@ const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];
 getStyle(document.querySelector('p'), 'font-size'); // '16px'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-46-getType |  This snippet can be used to get the type of a value |
@@ -5222,6 +6950,10 @@ const getType = v =>
 getType(new Set([1, 2, 3])); // 'set'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-47-hasClass |  This snippet checks whether an element has a particular class |
@@ -5231,6 +6963,10 @@ const hasClass = (el, className) => el.classList.contains(className);
 hasClass(document.querySelector('p.special'), 'special'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-48-head |  This snippet returns the  of a list |
@@ -5241,6 +6977,10 @@ const head = arr => arr[0];
 head([1, 2, 3]); // 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-49-hide |  This snippet can be used to hide all elements specified |
@@ -5251,6 +6991,10 @@ const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
 hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-50-httpsRedirect |  This snippet can be used to redirect from HTTP to HTTPS in a particular domain |
@@ -5263,6 +7007,10 @@ const httpsRedirect = () => {
 httpsRedirect(); // If you are on http://mydomain.com, you are redirected to https://mydomain.com
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-51-indexOfAll |  This snippet can be used to get all indexes of a value in an array, which returns an empty array, in case this value is not included in it |
@@ -5274,6 +7022,10 @@ indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
 indexOfAll([1, 2, 3], 4); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-52-initial |  This snippet returns all elements of an array except the last one |
@@ -5285,6 +7037,10 @@ initial([1, 2, 3]); // [1,2]const initial = arr => arr.slice(0, -1);
 initial([1, 2, 3]); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-53-insertAfter |  This snippet can be used to insert an HTML string after the end of a particular element |
@@ -5295,6 +7051,10 @@ const insertAfter = (el, htmlString) => el.insertAdjacentHTML('afterend', htmlSt
 insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">...</div> <p>after</p>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-54-insertBefore |  This snippet can be used to insert an HTML string before a particular element |
@@ -5305,6 +7065,10 @@ const insertBefore = (el, htmlString) => el.insertAdjacentHTML('beforebegin', ht
 insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p> <div id="myId">...</div>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-55-intersection |  This snippet can be used to get an array with elements that are included in two other arrays |
@@ -5318,6 +7082,10 @@ const intersection = (a, b) => {
 intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-56-intersectionBy |  This snippet can be used to return a list of elements that exist in both arrays, after a particular function has been executed to each element of both arrays |
@@ -5331,6 +7099,10 @@ const intersectionBy = (a, b, fn) => {
 intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-57-intersectionWith |  This snippet can be used to return a list of elements that exist in both arrays by using a comparator function |
@@ -5341,6 +7113,10 @@ const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, 
 intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)); // [1.5, 3, 0]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-58-is |  This snippet can be used to check if a value is of a particular type |
@@ -5363,6 +7139,10 @@ is(Boolean, true); // true
 is(Boolean, new Boolean(true)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-59-isAfterDate |  This snippet can be used to check whether a date is after another date |
@@ -5373,6 +7153,10 @@ const isAfterDate = (dateA, dateB) => dateA > dateB;
 isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-60-isAnagram |  This snippet can be used to check whether a particular string is an anagram with another string |
@@ -5392,6 +7176,10 @@ const isAnagram = (str1, str2) => {
 isAnagram('iceman', 'cinema'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-61-isArrayLike |  This snippet can be used to check if a provided argument is iterable like an array |
@@ -5404,6 +7192,10 @@ isArrayLike('abc'); // true
 isArrayLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-62-isBeforeDate |  This snippet can be used to check whether a date is before another date |
@@ -5414,6 +7206,10 @@ const isBeforeDate = (dateA, dateB) => dateA < dateB;
 isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-63-isBoolean |  This snippet can be used to check whether an argument is a boolean |
@@ -5425,6 +7221,10 @@ isBoolean(null); // false
 isBoolean(false); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-64-isBrowser |  This snippet can be used to determine whether the current runtime environment is a browser. This is helpful for avoiding errors when running front-end modules on the server (Node) |
@@ -5436,6 +7236,10 @@ isBrowser(); // true (browser)
 isBrowser(); // false (Node)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-65-isBrowserTabFocused |  This snippet can be used to determine whether the browser tab is focused |
@@ -5446,6 +7250,10 @@ const isBrowserTabFocused = () => !document.hidden;
 isBrowserTabFocused(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-66-isLowerCase |  This snippet can be used to determine whether a string is lower case |
@@ -5458,6 +7266,10 @@ isLowerCase('a3@$'); // true
 isLowerCase('Ab4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-67-isNil |  This snippet can be used to check whether a value is  or  |
@@ -5469,6 +7281,10 @@ isNil(null); // true
 isNil(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-68-isNull |  This snippet can be used to check whether a value is  |
@@ -5479,6 +7295,10 @@ const isNull = val => val === null;
 isNull(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-69-isNumber |  This snippet can be used to check whether a provided value is a number |
@@ -5490,6 +7310,10 @@ isNumber('1'); // false
 isNumber(1); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-70-isObject |  This snippet can be used to check whether a provided value is an object. It uses the Object constructor to create an object wrapper for the given value |
@@ -5505,6 +7329,10 @@ isObject({}); // true
 isObject(true); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-71-isObjectLike |  This snippet can be used to check if a value is not and that its  is “object” |
@@ -5518,6 +7346,10 @@ isObjectLike(x => x); // false
 isObjectLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-72-isPlainObject |  This snippet checks whether a value is an object created by the Object constructor |
@@ -5529,6 +7361,10 @@ isPlainObject({ a: 1 }); // true
 isPlainObject(new Map()); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-73-isPromiseLike |  This snippet checks whether an object looks like a  |
@@ -5548,6 +7384,10 @@ isPromiseLike(null); // false
 isPromiseLike({}); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-74-isSameDate |  This snippet can be used to check whether two dates are equal |
@@ -5558,6 +7398,10 @@ const isSameDate = (dateA, dateB) => dateA.toISOString() === dateB.toISOString()
 isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-75-isString |  This snippet can be used to check whether an argument is a string |
@@ -5568,6 +7412,10 @@ const isString = val => typeof val === 'string';
 isString('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-76-isSymbol |  This snippet can be used to check whether an argument is a symbol |
@@ -5578,6 +7426,10 @@ const isSymbol = val => typeof val === 'symbol';
 isSymbol(Symbol('x')); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-77-isUndefined |  This snippet can be used to check whether a value is undefined |
@@ -5588,6 +7440,10 @@ const isUndefined = val => val === undefined;
 isUndefined(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-78-isUpperCase |  This snippet can be used to check whether a string is upper case |
@@ -5600,6 +7456,10 @@ isLowerCase('A3@$'); // true
 isLowerCase('aB4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-79-isValidJSON |  This snippet can be used to check whether a string is a valid JSON |
@@ -5619,6 +7479,10 @@ isValidJSON('{"name":"Adam",age:"20"}'); // false
 isValidJSON(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-80-last |  This snippet returns the last element of an array |
@@ -5629,6 +7493,10 @@ const last = arr => arr[arr.length - 1];
 last([1, 2, 3]); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-81-matches |  This snippet compares two objects to determine if the first one contains the same property values as the second one |
@@ -5641,6 +7509,10 @@ matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true }); 
 matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-82-maxDate |  This snippet can be used to get the latest date |
@@ -5657,6 +7529,10 @@ const array = [
 maxDate(array); // 2018-03-11T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-83-maxN |  This snippet returns the  largest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in descending order) |
@@ -5668,6 +7544,10 @@ maxN([1, 2, 3]); // [3]
 maxN([1, 2, 3], 2); // [3,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-84-minDate |  This snippet can be used to get the earliest date |
@@ -5684,6 +7564,10 @@ const array = [
 minDate(array); // 2016-01-08T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-85-minN |  This snippet returns the  smallest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in ascending order) |
@@ -5695,6 +7579,10 @@ minN([1, 2, 3]); // [1]
 minN([1, 2, 3], 2); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-86-negate |  This snippet can be used to apply the not operator () to a predicate function with its arguments |
@@ -5705,6 +7593,10 @@ const negate = func => (...args) => !func(...args);
 [1, 2, 3, 4, 5, 6].filter(negate(n => n % 2 === 0)); // [ 1, 3, 5 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-87-nodeListToArray |  This snippet can be used to convert a  to an array |
@@ -5715,6 +7607,10 @@ const nodeListToArray = nodeList => [...nodeList];
 nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-88-pad |  This snippet can be used to  a string on both sides with a specified character if it is shorter than the specified length |
@@ -5728,6 +7624,10 @@ pad(String(42), 6, '0'); // '004200'
 pad('foobar', 3); // 'foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-89-radsToDegrees |  This snippet can be used to convert an angle from radians to degrees |
@@ -5738,6 +7638,10 @@ const radsToDegrees = rad => (rad * 180.0) / Math.PI;
 radsToDegrees(Math.PI / 2); // 90
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-90-randomHexColorCode |  This snippet can be used to generate a random hexadecimal color code |
@@ -5751,6 +7655,10 @@ const randomHexColorCode = () => {
 randomHexColorCode(); // "#e34155"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-91-randomIntArrayInRange |  This snippet can be used to generate an array with  random integers in a specified range |
@@ -5762,6 +7670,10 @@ const randomIntArrayInRange = (min, max, n = 1) =>
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-92-randomIntegerInRange |  This snippet can be used to generate a random integer in a specified range |
@@ -5772,6 +7684,10 @@ const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min
 randomIntegerInRange(0, 5); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-93-randomNumberInRange |  This snippet can be used to return a random number in a specified range |
@@ -5782,6 +7698,10 @@ const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;
 randomNumberInRange(2, 10); // 6.0211363285087005
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-94-readFileLines |  This snippet can be used to read a file by getting an array of lines from a file |
@@ -5798,6 +7718,10 @@ let arr = readFileLines('test.txt');
 console.log(arr); // ['line1', 'line2', 'line3']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-95-redirect |  This snippet can be used to do a redirect to a specified URL |
@@ -5809,6 +7733,10 @@ const redirect = (url, asLink = true) =>
 redirect('https://google.com');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-96-reverse |  This snippet can be used to reverse a string |
@@ -5819,6 +7747,10 @@ const reverseString = str => [...str].reverse().join('');
 reverseString('foobar'); // 'raboof'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-97-round |  This snippet can be used to round a number to a specified number of digits |
@@ -5829,6 +7761,10 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.005, 2); // 1.01
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-98-runPromisesInSeries |  This snippet can be used to run an array of promises in series |
@@ -5841,6 +7777,10 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 // Executes each promise sequentially, taking a total of 3 seconds to complete
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-99-sample |  This snippet can be used to get a random number from an array |
@@ -5851,6 +7791,10 @@ const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 sample([3, 7, 9, 11]); // 9
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-100-sampleSize |  This snippet can be used to get random elements from unique positions from an array up to the size of the array. Elements in the array are shuffled using the  |
@@ -5869,6 +7813,10 @@ sampleSize([1, 2, 3], 2); // [3,1]
 sampleSize([1, 2, 3], 4); // [2,3,1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-101-scrollToTop |  This snippet can be used to do a smooth scroll to the top of the current page |
@@ -5885,6 +7833,10 @@ const scrollToTop = () => {
 scrollToTop();
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-102-serializeCookie |  This snippet can be used to serialize a cookie name-value pair into a Set-Cookie header string |
@@ -5895,6 +7847,10 @@ const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIC
 serializeCookie('foo', 'bar'); // 'foo=bar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-103-setStyle |  This snippet can be used to set the value of a CSS rule for a particular element |
@@ -5906,6 +7862,10 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 // The first <p> element on the page will have a font-size of 20px
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-104-shallowClone |  This snippet can be used to create a shallow clone of an object |
@@ -5917,6 +7877,10 @@ const a = { x: true, y: 1 };
 const b = shallowClone(a); // a !== b
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-105-show |  This snippet can be used to show all the elements specified |
@@ -5927,6 +7891,10 @@ const show = (...el) => [...el].forEach(e => (e.style.display = ''));
 show(...document.querySelectorAll('img')); // Shows all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-106-shuffle |  This snippet can be used to order the elements of an array randomly using the  |
@@ -5945,6 +7913,10 @@ const foo = [1, 2, 3];
 shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-107-similarity |  This snippet can be used to return an array of elements that appear in two arrays |
@@ -5955,6 +7927,10 @@ const similarity = (arr, values) => arr.filter(v => values.includes(v))
 similarity([1, 2, 3], [1, 2, 4]); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-108-sleep |  This snippet can be used to delay the execution of an asynchronous function by putting it into sleep |
@@ -5969,6 +7945,10 @@ async function sleepyWork() {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-130-smoothScroll |  This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
@@ -5983,6 +7963,10 @@ smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-110-sortCharactersInString |  This snippet can be used to alphabetically sort the characters in a string |
@@ -5993,6 +7977,10 @@ const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)
 sortCharactersInString('cabbage'); // 'aabbceg'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-111-splitLines |  This snippet can be used to split a multi-line string into an array of lines |
@@ -6003,6 +7991,10 @@ const splitLines = str => str.split(/\r?\n/);
 splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline', 'string.' , '']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-112-stripHTMLTags |  This snippet can be used to remove HTML/XML tags from a string |
@@ -6013,6 +8005,10 @@ const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
 stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-113-sum |  This snippet can be used to find the sum of two or more numbers or arrays |
@@ -6024,6 +8020,10 @@ sum(1, 2, 3, 4); // 10
 sum(...[1, 2, 3, 4]); // 10
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-114-tail |  This snippet can be used to get an array with all the elements of an array except for the first one. If the array has only one element, then that an array with that element will be returned instead |
@@ -6035,6 +8035,10 @@ tail([1, 2, 3]); // [2,3]
 tail([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-115-take |  This snippet can be used to get an array with elements removed from the beginning |
@@ -6046,6 +8050,10 @@ take([1, 2, 3], 5); // [1, 2, 3]
 take([1, 2, 3], 0); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-116-takeRight |  This snippet can be used to get an array with elements removed from the end |
@@ -6057,6 +8065,10 @@ takeRight([1, 2, 3], 2); // [ 2, 3 ]
 takeRight([1, 2, 3]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-117-timeTaken |  This snippet can be used to find out the time it takes to execute a function |
@@ -6072,6 +8084,10 @@ const timeTaken = callback => {
 timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-118-times |  This snippet can be used to iterate over a callback times |
@@ -6087,6 +8103,10 @@ times(5, i => (output += i));
 console.log(output); // 01234
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-119-toCurrency |  This snippet can be used to format a number like a currency |
@@ -6102,6 +8122,10 @@ toCurrency(322342436423.2435, 'JPY'); // ¥322,342,436,423 | currency: Japanese 
 toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Japanese Yen | currencyLangFormat: Finnish
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-120-toDecimalMark |  This snippet uses the function to convert float-point arithmetic to the decimal mark form by using a number to make a comma-separated string |
@@ -6112,6 +8136,10 @@ const toDecimalMark = num => num.toLocaleString('en-US');
 toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-121-toggleClass |  This snippet can be used to toggle a class for an element |
@@ -6122,6 +8150,10 @@ const toggleClass = (el, className) => el.classList.toggle(className);
 toggleClass(document.querySelector('p.special'), 'special'); // The paragraph will not have the 'special' class anymore
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-122-tomorrow |  This snippet can be used to get a string representation of tomorrow’s date |
@@ -6136,6 +8168,10 @@ const tomorrow = () => {
 tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-123-unfold |  This snippet can be used to build an array using an iterator function and an initial seed value |
@@ -6152,6 +8188,10 @@ var f = n => (n > 50 ? false : [-n, n + 10]);
 unfold(f, 10); // [-10, -20, -30, -40, -50]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-124-union |  This snippet can be used to find the  of two arrays, resulting in an array that has elements that come from both arrays but that do not repeat |
@@ -6162,6 +8202,10 @@ const union = (a, b) => Array.from(new Set([...a, ...b]));
 union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-125-uniqueElements |  This snippet uses ES6 andtheoperator to get every element only once |
@@ -6172,6 +8216,10 @@ const uniqueElements = arr => [...new Set(arr)];
 uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-126-validateNumber |  This snippet can be used to check whether a value is a number |
@@ -6182,6 +8230,10 @@ const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) ==
 validateNumber('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-127-words |  This snippet converts a string into an array of words |
@@ -6193,6 +8245,10 @@ words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-128-getES6moduleSyntaxBySource |  Get all ES6 modules syntax from the source directory |
@@ -6214,6 +8270,10 @@ export function getES6moduleSyntaxBySource(source, extension) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-129-concatJSONsourcesToOneFile |  Concat & export all external JSON sources to one JSON file |
@@ -6238,6 +8298,10 @@ export function concatJSONsourcesToOneFile(sourcesList, distPath) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-131-validateEmail |  Email validator with regex |
@@ -6266,6 +8330,10 @@ all([4, 2, 3], x => x > 1); // true
 all([1, 2, 3]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-2-allEqual |  This snippet checks whether all elements of the array are equal |
@@ -6277,6 +8345,10 @@ allEqual([1, 2, 3, 4, 5, 6]); // false
 allEqual([1, 1, 1, 1]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-3-approximatelyEqual |  This snippet checks whether two numbers are approximately equal to each other, with a small difference |
@@ -6287,6 +8359,10 @@ const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsi
 approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-4-arrayToCSV |  This snippet converts the elements to strings with comma-separated values |
@@ -6299,6 +8375,10 @@ arrayToCSV([['a', 'b'], ['c', 'd']]); // '"a","b"\n"c","d"'
 arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-5-arrayToHtmlList |  This snippet converts the elements of an array into  tags and appends them to the list of the given ID |
@@ -6313,6 +8393,10 @@ const arrayToHtmlList = (arr, listID) =>
 arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-6-attempt |  This snippet executes a function, returning either the result or the caught error object |
@@ -6331,6 +8415,10 @@ var elements = attempt(function(selector) {
 if (elements instanceof Error) elements = []; // elements = []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-7-average |  This snippet returns the average of two or more numerical values |
@@ -6341,6 +8429,10 @@ average(...[1, 2, 3]); // 2
 average(1, 2, 3); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-8-averageBy |  This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function |
@@ -6354,6 +8446,10 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o => o.n); // 5
 averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-9-bifurcate |  This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise |
@@ -6365,6 +8461,10 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-10-bifurcateBy |  This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group |
@@ -6377,6 +8477,10 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-11-bottomVisible |  This snippet checks whether the bottom of a page is visible |
@@ -6389,6 +8493,10 @@ const bottomVisible = () =>
 bottomVisible(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-12-byteSize |  This snippet returns the length of a string in bytes |
@@ -6400,6 +8508,10 @@ byteSize('😀'); // 4
 byteSize('Hello World'); // 11
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-13-capitalize |  This snippet capitalizes the first letter of a string |
@@ -6412,6 +8524,10 @@ capitalize('fooBar'); // 'FooBar'
 capitalize('fooBar', true); // 'Foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-14-capitalizeEveryWord |  This snippet capitalizes the first letter of every word in a given string |
@@ -6422,6 +8538,10 @@ const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperC
 capitalizeEveryWord('hello world!'); // 'Hello World!'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-15-castArray |  This snippet converts a non-array value into array |
@@ -6433,6 +8553,10 @@ castArray('foo'); // ['foo']
 castArray([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-16-compact |  This snippet removes false values from an array |
@@ -6444,6 +8568,10 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 // [ 1, 2, 3, 'a', 's', 34 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-17-countOccurrences |  This snippet counts the occurrences of a value in an array |
@@ -6453,6 +8581,10 @@ const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 :
 countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-18-createDirIfNotExists |  This snippet uses  to check whether a directory exists and then  to create it if it doesn’t |
@@ -6464,6 +8596,10 @@ createDirIfNotExists('test');
 // creates the directory 'test', if it doesn't exist
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-19-currentURL |  This snippet returns the current URL |
@@ -6474,6 +8610,10 @@ const currentURL = () => window.location.href;
 currentURL(); // 'https://medium.com/@fatosmorina'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-20-dayOfYear |  This snippet gets the day of the year from a object |
@@ -6485,6 +8625,10 @@ const dayOfYear = date =>
 dayOfYear(new Date()); // 272
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-21-decapitalize |  This snippet turns the first letter of a string into lowercase |
@@ -6497,6 +8641,10 @@ decapitalize('FooBar'); // 'fooBar'
 decapitalize('FooBar'); // 'fooBar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-22-deepFlatten |  This snippet flattens an array recursively |
@@ -6507,6 +8655,10 @@ const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFla
 deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-23-default |  This snippet assigns default values for all properties in an object that are  |
@@ -6517,6 +8669,10 @@ const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj
 defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-24-defer |  This snippet delays the execution of a function until the current call stack is cleared |
@@ -6527,6 +8683,10 @@ const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
 defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-25-degreesToRads |  This snippet can be used to convert a value from degrees to radians |
@@ -6537,6 +8697,10 @@ const degreesToRads = deg => (deg * Math.PI) / 180.0;
 degreesToRads(90.0); // ~1.5708
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-26-difference |  This snippet finds the difference between two arrays |
@@ -6550,6 +8714,10 @@ const difference = (a, b) => {
 difference([1, 2, 3], [1, 2, 4]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-27-differenceBy |  This snippet returns the difference between two arrays, after applying a given function to each element of both lists |
@@ -6564,6 +8732,10 @@ differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [1.2]
 differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-28-differenceWith |  This snippet removes the values for which the comparator function returns  |
@@ -6575,6 +8747,10 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 // [1, 1.2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-29-digitize |  This snippet gets a number as input and returns an array of its digits |
@@ -6585,6 +8761,10 @@ const digitize = n => [...`${n}`].map(i => parseInt(i));
 digitize(431); // [4, 3, 1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-30-distance |  This snippet returns the distance between two points by calculating the Euclidean distance |
@@ -6595,6 +8775,10 @@ const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);
 distance(1, 1, 2, 3); // 2.23606797749979
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-31-DropLeft |  This snippet returns a new array with  elements removed from the left |
@@ -6607,6 +8791,10 @@ dropLeft([1, 2, 3], 2); // [3]
 dropLeft([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-32-dropRight |  This snippet returns a new array with  elements removed from the right |
@@ -6619,6 +8807,10 @@ dropRight([1, 2, 3], 2); // [1]
 dropRight([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-33-dropRightWhile |  This snippet removes elements from the right side of an array until the passed function returns  |
@@ -6632,6 +8824,10 @@ const dropRightWhile = (arr, func) => {
 dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-34-dropWhile |  This snippet removes elements from an array until the passed function returns  |
@@ -6645,6 +8841,10 @@ const dropWhile = (arr, func) => {
 dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-35-elementContains |  This snippet checks whether the parent element contains the child |
@@ -6656,6 +8856,10 @@ elementContains(document.querySelector('head'), document.querySelector('title'))
 elementContains(document.querySelector('body'), document.querySelector('body')); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-36-Filter Duplicate Elements |  This snippet removes duplicate values in an array |
@@ -6666,6 +8870,10 @@ const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexO
 filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-37-findKey |  This snippet returns the first key that satisfies a given function |
@@ -6683,6 +8891,10 @@ findKey(
 ); // 'barney'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-38-findLast |  This snippet returns the last element for which a given function returns a truthy value |
@@ -6693,6 +8905,10 @@ const findLast = (arr, fn) => arr.filter(fn).pop();
 findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-39-flatten |  This snippet flattens an array up to a specified depth using recursion |
@@ -6705,6 +8921,10 @@ flatten([1, [2], 3, 4]); // [1, 2, 3, 4]
 flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-40-forEachRight |  This snippet executes a function for each element of an array starting from the array’s last element |
@@ -6719,6 +8939,10 @@ const forEachRight = (arr, callback) =>
 forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-41-forOwn |  This snippet iterates on each property of an object and iterates a callback for each one respectively |
@@ -6728,6 +8952,10 @@ const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, ob
 forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-42-functionName |  This snippet prints the name of a function into the console |
@@ -6738,6 +8966,10 @@ const functionName = fn => (console.debug(fn.name), fn);
 functionName(Math.max); // max (logged in debug channel of console)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-43-Get Time From Date |  This snippet can be used to get the time from a object as a string |
@@ -6748,6 +8980,10 @@ const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);
 getColonTimeFromDate(new Date()); // "08:38:00"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-44-Get Days Between Dates |  This snippet can be used to find the difference in days between two dates |
@@ -6759,6 +8995,10 @@ const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
 getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-45-getStyle |  This snippet can be used to get the value of a CSS rule for a particular element |
@@ -6769,6 +9009,10 @@ const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];
 getStyle(document.querySelector('p'), 'font-size'); // '16px'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-46-getType |  This snippet can be used to get the type of a value |
@@ -6780,6 +9024,10 @@ const getType = v =>
 getType(new Set([1, 2, 3])); // 'set'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-47-hasClass |  This snippet checks whether an element has a particular class |
@@ -6789,6 +9037,10 @@ const hasClass = (el, className) => el.classList.contains(className);
 hasClass(document.querySelector('p.special'), 'special'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-48-head |  This snippet returns the  of a list |
@@ -6799,6 +9051,10 @@ const head = arr => arr[0];
 head([1, 2, 3]); // 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-49-hide |  This snippet can be used to hide all elements specified |
@@ -6809,6 +9065,10 @@ const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
 hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-50-httpsRedirect |  This snippet can be used to redirect from HTTP to HTTPS in a particular domain |
@@ -6821,6 +9081,10 @@ const httpsRedirect = () => {
 httpsRedirect(); // If you are on http://mydomain.com, you are redirected to https://mydomain.com
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-51-indexOfAll |  This snippet can be used to get all indexes of a value in an array, which returns an empty array, in case this value is not included in it |
@@ -6832,6 +9096,10 @@ indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
 indexOfAll([1, 2, 3], 4); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-52-initial |  This snippet returns all elements of an array except the last one |
@@ -6843,6 +9111,10 @@ initial([1, 2, 3]); // [1,2]const initial = arr => arr.slice(0, -1);
 initial([1, 2, 3]); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-53-insertAfter |  This snippet can be used to insert an HTML string after the end of a particular element |
@@ -6853,6 +9125,10 @@ const insertAfter = (el, htmlString) => el.insertAdjacentHTML('afterend', htmlSt
 insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">...</div> <p>after</p>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-54-insertBefore |  This snippet can be used to insert an HTML string before a particular element |
@@ -6863,6 +9139,10 @@ const insertBefore = (el, htmlString) => el.insertAdjacentHTML('beforebegin', ht
 insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p> <div id="myId">...</div>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-55-intersection |  This snippet can be used to get an array with elements that are included in two other arrays |
@@ -6876,6 +9156,10 @@ const intersection = (a, b) => {
 intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-56-intersectionBy |  This snippet can be used to return a list of elements that exist in both arrays, after a particular function has been executed to each element of both arrays |
@@ -6889,6 +9173,10 @@ const intersectionBy = (a, b, fn) => {
 intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-57-intersectionWith |  This snippet can be used to return a list of elements that exist in both arrays by using a comparator function |
@@ -6899,6 +9187,10 @@ const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, 
 intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)); // [1.5, 3, 0]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-58-is |  This snippet can be used to check if a value is of a particular type |
@@ -6921,6 +9213,10 @@ is(Boolean, true); // true
 is(Boolean, new Boolean(true)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-59-isAfterDate |  This snippet can be used to check whether a date is after another date |
@@ -6931,6 +9227,10 @@ const isAfterDate = (dateA, dateB) => dateA > dateB;
 isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-60-isAnagram |  This snippet can be used to check whether a particular string is an anagram with another string |
@@ -6950,6 +9250,10 @@ const isAnagram = (str1, str2) => {
 isAnagram('iceman', 'cinema'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-61-isArrayLike |  This snippet can be used to check if a provided argument is iterable like an array |
@@ -6962,6 +9266,10 @@ isArrayLike('abc'); // true
 isArrayLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-62-isBeforeDate |  This snippet can be used to check whether a date is before another date |
@@ -6972,6 +9280,10 @@ const isBeforeDate = (dateA, dateB) => dateA < dateB;
 isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-63-isBoolean |  This snippet can be used to check whether an argument is a boolean |
@@ -6983,6 +9295,10 @@ isBoolean(null); // false
 isBoolean(false); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-64-isBrowser |  This snippet can be used to determine whether the current runtime environment is a browser. This is helpful for avoiding errors when running front-end modules on the server (Node) |
@@ -6994,6 +9310,10 @@ isBrowser(); // true (browser)
 isBrowser(); // false (Node)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-65-isBrowserTabFocused |  This snippet can be used to determine whether the browser tab is focused |
@@ -7004,6 +9324,10 @@ const isBrowserTabFocused = () => !document.hidden;
 isBrowserTabFocused(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-66-isLowerCase |  This snippet can be used to determine whether a string is lower case |
@@ -7016,6 +9340,10 @@ isLowerCase('a3@$'); // true
 isLowerCase('Ab4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-67-isNil |  This snippet can be used to check whether a value is  or  |
@@ -7027,6 +9355,10 @@ isNil(null); // true
 isNil(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-68-isNull |  This snippet can be used to check whether a value is  |
@@ -7037,6 +9369,10 @@ const isNull = val => val === null;
 isNull(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-69-isNumber |  This snippet can be used to check whether a provided value is a number |
@@ -7048,6 +9384,10 @@ isNumber('1'); // false
 isNumber(1); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-70-isObject |  This snippet can be used to check whether a provided value is an object. It uses the Object constructor to create an object wrapper for the given value |
@@ -7063,6 +9403,10 @@ isObject({}); // true
 isObject(true); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-71-isObjectLike |  This snippet can be used to check if a value is not and that its  is “object” |
@@ -7076,6 +9420,10 @@ isObjectLike(x => x); // false
 isObjectLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-72-isPlainObject |  This snippet checks whether a value is an object created by the Object constructor |
@@ -7087,6 +9435,10 @@ isPlainObject({ a: 1 }); // true
 isPlainObject(new Map()); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-73-isPromiseLike |  This snippet checks whether an object looks like a  |
@@ -7106,6 +9458,10 @@ isPromiseLike(null); // false
 isPromiseLike({}); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-74-isSameDate |  This snippet can be used to check whether two dates are equal |
@@ -7116,6 +9472,10 @@ const isSameDate = (dateA, dateB) => dateA.toISOString() === dateB.toISOString()
 isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-75-isString |  This snippet can be used to check whether an argument is a string |
@@ -7126,6 +9486,10 @@ const isString = val => typeof val === 'string';
 isString('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-76-isSymbol |  This snippet can be used to check whether an argument is a symbol |
@@ -7136,6 +9500,10 @@ const isSymbol = val => typeof val === 'symbol';
 isSymbol(Symbol('x')); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-77-isUndefined |  This snippet can be used to check whether a value is undefined |
@@ -7146,6 +9514,10 @@ const isUndefined = val => val === undefined;
 isUndefined(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-78-isUpperCase |  This snippet can be used to check whether a string is upper case |
@@ -7158,6 +9530,10 @@ isLowerCase('A3@$'); // true
 isLowerCase('aB4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-79-isValidJSON |  This snippet can be used to check whether a string is a valid JSON |
@@ -7177,6 +9553,10 @@ isValidJSON('{"name":"Adam",age:"20"}'); // false
 isValidJSON(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-80-last |  This snippet returns the last element of an array |
@@ -7187,6 +9567,10 @@ const last = arr => arr[arr.length - 1];
 last([1, 2, 3]); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-81-matches |  This snippet compares two objects to determine if the first one contains the same property values as the second one |
@@ -7199,6 +9583,10 @@ matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true }); 
 matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-82-maxDate |  This snippet can be used to get the latest date |
@@ -7215,6 +9603,10 @@ const array = [
 maxDate(array); // 2018-03-11T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-83-maxN |  This snippet returns the  largest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in descending order) |
@@ -7226,6 +9618,10 @@ maxN([1, 2, 3]); // [3]
 maxN([1, 2, 3], 2); // [3,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-84-minDate |  This snippet can be used to get the earliest date |
@@ -7242,6 +9638,10 @@ const array = [
 minDate(array); // 2016-01-08T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-85-minN |  This snippet returns the  smallest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in ascending order) |
@@ -7253,6 +9653,10 @@ minN([1, 2, 3]); // [1]
 minN([1, 2, 3], 2); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-86-negate |  This snippet can be used to apply the not operator () to a predicate function with its arguments |
@@ -7263,6 +9667,10 @@ const negate = func => (...args) => !func(...args);
 [1, 2, 3, 4, 5, 6].filter(negate(n => n % 2 === 0)); // [ 1, 3, 5 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-87-nodeListToArray |  This snippet can be used to convert a  to an array |
@@ -7273,6 +9681,10 @@ const nodeListToArray = nodeList => [...nodeList];
 nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-88-pad |  This snippet can be used to  a string on both sides with a specified character if it is shorter than the specified length |
@@ -7286,6 +9698,10 @@ pad(String(42), 6, '0'); // '004200'
 pad('foobar', 3); // 'foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-89-radsToDegrees |  This snippet can be used to convert an angle from radians to degrees |
@@ -7296,6 +9712,10 @@ const radsToDegrees = rad => (rad * 180.0) / Math.PI;
 radsToDegrees(Math.PI / 2); // 90
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-90-randomHexColorCode |  This snippet can be used to generate a random hexadecimal color code |
@@ -7309,6 +9729,10 @@ const randomHexColorCode = () => {
 randomHexColorCode(); // "#e34155"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-91-randomIntArrayInRange |  This snippet can be used to generate an array with  random integers in a specified range |
@@ -7320,6 +9744,10 @@ const randomIntArrayInRange = (min, max, n = 1) =>
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-92-randomIntegerInRange |  This snippet can be used to generate a random integer in a specified range |
@@ -7330,6 +9758,10 @@ const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min
 randomIntegerInRange(0, 5); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-93-randomNumberInRange |  This snippet can be used to return a random number in a specified range |
@@ -7340,6 +9772,10 @@ const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;
 randomNumberInRange(2, 10); // 6.0211363285087005
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-94-readFileLines |  This snippet can be used to read a file by getting an array of lines from a file |
@@ -7356,6 +9792,10 @@ let arr = readFileLines('test.txt');
 console.log(arr); // ['line1', 'line2', 'line3']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-95-redirect |  This snippet can be used to do a redirect to a specified URL |
@@ -7367,6 +9807,10 @@ const redirect = (url, asLink = true) =>
 redirect('https://google.com');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-96-reverse |  This snippet can be used to reverse a string |
@@ -7377,6 +9821,10 @@ const reverseString = str => [...str].reverse().join('');
 reverseString('foobar'); // 'raboof'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-97-round |  This snippet can be used to round a number to a specified number of digits |
@@ -7387,6 +9835,10 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.005, 2); // 1.01
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-98-runPromisesInSeries |  This snippet can be used to run an array of promises in series |
@@ -7399,6 +9851,10 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 // Executes each promise sequentially, taking a total of 3 seconds to complete
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-99-sample |  This snippet can be used to get a random number from an array |
@@ -7409,6 +9865,10 @@ const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 sample([3, 7, 9, 11]); // 9
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-100-sampleSize |  This snippet can be used to get random elements from unique positions from an array up to the size of the array. Elements in the array are shuffled using the  |
@@ -7427,6 +9887,10 @@ sampleSize([1, 2, 3], 2); // [3,1]
 sampleSize([1, 2, 3], 4); // [2,3,1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-101-scrollToTop |  This snippet can be used to do a smooth scroll to the top of the current page |
@@ -7443,6 +9907,10 @@ const scrollToTop = () => {
 scrollToTop();
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-102-serializeCookie |  This snippet can be used to serialize a cookie name-value pair into a Set-Cookie header string |
@@ -7453,6 +9921,10 @@ const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIC
 serializeCookie('foo', 'bar'); // 'foo=bar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-103-setStyle |  This snippet can be used to set the value of a CSS rule for a particular element |
@@ -7464,6 +9936,10 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 // The first <p> element on the page will have a font-size of 20px
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-104-shallowClone |  This snippet can be used to create a shallow clone of an object |
@@ -7475,6 +9951,10 @@ const a = { x: true, y: 1 };
 const b = shallowClone(a); // a !== b
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-105-show |  This snippet can be used to show all the elements specified |
@@ -7485,6 +9965,10 @@ const show = (...el) => [...el].forEach(e => (e.style.display = ''));
 show(...document.querySelectorAll('img')); // Shows all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-106-shuffle |  This snippet can be used to order the elements of an array randomly using the  |
@@ -7503,6 +9987,10 @@ const foo = [1, 2, 3];
 shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-107-similarity |  This snippet can be used to return an array of elements that appear in two arrays |
@@ -7513,6 +10001,10 @@ const similarity = (arr, values) => arr.filter(v => values.includes(v))
 similarity([1, 2, 3], [1, 2, 4]); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-108-sleep |  This snippet can be used to delay the execution of an asynchronous function by putting it into sleep |
@@ -7527,6 +10019,10 @@ async function sleepyWork() {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-130-smoothScroll |  This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
@@ -7541,6 +10037,10 @@ smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-110-sortCharactersInString |  This snippet can be used to alphabetically sort the characters in a string |
@@ -7551,6 +10051,10 @@ const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)
 sortCharactersInString('cabbage'); // 'aabbceg'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-111-splitLines |  This snippet can be used to split a multi-line string into an array of lines |
@@ -7561,6 +10065,10 @@ const splitLines = str => str.split(/\r?\n/);
 splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline', 'string.' , '']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-112-stripHTMLTags |  This snippet can be used to remove HTML/XML tags from a string |
@@ -7571,6 +10079,10 @@ const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
 stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-113-sum |  This snippet can be used to find the sum of two or more numbers or arrays |
@@ -7582,6 +10094,10 @@ sum(1, 2, 3, 4); // 10
 sum(...[1, 2, 3, 4]); // 10
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-114-tail |  This snippet can be used to get an array with all the elements of an array except for the first one. If the array has only one element, then that an array with that element will be returned instead |
@@ -7593,6 +10109,10 @@ tail([1, 2, 3]); // [2,3]
 tail([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-115-take |  This snippet can be used to get an array with elements removed from the beginning |
@@ -7604,6 +10124,10 @@ take([1, 2, 3], 5); // [1, 2, 3]
 take([1, 2, 3], 0); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-116-takeRight |  This snippet can be used to get an array with elements removed from the end |
@@ -7615,6 +10139,10 @@ takeRight([1, 2, 3], 2); // [ 2, 3 ]
 takeRight([1, 2, 3]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-117-timeTaken |  This snippet can be used to find out the time it takes to execute a function |
@@ -7630,6 +10158,10 @@ const timeTaken = callback => {
 timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-118-times |  This snippet can be used to iterate over a callback times |
@@ -7645,6 +10177,10 @@ times(5, i => (output += i));
 console.log(output); // 01234
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-119-toCurrency |  This snippet can be used to format a number like a currency |
@@ -7660,6 +10196,10 @@ toCurrency(322342436423.2435, 'JPY'); // ¥322,342,436,423 | currency: Japanese 
 toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Japanese Yen | currencyLangFormat: Finnish
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-120-toDecimalMark |  This snippet uses the function to convert float-point arithmetic to the decimal mark form by using a number to make a comma-separated string |
@@ -7670,6 +10210,10 @@ const toDecimalMark = num => num.toLocaleString('en-US');
 toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-121-toggleClass |  This snippet can be used to toggle a class for an element |
@@ -7680,6 +10224,10 @@ const toggleClass = (el, className) => el.classList.toggle(className);
 toggleClass(document.querySelector('p.special'), 'special'); // The paragraph will not have the 'special' class anymore
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-122-tomorrow |  This snippet can be used to get a string representation of tomorrow’s date |
@@ -7694,6 +10242,10 @@ const tomorrow = () => {
 tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-123-unfold |  This snippet can be used to build an array using an iterator function and an initial seed value |
@@ -7710,6 +10262,10 @@ var f = n => (n > 50 ? false : [-n, n + 10]);
 unfold(f, 10); // [-10, -20, -30, -40, -50]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-124-union |  This snippet can be used to find the  of two arrays, resulting in an array that has elements that come from both arrays but that do not repeat |
@@ -7720,6 +10276,10 @@ const union = (a, b) => Array.from(new Set([...a, ...b]));
 union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-125-uniqueElements |  This snippet uses ES6 andtheoperator to get every element only once |
@@ -7730,6 +10290,10 @@ const uniqueElements = arr => [...new Set(arr)];
 uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-126-validateNumber |  This snippet can be used to check whether a value is a number |
@@ -7740,6 +10304,10 @@ const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) ==
 validateNumber('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-127-words |  This snippet converts a string into an array of words |
@@ -7751,6 +10319,10 @@ words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-128-getES6moduleSyntaxBySource |  Get all ES6 modules syntax from the source directory |
@@ -7772,6 +10344,10 @@ export function getES6moduleSyntaxBySource(source, extension) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-129-concatJSONsourcesToOneFile |  Concat & export all external JSON sources to one JSON file |
@@ -7796,6 +10372,10 @@ export function concatJSONsourcesToOneFile(sourcesList, distPath) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-131-validateEmail |  Email validator with regex |
@@ -7824,6 +10404,10 @@ all([4, 2, 3], x => x > 1); // true
 all([1, 2, 3]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-2-allEqual |  This snippet checks whether all elements of the array are equal |
@@ -7835,6 +10419,10 @@ allEqual([1, 2, 3, 4, 5, 6]); // false
 allEqual([1, 1, 1, 1]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-3-approximatelyEqual |  This snippet checks whether two numbers are approximately equal to each other, with a small difference |
@@ -7845,6 +10433,10 @@ const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsi
 approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-4-arrayToCSV |  This snippet converts the elements to strings with comma-separated values |
@@ -7857,6 +10449,10 @@ arrayToCSV([['a', 'b'], ['c', 'd']]); // '"a","b"\n"c","d"'
 arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-5-arrayToHtmlList |  This snippet converts the elements of an array into  tags and appends them to the list of the given ID |
@@ -7871,6 +10467,10 @@ const arrayToHtmlList = (arr, listID) =>
 arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-6-attempt |  This snippet executes a function, returning either the result or the caught error object |
@@ -7889,6 +10489,10 @@ var elements = attempt(function(selector) {
 if (elements instanceof Error) elements = []; // elements = []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-7-average |  This snippet returns the average of two or more numerical values |
@@ -7899,6 +10503,10 @@ average(...[1, 2, 3]); // 2
 average(1, 2, 3); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-8-averageBy |  This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function |
@@ -7912,6 +10520,10 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o => o.n); // 5
 averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-9-bifurcate |  This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise |
@@ -7923,6 +10535,10 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-10-bifurcateBy |  This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group |
@@ -7935,6 +10551,10 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-11-bottomVisible |  This snippet checks whether the bottom of a page is visible |
@@ -7947,6 +10567,10 @@ const bottomVisible = () =>
 bottomVisible(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-12-byteSize |  This snippet returns the length of a string in bytes |
@@ -7958,6 +10582,10 @@ byteSize('😀'); // 4
 byteSize('Hello World'); // 11
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-13-capitalize |  This snippet capitalizes the first letter of a string |
@@ -7970,6 +10598,10 @@ capitalize('fooBar'); // 'FooBar'
 capitalize('fooBar', true); // 'Foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-14-capitalizeEveryWord |  This snippet capitalizes the first letter of every word in a given string |
@@ -7980,6 +10612,10 @@ const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperC
 capitalizeEveryWord('hello world!'); // 'Hello World!'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-15-castArray |  This snippet converts a non-array value into array |
@@ -7991,6 +10627,10 @@ castArray('foo'); // ['foo']
 castArray([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-16-compact |  This snippet removes false values from an array |
@@ -8002,6 +10642,10 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 // [ 1, 2, 3, 'a', 's', 34 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-17-countOccurrences |  This snippet counts the occurrences of a value in an array |
@@ -8011,6 +10655,10 @@ const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 :
 countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-18-createDirIfNotExists |  This snippet uses  to check whether a directory exists and then  to create it if it doesn’t |
@@ -8022,6 +10670,10 @@ createDirIfNotExists('test');
 // creates the directory 'test', if it doesn't exist
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-19-currentURL |  This snippet returns the current URL |
@@ -8032,6 +10684,10 @@ const currentURL = () => window.location.href;
 currentURL(); // 'https://medium.com/@fatosmorina'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-20-dayOfYear |  This snippet gets the day of the year from a object |
@@ -8043,6 +10699,10 @@ const dayOfYear = date =>
 dayOfYear(new Date()); // 272
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-21-decapitalize |  This snippet turns the first letter of a string into lowercase |
@@ -8055,6 +10715,10 @@ decapitalize('FooBar'); // 'fooBar'
 decapitalize('FooBar'); // 'fooBar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-22-deepFlatten |  This snippet flattens an array recursively |
@@ -8065,6 +10729,10 @@ const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFla
 deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-23-default |  This snippet assigns default values for all properties in an object that are  |
@@ -8075,6 +10743,10 @@ const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj
 defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-24-defer |  This snippet delays the execution of a function until the current call stack is cleared |
@@ -8085,6 +10757,10 @@ const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
 defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-25-degreesToRads |  This snippet can be used to convert a value from degrees to radians |
@@ -8095,6 +10771,10 @@ const degreesToRads = deg => (deg * Math.PI) / 180.0;
 degreesToRads(90.0); // ~1.5708
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-26-difference |  This snippet finds the difference between two arrays |
@@ -8108,6 +10788,10 @@ const difference = (a, b) => {
 difference([1, 2, 3], [1, 2, 4]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-27-differenceBy |  This snippet returns the difference between two arrays, after applying a given function to each element of both lists |
@@ -8122,6 +10806,10 @@ differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [1.2]
 differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-28-differenceWith |  This snippet removes the values for which the comparator function returns  |
@@ -8133,6 +10821,10 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 // [1, 1.2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-29-digitize |  This snippet gets a number as input and returns an array of its digits |
@@ -8143,6 +10835,10 @@ const digitize = n => [...`${n}`].map(i => parseInt(i));
 digitize(431); // [4, 3, 1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-30-distance |  This snippet returns the distance between two points by calculating the Euclidean distance |
@@ -8153,6 +10849,10 @@ const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);
 distance(1, 1, 2, 3); // 2.23606797749979
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-31-DropLeft |  This snippet returns a new array with  elements removed from the left |
@@ -8165,6 +10865,10 @@ dropLeft([1, 2, 3], 2); // [3]
 dropLeft([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-32-dropRight |  This snippet returns a new array with  elements removed from the right |
@@ -8177,6 +10881,10 @@ dropRight([1, 2, 3], 2); // [1]
 dropRight([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-33-dropRightWhile |  This snippet removes elements from the right side of an array until the passed function returns  |
@@ -8190,6 +10898,10 @@ const dropRightWhile = (arr, func) => {
 dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-34-dropWhile |  This snippet removes elements from an array until the passed function returns  |
@@ -8203,6 +10915,10 @@ const dropWhile = (arr, func) => {
 dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-35-elementContains |  This snippet checks whether the parent element contains the child |
@@ -8214,6 +10930,10 @@ elementContains(document.querySelector('head'), document.querySelector('title'))
 elementContains(document.querySelector('body'), document.querySelector('body')); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-36-Filter Duplicate Elements |  This snippet removes duplicate values in an array |
@@ -8224,6 +10944,10 @@ const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexO
 filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-37-findKey |  This snippet returns the first key that satisfies a given function |
@@ -8241,6 +10965,10 @@ findKey(
 ); // 'barney'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-38-findLast |  This snippet returns the last element for which a given function returns a truthy value |
@@ -8251,6 +10979,10 @@ const findLast = (arr, fn) => arr.filter(fn).pop();
 findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-39-flatten |  This snippet flattens an array up to a specified depth using recursion |
@@ -8263,6 +10995,10 @@ flatten([1, [2], 3, 4]); // [1, 2, 3, 4]
 flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-40-forEachRight |  This snippet executes a function for each element of an array starting from the array’s last element |
@@ -8277,6 +11013,10 @@ const forEachRight = (arr, callback) =>
 forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-41-forOwn |  This snippet iterates on each property of an object and iterates a callback for each one respectively |
@@ -8286,6 +11026,10 @@ const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, ob
 forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-42-functionName |  This snippet prints the name of a function into the console |
@@ -8296,6 +11040,10 @@ const functionName = fn => (console.debug(fn.name), fn);
 functionName(Math.max); // max (logged in debug channel of console)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-43-Get Time From Date |  This snippet can be used to get the time from a object as a string |
@@ -8306,6 +11054,10 @@ const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);
 getColonTimeFromDate(new Date()); // "08:38:00"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-44-Get Days Between Dates |  This snippet can be used to find the difference in days between two dates |
@@ -8317,6 +11069,10 @@ const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
 getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-45-getStyle |  This snippet can be used to get the value of a CSS rule for a particular element |
@@ -8327,6 +11083,10 @@ const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];
 getStyle(document.querySelector('p'), 'font-size'); // '16px'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-46-getType |  This snippet can be used to get the type of a value |
@@ -8338,6 +11098,10 @@ const getType = v =>
 getType(new Set([1, 2, 3])); // 'set'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-47-hasClass |  This snippet checks whether an element has a particular class |
@@ -8347,6 +11111,10 @@ const hasClass = (el, className) => el.classList.contains(className);
 hasClass(document.querySelector('p.special'), 'special'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-48-head |  This snippet returns the  of a list |
@@ -8357,6 +11125,10 @@ const head = arr => arr[0];
 head([1, 2, 3]); // 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-49-hide |  This snippet can be used to hide all elements specified |
@@ -8367,6 +11139,10 @@ const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
 hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-50-httpsRedirect |  This snippet can be used to redirect from HTTP to HTTPS in a particular domain |
@@ -8379,6 +11155,10 @@ const httpsRedirect = () => {
 httpsRedirect(); // If you are on http://mydomain.com, you are redirected to https://mydomain.com
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-51-indexOfAll |  This snippet can be used to get all indexes of a value in an array, which returns an empty array, in case this value is not included in it |
@@ -8390,6 +11170,10 @@ indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
 indexOfAll([1, 2, 3], 4); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-52-initial |  This snippet returns all elements of an array except the last one |
@@ -8401,6 +11185,10 @@ initial([1, 2, 3]); // [1,2]const initial = arr => arr.slice(0, -1);
 initial([1, 2, 3]); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-53-insertAfter |  This snippet can be used to insert an HTML string after the end of a particular element |
@@ -8411,6 +11199,10 @@ const insertAfter = (el, htmlString) => el.insertAdjacentHTML('afterend', htmlSt
 insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">...</div> <p>after</p>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-54-insertBefore |  This snippet can be used to insert an HTML string before a particular element |
@@ -8421,6 +11213,10 @@ const insertBefore = (el, htmlString) => el.insertAdjacentHTML('beforebegin', ht
 insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p> <div id="myId">...</div>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-55-intersection |  This snippet can be used to get an array with elements that are included in two other arrays |
@@ -8434,6 +11230,10 @@ const intersection = (a, b) => {
 intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-56-intersectionBy |  This snippet can be used to return a list of elements that exist in both arrays, after a particular function has been executed to each element of both arrays |
@@ -8447,6 +11247,10 @@ const intersectionBy = (a, b, fn) => {
 intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-57-intersectionWith |  This snippet can be used to return a list of elements that exist in both arrays by using a comparator function |
@@ -8457,6 +11261,10 @@ const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, 
 intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)); // [1.5, 3, 0]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-58-is |  This snippet can be used to check if a value is of a particular type |
@@ -8479,6 +11287,10 @@ is(Boolean, true); // true
 is(Boolean, new Boolean(true)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-59-isAfterDate |  This snippet can be used to check whether a date is after another date |
@@ -8489,6 +11301,10 @@ const isAfterDate = (dateA, dateB) => dateA > dateB;
 isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-60-isAnagram |  This snippet can be used to check whether a particular string is an anagram with another string |
@@ -8508,6 +11324,10 @@ const isAnagram = (str1, str2) => {
 isAnagram('iceman', 'cinema'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-61-isArrayLike |  This snippet can be used to check if a provided argument is iterable like an array |
@@ -8520,6 +11340,10 @@ isArrayLike('abc'); // true
 isArrayLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-62-isBeforeDate |  This snippet can be used to check whether a date is before another date |
@@ -8530,6 +11354,10 @@ const isBeforeDate = (dateA, dateB) => dateA < dateB;
 isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-63-isBoolean |  This snippet can be used to check whether an argument is a boolean |
@@ -8541,6 +11369,10 @@ isBoolean(null); // false
 isBoolean(false); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-64-isBrowser |  This snippet can be used to determine whether the current runtime environment is a browser. This is helpful for avoiding errors when running front-end modules on the server (Node) |
@@ -8552,6 +11384,10 @@ isBrowser(); // true (browser)
 isBrowser(); // false (Node)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-65-isBrowserTabFocused |  This snippet can be used to determine whether the browser tab is focused |
@@ -8562,6 +11398,10 @@ const isBrowserTabFocused = () => !document.hidden;
 isBrowserTabFocused(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-66-isLowerCase |  This snippet can be used to determine whether a string is lower case |
@@ -8574,6 +11414,10 @@ isLowerCase('a3@$'); // true
 isLowerCase('Ab4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-67-isNil |  This snippet can be used to check whether a value is  or  |
@@ -8585,6 +11429,10 @@ isNil(null); // true
 isNil(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-68-isNull |  This snippet can be used to check whether a value is  |
@@ -8595,6 +11443,10 @@ const isNull = val => val === null;
 isNull(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-69-isNumber |  This snippet can be used to check whether a provided value is a number |
@@ -8606,6 +11458,10 @@ isNumber('1'); // false
 isNumber(1); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-70-isObject |  This snippet can be used to check whether a provided value is an object. It uses the Object constructor to create an object wrapper for the given value |
@@ -8621,6 +11477,10 @@ isObject({}); // true
 isObject(true); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-71-isObjectLike |  This snippet can be used to check if a value is not and that its  is “object” |
@@ -8634,6 +11494,10 @@ isObjectLike(x => x); // false
 isObjectLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-72-isPlainObject |  This snippet checks whether a value is an object created by the Object constructor |
@@ -8645,6 +11509,10 @@ isPlainObject({ a: 1 }); // true
 isPlainObject(new Map()); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-73-isPromiseLike |  This snippet checks whether an object looks like a  |
@@ -8664,6 +11532,10 @@ isPromiseLike(null); // false
 isPromiseLike({}); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-74-isSameDate |  This snippet can be used to check whether two dates are equal |
@@ -8674,6 +11546,10 @@ const isSameDate = (dateA, dateB) => dateA.toISOString() === dateB.toISOString()
 isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-75-isString |  This snippet can be used to check whether an argument is a string |
@@ -8684,6 +11560,10 @@ const isString = val => typeof val === 'string';
 isString('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-76-isSymbol |  This snippet can be used to check whether an argument is a symbol |
@@ -8694,6 +11574,10 @@ const isSymbol = val => typeof val === 'symbol';
 isSymbol(Symbol('x')); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-77-isUndefined |  This snippet can be used to check whether a value is undefined |
@@ -8704,6 +11588,10 @@ const isUndefined = val => val === undefined;
 isUndefined(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-78-isUpperCase |  This snippet can be used to check whether a string is upper case |
@@ -8716,6 +11604,10 @@ isLowerCase('A3@$'); // true
 isLowerCase('aB4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-79-isValidJSON |  This snippet can be used to check whether a string is a valid JSON |
@@ -8735,6 +11627,10 @@ isValidJSON('{"name":"Adam",age:"20"}'); // false
 isValidJSON(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-80-last |  This snippet returns the last element of an array |
@@ -8745,6 +11641,10 @@ const last = arr => arr[arr.length - 1];
 last([1, 2, 3]); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-81-matches |  This snippet compares two objects to determine if the first one contains the same property values as the second one |
@@ -8757,6 +11657,10 @@ matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true }); 
 matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-82-maxDate |  This snippet can be used to get the latest date |
@@ -8773,6 +11677,10 @@ const array = [
 maxDate(array); // 2018-03-11T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-83-maxN |  This snippet returns the  largest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in descending order) |
@@ -8784,6 +11692,10 @@ maxN([1, 2, 3]); // [3]
 maxN([1, 2, 3], 2); // [3,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-84-minDate |  This snippet can be used to get the earliest date |
@@ -8800,6 +11712,10 @@ const array = [
 minDate(array); // 2016-01-08T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-85-minN |  This snippet returns the  smallest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in ascending order) |
@@ -8811,6 +11727,10 @@ minN([1, 2, 3]); // [1]
 minN([1, 2, 3], 2); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-86-negate |  This snippet can be used to apply the not operator () to a predicate function with its arguments |
@@ -8821,6 +11741,10 @@ const negate = func => (...args) => !func(...args);
 [1, 2, 3, 4, 5, 6].filter(negate(n => n % 2 === 0)); // [ 1, 3, 5 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-87-nodeListToArray |  This snippet can be used to convert a  to an array |
@@ -8831,6 +11755,10 @@ const nodeListToArray = nodeList => [...nodeList];
 nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-88-pad |  This snippet can be used to  a string on both sides with a specified character if it is shorter than the specified length |
@@ -8844,6 +11772,10 @@ pad(String(42), 6, '0'); // '004200'
 pad('foobar', 3); // 'foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-89-radsToDegrees |  This snippet can be used to convert an angle from radians to degrees |
@@ -8854,6 +11786,10 @@ const radsToDegrees = rad => (rad * 180.0) / Math.PI;
 radsToDegrees(Math.PI / 2); // 90
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-90-randomHexColorCode |  This snippet can be used to generate a random hexadecimal color code |
@@ -8867,6 +11803,10 @@ const randomHexColorCode = () => {
 randomHexColorCode(); // "#e34155"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-91-randomIntArrayInRange |  This snippet can be used to generate an array with  random integers in a specified range |
@@ -8878,6 +11818,10 @@ const randomIntArrayInRange = (min, max, n = 1) =>
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-92-randomIntegerInRange |  This snippet can be used to generate a random integer in a specified range |
@@ -8888,6 +11832,10 @@ const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min
 randomIntegerInRange(0, 5); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-93-randomNumberInRange |  This snippet can be used to return a random number in a specified range |
@@ -8898,6 +11846,10 @@ const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;
 randomNumberInRange(2, 10); // 6.0211363285087005
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-94-readFileLines |  This snippet can be used to read a file by getting an array of lines from a file |
@@ -8914,6 +11866,10 @@ let arr = readFileLines('test.txt');
 console.log(arr); // ['line1', 'line2', 'line3']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-95-redirect |  This snippet can be used to do a redirect to a specified URL |
@@ -8925,6 +11881,10 @@ const redirect = (url, asLink = true) =>
 redirect('https://google.com');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-96-reverse |  This snippet can be used to reverse a string |
@@ -8935,6 +11895,10 @@ const reverseString = str => [...str].reverse().join('');
 reverseString('foobar'); // 'raboof'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-97-round |  This snippet can be used to round a number to a specified number of digits |
@@ -8945,6 +11909,10 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.005, 2); // 1.01
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-98-runPromisesInSeries |  This snippet can be used to run an array of promises in series |
@@ -8957,6 +11925,10 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 // Executes each promise sequentially, taking a total of 3 seconds to complete
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-99-sample |  This snippet can be used to get a random number from an array |
@@ -8967,6 +11939,10 @@ const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 sample([3, 7, 9, 11]); // 9
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-100-sampleSize |  This snippet can be used to get random elements from unique positions from an array up to the size of the array. Elements in the array are shuffled using the  |
@@ -8985,6 +11961,10 @@ sampleSize([1, 2, 3], 2); // [3,1]
 sampleSize([1, 2, 3], 4); // [2,3,1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-101-scrollToTop |  This snippet can be used to do a smooth scroll to the top of the current page |
@@ -9001,6 +11981,10 @@ const scrollToTop = () => {
 scrollToTop();
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-102-serializeCookie |  This snippet can be used to serialize a cookie name-value pair into a Set-Cookie header string |
@@ -9011,6 +11995,10 @@ const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIC
 serializeCookie('foo', 'bar'); // 'foo=bar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-103-setStyle |  This snippet can be used to set the value of a CSS rule for a particular element |
@@ -9022,6 +12010,10 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 // The first <p> element on the page will have a font-size of 20px
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-104-shallowClone |  This snippet can be used to create a shallow clone of an object |
@@ -9033,6 +12025,10 @@ const a = { x: true, y: 1 };
 const b = shallowClone(a); // a !== b
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-105-show |  This snippet can be used to show all the elements specified |
@@ -9043,6 +12039,10 @@ const show = (...el) => [...el].forEach(e => (e.style.display = ''));
 show(...document.querySelectorAll('img')); // Shows all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-106-shuffle |  This snippet can be used to order the elements of an array randomly using the  |
@@ -9061,6 +12061,10 @@ const foo = [1, 2, 3];
 shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-107-similarity |  This snippet can be used to return an array of elements that appear in two arrays |
@@ -9071,6 +12075,10 @@ const similarity = (arr, values) => arr.filter(v => values.includes(v))
 similarity([1, 2, 3], [1, 2, 4]); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-108-sleep |  This snippet can be used to delay the execution of an asynchronous function by putting it into sleep |
@@ -9085,6 +12093,10 @@ async function sleepyWork() {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-130-smoothScroll |  This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
@@ -9099,6 +12111,10 @@ smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-110-sortCharactersInString |  This snippet can be used to alphabetically sort the characters in a string |
@@ -9109,6 +12125,10 @@ const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)
 sortCharactersInString('cabbage'); // 'aabbceg'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-111-splitLines |  This snippet can be used to split a multi-line string into an array of lines |
@@ -9119,6 +12139,10 @@ const splitLines = str => str.split(/\r?\n/);
 splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline', 'string.' , '']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-112-stripHTMLTags |  This snippet can be used to remove HTML/XML tags from a string |
@@ -9129,6 +12153,10 @@ const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
 stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-113-sum |  This snippet can be used to find the sum of two or more numbers or arrays |
@@ -9140,6 +12168,10 @@ sum(1, 2, 3, 4); // 10
 sum(...[1, 2, 3, 4]); // 10
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-114-tail |  This snippet can be used to get an array with all the elements of an array except for the first one. If the array has only one element, then that an array with that element will be returned instead |
@@ -9151,6 +12183,10 @@ tail([1, 2, 3]); // [2,3]
 tail([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-115-take |  This snippet can be used to get an array with elements removed from the beginning |
@@ -9162,6 +12198,10 @@ take([1, 2, 3], 5); // [1, 2, 3]
 take([1, 2, 3], 0); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-116-takeRight |  This snippet can be used to get an array with elements removed from the end |
@@ -9173,6 +12213,10 @@ takeRight([1, 2, 3], 2); // [ 2, 3 ]
 takeRight([1, 2, 3]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-117-timeTaken |  This snippet can be used to find out the time it takes to execute a function |
@@ -9188,6 +12232,10 @@ const timeTaken = callback => {
 timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-118-times |  This snippet can be used to iterate over a callback times |
@@ -9203,6 +12251,10 @@ times(5, i => (output += i));
 console.log(output); // 01234
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-119-toCurrency |  This snippet can be used to format a number like a currency |
@@ -9218,6 +12270,10 @@ toCurrency(322342436423.2435, 'JPY'); // ¥322,342,436,423 | currency: Japanese 
 toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Japanese Yen | currencyLangFormat: Finnish
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-120-toDecimalMark |  This snippet uses the function to convert float-point arithmetic to the decimal mark form by using a number to make a comma-separated string |
@@ -9228,6 +12284,10 @@ const toDecimalMark = num => num.toLocaleString('en-US');
 toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-121-toggleClass |  This snippet can be used to toggle a class for an element |
@@ -9238,6 +12298,10 @@ const toggleClass = (el, className) => el.classList.toggle(className);
 toggleClass(document.querySelector('p.special'), 'special'); // The paragraph will not have the 'special' class anymore
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-122-tomorrow |  This snippet can be used to get a string representation of tomorrow’s date |
@@ -9252,6 +12316,10 @@ const tomorrow = () => {
 tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-123-unfold |  This snippet can be used to build an array using an iterator function and an initial seed value |
@@ -9268,6 +12336,10 @@ var f = n => (n > 50 ? false : [-n, n + 10]);
 unfold(f, 10); // [-10, -20, -30, -40, -50]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-124-union |  This snippet can be used to find the  of two arrays, resulting in an array that has elements that come from both arrays but that do not repeat |
@@ -9278,6 +12350,10 @@ const union = (a, b) => Array.from(new Set([...a, ...b]));
 union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-125-uniqueElements |  This snippet uses ES6 andtheoperator to get every element only once |
@@ -9288,6 +12364,10 @@ const uniqueElements = arr => [...new Set(arr)];
 uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-126-validateNumber |  This snippet can be used to check whether a value is a number |
@@ -9298,6 +12378,10 @@ const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) ==
 validateNumber('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-127-words |  This snippet converts a string into an array of words |
@@ -9309,6 +12393,10 @@ words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-128-getES6moduleSyntaxBySource |  Get all ES6 modules syntax from the source directory |
@@ -9330,6 +12418,10 @@ export function getES6moduleSyntaxBySource(source, extension) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-129-concatJSONsourcesToOneFile |  Concat & export all external JSON sources to one JSON file |
@@ -9354,6 +12446,10 @@ export function concatJSONsourcesToOneFile(sourcesList, distPath) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-131-validateEmail |  Email validator with regex |
@@ -9382,6 +12478,10 @@ all([4, 2, 3], x => x > 1); // true
 all([1, 2, 3]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-2-allEqual |  This snippet checks whether all elements of the array are equal |
@@ -9393,6 +12493,10 @@ allEqual([1, 2, 3, 4, 5, 6]); // false
 allEqual([1, 1, 1, 1]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-3-approximatelyEqual |  This snippet checks whether two numbers are approximately equal to each other, with a small difference |
@@ -9403,6 +12507,10 @@ const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsi
 approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-4-arrayToCSV |  This snippet converts the elements to strings with comma-separated values |
@@ -9415,6 +12523,10 @@ arrayToCSV([['a', 'b'], ['c', 'd']]); // '"a","b"\n"c","d"'
 arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-5-arrayToHtmlList |  This snippet converts the elements of an array into  tags and appends them to the list of the given ID |
@@ -9429,6 +12541,10 @@ const arrayToHtmlList = (arr, listID) =>
 arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-6-attempt |  This snippet executes a function, returning either the result or the caught error object |
@@ -9447,6 +12563,10 @@ var elements = attempt(function(selector) {
 if (elements instanceof Error) elements = []; // elements = []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-7-average |  This snippet returns the average of two or more numerical values |
@@ -9457,6 +12577,10 @@ average(...[1, 2, 3]); // 2
 average(1, 2, 3); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-8-averageBy |  This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function |
@@ -9470,6 +12594,10 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o => o.n); // 5
 averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-9-bifurcate |  This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise |
@@ -9481,6 +12609,10 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-10-bifurcateBy |  This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group |
@@ -9493,6 +12625,10 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-11-bottomVisible |  This snippet checks whether the bottom of a page is visible |
@@ -9505,6 +12641,10 @@ const bottomVisible = () =>
 bottomVisible(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-12-byteSize |  This snippet returns the length of a string in bytes |
@@ -9516,6 +12656,10 @@ byteSize('😀'); // 4
 byteSize('Hello World'); // 11
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-13-capitalize |  This snippet capitalizes the first letter of a string |
@@ -9528,6 +12672,10 @@ capitalize('fooBar'); // 'FooBar'
 capitalize('fooBar', true); // 'Foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-14-capitalizeEveryWord |  This snippet capitalizes the first letter of every word in a given string |
@@ -9538,6 +12686,10 @@ const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperC
 capitalizeEveryWord('hello world!'); // 'Hello World!'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-15-castArray |  This snippet converts a non-array value into array |
@@ -9549,6 +12701,10 @@ castArray('foo'); // ['foo']
 castArray([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-16-compact |  This snippet removes false values from an array |
@@ -9560,6 +12716,10 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 // [ 1, 2, 3, 'a', 's', 34 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-17-countOccurrences |  This snippet counts the occurrences of a value in an array |
@@ -9569,6 +12729,10 @@ const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 :
 countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-18-createDirIfNotExists |  This snippet uses  to check whether a directory exists and then  to create it if it doesn’t |
@@ -9580,6 +12744,10 @@ createDirIfNotExists('test');
 // creates the directory 'test', if it doesn't exist
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-19-currentURL |  This snippet returns the current URL |
@@ -9590,6 +12758,10 @@ const currentURL = () => window.location.href;
 currentURL(); // 'https://medium.com/@fatosmorina'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-20-dayOfYear |  This snippet gets the day of the year from a object |
@@ -9601,6 +12773,10 @@ const dayOfYear = date =>
 dayOfYear(new Date()); // 272
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-21-decapitalize |  This snippet turns the first letter of a string into lowercase |
@@ -9613,6 +12789,10 @@ decapitalize('FooBar'); // 'fooBar'
 decapitalize('FooBar'); // 'fooBar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-22-deepFlatten |  This snippet flattens an array recursively |
@@ -9623,6 +12803,10 @@ const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFla
 deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-23-default |  This snippet assigns default values for all properties in an object that are  |
@@ -9633,6 +12817,10 @@ const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj
 defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-24-defer |  This snippet delays the execution of a function until the current call stack is cleared |
@@ -9643,6 +12831,10 @@ const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
 defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-25-degreesToRads |  This snippet can be used to convert a value from degrees to radians |
@@ -9653,6 +12845,10 @@ const degreesToRads = deg => (deg * Math.PI) / 180.0;
 degreesToRads(90.0); // ~1.5708
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-26-difference |  This snippet finds the difference between two arrays |
@@ -9666,6 +12862,10 @@ const difference = (a, b) => {
 difference([1, 2, 3], [1, 2, 4]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-27-differenceBy |  This snippet returns the difference between two arrays, after applying a given function to each element of both lists |
@@ -9680,6 +12880,10 @@ differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [1.2]
 differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-28-differenceWith |  This snippet removes the values for which the comparator function returns  |
@@ -9691,6 +12895,10 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 // [1, 1.2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-29-digitize |  This snippet gets a number as input and returns an array of its digits |
@@ -9701,6 +12909,10 @@ const digitize = n => [...`${n}`].map(i => parseInt(i));
 digitize(431); // [4, 3, 1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-30-distance |  This snippet returns the distance between two points by calculating the Euclidean distance |
@@ -9711,6 +12923,10 @@ const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);
 distance(1, 1, 2, 3); // 2.23606797749979
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-31-DropLeft |  This snippet returns a new array with  elements removed from the left |
@@ -9723,6 +12939,10 @@ dropLeft([1, 2, 3], 2); // [3]
 dropLeft([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-32-dropRight |  This snippet returns a new array with  elements removed from the right |
@@ -9735,6 +12955,10 @@ dropRight([1, 2, 3], 2); // [1]
 dropRight([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-33-dropRightWhile |  This snippet removes elements from the right side of an array until the passed function returns  |
@@ -9748,6 +12972,10 @@ const dropRightWhile = (arr, func) => {
 dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-34-dropWhile |  This snippet removes elements from an array until the passed function returns  |
@@ -9761,6 +12989,10 @@ const dropWhile = (arr, func) => {
 dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-35-elementContains |  This snippet checks whether the parent element contains the child |
@@ -9772,6 +13004,10 @@ elementContains(document.querySelector('head'), document.querySelector('title'))
 elementContains(document.querySelector('body'), document.querySelector('body')); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-36-Filter Duplicate Elements |  This snippet removes duplicate values in an array |
@@ -9782,6 +13018,10 @@ const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexO
 filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-37-findKey |  This snippet returns the first key that satisfies a given function |
@@ -9799,6 +13039,10 @@ findKey(
 ); // 'barney'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-38-findLast |  This snippet returns the last element for which a given function returns a truthy value |
@@ -9809,6 +13053,10 @@ const findLast = (arr, fn) => arr.filter(fn).pop();
 findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-39-flatten |  This snippet flattens an array up to a specified depth using recursion |
@@ -9821,6 +13069,10 @@ flatten([1, [2], 3, 4]); // [1, 2, 3, 4]
 flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-40-forEachRight |  This snippet executes a function for each element of an array starting from the array’s last element |
@@ -9835,6 +13087,10 @@ const forEachRight = (arr, callback) =>
 forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-41-forOwn |  This snippet iterates on each property of an object and iterates a callback for each one respectively |
@@ -9844,6 +13100,10 @@ const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, ob
 forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-42-functionName |  This snippet prints the name of a function into the console |
@@ -9854,6 +13114,10 @@ const functionName = fn => (console.debug(fn.name), fn);
 functionName(Math.max); // max (logged in debug channel of console)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-43-Get Time From Date |  This snippet can be used to get the time from a object as a string |
@@ -9864,6 +13128,10 @@ const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);
 getColonTimeFromDate(new Date()); // "08:38:00"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-44-Get Days Between Dates |  This snippet can be used to find the difference in days between two dates |
@@ -9875,6 +13143,10 @@ const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
 getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-45-getStyle |  This snippet can be used to get the value of a CSS rule for a particular element |
@@ -9885,6 +13157,10 @@ const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];
 getStyle(document.querySelector('p'), 'font-size'); // '16px'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-46-getType |  This snippet can be used to get the type of a value |
@@ -9896,6 +13172,10 @@ const getType = v =>
 getType(new Set([1, 2, 3])); // 'set'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-47-hasClass |  This snippet checks whether an element has a particular class |
@@ -9905,6 +13185,10 @@ const hasClass = (el, className) => el.classList.contains(className);
 hasClass(document.querySelector('p.special'), 'special'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-48-head |  This snippet returns the  of a list |
@@ -9915,6 +13199,10 @@ const head = arr => arr[0];
 head([1, 2, 3]); // 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-49-hide |  This snippet can be used to hide all elements specified |
@@ -9925,6 +13213,10 @@ const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
 hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-50-httpsRedirect |  This snippet can be used to redirect from HTTP to HTTPS in a particular domain |
@@ -9937,6 +13229,10 @@ const httpsRedirect = () => {
 httpsRedirect(); // If you are on http://mydomain.com, you are redirected to https://mydomain.com
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-51-indexOfAll |  This snippet can be used to get all indexes of a value in an array, which returns an empty array, in case this value is not included in it |
@@ -9948,6 +13244,10 @@ indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
 indexOfAll([1, 2, 3], 4); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-52-initial |  This snippet returns all elements of an array except the last one |
@@ -9959,6 +13259,10 @@ initial([1, 2, 3]); // [1,2]const initial = arr => arr.slice(0, -1);
 initial([1, 2, 3]); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-53-insertAfter |  This snippet can be used to insert an HTML string after the end of a particular element |
@@ -9969,6 +13273,10 @@ const insertAfter = (el, htmlString) => el.insertAdjacentHTML('afterend', htmlSt
 insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">...</div> <p>after</p>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-54-insertBefore |  This snippet can be used to insert an HTML string before a particular element |
@@ -9979,6 +13287,10 @@ const insertBefore = (el, htmlString) => el.insertAdjacentHTML('beforebegin', ht
 insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p> <div id="myId">...</div>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-55-intersection |  This snippet can be used to get an array with elements that are included in two other arrays |
@@ -9992,6 +13304,10 @@ const intersection = (a, b) => {
 intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-56-intersectionBy |  This snippet can be used to return a list of elements that exist in both arrays, after a particular function has been executed to each element of both arrays |
@@ -10005,6 +13321,10 @@ const intersectionBy = (a, b, fn) => {
 intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-57-intersectionWith |  This snippet can be used to return a list of elements that exist in both arrays by using a comparator function |
@@ -10015,6 +13335,10 @@ const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, 
 intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)); // [1.5, 3, 0]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-58-is |  This snippet can be used to check if a value is of a particular type |
@@ -10037,6 +13361,10 @@ is(Boolean, true); // true
 is(Boolean, new Boolean(true)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-59-isAfterDate |  This snippet can be used to check whether a date is after another date |
@@ -10047,6 +13375,10 @@ const isAfterDate = (dateA, dateB) => dateA > dateB;
 isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-60-isAnagram |  This snippet can be used to check whether a particular string is an anagram with another string |
@@ -10066,6 +13398,10 @@ const isAnagram = (str1, str2) => {
 isAnagram('iceman', 'cinema'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-61-isArrayLike |  This snippet can be used to check if a provided argument is iterable like an array |
@@ -10078,6 +13414,10 @@ isArrayLike('abc'); // true
 isArrayLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-62-isBeforeDate |  This snippet can be used to check whether a date is before another date |
@@ -10088,6 +13428,10 @@ const isBeforeDate = (dateA, dateB) => dateA < dateB;
 isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-63-isBoolean |  This snippet can be used to check whether an argument is a boolean |
@@ -10099,6 +13443,10 @@ isBoolean(null); // false
 isBoolean(false); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-64-isBrowser |  This snippet can be used to determine whether the current runtime environment is a browser. This is helpful for avoiding errors when running front-end modules on the server (Node) |
@@ -10110,6 +13458,10 @@ isBrowser(); // true (browser)
 isBrowser(); // false (Node)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-65-isBrowserTabFocused |  This snippet can be used to determine whether the browser tab is focused |
@@ -10120,6 +13472,10 @@ const isBrowserTabFocused = () => !document.hidden;
 isBrowserTabFocused(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-66-isLowerCase |  This snippet can be used to determine whether a string is lower case |
@@ -10132,6 +13488,10 @@ isLowerCase('a3@$'); // true
 isLowerCase('Ab4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-67-isNil |  This snippet can be used to check whether a value is  or  |
@@ -10143,6 +13503,10 @@ isNil(null); // true
 isNil(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-68-isNull |  This snippet can be used to check whether a value is  |
@@ -10153,6 +13517,10 @@ const isNull = val => val === null;
 isNull(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-69-isNumber |  This snippet can be used to check whether a provided value is a number |
@@ -10164,6 +13532,10 @@ isNumber('1'); // false
 isNumber(1); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-70-isObject |  This snippet can be used to check whether a provided value is an object. It uses the Object constructor to create an object wrapper for the given value |
@@ -10179,6 +13551,10 @@ isObject({}); // true
 isObject(true); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-71-isObjectLike |  This snippet can be used to check if a value is not and that its  is “object” |
@@ -10192,6 +13568,10 @@ isObjectLike(x => x); // false
 isObjectLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-72-isPlainObject |  This snippet checks whether a value is an object created by the Object constructor |
@@ -10203,6 +13583,10 @@ isPlainObject({ a: 1 }); // true
 isPlainObject(new Map()); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-73-isPromiseLike |  This snippet checks whether an object looks like a  |
@@ -10222,6 +13606,10 @@ isPromiseLike(null); // false
 isPromiseLike({}); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-74-isSameDate |  This snippet can be used to check whether two dates are equal |
@@ -10232,6 +13620,10 @@ const isSameDate = (dateA, dateB) => dateA.toISOString() === dateB.toISOString()
 isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-75-isString |  This snippet can be used to check whether an argument is a string |
@@ -10242,6 +13634,10 @@ const isString = val => typeof val === 'string';
 isString('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-76-isSymbol |  This snippet can be used to check whether an argument is a symbol |
@@ -10252,6 +13648,10 @@ const isSymbol = val => typeof val === 'symbol';
 isSymbol(Symbol('x')); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-77-isUndefined |  This snippet can be used to check whether a value is undefined |
@@ -10262,6 +13662,10 @@ const isUndefined = val => val === undefined;
 isUndefined(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-78-isUpperCase |  This snippet can be used to check whether a string is upper case |
@@ -10274,6 +13678,10 @@ isLowerCase('A3@$'); // true
 isLowerCase('aB4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-79-isValidJSON |  This snippet can be used to check whether a string is a valid JSON |
@@ -10293,6 +13701,10 @@ isValidJSON('{"name":"Adam",age:"20"}'); // false
 isValidJSON(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-80-last |  This snippet returns the last element of an array |
@@ -10303,6 +13715,10 @@ const last = arr => arr[arr.length - 1];
 last([1, 2, 3]); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-81-matches |  This snippet compares two objects to determine if the first one contains the same property values as the second one |
@@ -10315,6 +13731,10 @@ matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true }); 
 matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-82-maxDate |  This snippet can be used to get the latest date |
@@ -10331,6 +13751,10 @@ const array = [
 maxDate(array); // 2018-03-11T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-83-maxN |  This snippet returns the  largest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in descending order) |
@@ -10342,6 +13766,10 @@ maxN([1, 2, 3]); // [3]
 maxN([1, 2, 3], 2); // [3,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-84-minDate |  This snippet can be used to get the earliest date |
@@ -10358,6 +13786,10 @@ const array = [
 minDate(array); // 2016-01-08T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-85-minN |  This snippet returns the  smallest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in ascending order) |
@@ -10369,6 +13801,10 @@ minN([1, 2, 3]); // [1]
 minN([1, 2, 3], 2); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-86-negate |  This snippet can be used to apply the not operator () to a predicate function with its arguments |
@@ -10379,6 +13815,10 @@ const negate = func => (...args) => !func(...args);
 [1, 2, 3, 4, 5, 6].filter(negate(n => n % 2 === 0)); // [ 1, 3, 5 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-87-nodeListToArray |  This snippet can be used to convert a  to an array |
@@ -10389,6 +13829,10 @@ const nodeListToArray = nodeList => [...nodeList];
 nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-88-pad |  This snippet can be used to  a string on both sides with a specified character if it is shorter than the specified length |
@@ -10402,6 +13846,10 @@ pad(String(42), 6, '0'); // '004200'
 pad('foobar', 3); // 'foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-89-radsToDegrees |  This snippet can be used to convert an angle from radians to degrees |
@@ -10412,6 +13860,10 @@ const radsToDegrees = rad => (rad * 180.0) / Math.PI;
 radsToDegrees(Math.PI / 2); // 90
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-90-randomHexColorCode |  This snippet can be used to generate a random hexadecimal color code |
@@ -10425,6 +13877,10 @@ const randomHexColorCode = () => {
 randomHexColorCode(); // "#e34155"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-91-randomIntArrayInRange |  This snippet can be used to generate an array with  random integers in a specified range |
@@ -10436,6 +13892,10 @@ const randomIntArrayInRange = (min, max, n = 1) =>
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-92-randomIntegerInRange |  This snippet can be used to generate a random integer in a specified range |
@@ -10446,6 +13906,10 @@ const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min
 randomIntegerInRange(0, 5); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-93-randomNumberInRange |  This snippet can be used to return a random number in a specified range |
@@ -10456,6 +13920,10 @@ const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;
 randomNumberInRange(2, 10); // 6.0211363285087005
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-94-readFileLines |  This snippet can be used to read a file by getting an array of lines from a file |
@@ -10472,6 +13940,10 @@ let arr = readFileLines('test.txt');
 console.log(arr); // ['line1', 'line2', 'line3']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-95-redirect |  This snippet can be used to do a redirect to a specified URL |
@@ -10483,6 +13955,10 @@ const redirect = (url, asLink = true) =>
 redirect('https://google.com');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-96-reverse |  This snippet can be used to reverse a string |
@@ -10493,6 +13969,10 @@ const reverseString = str => [...str].reverse().join('');
 reverseString('foobar'); // 'raboof'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-97-round |  This snippet can be used to round a number to a specified number of digits |
@@ -10503,6 +13983,10 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.005, 2); // 1.01
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-98-runPromisesInSeries |  This snippet can be used to run an array of promises in series |
@@ -10515,6 +13999,10 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 // Executes each promise sequentially, taking a total of 3 seconds to complete
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-99-sample |  This snippet can be used to get a random number from an array |
@@ -10525,6 +14013,10 @@ const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 sample([3, 7, 9, 11]); // 9
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-100-sampleSize |  This snippet can be used to get random elements from unique positions from an array up to the size of the array. Elements in the array are shuffled using the  |
@@ -10543,6 +14035,10 @@ sampleSize([1, 2, 3], 2); // [3,1]
 sampleSize([1, 2, 3], 4); // [2,3,1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-101-scrollToTop |  This snippet can be used to do a smooth scroll to the top of the current page |
@@ -10559,6 +14055,10 @@ const scrollToTop = () => {
 scrollToTop();
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-102-serializeCookie |  This snippet can be used to serialize a cookie name-value pair into a Set-Cookie header string |
@@ -10569,6 +14069,10 @@ const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIC
 serializeCookie('foo', 'bar'); // 'foo=bar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-103-setStyle |  This snippet can be used to set the value of a CSS rule for a particular element |
@@ -10580,6 +14084,10 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 // The first <p> element on the page will have a font-size of 20px
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-104-shallowClone |  This snippet can be used to create a shallow clone of an object |
@@ -10591,6 +14099,10 @@ const a = { x: true, y: 1 };
 const b = shallowClone(a); // a !== b
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-105-show |  This snippet can be used to show all the elements specified |
@@ -10601,6 +14113,10 @@ const show = (...el) => [...el].forEach(e => (e.style.display = ''));
 show(...document.querySelectorAll('img')); // Shows all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-106-shuffle |  This snippet can be used to order the elements of an array randomly using the  |
@@ -10619,6 +14135,10 @@ const foo = [1, 2, 3];
 shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-107-similarity |  This snippet can be used to return an array of elements that appear in two arrays |
@@ -10629,6 +14149,10 @@ const similarity = (arr, values) => arr.filter(v => values.includes(v))
 similarity([1, 2, 3], [1, 2, 4]); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-108-sleep |  This snippet can be used to delay the execution of an asynchronous function by putting it into sleep |
@@ -10643,6 +14167,10 @@ async function sleepyWork() {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-130-smoothScroll |  This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
@@ -10657,6 +14185,10 @@ smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-110-sortCharactersInString |  This snippet can be used to alphabetically sort the characters in a string |
@@ -10667,6 +14199,10 @@ const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)
 sortCharactersInString('cabbage'); // 'aabbceg'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-111-splitLines |  This snippet can be used to split a multi-line string into an array of lines |
@@ -10677,6 +14213,10 @@ const splitLines = str => str.split(/\r?\n/);
 splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline', 'string.' , '']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-112-stripHTMLTags |  This snippet can be used to remove HTML/XML tags from a string |
@@ -10687,6 +14227,10 @@ const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
 stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-113-sum |  This snippet can be used to find the sum of two or more numbers or arrays |
@@ -10698,6 +14242,10 @@ sum(1, 2, 3, 4); // 10
 sum(...[1, 2, 3, 4]); // 10
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-114-tail |  This snippet can be used to get an array with all the elements of an array except for the first one. If the array has only one element, then that an array with that element will be returned instead |
@@ -10709,6 +14257,10 @@ tail([1, 2, 3]); // [2,3]
 tail([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-115-take |  This snippet can be used to get an array with elements removed from the beginning |
@@ -10720,6 +14272,10 @@ take([1, 2, 3], 5); // [1, 2, 3]
 take([1, 2, 3], 0); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-116-takeRight |  This snippet can be used to get an array with elements removed from the end |
@@ -10731,6 +14287,10 @@ takeRight([1, 2, 3], 2); // [ 2, 3 ]
 takeRight([1, 2, 3]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-117-timeTaken |  This snippet can be used to find out the time it takes to execute a function |
@@ -10746,6 +14306,10 @@ const timeTaken = callback => {
 timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-118-times |  This snippet can be used to iterate over a callback times |
@@ -10761,6 +14325,10 @@ times(5, i => (output += i));
 console.log(output); // 01234
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-119-toCurrency |  This snippet can be used to format a number like a currency |
@@ -10776,6 +14344,10 @@ toCurrency(322342436423.2435, 'JPY'); // ¥322,342,436,423 | currency: Japanese 
 toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Japanese Yen | currencyLangFormat: Finnish
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-120-toDecimalMark |  This snippet uses the function to convert float-point arithmetic to the decimal mark form by using a number to make a comma-separated string |
@@ -10786,6 +14358,10 @@ const toDecimalMark = num => num.toLocaleString('en-US');
 toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-121-toggleClass |  This snippet can be used to toggle a class for an element |
@@ -10796,6 +14372,10 @@ const toggleClass = (el, className) => el.classList.toggle(className);
 toggleClass(document.querySelector('p.special'), 'special'); // The paragraph will not have the 'special' class anymore
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-122-tomorrow |  This snippet can be used to get a string representation of tomorrow’s date |
@@ -10810,6 +14390,10 @@ const tomorrow = () => {
 tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-123-unfold |  This snippet can be used to build an array using an iterator function and an initial seed value |
@@ -10826,6 +14410,10 @@ var f = n => (n > 50 ? false : [-n, n + 10]);
 unfold(f, 10); // [-10, -20, -30, -40, -50]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-124-union |  This snippet can be used to find the  of two arrays, resulting in an array that has elements that come from both arrays but that do not repeat |
@@ -10836,6 +14424,10 @@ const union = (a, b) => Array.from(new Set([...a, ...b]));
 union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-125-uniqueElements |  This snippet uses ES6 andtheoperator to get every element only once |
@@ -10846,6 +14438,10 @@ const uniqueElements = arr => [...new Set(arr)];
 uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-126-validateNumber |  This snippet can be used to check whether a value is a number |
@@ -10856,6 +14452,10 @@ const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) ==
 validateNumber('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-127-words |  This snippet converts a string into an array of words |
@@ -10867,6 +14467,10 @@ words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-128-getES6moduleSyntaxBySource |  Get all ES6 modules syntax from the source directory |
@@ -10888,6 +14492,10 @@ export function getES6moduleSyntaxBySource(source, extension) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-129-concatJSONsourcesToOneFile |  Concat & export all external JSON sources to one JSON file |
@@ -10912,6 +14520,10 @@ export function concatJSONsourcesToOneFile(sourcesList, distPath) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-131-validateEmail |  Email validator with regex |
@@ -10940,6 +14552,10 @@ all([4, 2, 3], x => x > 1); // true
 all([1, 2, 3]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-2-allEqual |  This snippet checks whether all elements of the array are equal |
@@ -10951,6 +14567,10 @@ allEqual([1, 2, 3, 4, 5, 6]); // false
 allEqual([1, 1, 1, 1]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-3-approximatelyEqual |  This snippet checks whether two numbers are approximately equal to each other, with a small difference |
@@ -10961,6 +14581,10 @@ const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsi
 approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-4-arrayToCSV |  This snippet converts the elements to strings with comma-separated values |
@@ -10973,6 +14597,10 @@ arrayToCSV([['a', 'b'], ['c', 'd']]); // '"a","b"\n"c","d"'
 arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-5-arrayToHtmlList |  This snippet converts the elements of an array into  tags and appends them to the list of the given ID |
@@ -10987,6 +14615,10 @@ const arrayToHtmlList = (arr, listID) =>
 arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-6-attempt |  This snippet executes a function, returning either the result or the caught error object |
@@ -11005,6 +14637,10 @@ var elements = attempt(function(selector) {
 if (elements instanceof Error) elements = []; // elements = []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-7-average |  This snippet returns the average of two or more numerical values |
@@ -11015,6 +14651,10 @@ average(...[1, 2, 3]); // 2
 average(1, 2, 3); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-8-averageBy |  This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function |
@@ -11028,6 +14668,10 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o => o.n); // 5
 averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-9-bifurcate |  This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise |
@@ -11039,6 +14683,10 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-10-bifurcateBy |  This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group |
@@ -11051,6 +14699,10 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-11-bottomVisible |  This snippet checks whether the bottom of a page is visible |
@@ -11063,6 +14715,10 @@ const bottomVisible = () =>
 bottomVisible(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-12-byteSize |  This snippet returns the length of a string in bytes |
@@ -11074,6 +14730,10 @@ byteSize('😀'); // 4
 byteSize('Hello World'); // 11
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-13-capitalize |  This snippet capitalizes the first letter of a string |
@@ -11086,6 +14746,10 @@ capitalize('fooBar'); // 'FooBar'
 capitalize('fooBar', true); // 'Foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-14-capitalizeEveryWord |  This snippet capitalizes the first letter of every word in a given string |
@@ -11096,6 +14760,10 @@ const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperC
 capitalizeEveryWord('hello world!'); // 'Hello World!'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-15-castArray |  This snippet converts a non-array value into array |
@@ -11107,6 +14775,10 @@ castArray('foo'); // ['foo']
 castArray([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-16-compact |  This snippet removes false values from an array |
@@ -11118,6 +14790,10 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 // [ 1, 2, 3, 'a', 's', 34 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-17-countOccurrences |  This snippet counts the occurrences of a value in an array |
@@ -11127,6 +14803,10 @@ const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 :
 countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-18-createDirIfNotExists |  This snippet uses  to check whether a directory exists and then  to create it if it doesn’t |
@@ -11138,6 +14818,10 @@ createDirIfNotExists('test');
 // creates the directory 'test', if it doesn't exist
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-19-currentURL |  This snippet returns the current URL |
@@ -11148,6 +14832,10 @@ const currentURL = () => window.location.href;
 currentURL(); // 'https://medium.com/@fatosmorina'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-20-dayOfYear |  This snippet gets the day of the year from a object |
@@ -11159,6 +14847,10 @@ const dayOfYear = date =>
 dayOfYear(new Date()); // 272
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-21-decapitalize |  This snippet turns the first letter of a string into lowercase |
@@ -11171,6 +14863,10 @@ decapitalize('FooBar'); // 'fooBar'
 decapitalize('FooBar'); // 'fooBar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-22-deepFlatten |  This snippet flattens an array recursively |
@@ -11181,6 +14877,10 @@ const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFla
 deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-23-default |  This snippet assigns default values for all properties in an object that are  |
@@ -11191,6 +14891,10 @@ const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj
 defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-24-defer |  This snippet delays the execution of a function until the current call stack is cleared |
@@ -11201,6 +14905,10 @@ const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
 defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-25-degreesToRads |  This snippet can be used to convert a value from degrees to radians |
@@ -11211,6 +14919,10 @@ const degreesToRads = deg => (deg * Math.PI) / 180.0;
 degreesToRads(90.0); // ~1.5708
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-26-difference |  This snippet finds the difference between two arrays |
@@ -11224,6 +14936,10 @@ const difference = (a, b) => {
 difference([1, 2, 3], [1, 2, 4]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-27-differenceBy |  This snippet returns the difference between two arrays, after applying a given function to each element of both lists |
@@ -11238,6 +14954,10 @@ differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [1.2]
 differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-28-differenceWith |  This snippet removes the values for which the comparator function returns  |
@@ -11249,6 +14969,10 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 // [1, 1.2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-29-digitize |  This snippet gets a number as input and returns an array of its digits |
@@ -11259,6 +14983,10 @@ const digitize = n => [...`${n}`].map(i => parseInt(i));
 digitize(431); // [4, 3, 1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-30-distance |  This snippet returns the distance between two points by calculating the Euclidean distance |
@@ -11269,6 +14997,10 @@ const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);
 distance(1, 1, 2, 3); // 2.23606797749979
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-31-DropLeft |  This snippet returns a new array with  elements removed from the left |
@@ -11281,6 +15013,10 @@ dropLeft([1, 2, 3], 2); // [3]
 dropLeft([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-32-dropRight |  This snippet returns a new array with  elements removed from the right |
@@ -11293,6 +15029,10 @@ dropRight([1, 2, 3], 2); // [1]
 dropRight([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-33-dropRightWhile |  This snippet removes elements from the right side of an array until the passed function returns  |
@@ -11306,6 +15046,10 @@ const dropRightWhile = (arr, func) => {
 dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-34-dropWhile |  This snippet removes elements from an array until the passed function returns  |
@@ -11319,6 +15063,10 @@ const dropWhile = (arr, func) => {
 dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-35-elementContains |  This snippet checks whether the parent element contains the child |
@@ -11330,6 +15078,10 @@ elementContains(document.querySelector('head'), document.querySelector('title'))
 elementContains(document.querySelector('body'), document.querySelector('body')); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-36-Filter Duplicate Elements |  This snippet removes duplicate values in an array |
@@ -11340,6 +15092,10 @@ const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexO
 filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-37-findKey |  This snippet returns the first key that satisfies a given function |
@@ -11357,6 +15113,10 @@ findKey(
 ); // 'barney'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-38-findLast |  This snippet returns the last element for which a given function returns a truthy value |
@@ -11367,6 +15127,10 @@ const findLast = (arr, fn) => arr.filter(fn).pop();
 findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-39-flatten |  This snippet flattens an array up to a specified depth using recursion |
@@ -11379,6 +15143,10 @@ flatten([1, [2], 3, 4]); // [1, 2, 3, 4]
 flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-40-forEachRight |  This snippet executes a function for each element of an array starting from the array’s last element |
@@ -11393,6 +15161,10 @@ const forEachRight = (arr, callback) =>
 forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-41-forOwn |  This snippet iterates on each property of an object and iterates a callback for each one respectively |
@@ -11402,6 +15174,10 @@ const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, ob
 forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-42-functionName |  This snippet prints the name of a function into the console |
@@ -11412,6 +15188,10 @@ const functionName = fn => (console.debug(fn.name), fn);
 functionName(Math.max); // max (logged in debug channel of console)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-43-Get Time From Date |  This snippet can be used to get the time from a object as a string |
@@ -11422,6 +15202,10 @@ const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);
 getColonTimeFromDate(new Date()); // "08:38:00"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-44-Get Days Between Dates |  This snippet can be used to find the difference in days between two dates |
@@ -11433,6 +15217,10 @@ const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
 getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-45-getStyle |  This snippet can be used to get the value of a CSS rule for a particular element |
@@ -11443,6 +15231,10 @@ const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];
 getStyle(document.querySelector('p'), 'font-size'); // '16px'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-46-getType |  This snippet can be used to get the type of a value |
@@ -11454,6 +15246,10 @@ const getType = v =>
 getType(new Set([1, 2, 3])); // 'set'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-47-hasClass |  This snippet checks whether an element has a particular class |
@@ -11463,6 +15259,10 @@ const hasClass = (el, className) => el.classList.contains(className);
 hasClass(document.querySelector('p.special'), 'special'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-48-head |  This snippet returns the  of a list |
@@ -11473,6 +15273,10 @@ const head = arr => arr[0];
 head([1, 2, 3]); // 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-49-hide |  This snippet can be used to hide all elements specified |
@@ -11483,6 +15287,10 @@ const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
 hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-50-httpsRedirect |  This snippet can be used to redirect from HTTP to HTTPS in a particular domain |
@@ -11495,6 +15303,10 @@ const httpsRedirect = () => {
 httpsRedirect(); // If you are on http://mydomain.com, you are redirected to https://mydomain.com
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-51-indexOfAll |  This snippet can be used to get all indexes of a value in an array, which returns an empty array, in case this value is not included in it |
@@ -11506,6 +15318,10 @@ indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
 indexOfAll([1, 2, 3], 4); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-52-initial |  This snippet returns all elements of an array except the last one |
@@ -11517,6 +15333,10 @@ initial([1, 2, 3]); // [1,2]const initial = arr => arr.slice(0, -1);
 initial([1, 2, 3]); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-53-insertAfter |  This snippet can be used to insert an HTML string after the end of a particular element |
@@ -11527,6 +15347,10 @@ const insertAfter = (el, htmlString) => el.insertAdjacentHTML('afterend', htmlSt
 insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">...</div> <p>after</p>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-54-insertBefore |  This snippet can be used to insert an HTML string before a particular element |
@@ -11537,6 +15361,10 @@ const insertBefore = (el, htmlString) => el.insertAdjacentHTML('beforebegin', ht
 insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p> <div id="myId">...</div>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-55-intersection |  This snippet can be used to get an array with elements that are included in two other arrays |
@@ -11550,6 +15378,10 @@ const intersection = (a, b) => {
 intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-56-intersectionBy |  This snippet can be used to return a list of elements that exist in both arrays, after a particular function has been executed to each element of both arrays |
@@ -11563,6 +15395,10 @@ const intersectionBy = (a, b, fn) => {
 intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-57-intersectionWith |  This snippet can be used to return a list of elements that exist in both arrays by using a comparator function |
@@ -11573,6 +15409,10 @@ const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, 
 intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)); // [1.5, 3, 0]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-58-is |  This snippet can be used to check if a value is of a particular type |
@@ -11595,6 +15435,10 @@ is(Boolean, true); // true
 is(Boolean, new Boolean(true)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-59-isAfterDate |  This snippet can be used to check whether a date is after another date |
@@ -11605,6 +15449,10 @@ const isAfterDate = (dateA, dateB) => dateA > dateB;
 isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-60-isAnagram |  This snippet can be used to check whether a particular string is an anagram with another string |
@@ -11624,6 +15472,10 @@ const isAnagram = (str1, str2) => {
 isAnagram('iceman', 'cinema'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-61-isArrayLike |  This snippet can be used to check if a provided argument is iterable like an array |
@@ -11636,6 +15488,10 @@ isArrayLike('abc'); // true
 isArrayLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-62-isBeforeDate |  This snippet can be used to check whether a date is before another date |
@@ -11646,6 +15502,10 @@ const isBeforeDate = (dateA, dateB) => dateA < dateB;
 isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-63-isBoolean |  This snippet can be used to check whether an argument is a boolean |
@@ -11657,6 +15517,10 @@ isBoolean(null); // false
 isBoolean(false); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-64-isBrowser |  This snippet can be used to determine whether the current runtime environment is a browser. This is helpful for avoiding errors when running front-end modules on the server (Node) |
@@ -11668,6 +15532,10 @@ isBrowser(); // true (browser)
 isBrowser(); // false (Node)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-65-isBrowserTabFocused |  This snippet can be used to determine whether the browser tab is focused |
@@ -11678,6 +15546,10 @@ const isBrowserTabFocused = () => !document.hidden;
 isBrowserTabFocused(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-66-isLowerCase |  This snippet can be used to determine whether a string is lower case |
@@ -11690,6 +15562,10 @@ isLowerCase('a3@$'); // true
 isLowerCase('Ab4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-67-isNil |  This snippet can be used to check whether a value is  or  |
@@ -11701,6 +15577,10 @@ isNil(null); // true
 isNil(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-68-isNull |  This snippet can be used to check whether a value is  |
@@ -11711,6 +15591,10 @@ const isNull = val => val === null;
 isNull(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-69-isNumber |  This snippet can be used to check whether a provided value is a number |
@@ -11722,6 +15606,10 @@ isNumber('1'); // false
 isNumber(1); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-70-isObject |  This snippet can be used to check whether a provided value is an object. It uses the Object constructor to create an object wrapper for the given value |
@@ -11737,6 +15625,10 @@ isObject({}); // true
 isObject(true); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-71-isObjectLike |  This snippet can be used to check if a value is not and that its  is “object” |
@@ -11750,6 +15642,10 @@ isObjectLike(x => x); // false
 isObjectLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-72-isPlainObject |  This snippet checks whether a value is an object created by the Object constructor |
@@ -11761,6 +15657,10 @@ isPlainObject({ a: 1 }); // true
 isPlainObject(new Map()); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-73-isPromiseLike |  This snippet checks whether an object looks like a  |
@@ -11780,6 +15680,10 @@ isPromiseLike(null); // false
 isPromiseLike({}); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-74-isSameDate |  This snippet can be used to check whether two dates are equal |
@@ -11790,6 +15694,10 @@ const isSameDate = (dateA, dateB) => dateA.toISOString() === dateB.toISOString()
 isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-75-isString |  This snippet can be used to check whether an argument is a string |
@@ -11800,6 +15708,10 @@ const isString = val => typeof val === 'string';
 isString('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-76-isSymbol |  This snippet can be used to check whether an argument is a symbol |
@@ -11810,6 +15722,10 @@ const isSymbol = val => typeof val === 'symbol';
 isSymbol(Symbol('x')); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-77-isUndefined |  This snippet can be used to check whether a value is undefined |
@@ -11820,6 +15736,10 @@ const isUndefined = val => val === undefined;
 isUndefined(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-78-isUpperCase |  This snippet can be used to check whether a string is upper case |
@@ -11832,6 +15752,10 @@ isLowerCase('A3@$'); // true
 isLowerCase('aB4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-79-isValidJSON |  This snippet can be used to check whether a string is a valid JSON |
@@ -11851,6 +15775,10 @@ isValidJSON('{"name":"Adam",age:"20"}'); // false
 isValidJSON(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-80-last |  This snippet returns the last element of an array |
@@ -11861,6 +15789,10 @@ const last = arr => arr[arr.length - 1];
 last([1, 2, 3]); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-81-matches |  This snippet compares two objects to determine if the first one contains the same property values as the second one |
@@ -11873,6 +15805,10 @@ matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true }); 
 matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-82-maxDate |  This snippet can be used to get the latest date |
@@ -11889,6 +15825,10 @@ const array = [
 maxDate(array); // 2018-03-11T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-83-maxN |  This snippet returns the  largest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in descending order) |
@@ -11900,6 +15840,10 @@ maxN([1, 2, 3]); // [3]
 maxN([1, 2, 3], 2); // [3,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-84-minDate |  This snippet can be used to get the earliest date |
@@ -11916,6 +15860,10 @@ const array = [
 minDate(array); // 2016-01-08T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-85-minN |  This snippet returns the  smallest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in ascending order) |
@@ -11927,6 +15875,10 @@ minN([1, 2, 3]); // [1]
 minN([1, 2, 3], 2); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-86-negate |  This snippet can be used to apply the not operator () to a predicate function with its arguments |
@@ -11937,6 +15889,10 @@ const negate = func => (...args) => !func(...args);
 [1, 2, 3, 4, 5, 6].filter(negate(n => n % 2 === 0)); // [ 1, 3, 5 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-87-nodeListToArray |  This snippet can be used to convert a  to an array |
@@ -11947,6 +15903,10 @@ const nodeListToArray = nodeList => [...nodeList];
 nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-88-pad |  This snippet can be used to  a string on both sides with a specified character if it is shorter than the specified length |
@@ -11960,6 +15920,10 @@ pad(String(42), 6, '0'); // '004200'
 pad('foobar', 3); // 'foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-89-radsToDegrees |  This snippet can be used to convert an angle from radians to degrees |
@@ -11970,6 +15934,10 @@ const radsToDegrees = rad => (rad * 180.0) / Math.PI;
 radsToDegrees(Math.PI / 2); // 90
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-90-randomHexColorCode |  This snippet can be used to generate a random hexadecimal color code |
@@ -11983,6 +15951,10 @@ const randomHexColorCode = () => {
 randomHexColorCode(); // "#e34155"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-91-randomIntArrayInRange |  This snippet can be used to generate an array with  random integers in a specified range |
@@ -11994,6 +15966,10 @@ const randomIntArrayInRange = (min, max, n = 1) =>
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-92-randomIntegerInRange |  This snippet can be used to generate a random integer in a specified range |
@@ -12004,6 +15980,10 @@ const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min
 randomIntegerInRange(0, 5); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-93-randomNumberInRange |  This snippet can be used to return a random number in a specified range |
@@ -12014,6 +15994,10 @@ const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;
 randomNumberInRange(2, 10); // 6.0211363285087005
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-94-readFileLines |  This snippet can be used to read a file by getting an array of lines from a file |
@@ -12030,6 +16014,10 @@ let arr = readFileLines('test.txt');
 console.log(arr); // ['line1', 'line2', 'line3']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-95-redirect |  This snippet can be used to do a redirect to a specified URL |
@@ -12041,6 +16029,10 @@ const redirect = (url, asLink = true) =>
 redirect('https://google.com');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-96-reverse |  This snippet can be used to reverse a string |
@@ -12051,6 +16043,10 @@ const reverseString = str => [...str].reverse().join('');
 reverseString('foobar'); // 'raboof'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-97-round |  This snippet can be used to round a number to a specified number of digits |
@@ -12061,6 +16057,10 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.005, 2); // 1.01
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-98-runPromisesInSeries |  This snippet can be used to run an array of promises in series |
@@ -12073,6 +16073,10 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 // Executes each promise sequentially, taking a total of 3 seconds to complete
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-99-sample |  This snippet can be used to get a random number from an array |
@@ -12083,6 +16087,10 @@ const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 sample([3, 7, 9, 11]); // 9
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-100-sampleSize |  This snippet can be used to get random elements from unique positions from an array up to the size of the array. Elements in the array are shuffled using the  |
@@ -12101,6 +16109,10 @@ sampleSize([1, 2, 3], 2); // [3,1]
 sampleSize([1, 2, 3], 4); // [2,3,1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-101-scrollToTop |  This snippet can be used to do a smooth scroll to the top of the current page |
@@ -12117,6 +16129,10 @@ const scrollToTop = () => {
 scrollToTop();
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-102-serializeCookie |  This snippet can be used to serialize a cookie name-value pair into a Set-Cookie header string |
@@ -12127,6 +16143,10 @@ const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIC
 serializeCookie('foo', 'bar'); // 'foo=bar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-103-setStyle |  This snippet can be used to set the value of a CSS rule for a particular element |
@@ -12138,6 +16158,10 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 // The first <p> element on the page will have a font-size of 20px
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-104-shallowClone |  This snippet can be used to create a shallow clone of an object |
@@ -12149,6 +16173,10 @@ const a = { x: true, y: 1 };
 const b = shallowClone(a); // a !== b
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-105-show |  This snippet can be used to show all the elements specified |
@@ -12159,6 +16187,10 @@ const show = (...el) => [...el].forEach(e => (e.style.display = ''));
 show(...document.querySelectorAll('img')); // Shows all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-106-shuffle |  This snippet can be used to order the elements of an array randomly using the  |
@@ -12177,6 +16209,10 @@ const foo = [1, 2, 3];
 shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-107-similarity |  This snippet can be used to return an array of elements that appear in two arrays |
@@ -12187,6 +16223,10 @@ const similarity = (arr, values) => arr.filter(v => values.includes(v))
 similarity([1, 2, 3], [1, 2, 4]); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-108-sleep |  This snippet can be used to delay the execution of an asynchronous function by putting it into sleep |
@@ -12201,6 +16241,10 @@ async function sleepyWork() {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-130-smoothScroll |  This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
@@ -12215,6 +16259,10 @@ smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-110-sortCharactersInString |  This snippet can be used to alphabetically sort the characters in a string |
@@ -12225,6 +16273,10 @@ const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)
 sortCharactersInString('cabbage'); // 'aabbceg'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-111-splitLines |  This snippet can be used to split a multi-line string into an array of lines |
@@ -12235,6 +16287,10 @@ const splitLines = str => str.split(/\r?\n/);
 splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline', 'string.' , '']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-112-stripHTMLTags |  This snippet can be used to remove HTML/XML tags from a string |
@@ -12245,6 +16301,10 @@ const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
 stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-113-sum |  This snippet can be used to find the sum of two or more numbers or arrays |
@@ -12256,6 +16316,10 @@ sum(1, 2, 3, 4); // 10
 sum(...[1, 2, 3, 4]); // 10
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-114-tail |  This snippet can be used to get an array with all the elements of an array except for the first one. If the array has only one element, then that an array with that element will be returned instead |
@@ -12267,6 +16331,10 @@ tail([1, 2, 3]); // [2,3]
 tail([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-115-take |  This snippet can be used to get an array with elements removed from the beginning |
@@ -12278,6 +16346,10 @@ take([1, 2, 3], 5); // [1, 2, 3]
 take([1, 2, 3], 0); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-116-takeRight |  This snippet can be used to get an array with elements removed from the end |
@@ -12289,6 +16361,10 @@ takeRight([1, 2, 3], 2); // [ 2, 3 ]
 takeRight([1, 2, 3]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-117-timeTaken |  This snippet can be used to find out the time it takes to execute a function |
@@ -12304,6 +16380,10 @@ const timeTaken = callback => {
 timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-118-times |  This snippet can be used to iterate over a callback times |
@@ -12319,6 +16399,10 @@ times(5, i => (output += i));
 console.log(output); // 01234
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-119-toCurrency |  This snippet can be used to format a number like a currency |
@@ -12334,6 +16418,10 @@ toCurrency(322342436423.2435, 'JPY'); // ¥322,342,436,423 | currency: Japanese 
 toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Japanese Yen | currencyLangFormat: Finnish
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-120-toDecimalMark |  This snippet uses the function to convert float-point arithmetic to the decimal mark form by using a number to make a comma-separated string |
@@ -12344,6 +16432,10 @@ const toDecimalMark = num => num.toLocaleString('en-US');
 toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-121-toggleClass |  This snippet can be used to toggle a class for an element |
@@ -12354,6 +16446,10 @@ const toggleClass = (el, className) => el.classList.toggle(className);
 toggleClass(document.querySelector('p.special'), 'special'); // The paragraph will not have the 'special' class anymore
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-122-tomorrow |  This snippet can be used to get a string representation of tomorrow’s date |
@@ -12368,6 +16464,10 @@ const tomorrow = () => {
 tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-123-unfold |  This snippet can be used to build an array using an iterator function and an initial seed value |
@@ -12384,6 +16484,10 @@ var f = n => (n > 50 ? false : [-n, n + 10]);
 unfold(f, 10); // [-10, -20, -30, -40, -50]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-124-union |  This snippet can be used to find the  of two arrays, resulting in an array that has elements that come from both arrays but that do not repeat |
@@ -12394,6 +16498,10 @@ const union = (a, b) => Array.from(new Set([...a, ...b]));
 union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-125-uniqueElements |  This snippet uses ES6 andtheoperator to get every element only once |
@@ -12404,6 +16512,10 @@ const uniqueElements = arr => [...new Set(arr)];
 uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-126-validateNumber |  This snippet can be used to check whether a value is a number |
@@ -12414,6 +16526,10 @@ const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) ==
 validateNumber('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-127-words |  This snippet converts a string into an array of words |
@@ -12425,6 +16541,10 @@ words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-128-getES6moduleSyntaxBySource |  Get all ES6 modules syntax from the source directory |
@@ -12446,6 +16566,10 @@ export function getES6moduleSyntaxBySource(source, extension) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-129-concatJSONsourcesToOneFile |  Concat & export all external JSON sources to one JSON file |
@@ -12470,6 +16594,10 @@ export function concatJSONsourcesToOneFile(sourcesList, distPath) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-131-validateEmail |  Email validator with regex |
@@ -12498,6 +16626,10 @@ all([4, 2, 3], x => x > 1); // true
 all([1, 2, 3]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-2-allEqual |  This snippet checks whether all elements of the array are equal |
@@ -12509,6 +16641,10 @@ allEqual([1, 2, 3, 4, 5, 6]); // false
 allEqual([1, 1, 1, 1]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-3-approximatelyEqual |  This snippet checks whether two numbers are approximately equal to each other, with a small difference |
@@ -12519,6 +16655,10 @@ const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsi
 approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-4-arrayToCSV |  This snippet converts the elements to strings with comma-separated values |
@@ -12531,6 +16671,10 @@ arrayToCSV([['a', 'b'], ['c', 'd']]); // '"a","b"\n"c","d"'
 arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-5-arrayToHtmlList |  This snippet converts the elements of an array into  tags and appends them to the list of the given ID |
@@ -12545,6 +16689,10 @@ const arrayToHtmlList = (arr, listID) =>
 arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-6-attempt |  This snippet executes a function, returning either the result or the caught error object |
@@ -12563,6 +16711,10 @@ var elements = attempt(function(selector) {
 if (elements instanceof Error) elements = []; // elements = []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-7-average |  This snippet returns the average of two or more numerical values |
@@ -12573,6 +16725,10 @@ average(...[1, 2, 3]); // 2
 average(1, 2, 3); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-8-averageBy |  This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function |
@@ -12586,6 +16742,10 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o => o.n); // 5
 averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-9-bifurcate |  This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise |
@@ -12597,6 +16757,10 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-10-bifurcateBy |  This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group |
@@ -12609,6 +16773,10 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-11-bottomVisible |  This snippet checks whether the bottom of a page is visible |
@@ -12621,6 +16789,10 @@ const bottomVisible = () =>
 bottomVisible(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-12-byteSize |  This snippet returns the length of a string in bytes |
@@ -12632,6 +16804,10 @@ byteSize('😀'); // 4
 byteSize('Hello World'); // 11
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-13-capitalize |  This snippet capitalizes the first letter of a string |
@@ -12644,6 +16820,10 @@ capitalize('fooBar'); // 'FooBar'
 capitalize('fooBar', true); // 'Foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-14-capitalizeEveryWord |  This snippet capitalizes the first letter of every word in a given string |
@@ -12654,6 +16834,10 @@ const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperC
 capitalizeEveryWord('hello world!'); // 'Hello World!'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-15-castArray |  This snippet converts a non-array value into array |
@@ -12665,6 +16849,10 @@ castArray('foo'); // ['foo']
 castArray([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-16-compact |  This snippet removes false values from an array |
@@ -12676,6 +16864,10 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 // [ 1, 2, 3, 'a', 's', 34 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-17-countOccurrences |  This snippet counts the occurrences of a value in an array |
@@ -12685,6 +16877,10 @@ const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 :
 countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-18-createDirIfNotExists |  This snippet uses  to check whether a directory exists and then  to create it if it doesn’t |
@@ -12696,6 +16892,10 @@ createDirIfNotExists('test');
 // creates the directory 'test', if it doesn't exist
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-19-currentURL |  This snippet returns the current URL |
@@ -12706,6 +16906,10 @@ const currentURL = () => window.location.href;
 currentURL(); // 'https://medium.com/@fatosmorina'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-20-dayOfYear |  This snippet gets the day of the year from a object |
@@ -12717,6 +16921,10 @@ const dayOfYear = date =>
 dayOfYear(new Date()); // 272
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-21-decapitalize |  This snippet turns the first letter of a string into lowercase |
@@ -12729,6 +16937,10 @@ decapitalize('FooBar'); // 'fooBar'
 decapitalize('FooBar'); // 'fooBar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-22-deepFlatten |  This snippet flattens an array recursively |
@@ -12739,6 +16951,10 @@ const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFla
 deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-23-default |  This snippet assigns default values for all properties in an object that are  |
@@ -12749,6 +16965,10 @@ const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj
 defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-24-defer |  This snippet delays the execution of a function until the current call stack is cleared |
@@ -12759,6 +16979,10 @@ const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
 defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-25-degreesToRads |  This snippet can be used to convert a value from degrees to radians |
@@ -12769,6 +16993,10 @@ const degreesToRads = deg => (deg * Math.PI) / 180.0;
 degreesToRads(90.0); // ~1.5708
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-26-difference |  This snippet finds the difference between two arrays |
@@ -12782,6 +17010,10 @@ const difference = (a, b) => {
 difference([1, 2, 3], [1, 2, 4]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-27-differenceBy |  This snippet returns the difference between two arrays, after applying a given function to each element of both lists |
@@ -12796,6 +17028,10 @@ differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [1.2]
 differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-28-differenceWith |  This snippet removes the values for which the comparator function returns  |
@@ -12807,6 +17043,10 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 // [1, 1.2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-29-digitize |  This snippet gets a number as input and returns an array of its digits |
@@ -12817,6 +17057,10 @@ const digitize = n => [...`${n}`].map(i => parseInt(i));
 digitize(431); // [4, 3, 1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-30-distance |  This snippet returns the distance between two points by calculating the Euclidean distance |
@@ -12827,6 +17071,10 @@ const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);
 distance(1, 1, 2, 3); // 2.23606797749979
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-31-DropLeft |  This snippet returns a new array with  elements removed from the left |
@@ -12839,6 +17087,10 @@ dropLeft([1, 2, 3], 2); // [3]
 dropLeft([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-32-dropRight |  This snippet returns a new array with  elements removed from the right |
@@ -12851,6 +17103,10 @@ dropRight([1, 2, 3], 2); // [1]
 dropRight([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-33-dropRightWhile |  This snippet removes elements from the right side of an array until the passed function returns  |
@@ -12864,6 +17120,10 @@ const dropRightWhile = (arr, func) => {
 dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-34-dropWhile |  This snippet removes elements from an array until the passed function returns  |
@@ -12877,6 +17137,10 @@ const dropWhile = (arr, func) => {
 dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-35-elementContains |  This snippet checks whether the parent element contains the child |
@@ -12888,6 +17152,10 @@ elementContains(document.querySelector('head'), document.querySelector('title'))
 elementContains(document.querySelector('body'), document.querySelector('body')); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-36-Filter Duplicate Elements |  This snippet removes duplicate values in an array |
@@ -12898,6 +17166,10 @@ const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexO
 filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-37-findKey |  This snippet returns the first key that satisfies a given function |
@@ -12915,6 +17187,10 @@ findKey(
 ); // 'barney'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-38-findLast |  This snippet returns the last element for which a given function returns a truthy value |
@@ -12925,6 +17201,10 @@ const findLast = (arr, fn) => arr.filter(fn).pop();
 findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-39-flatten |  This snippet flattens an array up to a specified depth using recursion |
@@ -12937,6 +17217,10 @@ flatten([1, [2], 3, 4]); // [1, 2, 3, 4]
 flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-40-forEachRight |  This snippet executes a function for each element of an array starting from the array’s last element |
@@ -12951,6 +17235,10 @@ const forEachRight = (arr, callback) =>
 forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-41-forOwn |  This snippet iterates on each property of an object and iterates a callback for each one respectively |
@@ -12960,6 +17248,10 @@ const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, ob
 forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-42-functionName |  This snippet prints the name of a function into the console |
@@ -12970,6 +17262,10 @@ const functionName = fn => (console.debug(fn.name), fn);
 functionName(Math.max); // max (logged in debug channel of console)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-43-Get Time From Date |  This snippet can be used to get the time from a object as a string |
@@ -12980,6 +17276,10 @@ const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);
 getColonTimeFromDate(new Date()); // "08:38:00"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-44-Get Days Between Dates |  This snippet can be used to find the difference in days between two dates |
@@ -12991,6 +17291,10 @@ const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
 getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-45-getStyle |  This snippet can be used to get the value of a CSS rule for a particular element |
@@ -13001,6 +17305,10 @@ const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];
 getStyle(document.querySelector('p'), 'font-size'); // '16px'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-46-getType |  This snippet can be used to get the type of a value |
@@ -13012,6 +17320,10 @@ const getType = v =>
 getType(new Set([1, 2, 3])); // 'set'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-47-hasClass |  This snippet checks whether an element has a particular class |
@@ -13021,6 +17333,10 @@ const hasClass = (el, className) => el.classList.contains(className);
 hasClass(document.querySelector('p.special'), 'special'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-48-head |  This snippet returns the  of a list |
@@ -13031,6 +17347,10 @@ const head = arr => arr[0];
 head([1, 2, 3]); // 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-49-hide |  This snippet can be used to hide all elements specified |
@@ -13041,6 +17361,10 @@ const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
 hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-50-httpsRedirect |  This snippet can be used to redirect from HTTP to HTTPS in a particular domain |
@@ -13053,6 +17377,10 @@ const httpsRedirect = () => {
 httpsRedirect(); // If you are on http://mydomain.com, you are redirected to https://mydomain.com
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-51-indexOfAll |  This snippet can be used to get all indexes of a value in an array, which returns an empty array, in case this value is not included in it |
@@ -13064,6 +17392,10 @@ indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
 indexOfAll([1, 2, 3], 4); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-52-initial |  This snippet returns all elements of an array except the last one |
@@ -13075,6 +17407,10 @@ initial([1, 2, 3]); // [1,2]const initial = arr => arr.slice(0, -1);
 initial([1, 2, 3]); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-53-insertAfter |  This snippet can be used to insert an HTML string after the end of a particular element |
@@ -13085,6 +17421,10 @@ const insertAfter = (el, htmlString) => el.insertAdjacentHTML('afterend', htmlSt
 insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">...</div> <p>after</p>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-54-insertBefore |  This snippet can be used to insert an HTML string before a particular element |
@@ -13095,6 +17435,10 @@ const insertBefore = (el, htmlString) => el.insertAdjacentHTML('beforebegin', ht
 insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p> <div id="myId">...</div>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-55-intersection |  This snippet can be used to get an array with elements that are included in two other arrays |
@@ -13108,6 +17452,10 @@ const intersection = (a, b) => {
 intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-56-intersectionBy |  This snippet can be used to return a list of elements that exist in both arrays, after a particular function has been executed to each element of both arrays |
@@ -13121,6 +17469,10 @@ const intersectionBy = (a, b, fn) => {
 intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-57-intersectionWith |  This snippet can be used to return a list of elements that exist in both arrays by using a comparator function |
@@ -13131,6 +17483,10 @@ const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, 
 intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)); // [1.5, 3, 0]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-58-is |  This snippet can be used to check if a value is of a particular type |
@@ -13153,6 +17509,10 @@ is(Boolean, true); // true
 is(Boolean, new Boolean(true)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-59-isAfterDate |  This snippet can be used to check whether a date is after another date |
@@ -13163,6 +17523,10 @@ const isAfterDate = (dateA, dateB) => dateA > dateB;
 isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-60-isAnagram |  This snippet can be used to check whether a particular string is an anagram with another string |
@@ -13182,6 +17546,10 @@ const isAnagram = (str1, str2) => {
 isAnagram('iceman', 'cinema'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-61-isArrayLike |  This snippet can be used to check if a provided argument is iterable like an array |
@@ -13194,6 +17562,10 @@ isArrayLike('abc'); // true
 isArrayLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-62-isBeforeDate |  This snippet can be used to check whether a date is before another date |
@@ -13204,6 +17576,10 @@ const isBeforeDate = (dateA, dateB) => dateA < dateB;
 isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-63-isBoolean |  This snippet can be used to check whether an argument is a boolean |
@@ -13215,6 +17591,10 @@ isBoolean(null); // false
 isBoolean(false); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-64-isBrowser |  This snippet can be used to determine whether the current runtime environment is a browser. This is helpful for avoiding errors when running front-end modules on the server (Node) |
@@ -13226,6 +17606,10 @@ isBrowser(); // true (browser)
 isBrowser(); // false (Node)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-65-isBrowserTabFocused |  This snippet can be used to determine whether the browser tab is focused |
@@ -13236,6 +17620,10 @@ const isBrowserTabFocused = () => !document.hidden;
 isBrowserTabFocused(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-66-isLowerCase |  This snippet can be used to determine whether a string is lower case |
@@ -13248,6 +17636,10 @@ isLowerCase('a3@$'); // true
 isLowerCase('Ab4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-67-isNil |  This snippet can be used to check whether a value is  or  |
@@ -13259,6 +17651,10 @@ isNil(null); // true
 isNil(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-68-isNull |  This snippet can be used to check whether a value is  |
@@ -13269,6 +17665,10 @@ const isNull = val => val === null;
 isNull(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-69-isNumber |  This snippet can be used to check whether a provided value is a number |
@@ -13280,6 +17680,10 @@ isNumber('1'); // false
 isNumber(1); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-70-isObject |  This snippet can be used to check whether a provided value is an object. It uses the Object constructor to create an object wrapper for the given value |
@@ -13295,6 +17699,10 @@ isObject({}); // true
 isObject(true); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-71-isObjectLike |  This snippet can be used to check if a value is not and that its  is “object” |
@@ -13308,6 +17716,10 @@ isObjectLike(x => x); // false
 isObjectLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-72-isPlainObject |  This snippet checks whether a value is an object created by the Object constructor |
@@ -13319,6 +17731,10 @@ isPlainObject({ a: 1 }); // true
 isPlainObject(new Map()); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-73-isPromiseLike |  This snippet checks whether an object looks like a  |
@@ -13338,6 +17754,10 @@ isPromiseLike(null); // false
 isPromiseLike({}); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-74-isSameDate |  This snippet can be used to check whether two dates are equal |
@@ -13348,6 +17768,10 @@ const isSameDate = (dateA, dateB) => dateA.toISOString() === dateB.toISOString()
 isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-75-isString |  This snippet can be used to check whether an argument is a string |
@@ -13358,6 +17782,10 @@ const isString = val => typeof val === 'string';
 isString('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-76-isSymbol |  This snippet can be used to check whether an argument is a symbol |
@@ -13368,6 +17796,10 @@ const isSymbol = val => typeof val === 'symbol';
 isSymbol(Symbol('x')); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-77-isUndefined |  This snippet can be used to check whether a value is undefined |
@@ -13378,6 +17810,10 @@ const isUndefined = val => val === undefined;
 isUndefined(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-78-isUpperCase |  This snippet can be used to check whether a string is upper case |
@@ -13390,6 +17826,10 @@ isLowerCase('A3@$'); // true
 isLowerCase('aB4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-79-isValidJSON |  This snippet can be used to check whether a string is a valid JSON |
@@ -13409,6 +17849,10 @@ isValidJSON('{"name":"Adam",age:"20"}'); // false
 isValidJSON(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-80-last |  This snippet returns the last element of an array |
@@ -13419,6 +17863,10 @@ const last = arr => arr[arr.length - 1];
 last([1, 2, 3]); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-81-matches |  This snippet compares two objects to determine if the first one contains the same property values as the second one |
@@ -13431,6 +17879,10 @@ matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true }); 
 matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-82-maxDate |  This snippet can be used to get the latest date |
@@ -13447,6 +17899,10 @@ const array = [
 maxDate(array); // 2018-03-11T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-83-maxN |  This snippet returns the  largest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in descending order) |
@@ -13458,6 +17914,10 @@ maxN([1, 2, 3]); // [3]
 maxN([1, 2, 3], 2); // [3,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-84-minDate |  This snippet can be used to get the earliest date |
@@ -13474,6 +17934,10 @@ const array = [
 minDate(array); // 2016-01-08T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-85-minN |  This snippet returns the  smallest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in ascending order) |
@@ -13485,6 +17949,10 @@ minN([1, 2, 3]); // [1]
 minN([1, 2, 3], 2); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-86-negate |  This snippet can be used to apply the not operator () to a predicate function with its arguments |
@@ -13495,6 +17963,10 @@ const negate = func => (...args) => !func(...args);
 [1, 2, 3, 4, 5, 6].filter(negate(n => n % 2 === 0)); // [ 1, 3, 5 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-87-nodeListToArray |  This snippet can be used to convert a  to an array |
@@ -13505,6 +17977,10 @@ const nodeListToArray = nodeList => [...nodeList];
 nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-88-pad |  This snippet can be used to  a string on both sides with a specified character if it is shorter than the specified length |
@@ -13518,6 +17994,10 @@ pad(String(42), 6, '0'); // '004200'
 pad('foobar', 3); // 'foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-89-radsToDegrees |  This snippet can be used to convert an angle from radians to degrees |
@@ -13528,6 +18008,10 @@ const radsToDegrees = rad => (rad * 180.0) / Math.PI;
 radsToDegrees(Math.PI / 2); // 90
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-90-randomHexColorCode |  This snippet can be used to generate a random hexadecimal color code |
@@ -13541,6 +18025,10 @@ const randomHexColorCode = () => {
 randomHexColorCode(); // "#e34155"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-91-randomIntArrayInRange |  This snippet can be used to generate an array with  random integers in a specified range |
@@ -13552,6 +18040,10 @@ const randomIntArrayInRange = (min, max, n = 1) =>
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-92-randomIntegerInRange |  This snippet can be used to generate a random integer in a specified range |
@@ -13562,6 +18054,10 @@ const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min
 randomIntegerInRange(0, 5); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-93-randomNumberInRange |  This snippet can be used to return a random number in a specified range |
@@ -13572,6 +18068,10 @@ const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;
 randomNumberInRange(2, 10); // 6.0211363285087005
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-94-readFileLines |  This snippet can be used to read a file by getting an array of lines from a file |
@@ -13588,6 +18088,10 @@ let arr = readFileLines('test.txt');
 console.log(arr); // ['line1', 'line2', 'line3']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-95-redirect |  This snippet can be used to do a redirect to a specified URL |
@@ -13599,6 +18103,10 @@ const redirect = (url, asLink = true) =>
 redirect('https://google.com');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-96-reverse |  This snippet can be used to reverse a string |
@@ -13609,6 +18117,10 @@ const reverseString = str => [...str].reverse().join('');
 reverseString('foobar'); // 'raboof'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-97-round |  This snippet can be used to round a number to a specified number of digits |
@@ -13619,6 +18131,10 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.005, 2); // 1.01
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-98-runPromisesInSeries |  This snippet can be used to run an array of promises in series |
@@ -13631,6 +18147,10 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 // Executes each promise sequentially, taking a total of 3 seconds to complete
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-99-sample |  This snippet can be used to get a random number from an array |
@@ -13641,6 +18161,10 @@ const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 sample([3, 7, 9, 11]); // 9
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-100-sampleSize |  This snippet can be used to get random elements from unique positions from an array up to the size of the array. Elements in the array are shuffled using the  |
@@ -13659,6 +18183,10 @@ sampleSize([1, 2, 3], 2); // [3,1]
 sampleSize([1, 2, 3], 4); // [2,3,1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-101-scrollToTop |  This snippet can be used to do a smooth scroll to the top of the current page |
@@ -13675,6 +18203,10 @@ const scrollToTop = () => {
 scrollToTop();
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-102-serializeCookie |  This snippet can be used to serialize a cookie name-value pair into a Set-Cookie header string |
@@ -13685,6 +18217,10 @@ const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIC
 serializeCookie('foo', 'bar'); // 'foo=bar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-103-setStyle |  This snippet can be used to set the value of a CSS rule for a particular element |
@@ -13696,6 +18232,10 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 // The first <p> element on the page will have a font-size of 20px
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-104-shallowClone |  This snippet can be used to create a shallow clone of an object |
@@ -13707,6 +18247,10 @@ const a = { x: true, y: 1 };
 const b = shallowClone(a); // a !== b
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-105-show |  This snippet can be used to show all the elements specified |
@@ -13717,6 +18261,10 @@ const show = (...el) => [...el].forEach(e => (e.style.display = ''));
 show(...document.querySelectorAll('img')); // Shows all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-106-shuffle |  This snippet can be used to order the elements of an array randomly using the  |
@@ -13735,6 +18283,10 @@ const foo = [1, 2, 3];
 shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-107-similarity |  This snippet can be used to return an array of elements that appear in two arrays |
@@ -13745,6 +18297,10 @@ const similarity = (arr, values) => arr.filter(v => values.includes(v))
 similarity([1, 2, 3], [1, 2, 4]); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-108-sleep |  This snippet can be used to delay the execution of an asynchronous function by putting it into sleep |
@@ -13759,6 +18315,10 @@ async function sleepyWork() {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-130-smoothScroll |  This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
@@ -13773,6 +18333,10 @@ smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-110-sortCharactersInString |  This snippet can be used to alphabetically sort the characters in a string |
@@ -13783,6 +18347,10 @@ const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)
 sortCharactersInString('cabbage'); // 'aabbceg'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-111-splitLines |  This snippet can be used to split a multi-line string into an array of lines |
@@ -13793,6 +18361,10 @@ const splitLines = str => str.split(/\r?\n/);
 splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline', 'string.' , '']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-112-stripHTMLTags |  This snippet can be used to remove HTML/XML tags from a string |
@@ -13803,6 +18375,10 @@ const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
 stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-113-sum |  This snippet can be used to find the sum of two or more numbers or arrays |
@@ -13814,6 +18390,10 @@ sum(1, 2, 3, 4); // 10
 sum(...[1, 2, 3, 4]); // 10
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-114-tail |  This snippet can be used to get an array with all the elements of an array except for the first one. If the array has only one element, then that an array with that element will be returned instead |
@@ -13825,6 +18405,10 @@ tail([1, 2, 3]); // [2,3]
 tail([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-115-take |  This snippet can be used to get an array with elements removed from the beginning |
@@ -13836,6 +18420,10 @@ take([1, 2, 3], 5); // [1, 2, 3]
 take([1, 2, 3], 0); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-116-takeRight |  This snippet can be used to get an array with elements removed from the end |
@@ -13847,6 +18435,10 @@ takeRight([1, 2, 3], 2); // [ 2, 3 ]
 takeRight([1, 2, 3]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-117-timeTaken |  This snippet can be used to find out the time it takes to execute a function |
@@ -13862,6 +18454,10 @@ const timeTaken = callback => {
 timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-118-times |  This snippet can be used to iterate over a callback times |
@@ -13877,6 +18473,10 @@ times(5, i => (output += i));
 console.log(output); // 01234
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-119-toCurrency |  This snippet can be used to format a number like a currency |
@@ -13892,6 +18492,10 @@ toCurrency(322342436423.2435, 'JPY'); // ¥322,342,436,423 | currency: Japanese 
 toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Japanese Yen | currencyLangFormat: Finnish
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-120-toDecimalMark |  This snippet uses the function to convert float-point arithmetic to the decimal mark form by using a number to make a comma-separated string |
@@ -13902,6 +18506,10 @@ const toDecimalMark = num => num.toLocaleString('en-US');
 toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-121-toggleClass |  This snippet can be used to toggle a class for an element |
@@ -13912,6 +18520,10 @@ const toggleClass = (el, className) => el.classList.toggle(className);
 toggleClass(document.querySelector('p.special'), 'special'); // The paragraph will not have the 'special' class anymore
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-122-tomorrow |  This snippet can be used to get a string representation of tomorrow’s date |
@@ -13926,6 +18538,10 @@ const tomorrow = () => {
 tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-123-unfold |  This snippet can be used to build an array using an iterator function and an initial seed value |
@@ -13942,6 +18558,10 @@ var f = n => (n > 50 ? false : [-n, n + 10]);
 unfold(f, 10); // [-10, -20, -30, -40, -50]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-124-union |  This snippet can be used to find the  of two arrays, resulting in an array that has elements that come from both arrays but that do not repeat |
@@ -13952,6 +18572,10 @@ const union = (a, b) => Array.from(new Set([...a, ...b]));
 union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-125-uniqueElements |  This snippet uses ES6 andtheoperator to get every element only once |
@@ -13962,6 +18586,10 @@ const uniqueElements = arr => [...new Set(arr)];
 uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-126-validateNumber |  This snippet can be used to check whether a value is a number |
@@ -13972,6 +18600,10 @@ const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) ==
 validateNumber('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-127-words |  This snippet converts a string into an array of words |
@@ -13983,6 +18615,10 @@ words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-128-getES6moduleSyntaxBySource |  Get all ES6 modules syntax from the source directory |
@@ -14004,6 +18640,10 @@ export function getES6moduleSyntaxBySource(source, extension) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-129-concatJSONsourcesToOneFile |  Concat & export all external JSON sources to one JSON file |
@@ -14028,6 +18668,10 @@ export function concatJSONsourcesToOneFile(sourcesList, distPath) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-131-validateEmail |  Email validator with regex |
@@ -14056,6 +18700,10 @@ all([4, 2, 3], x => x > 1); // true
 all([1, 2, 3]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-2-allEqual |  This snippet checks whether all elements of the array are equal |
@@ -14067,6 +18715,10 @@ allEqual([1, 2, 3, 4, 5, 6]); // false
 allEqual([1, 1, 1, 1]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-3-approximatelyEqual |  This snippet checks whether two numbers are approximately equal to each other, with a small difference |
@@ -14077,6 +18729,10 @@ const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsi
 approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-4-arrayToCSV |  This snippet converts the elements to strings with comma-separated values |
@@ -14089,6 +18745,10 @@ arrayToCSV([['a', 'b'], ['c', 'd']]); // '"a","b"\n"c","d"'
 arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-5-arrayToHtmlList |  This snippet converts the elements of an array into  tags and appends them to the list of the given ID |
@@ -14103,6 +18763,10 @@ const arrayToHtmlList = (arr, listID) =>
 arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-6-attempt |  This snippet executes a function, returning either the result or the caught error object |
@@ -14121,6 +18785,10 @@ var elements = attempt(function(selector) {
 if (elements instanceof Error) elements = []; // elements = []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-7-average |  This snippet returns the average of two or more numerical values |
@@ -14131,6 +18799,10 @@ average(...[1, 2, 3]); // 2
 average(1, 2, 3); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-8-averageBy |  This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function |
@@ -14144,6 +18816,10 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o => o.n); // 5
 averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-9-bifurcate |  This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise |
@@ -14155,6 +18831,10 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-10-bifurcateBy |  This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group |
@@ -14167,6 +18847,10 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-11-bottomVisible |  This snippet checks whether the bottom of a page is visible |
@@ -14179,6 +18863,10 @@ const bottomVisible = () =>
 bottomVisible(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-12-byteSize |  This snippet returns the length of a string in bytes |
@@ -14190,6 +18878,10 @@ byteSize('😀'); // 4
 byteSize('Hello World'); // 11
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-13-capitalize |  This snippet capitalizes the first letter of a string |
@@ -14202,6 +18894,10 @@ capitalize('fooBar'); // 'FooBar'
 capitalize('fooBar', true); // 'Foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-14-capitalizeEveryWord |  This snippet capitalizes the first letter of every word in a given string |
@@ -14212,6 +18908,10 @@ const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperC
 capitalizeEveryWord('hello world!'); // 'Hello World!'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-15-castArray |  This snippet converts a non-array value into array |
@@ -14223,6 +18923,10 @@ castArray('foo'); // ['foo']
 castArray([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-16-compact |  This snippet removes false values from an array |
@@ -14234,6 +18938,10 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 // [ 1, 2, 3, 'a', 's', 34 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-17-countOccurrences |  This snippet counts the occurrences of a value in an array |
@@ -14243,6 +18951,10 @@ const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 :
 countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-18-createDirIfNotExists |  This snippet uses  to check whether a directory exists and then  to create it if it doesn’t |
@@ -14254,6 +18966,10 @@ createDirIfNotExists('test');
 // creates the directory 'test', if it doesn't exist
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-19-currentURL |  This snippet returns the current URL |
@@ -14264,6 +18980,10 @@ const currentURL = () => window.location.href;
 currentURL(); // 'https://medium.com/@fatosmorina'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-20-dayOfYear |  This snippet gets the day of the year from a object |
@@ -14275,6 +18995,10 @@ const dayOfYear = date =>
 dayOfYear(new Date()); // 272
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-21-decapitalize |  This snippet turns the first letter of a string into lowercase |
@@ -14287,6 +19011,10 @@ decapitalize('FooBar'); // 'fooBar'
 decapitalize('FooBar'); // 'fooBar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-22-deepFlatten |  This snippet flattens an array recursively |
@@ -14297,6 +19025,10 @@ const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFla
 deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-23-default |  This snippet assigns default values for all properties in an object that are  |
@@ -14307,6 +19039,10 @@ const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj
 defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-24-defer |  This snippet delays the execution of a function until the current call stack is cleared |
@@ -14317,6 +19053,10 @@ const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
 defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-25-degreesToRads |  This snippet can be used to convert a value from degrees to radians |
@@ -14327,6 +19067,10 @@ const degreesToRads = deg => (deg * Math.PI) / 180.0;
 degreesToRads(90.0); // ~1.5708
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-26-difference |  This snippet finds the difference between two arrays |
@@ -14340,6 +19084,10 @@ const difference = (a, b) => {
 difference([1, 2, 3], [1, 2, 4]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-27-differenceBy |  This snippet returns the difference between two arrays, after applying a given function to each element of both lists |
@@ -14354,6 +19102,10 @@ differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [1.2]
 differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-28-differenceWith |  This snippet removes the values for which the comparator function returns  |
@@ -14365,6 +19117,10 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 // [1, 1.2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-29-digitize |  This snippet gets a number as input and returns an array of its digits |
@@ -14375,6 +19131,10 @@ const digitize = n => [...`${n}`].map(i => parseInt(i));
 digitize(431); // [4, 3, 1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-30-distance |  This snippet returns the distance between two points by calculating the Euclidean distance |
@@ -14385,6 +19145,10 @@ const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);
 distance(1, 1, 2, 3); // 2.23606797749979
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-31-DropLeft |  This snippet returns a new array with  elements removed from the left |
@@ -14397,6 +19161,10 @@ dropLeft([1, 2, 3], 2); // [3]
 dropLeft([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-32-dropRight |  This snippet returns a new array with  elements removed from the right |
@@ -14409,6 +19177,10 @@ dropRight([1, 2, 3], 2); // [1]
 dropRight([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-33-dropRightWhile |  This snippet removes elements from the right side of an array until the passed function returns  |
@@ -14422,6 +19194,10 @@ const dropRightWhile = (arr, func) => {
 dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-34-dropWhile |  This snippet removes elements from an array until the passed function returns  |
@@ -14435,6 +19211,10 @@ const dropWhile = (arr, func) => {
 dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-35-elementContains |  This snippet checks whether the parent element contains the child |
@@ -14446,6 +19226,10 @@ elementContains(document.querySelector('head'), document.querySelector('title'))
 elementContains(document.querySelector('body'), document.querySelector('body')); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-36-Filter Duplicate Elements |  This snippet removes duplicate values in an array |
@@ -14456,6 +19240,10 @@ const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexO
 filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-37-findKey |  This snippet returns the first key that satisfies a given function |
@@ -14473,6 +19261,10 @@ findKey(
 ); // 'barney'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-38-findLast |  This snippet returns the last element for which a given function returns a truthy value |
@@ -14483,6 +19275,10 @@ const findLast = (arr, fn) => arr.filter(fn).pop();
 findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-39-flatten |  This snippet flattens an array up to a specified depth using recursion |
@@ -14495,6 +19291,10 @@ flatten([1, [2], 3, 4]); // [1, 2, 3, 4]
 flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-40-forEachRight |  This snippet executes a function for each element of an array starting from the array’s last element |
@@ -14509,6 +19309,10 @@ const forEachRight = (arr, callback) =>
 forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-41-forOwn |  This snippet iterates on each property of an object and iterates a callback for each one respectively |
@@ -14518,6 +19322,10 @@ const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, ob
 forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-42-functionName |  This snippet prints the name of a function into the console |
@@ -14528,6 +19336,10 @@ const functionName = fn => (console.debug(fn.name), fn);
 functionName(Math.max); // max (logged in debug channel of console)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-43-Get Time From Date |  This snippet can be used to get the time from a object as a string |
@@ -14538,6 +19350,10 @@ const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);
 getColonTimeFromDate(new Date()); // "08:38:00"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-44-Get Days Between Dates |  This snippet can be used to find the difference in days between two dates |
@@ -14549,6 +19365,10 @@ const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
 getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-45-getStyle |  This snippet can be used to get the value of a CSS rule for a particular element |
@@ -14559,6 +19379,10 @@ const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];
 getStyle(document.querySelector('p'), 'font-size'); // '16px'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-46-getType |  This snippet can be used to get the type of a value |
@@ -14570,6 +19394,10 @@ const getType = v =>
 getType(new Set([1, 2, 3])); // 'set'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-47-hasClass |  This snippet checks whether an element has a particular class |
@@ -14579,6 +19407,10 @@ const hasClass = (el, className) => el.classList.contains(className);
 hasClass(document.querySelector('p.special'), 'special'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-48-head |  This snippet returns the  of a list |
@@ -14589,6 +19421,10 @@ const head = arr => arr[0];
 head([1, 2, 3]); // 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-49-hide |  This snippet can be used to hide all elements specified |
@@ -14599,6 +19435,10 @@ const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
 hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-50-httpsRedirect |  This snippet can be used to redirect from HTTP to HTTPS in a particular domain |
@@ -14611,6 +19451,10 @@ const httpsRedirect = () => {
 httpsRedirect(); // If you are on http://mydomain.com, you are redirected to https://mydomain.com
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-51-indexOfAll |  This snippet can be used to get all indexes of a value in an array, which returns an empty array, in case this value is not included in it |
@@ -14622,6 +19466,10 @@ indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
 indexOfAll([1, 2, 3], 4); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-52-initial |  This snippet returns all elements of an array except the last one |
@@ -14633,6 +19481,10 @@ initial([1, 2, 3]); // [1,2]const initial = arr => arr.slice(0, -1);
 initial([1, 2, 3]); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-53-insertAfter |  This snippet can be used to insert an HTML string after the end of a particular element |
@@ -14643,6 +19495,10 @@ const insertAfter = (el, htmlString) => el.insertAdjacentHTML('afterend', htmlSt
 insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">...</div> <p>after</p>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-54-insertBefore |  This snippet can be used to insert an HTML string before a particular element |
@@ -14653,6 +19509,10 @@ const insertBefore = (el, htmlString) => el.insertAdjacentHTML('beforebegin', ht
 insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p> <div id="myId">...</div>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-55-intersection |  This snippet can be used to get an array with elements that are included in two other arrays |
@@ -14666,6 +19526,10 @@ const intersection = (a, b) => {
 intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-56-intersectionBy |  This snippet can be used to return a list of elements that exist in both arrays, after a particular function has been executed to each element of both arrays |
@@ -14679,6 +19543,10 @@ const intersectionBy = (a, b, fn) => {
 intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-57-intersectionWith |  This snippet can be used to return a list of elements that exist in both arrays by using a comparator function |
@@ -14689,6 +19557,10 @@ const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, 
 intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)); // [1.5, 3, 0]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-58-is |  This snippet can be used to check if a value is of a particular type |
@@ -14711,6 +19583,10 @@ is(Boolean, true); // true
 is(Boolean, new Boolean(true)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-59-isAfterDate |  This snippet can be used to check whether a date is after another date |
@@ -14721,6 +19597,10 @@ const isAfterDate = (dateA, dateB) => dateA > dateB;
 isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-60-isAnagram |  This snippet can be used to check whether a particular string is an anagram with another string |
@@ -14740,6 +19620,10 @@ const isAnagram = (str1, str2) => {
 isAnagram('iceman', 'cinema'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-61-isArrayLike |  This snippet can be used to check if a provided argument is iterable like an array |
@@ -14752,6 +19636,10 @@ isArrayLike('abc'); // true
 isArrayLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-62-isBeforeDate |  This snippet can be used to check whether a date is before another date |
@@ -14762,6 +19650,10 @@ const isBeforeDate = (dateA, dateB) => dateA < dateB;
 isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-63-isBoolean |  This snippet can be used to check whether an argument is a boolean |
@@ -14773,6 +19665,10 @@ isBoolean(null); // false
 isBoolean(false); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-64-isBrowser |  This snippet can be used to determine whether the current runtime environment is a browser. This is helpful for avoiding errors when running front-end modules on the server (Node) |
@@ -14784,6 +19680,10 @@ isBrowser(); // true (browser)
 isBrowser(); // false (Node)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-65-isBrowserTabFocused |  This snippet can be used to determine whether the browser tab is focused |
@@ -14794,6 +19694,10 @@ const isBrowserTabFocused = () => !document.hidden;
 isBrowserTabFocused(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-66-isLowerCase |  This snippet can be used to determine whether a string is lower case |
@@ -14806,6 +19710,10 @@ isLowerCase('a3@$'); // true
 isLowerCase('Ab4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-67-isNil |  This snippet can be used to check whether a value is  or  |
@@ -14817,6 +19725,10 @@ isNil(null); // true
 isNil(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-68-isNull |  This snippet can be used to check whether a value is  |
@@ -14827,6 +19739,10 @@ const isNull = val => val === null;
 isNull(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-69-isNumber |  This snippet can be used to check whether a provided value is a number |
@@ -14838,6 +19754,10 @@ isNumber('1'); // false
 isNumber(1); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-70-isObject |  This snippet can be used to check whether a provided value is an object. It uses the Object constructor to create an object wrapper for the given value |
@@ -14853,6 +19773,10 @@ isObject({}); // true
 isObject(true); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-71-isObjectLike |  This snippet can be used to check if a value is not and that its  is “object” |
@@ -14866,6 +19790,10 @@ isObjectLike(x => x); // false
 isObjectLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-72-isPlainObject |  This snippet checks whether a value is an object created by the Object constructor |
@@ -14877,6 +19805,10 @@ isPlainObject({ a: 1 }); // true
 isPlainObject(new Map()); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-73-isPromiseLike |  This snippet checks whether an object looks like a  |
@@ -14896,6 +19828,10 @@ isPromiseLike(null); // false
 isPromiseLike({}); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-74-isSameDate |  This snippet can be used to check whether two dates are equal |
@@ -14906,6 +19842,10 @@ const isSameDate = (dateA, dateB) => dateA.toISOString() === dateB.toISOString()
 isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-75-isString |  This snippet can be used to check whether an argument is a string |
@@ -14916,6 +19856,10 @@ const isString = val => typeof val === 'string';
 isString('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-76-isSymbol |  This snippet can be used to check whether an argument is a symbol |
@@ -14926,6 +19870,10 @@ const isSymbol = val => typeof val === 'symbol';
 isSymbol(Symbol('x')); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-77-isUndefined |  This snippet can be used to check whether a value is undefined |
@@ -14936,6 +19884,10 @@ const isUndefined = val => val === undefined;
 isUndefined(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-78-isUpperCase |  This snippet can be used to check whether a string is upper case |
@@ -14948,6 +19900,10 @@ isLowerCase('A3@$'); // true
 isLowerCase('aB4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-79-isValidJSON |  This snippet can be used to check whether a string is a valid JSON |
@@ -14967,6 +19923,10 @@ isValidJSON('{"name":"Adam",age:"20"}'); // false
 isValidJSON(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-80-last |  This snippet returns the last element of an array |
@@ -14977,6 +19937,10 @@ const last = arr => arr[arr.length - 1];
 last([1, 2, 3]); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-81-matches |  This snippet compares two objects to determine if the first one contains the same property values as the second one |
@@ -14989,6 +19953,10 @@ matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true }); 
 matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-82-maxDate |  This snippet can be used to get the latest date |
@@ -15005,6 +19973,10 @@ const array = [
 maxDate(array); // 2018-03-11T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-83-maxN |  This snippet returns the  largest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in descending order) |
@@ -15016,6 +19988,10 @@ maxN([1, 2, 3]); // [3]
 maxN([1, 2, 3], 2); // [3,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-84-minDate |  This snippet can be used to get the earliest date |
@@ -15032,6 +20008,10 @@ const array = [
 minDate(array); // 2016-01-08T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-85-minN |  This snippet returns the  smallest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in ascending order) |
@@ -15043,6 +20023,10 @@ minN([1, 2, 3]); // [1]
 minN([1, 2, 3], 2); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-86-negate |  This snippet can be used to apply the not operator () to a predicate function with its arguments |
@@ -15053,6 +20037,10 @@ const negate = func => (...args) => !func(...args);
 [1, 2, 3, 4, 5, 6].filter(negate(n => n % 2 === 0)); // [ 1, 3, 5 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-87-nodeListToArray |  This snippet can be used to convert a  to an array |
@@ -15063,6 +20051,10 @@ const nodeListToArray = nodeList => [...nodeList];
 nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-88-pad |  This snippet can be used to  a string on both sides with a specified character if it is shorter than the specified length |
@@ -15076,6 +20068,10 @@ pad(String(42), 6, '0'); // '004200'
 pad('foobar', 3); // 'foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-89-radsToDegrees |  This snippet can be used to convert an angle from radians to degrees |
@@ -15086,6 +20082,10 @@ const radsToDegrees = rad => (rad * 180.0) / Math.PI;
 radsToDegrees(Math.PI / 2); // 90
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-90-randomHexColorCode |  This snippet can be used to generate a random hexadecimal color code |
@@ -15099,6 +20099,10 @@ const randomHexColorCode = () => {
 randomHexColorCode(); // "#e34155"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-91-randomIntArrayInRange |  This snippet can be used to generate an array with  random integers in a specified range |
@@ -15110,6 +20114,10 @@ const randomIntArrayInRange = (min, max, n = 1) =>
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-92-randomIntegerInRange |  This snippet can be used to generate a random integer in a specified range |
@@ -15120,6 +20128,10 @@ const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min
 randomIntegerInRange(0, 5); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-93-randomNumberInRange |  This snippet can be used to return a random number in a specified range |
@@ -15130,6 +20142,10 @@ const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;
 randomNumberInRange(2, 10); // 6.0211363285087005
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-94-readFileLines |  This snippet can be used to read a file by getting an array of lines from a file |
@@ -15146,6 +20162,10 @@ let arr = readFileLines('test.txt');
 console.log(arr); // ['line1', 'line2', 'line3']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-95-redirect |  This snippet can be used to do a redirect to a specified URL |
@@ -15157,6 +20177,10 @@ const redirect = (url, asLink = true) =>
 redirect('https://google.com');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-96-reverse |  This snippet can be used to reverse a string |
@@ -15167,6 +20191,10 @@ const reverseString = str => [...str].reverse().join('');
 reverseString('foobar'); // 'raboof'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-97-round |  This snippet can be used to round a number to a specified number of digits |
@@ -15177,6 +20205,10 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.005, 2); // 1.01
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-98-runPromisesInSeries |  This snippet can be used to run an array of promises in series |
@@ -15189,6 +20221,10 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 // Executes each promise sequentially, taking a total of 3 seconds to complete
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-99-sample |  This snippet can be used to get a random number from an array |
@@ -15199,6 +20235,10 @@ const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 sample([3, 7, 9, 11]); // 9
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-100-sampleSize |  This snippet can be used to get random elements from unique positions from an array up to the size of the array. Elements in the array are shuffled using the  |
@@ -15217,6 +20257,10 @@ sampleSize([1, 2, 3], 2); // [3,1]
 sampleSize([1, 2, 3], 4); // [2,3,1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-101-scrollToTop |  This snippet can be used to do a smooth scroll to the top of the current page |
@@ -15233,6 +20277,10 @@ const scrollToTop = () => {
 scrollToTop();
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-102-serializeCookie |  This snippet can be used to serialize a cookie name-value pair into a Set-Cookie header string |
@@ -15243,6 +20291,10 @@ const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIC
 serializeCookie('foo', 'bar'); // 'foo=bar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-103-setStyle |  This snippet can be used to set the value of a CSS rule for a particular element |
@@ -15254,6 +20306,10 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 // The first <p> element on the page will have a font-size of 20px
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-104-shallowClone |  This snippet can be used to create a shallow clone of an object |
@@ -15265,6 +20321,10 @@ const a = { x: true, y: 1 };
 const b = shallowClone(a); // a !== b
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-105-show |  This snippet can be used to show all the elements specified |
@@ -15275,6 +20335,10 @@ const show = (...el) => [...el].forEach(e => (e.style.display = ''));
 show(...document.querySelectorAll('img')); // Shows all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-106-shuffle |  This snippet can be used to order the elements of an array randomly using the  |
@@ -15293,6 +20357,10 @@ const foo = [1, 2, 3];
 shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-107-similarity |  This snippet can be used to return an array of elements that appear in two arrays |
@@ -15303,6 +20371,10 @@ const similarity = (arr, values) => arr.filter(v => values.includes(v))
 similarity([1, 2, 3], [1, 2, 4]); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-108-sleep |  This snippet can be used to delay the execution of an asynchronous function by putting it into sleep |
@@ -15317,6 +20389,10 @@ async function sleepyWork() {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-130-smoothScroll |  This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
@@ -15331,6 +20407,10 @@ smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-110-sortCharactersInString |  This snippet can be used to alphabetically sort the characters in a string |
@@ -15341,6 +20421,10 @@ const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)
 sortCharactersInString('cabbage'); // 'aabbceg'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-111-splitLines |  This snippet can be used to split a multi-line string into an array of lines |
@@ -15351,6 +20435,10 @@ const splitLines = str => str.split(/\r?\n/);
 splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline', 'string.' , '']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-112-stripHTMLTags |  This snippet can be used to remove HTML/XML tags from a string |
@@ -15361,6 +20449,10 @@ const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
 stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-113-sum |  This snippet can be used to find the sum of two or more numbers or arrays |
@@ -15372,6 +20464,10 @@ sum(1, 2, 3, 4); // 10
 sum(...[1, 2, 3, 4]); // 10
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-114-tail |  This snippet can be used to get an array with all the elements of an array except for the first one. If the array has only one element, then that an array with that element will be returned instead |
@@ -15383,6 +20479,10 @@ tail([1, 2, 3]); // [2,3]
 tail([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-115-take |  This snippet can be used to get an array with elements removed from the beginning |
@@ -15394,6 +20494,10 @@ take([1, 2, 3], 5); // [1, 2, 3]
 take([1, 2, 3], 0); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-116-takeRight |  This snippet can be used to get an array with elements removed from the end |
@@ -15405,6 +20509,10 @@ takeRight([1, 2, 3], 2); // [ 2, 3 ]
 takeRight([1, 2, 3]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-117-timeTaken |  This snippet can be used to find out the time it takes to execute a function |
@@ -15420,6 +20528,10 @@ const timeTaken = callback => {
 timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-118-times |  This snippet can be used to iterate over a callback times |
@@ -15435,6 +20547,10 @@ times(5, i => (output += i));
 console.log(output); // 01234
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-119-toCurrency |  This snippet can be used to format a number like a currency |
@@ -15450,6 +20566,10 @@ toCurrency(322342436423.2435, 'JPY'); // ¥322,342,436,423 | currency: Japanese 
 toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Japanese Yen | currencyLangFormat: Finnish
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-120-toDecimalMark |  This snippet uses the function to convert float-point arithmetic to the decimal mark form by using a number to make a comma-separated string |
@@ -15460,6 +20580,10 @@ const toDecimalMark = num => num.toLocaleString('en-US');
 toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-121-toggleClass |  This snippet can be used to toggle a class for an element |
@@ -15470,6 +20594,10 @@ const toggleClass = (el, className) => el.classList.toggle(className);
 toggleClass(document.querySelector('p.special'), 'special'); // The paragraph will not have the 'special' class anymore
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-122-tomorrow |  This snippet can be used to get a string representation of tomorrow’s date |
@@ -15484,6 +20612,10 @@ const tomorrow = () => {
 tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-123-unfold |  This snippet can be used to build an array using an iterator function and an initial seed value |
@@ -15500,6 +20632,10 @@ var f = n => (n > 50 ? false : [-n, n + 10]);
 unfold(f, 10); // [-10, -20, -30, -40, -50]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-124-union |  This snippet can be used to find the  of two arrays, resulting in an array that has elements that come from both arrays but that do not repeat |
@@ -15510,6 +20646,10 @@ const union = (a, b) => Array.from(new Set([...a, ...b]));
 union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-125-uniqueElements |  This snippet uses ES6 andtheoperator to get every element only once |
@@ -15520,6 +20660,10 @@ const uniqueElements = arr => [...new Set(arr)];
 uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-126-validateNumber |  This snippet can be used to check whether a value is a number |
@@ -15530,6 +20674,10 @@ const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) ==
 validateNumber('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-127-words |  This snippet converts a string into an array of words |
@@ -15541,6 +20689,10 @@ words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-128-getES6moduleSyntaxBySource |  Get all ES6 modules syntax from the source directory |
@@ -15562,6 +20714,10 @@ export function getES6moduleSyntaxBySource(source, extension) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-129-concatJSONsourcesToOneFile |  Concat & export all external JSON sources to one JSON file |
@@ -15586,6 +20742,10 @@ export function concatJSONsourcesToOneFile(sourcesList, distPath) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-131-validateEmail |  Email validator with regex |
@@ -15614,6 +20774,10 @@ all([4, 2, 3], x => x > 1); // true
 all([1, 2, 3]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-2-allEqual |  This snippet checks whether all elements of the array are equal |
@@ -15625,6 +20789,10 @@ allEqual([1, 2, 3, 4, 5, 6]); // false
 allEqual([1, 1, 1, 1]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-3-approximatelyEqual |  This snippet checks whether two numbers are approximately equal to each other, with a small difference |
@@ -15635,6 +20803,10 @@ const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsi
 approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-4-arrayToCSV |  This snippet converts the elements to strings with comma-separated values |
@@ -15647,6 +20819,10 @@ arrayToCSV([['a', 'b'], ['c', 'd']]); // '"a","b"\n"c","d"'
 arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-5-arrayToHtmlList |  This snippet converts the elements of an array into  tags and appends them to the list of the given ID |
@@ -15661,6 +20837,10 @@ const arrayToHtmlList = (arr, listID) =>
 arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-6-attempt |  This snippet executes a function, returning either the result or the caught error object |
@@ -15679,6 +20859,10 @@ var elements = attempt(function(selector) {
 if (elements instanceof Error) elements = []; // elements = []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-7-average |  This snippet returns the average of two or more numerical values |
@@ -15689,6 +20873,10 @@ average(...[1, 2, 3]); // 2
 average(1, 2, 3); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-8-averageBy |  This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function |
@@ -15702,6 +20890,10 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o => o.n); // 5
 averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-9-bifurcate |  This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise |
@@ -15713,6 +20905,10 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-10-bifurcateBy |  This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group |
@@ -15725,6 +20921,10 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-11-bottomVisible |  This snippet checks whether the bottom of a page is visible |
@@ -15737,6 +20937,10 @@ const bottomVisible = () =>
 bottomVisible(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-12-byteSize |  This snippet returns the length of a string in bytes |
@@ -15748,6 +20952,10 @@ byteSize('😀'); // 4
 byteSize('Hello World'); // 11
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-13-capitalize |  This snippet capitalizes the first letter of a string |
@@ -15760,6 +20968,10 @@ capitalize('fooBar'); // 'FooBar'
 capitalize('fooBar', true); // 'Foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-14-capitalizeEveryWord |  This snippet capitalizes the first letter of every word in a given string |
@@ -15770,6 +20982,10 @@ const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperC
 capitalizeEveryWord('hello world!'); // 'Hello World!'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-15-castArray |  This snippet converts a non-array value into array |
@@ -15781,6 +20997,10 @@ castArray('foo'); // ['foo']
 castArray([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-16-compact |  This snippet removes false values from an array |
@@ -15792,6 +21012,10 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 // [ 1, 2, 3, 'a', 's', 34 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-17-countOccurrences |  This snippet counts the occurrences of a value in an array |
@@ -15801,6 +21025,10 @@ const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 :
 countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-18-createDirIfNotExists |  This snippet uses  to check whether a directory exists and then  to create it if it doesn’t |
@@ -15812,6 +21040,10 @@ createDirIfNotExists('test');
 // creates the directory 'test', if it doesn't exist
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-19-currentURL |  This snippet returns the current URL |
@@ -15822,6 +21054,10 @@ const currentURL = () => window.location.href;
 currentURL(); // 'https://medium.com/@fatosmorina'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-20-dayOfYear |  This snippet gets the day of the year from a object |
@@ -15833,6 +21069,10 @@ const dayOfYear = date =>
 dayOfYear(new Date()); // 272
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-21-decapitalize |  This snippet turns the first letter of a string into lowercase |
@@ -15845,6 +21085,10 @@ decapitalize('FooBar'); // 'fooBar'
 decapitalize('FooBar'); // 'fooBar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-22-deepFlatten |  This snippet flattens an array recursively |
@@ -15855,6 +21099,10 @@ const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFla
 deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-23-default |  This snippet assigns default values for all properties in an object that are  |
@@ -15865,6 +21113,10 @@ const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj
 defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-24-defer |  This snippet delays the execution of a function until the current call stack is cleared |
@@ -15875,6 +21127,10 @@ const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
 defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-25-degreesToRads |  This snippet can be used to convert a value from degrees to radians |
@@ -15885,6 +21141,10 @@ const degreesToRads = deg => (deg * Math.PI) / 180.0;
 degreesToRads(90.0); // ~1.5708
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-26-difference |  This snippet finds the difference between two arrays |
@@ -15898,6 +21158,10 @@ const difference = (a, b) => {
 difference([1, 2, 3], [1, 2, 4]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-27-differenceBy |  This snippet returns the difference between two arrays, after applying a given function to each element of both lists |
@@ -15912,6 +21176,10 @@ differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [1.2]
 differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-28-differenceWith |  This snippet removes the values for which the comparator function returns  |
@@ -15923,6 +21191,10 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 // [1, 1.2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-29-digitize |  This snippet gets a number as input and returns an array of its digits |
@@ -15933,6 +21205,10 @@ const digitize = n => [...`${n}`].map(i => parseInt(i));
 digitize(431); // [4, 3, 1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-30-distance |  This snippet returns the distance between two points by calculating the Euclidean distance |
@@ -15943,6 +21219,10 @@ const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);
 distance(1, 1, 2, 3); // 2.23606797749979
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-31-DropLeft |  This snippet returns a new array with  elements removed from the left |
@@ -15955,6 +21235,10 @@ dropLeft([1, 2, 3], 2); // [3]
 dropLeft([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-32-dropRight |  This snippet returns a new array with  elements removed from the right |
@@ -15967,6 +21251,10 @@ dropRight([1, 2, 3], 2); // [1]
 dropRight([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-33-dropRightWhile |  This snippet removes elements from the right side of an array until the passed function returns  |
@@ -15980,6 +21268,10 @@ const dropRightWhile = (arr, func) => {
 dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-34-dropWhile |  This snippet removes elements from an array until the passed function returns  |
@@ -15993,6 +21285,10 @@ const dropWhile = (arr, func) => {
 dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-35-elementContains |  This snippet checks whether the parent element contains the child |
@@ -16004,6 +21300,10 @@ elementContains(document.querySelector('head'), document.querySelector('title'))
 elementContains(document.querySelector('body'), document.querySelector('body')); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-36-Filter Duplicate Elements |  This snippet removes duplicate values in an array |
@@ -16014,6 +21314,10 @@ const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexO
 filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-37-findKey |  This snippet returns the first key that satisfies a given function |
@@ -16031,6 +21335,10 @@ findKey(
 ); // 'barney'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-38-findLast |  This snippet returns the last element for which a given function returns a truthy value |
@@ -16041,6 +21349,10 @@ const findLast = (arr, fn) => arr.filter(fn).pop();
 findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-39-flatten |  This snippet flattens an array up to a specified depth using recursion |
@@ -16053,6 +21365,10 @@ flatten([1, [2], 3, 4]); // [1, 2, 3, 4]
 flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-40-forEachRight |  This snippet executes a function for each element of an array starting from the array’s last element |
@@ -16067,6 +21383,10 @@ const forEachRight = (arr, callback) =>
 forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-41-forOwn |  This snippet iterates on each property of an object and iterates a callback for each one respectively |
@@ -16076,6 +21396,10 @@ const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, ob
 forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-42-functionName |  This snippet prints the name of a function into the console |
@@ -16086,6 +21410,10 @@ const functionName = fn => (console.debug(fn.name), fn);
 functionName(Math.max); // max (logged in debug channel of console)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-43-Get Time From Date |  This snippet can be used to get the time from a object as a string |
@@ -16096,6 +21424,10 @@ const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);
 getColonTimeFromDate(new Date()); // "08:38:00"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-44-Get Days Between Dates |  This snippet can be used to find the difference in days between two dates |
@@ -16107,6 +21439,10 @@ const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
 getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-45-getStyle |  This snippet can be used to get the value of a CSS rule for a particular element |
@@ -16117,6 +21453,10 @@ const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];
 getStyle(document.querySelector('p'), 'font-size'); // '16px'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-46-getType |  This snippet can be used to get the type of a value |
@@ -16128,6 +21468,10 @@ const getType = v =>
 getType(new Set([1, 2, 3])); // 'set'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-47-hasClass |  This snippet checks whether an element has a particular class |
@@ -16137,6 +21481,10 @@ const hasClass = (el, className) => el.classList.contains(className);
 hasClass(document.querySelector('p.special'), 'special'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-48-head |  This snippet returns the  of a list |
@@ -16147,6 +21495,10 @@ const head = arr => arr[0];
 head([1, 2, 3]); // 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-49-hide |  This snippet can be used to hide all elements specified |
@@ -16157,6 +21509,10 @@ const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
 hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-50-httpsRedirect |  This snippet can be used to redirect from HTTP to HTTPS in a particular domain |
@@ -16169,6 +21525,10 @@ const httpsRedirect = () => {
 httpsRedirect(); // If you are on http://mydomain.com, you are redirected to https://mydomain.com
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-51-indexOfAll |  This snippet can be used to get all indexes of a value in an array, which returns an empty array, in case this value is not included in it |
@@ -16180,6 +21540,10 @@ indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
 indexOfAll([1, 2, 3], 4); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-52-initial |  This snippet returns all elements of an array except the last one |
@@ -16191,6 +21555,10 @@ initial([1, 2, 3]); // [1,2]const initial = arr => arr.slice(0, -1);
 initial([1, 2, 3]); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-53-insertAfter |  This snippet can be used to insert an HTML string after the end of a particular element |
@@ -16201,6 +21569,10 @@ const insertAfter = (el, htmlString) => el.insertAdjacentHTML('afterend', htmlSt
 insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">...</div> <p>after</p>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-54-insertBefore |  This snippet can be used to insert an HTML string before a particular element |
@@ -16211,6 +21583,10 @@ const insertBefore = (el, htmlString) => el.insertAdjacentHTML('beforebegin', ht
 insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p> <div id="myId">...</div>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-55-intersection |  This snippet can be used to get an array with elements that are included in two other arrays |
@@ -16224,6 +21600,10 @@ const intersection = (a, b) => {
 intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-56-intersectionBy |  This snippet can be used to return a list of elements that exist in both arrays, after a particular function has been executed to each element of both arrays |
@@ -16237,6 +21617,10 @@ const intersectionBy = (a, b, fn) => {
 intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-57-intersectionWith |  This snippet can be used to return a list of elements that exist in both arrays by using a comparator function |
@@ -16247,6 +21631,10 @@ const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, 
 intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)); // [1.5, 3, 0]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-58-is |  This snippet can be used to check if a value is of a particular type |
@@ -16269,6 +21657,10 @@ is(Boolean, true); // true
 is(Boolean, new Boolean(true)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-59-isAfterDate |  This snippet can be used to check whether a date is after another date |
@@ -16279,6 +21671,10 @@ const isAfterDate = (dateA, dateB) => dateA > dateB;
 isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-60-isAnagram |  This snippet can be used to check whether a particular string is an anagram with another string |
@@ -16298,6 +21694,10 @@ const isAnagram = (str1, str2) => {
 isAnagram('iceman', 'cinema'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-61-isArrayLike |  This snippet can be used to check if a provided argument is iterable like an array |
@@ -16310,6 +21710,10 @@ isArrayLike('abc'); // true
 isArrayLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-62-isBeforeDate |  This snippet can be used to check whether a date is before another date |
@@ -16320,6 +21724,10 @@ const isBeforeDate = (dateA, dateB) => dateA < dateB;
 isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-63-isBoolean |  This snippet can be used to check whether an argument is a boolean |
@@ -16331,6 +21739,10 @@ isBoolean(null); // false
 isBoolean(false); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-64-isBrowser |  This snippet can be used to determine whether the current runtime environment is a browser. This is helpful for avoiding errors when running front-end modules on the server (Node) |
@@ -16342,6 +21754,10 @@ isBrowser(); // true (browser)
 isBrowser(); // false (Node)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-65-isBrowserTabFocused |  This snippet can be used to determine whether the browser tab is focused |
@@ -16352,6 +21768,10 @@ const isBrowserTabFocused = () => !document.hidden;
 isBrowserTabFocused(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-66-isLowerCase |  This snippet can be used to determine whether a string is lower case |
@@ -16364,6 +21784,10 @@ isLowerCase('a3@$'); // true
 isLowerCase('Ab4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-67-isNil |  This snippet can be used to check whether a value is  or  |
@@ -16375,6 +21799,10 @@ isNil(null); // true
 isNil(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-68-isNull |  This snippet can be used to check whether a value is  |
@@ -16385,6 +21813,10 @@ const isNull = val => val === null;
 isNull(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-69-isNumber |  This snippet can be used to check whether a provided value is a number |
@@ -16396,6 +21828,10 @@ isNumber('1'); // false
 isNumber(1); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-70-isObject |  This snippet can be used to check whether a provided value is an object. It uses the Object constructor to create an object wrapper for the given value |
@@ -16411,6 +21847,10 @@ isObject({}); // true
 isObject(true); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-71-isObjectLike |  This snippet can be used to check if a value is not and that its  is “object” |
@@ -16424,6 +21864,10 @@ isObjectLike(x => x); // false
 isObjectLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-72-isPlainObject |  This snippet checks whether a value is an object created by the Object constructor |
@@ -16435,6 +21879,10 @@ isPlainObject({ a: 1 }); // true
 isPlainObject(new Map()); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-73-isPromiseLike |  This snippet checks whether an object looks like a  |
@@ -16454,6 +21902,10 @@ isPromiseLike(null); // false
 isPromiseLike({}); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-74-isSameDate |  This snippet can be used to check whether two dates are equal |
@@ -16464,6 +21916,10 @@ const isSameDate = (dateA, dateB) => dateA.toISOString() === dateB.toISOString()
 isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-75-isString |  This snippet can be used to check whether an argument is a string |
@@ -16474,6 +21930,10 @@ const isString = val => typeof val === 'string';
 isString('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-76-isSymbol |  This snippet can be used to check whether an argument is a symbol |
@@ -16484,6 +21944,10 @@ const isSymbol = val => typeof val === 'symbol';
 isSymbol(Symbol('x')); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-77-isUndefined |  This snippet can be used to check whether a value is undefined |
@@ -16494,6 +21958,10 @@ const isUndefined = val => val === undefined;
 isUndefined(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-78-isUpperCase |  This snippet can be used to check whether a string is upper case |
@@ -16506,6 +21974,10 @@ isLowerCase('A3@$'); // true
 isLowerCase('aB4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-79-isValidJSON |  This snippet can be used to check whether a string is a valid JSON |
@@ -16525,6 +21997,10 @@ isValidJSON('{"name":"Adam",age:"20"}'); // false
 isValidJSON(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-80-last |  This snippet returns the last element of an array |
@@ -16535,6 +22011,10 @@ const last = arr => arr[arr.length - 1];
 last([1, 2, 3]); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-81-matches |  This snippet compares two objects to determine if the first one contains the same property values as the second one |
@@ -16547,6 +22027,10 @@ matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true }); 
 matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-82-maxDate |  This snippet can be used to get the latest date |
@@ -16563,6 +22047,10 @@ const array = [
 maxDate(array); // 2018-03-11T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-83-maxN |  This snippet returns the  largest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in descending order) |
@@ -16574,6 +22062,10 @@ maxN([1, 2, 3]); // [3]
 maxN([1, 2, 3], 2); // [3,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-84-minDate |  This snippet can be used to get the earliest date |
@@ -16590,6 +22082,10 @@ const array = [
 minDate(array); // 2016-01-08T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-85-minN |  This snippet returns the  smallest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in ascending order) |
@@ -16601,6 +22097,10 @@ minN([1, 2, 3]); // [1]
 minN([1, 2, 3], 2); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-86-negate |  This snippet can be used to apply the not operator () to a predicate function with its arguments |
@@ -16611,6 +22111,10 @@ const negate = func => (...args) => !func(...args);
 [1, 2, 3, 4, 5, 6].filter(negate(n => n % 2 === 0)); // [ 1, 3, 5 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-87-nodeListToArray |  This snippet can be used to convert a  to an array |
@@ -16621,6 +22125,10 @@ const nodeListToArray = nodeList => [...nodeList];
 nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-88-pad |  This snippet can be used to  a string on both sides with a specified character if it is shorter than the specified length |
@@ -16634,6 +22142,10 @@ pad(String(42), 6, '0'); // '004200'
 pad('foobar', 3); // 'foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-89-radsToDegrees |  This snippet can be used to convert an angle from radians to degrees |
@@ -16644,6 +22156,10 @@ const radsToDegrees = rad => (rad * 180.0) / Math.PI;
 radsToDegrees(Math.PI / 2); // 90
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-90-randomHexColorCode |  This snippet can be used to generate a random hexadecimal color code |
@@ -16657,6 +22173,10 @@ const randomHexColorCode = () => {
 randomHexColorCode(); // "#e34155"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-91-randomIntArrayInRange |  This snippet can be used to generate an array with  random integers in a specified range |
@@ -16668,6 +22188,10 @@ const randomIntArrayInRange = (min, max, n = 1) =>
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-92-randomIntegerInRange |  This snippet can be used to generate a random integer in a specified range |
@@ -16678,6 +22202,10 @@ const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min
 randomIntegerInRange(0, 5); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-93-randomNumberInRange |  This snippet can be used to return a random number in a specified range |
@@ -16688,6 +22216,10 @@ const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;
 randomNumberInRange(2, 10); // 6.0211363285087005
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-94-readFileLines |  This snippet can be used to read a file by getting an array of lines from a file |
@@ -16704,6 +22236,10 @@ let arr = readFileLines('test.txt');
 console.log(arr); // ['line1', 'line2', 'line3']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-95-redirect |  This snippet can be used to do a redirect to a specified URL |
@@ -16715,6 +22251,10 @@ const redirect = (url, asLink = true) =>
 redirect('https://google.com');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-96-reverse |  This snippet can be used to reverse a string |
@@ -16725,6 +22265,10 @@ const reverseString = str => [...str].reverse().join('');
 reverseString('foobar'); // 'raboof'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-97-round |  This snippet can be used to round a number to a specified number of digits |
@@ -16735,6 +22279,10 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.005, 2); // 1.01
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-98-runPromisesInSeries |  This snippet can be used to run an array of promises in series |
@@ -16747,6 +22295,10 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 // Executes each promise sequentially, taking a total of 3 seconds to complete
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-99-sample |  This snippet can be used to get a random number from an array |
@@ -16757,6 +22309,10 @@ const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 sample([3, 7, 9, 11]); // 9
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-100-sampleSize |  This snippet can be used to get random elements from unique positions from an array up to the size of the array. Elements in the array are shuffled using the  |
@@ -16775,6 +22331,10 @@ sampleSize([1, 2, 3], 2); // [3,1]
 sampleSize([1, 2, 3], 4); // [2,3,1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-101-scrollToTop |  This snippet can be used to do a smooth scroll to the top of the current page |
@@ -16791,6 +22351,10 @@ const scrollToTop = () => {
 scrollToTop();
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-102-serializeCookie |  This snippet can be used to serialize a cookie name-value pair into a Set-Cookie header string |
@@ -16801,6 +22365,10 @@ const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIC
 serializeCookie('foo', 'bar'); // 'foo=bar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-103-setStyle |  This snippet can be used to set the value of a CSS rule for a particular element |
@@ -16812,6 +22380,10 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 // The first <p> element on the page will have a font-size of 20px
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-104-shallowClone |  This snippet can be used to create a shallow clone of an object |
@@ -16823,6 +22395,10 @@ const a = { x: true, y: 1 };
 const b = shallowClone(a); // a !== b
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-105-show |  This snippet can be used to show all the elements specified |
@@ -16833,6 +22409,10 @@ const show = (...el) => [...el].forEach(e => (e.style.display = ''));
 show(...document.querySelectorAll('img')); // Shows all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-106-shuffle |  This snippet can be used to order the elements of an array randomly using the  |
@@ -16851,6 +22431,10 @@ const foo = [1, 2, 3];
 shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-107-similarity |  This snippet can be used to return an array of elements that appear in two arrays |
@@ -16861,6 +22445,10 @@ const similarity = (arr, values) => arr.filter(v => values.includes(v))
 similarity([1, 2, 3], [1, 2, 4]); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-108-sleep |  This snippet can be used to delay the execution of an asynchronous function by putting it into sleep |
@@ -16875,6 +22463,10 @@ async function sleepyWork() {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-130-smoothScroll |  This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
@@ -16889,6 +22481,10 @@ smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-110-sortCharactersInString |  This snippet can be used to alphabetically sort the characters in a string |
@@ -16899,6 +22495,10 @@ const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)
 sortCharactersInString('cabbage'); // 'aabbceg'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-111-splitLines |  This snippet can be used to split a multi-line string into an array of lines |
@@ -16909,6 +22509,10 @@ const splitLines = str => str.split(/\r?\n/);
 splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline', 'string.' , '']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-112-stripHTMLTags |  This snippet can be used to remove HTML/XML tags from a string |
@@ -16919,6 +22523,10 @@ const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
 stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-113-sum |  This snippet can be used to find the sum of two or more numbers or arrays |
@@ -16930,6 +22538,10 @@ sum(1, 2, 3, 4); // 10
 sum(...[1, 2, 3, 4]); // 10
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-114-tail |  This snippet can be used to get an array with all the elements of an array except for the first one. If the array has only one element, then that an array with that element will be returned instead |
@@ -16941,6 +22553,10 @@ tail([1, 2, 3]); // [2,3]
 tail([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-115-take |  This snippet can be used to get an array with elements removed from the beginning |
@@ -16952,6 +22568,10 @@ take([1, 2, 3], 5); // [1, 2, 3]
 take([1, 2, 3], 0); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-116-takeRight |  This snippet can be used to get an array with elements removed from the end |
@@ -16963,6 +22583,10 @@ takeRight([1, 2, 3], 2); // [ 2, 3 ]
 takeRight([1, 2, 3]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-117-timeTaken |  This snippet can be used to find out the time it takes to execute a function |
@@ -16978,6 +22602,10 @@ const timeTaken = callback => {
 timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-118-times |  This snippet can be used to iterate over a callback times |
@@ -16993,6 +22621,10 @@ times(5, i => (output += i));
 console.log(output); // 01234
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-119-toCurrency |  This snippet can be used to format a number like a currency |
@@ -17008,6 +22640,10 @@ toCurrency(322342436423.2435, 'JPY'); // ¥322,342,436,423 | currency: Japanese 
 toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Japanese Yen | currencyLangFormat: Finnish
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-120-toDecimalMark |  This snippet uses the function to convert float-point arithmetic to the decimal mark form by using a number to make a comma-separated string |
@@ -17018,6 +22654,10 @@ const toDecimalMark = num => num.toLocaleString('en-US');
 toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-121-toggleClass |  This snippet can be used to toggle a class for an element |
@@ -17028,6 +22668,10 @@ const toggleClass = (el, className) => el.classList.toggle(className);
 toggleClass(document.querySelector('p.special'), 'special'); // The paragraph will not have the 'special' class anymore
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-122-tomorrow |  This snippet can be used to get a string representation of tomorrow’s date |
@@ -17042,6 +22686,10 @@ const tomorrow = () => {
 tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-123-unfold |  This snippet can be used to build an array using an iterator function and an initial seed value |
@@ -17058,6 +22706,10 @@ var f = n => (n > 50 ? false : [-n, n + 10]);
 unfold(f, 10); // [-10, -20, -30, -40, -50]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-124-union |  This snippet can be used to find the  of two arrays, resulting in an array that has elements that come from both arrays but that do not repeat |
@@ -17068,6 +22720,10 @@ const union = (a, b) => Array.from(new Set([...a, ...b]));
 union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-125-uniqueElements |  This snippet uses ES6 andtheoperator to get every element only once |
@@ -17078,6 +22734,10 @@ const uniqueElements = arr => [...new Set(arr)];
 uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-126-validateNumber |  This snippet can be used to check whether a value is a number |
@@ -17088,6 +22748,10 @@ const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) ==
 validateNumber('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-127-words |  This snippet converts a string into an array of words |
@@ -17099,6 +22763,10 @@ words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-128-getES6moduleSyntaxBySource |  Get all ES6 modules syntax from the source directory |
@@ -17120,6 +22788,10 @@ export function getES6moduleSyntaxBySource(source, extension) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-129-concatJSONsourcesToOneFile |  Concat & export all external JSON sources to one JSON file |
@@ -17144,6 +22816,10 @@ export function concatJSONsourcesToOneFile(sourcesList, distPath) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-131-validateEmail |  Email validator with regex |
@@ -17172,6 +22848,10 @@ all([4, 2, 3], x => x > 1); // true
 all([1, 2, 3]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-2-allEqual |  This snippet checks whether all elements of the array are equal |
@@ -17183,6 +22863,10 @@ allEqual([1, 2, 3, 4, 5, 6]); // false
 allEqual([1, 1, 1, 1]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-3-approximatelyEqual |  This snippet checks whether two numbers are approximately equal to each other, with a small difference |
@@ -17193,6 +22877,10 @@ const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsi
 approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-4-arrayToCSV |  This snippet converts the elements to strings with comma-separated values |
@@ -17205,6 +22893,10 @@ arrayToCSV([['a', 'b'], ['c', 'd']]); // '"a","b"\n"c","d"'
 arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-5-arrayToHtmlList |  This snippet converts the elements of an array into  tags and appends them to the list of the given ID |
@@ -17219,6 +22911,10 @@ const arrayToHtmlList = (arr, listID) =>
 arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-6-attempt |  This snippet executes a function, returning either the result or the caught error object |
@@ -17237,6 +22933,10 @@ var elements = attempt(function(selector) {
 if (elements instanceof Error) elements = []; // elements = []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-7-average |  This snippet returns the average of two or more numerical values |
@@ -17247,6 +22947,10 @@ average(...[1, 2, 3]); // 2
 average(1, 2, 3); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-8-averageBy |  This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function |
@@ -17260,6 +22964,10 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o => o.n); // 5
 averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-9-bifurcate |  This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise |
@@ -17271,6 +22979,10 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-10-bifurcateBy |  This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group |
@@ -17283,6 +22995,10 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-11-bottomVisible |  This snippet checks whether the bottom of a page is visible |
@@ -17295,6 +23011,10 @@ const bottomVisible = () =>
 bottomVisible(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-12-byteSize |  This snippet returns the length of a string in bytes |
@@ -17306,6 +23026,10 @@ byteSize('😀'); // 4
 byteSize('Hello World'); // 11
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-13-capitalize |  This snippet capitalizes the first letter of a string |
@@ -17318,6 +23042,10 @@ capitalize('fooBar'); // 'FooBar'
 capitalize('fooBar', true); // 'Foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-14-capitalizeEveryWord |  This snippet capitalizes the first letter of every word in a given string |
@@ -17328,6 +23056,10 @@ const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperC
 capitalizeEveryWord('hello world!'); // 'Hello World!'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-15-castArray |  This snippet converts a non-array value into array |
@@ -17339,6 +23071,10 @@ castArray('foo'); // ['foo']
 castArray([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-16-compact |  This snippet removes false values from an array |
@@ -17350,6 +23086,10 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 // [ 1, 2, 3, 'a', 's', 34 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-17-countOccurrences |  This snippet counts the occurrences of a value in an array |
@@ -17359,6 +23099,10 @@ const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 :
 countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-18-createDirIfNotExists |  This snippet uses  to check whether a directory exists and then  to create it if it doesn’t |
@@ -17370,6 +23114,10 @@ createDirIfNotExists('test');
 // creates the directory 'test', if it doesn't exist
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-19-currentURL |  This snippet returns the current URL |
@@ -17380,6 +23128,10 @@ const currentURL = () => window.location.href;
 currentURL(); // 'https://medium.com/@fatosmorina'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-20-dayOfYear |  This snippet gets the day of the year from a object |
@@ -17391,6 +23143,10 @@ const dayOfYear = date =>
 dayOfYear(new Date()); // 272
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-21-decapitalize |  This snippet turns the first letter of a string into lowercase |
@@ -17403,6 +23159,10 @@ decapitalize('FooBar'); // 'fooBar'
 decapitalize('FooBar'); // 'fooBar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-22-deepFlatten |  This snippet flattens an array recursively |
@@ -17413,6 +23173,10 @@ const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFla
 deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-23-default |  This snippet assigns default values for all properties in an object that are  |
@@ -17423,6 +23187,10 @@ const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj
 defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-24-defer |  This snippet delays the execution of a function until the current call stack is cleared |
@@ -17433,6 +23201,10 @@ const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
 defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-25-degreesToRads |  This snippet can be used to convert a value from degrees to radians |
@@ -17443,6 +23215,10 @@ const degreesToRads = deg => (deg * Math.PI) / 180.0;
 degreesToRads(90.0); // ~1.5708
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-26-difference |  This snippet finds the difference between two arrays |
@@ -17456,6 +23232,10 @@ const difference = (a, b) => {
 difference([1, 2, 3], [1, 2, 4]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-27-differenceBy |  This snippet returns the difference between two arrays, after applying a given function to each element of both lists |
@@ -17470,6 +23250,10 @@ differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [1.2]
 differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-28-differenceWith |  This snippet removes the values for which the comparator function returns  |
@@ -17481,6 +23265,10 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 // [1, 1.2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-29-digitize |  This snippet gets a number as input and returns an array of its digits |
@@ -17491,6 +23279,10 @@ const digitize = n => [...`${n}`].map(i => parseInt(i));
 digitize(431); // [4, 3, 1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-30-distance |  This snippet returns the distance between two points by calculating the Euclidean distance |
@@ -17501,6 +23293,10 @@ const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);
 distance(1, 1, 2, 3); // 2.23606797749979
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-31-DropLeft |  This snippet returns a new array with  elements removed from the left |
@@ -17513,6 +23309,10 @@ dropLeft([1, 2, 3], 2); // [3]
 dropLeft([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-32-dropRight |  This snippet returns a new array with  elements removed from the right |
@@ -17525,6 +23325,10 @@ dropRight([1, 2, 3], 2); // [1]
 dropRight([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-33-dropRightWhile |  This snippet removes elements from the right side of an array until the passed function returns  |
@@ -17538,6 +23342,10 @@ const dropRightWhile = (arr, func) => {
 dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-34-dropWhile |  This snippet removes elements from an array until the passed function returns  |
@@ -17551,6 +23359,10 @@ const dropWhile = (arr, func) => {
 dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-35-elementContains |  This snippet checks whether the parent element contains the child |
@@ -17562,6 +23374,10 @@ elementContains(document.querySelector('head'), document.querySelector('title'))
 elementContains(document.querySelector('body'), document.querySelector('body')); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-36-Filter Duplicate Elements |  This snippet removes duplicate values in an array |
@@ -17572,6 +23388,10 @@ const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexO
 filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-37-findKey |  This snippet returns the first key that satisfies a given function |
@@ -17589,6 +23409,10 @@ findKey(
 ); // 'barney'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-38-findLast |  This snippet returns the last element for which a given function returns a truthy value |
@@ -17599,6 +23423,10 @@ const findLast = (arr, fn) => arr.filter(fn).pop();
 findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-39-flatten |  This snippet flattens an array up to a specified depth using recursion |
@@ -17611,6 +23439,10 @@ flatten([1, [2], 3, 4]); // [1, 2, 3, 4]
 flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-40-forEachRight |  This snippet executes a function for each element of an array starting from the array’s last element |
@@ -17625,6 +23457,10 @@ const forEachRight = (arr, callback) =>
 forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-41-forOwn |  This snippet iterates on each property of an object and iterates a callback for each one respectively |
@@ -17634,6 +23470,10 @@ const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, ob
 forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-42-functionName |  This snippet prints the name of a function into the console |
@@ -17644,6 +23484,10 @@ const functionName = fn => (console.debug(fn.name), fn);
 functionName(Math.max); // max (logged in debug channel of console)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-43-Get Time From Date |  This snippet can be used to get the time from a object as a string |
@@ -17654,6 +23498,10 @@ const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);
 getColonTimeFromDate(new Date()); // "08:38:00"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-44-Get Days Between Dates |  This snippet can be used to find the difference in days between two dates |
@@ -17665,6 +23513,10 @@ const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
 getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-45-getStyle |  This snippet can be used to get the value of a CSS rule for a particular element |
@@ -17675,6 +23527,10 @@ const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];
 getStyle(document.querySelector('p'), 'font-size'); // '16px'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-46-getType |  This snippet can be used to get the type of a value |
@@ -17686,6 +23542,10 @@ const getType = v =>
 getType(new Set([1, 2, 3])); // 'set'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-47-hasClass |  This snippet checks whether an element has a particular class |
@@ -17695,6 +23555,10 @@ const hasClass = (el, className) => el.classList.contains(className);
 hasClass(document.querySelector('p.special'), 'special'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-48-head |  This snippet returns the  of a list |
@@ -17705,6 +23569,10 @@ const head = arr => arr[0];
 head([1, 2, 3]); // 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-49-hide |  This snippet can be used to hide all elements specified |
@@ -17715,6 +23583,10 @@ const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
 hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-50-httpsRedirect |  This snippet can be used to redirect from HTTP to HTTPS in a particular domain |
@@ -17727,6 +23599,10 @@ const httpsRedirect = () => {
 httpsRedirect(); // If you are on http://mydomain.com, you are redirected to https://mydomain.com
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-51-indexOfAll |  This snippet can be used to get all indexes of a value in an array, which returns an empty array, in case this value is not included in it |
@@ -17738,6 +23614,10 @@ indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
 indexOfAll([1, 2, 3], 4); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-52-initial |  This snippet returns all elements of an array except the last one |
@@ -17749,6 +23629,10 @@ initial([1, 2, 3]); // [1,2]const initial = arr => arr.slice(0, -1);
 initial([1, 2, 3]); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-53-insertAfter |  This snippet can be used to insert an HTML string after the end of a particular element |
@@ -17759,6 +23643,10 @@ const insertAfter = (el, htmlString) => el.insertAdjacentHTML('afterend', htmlSt
 insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">...</div> <p>after</p>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-54-insertBefore |  This snippet can be used to insert an HTML string before a particular element |
@@ -17769,6 +23657,10 @@ const insertBefore = (el, htmlString) => el.insertAdjacentHTML('beforebegin', ht
 insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p> <div id="myId">...</div>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-55-intersection |  This snippet can be used to get an array with elements that are included in two other arrays |
@@ -17782,6 +23674,10 @@ const intersection = (a, b) => {
 intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-56-intersectionBy |  This snippet can be used to return a list of elements that exist in both arrays, after a particular function has been executed to each element of both arrays |
@@ -17795,6 +23691,10 @@ const intersectionBy = (a, b, fn) => {
 intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-57-intersectionWith |  This snippet can be used to return a list of elements that exist in both arrays by using a comparator function |
@@ -17805,6 +23705,10 @@ const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, 
 intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)); // [1.5, 3, 0]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-58-is |  This snippet can be used to check if a value is of a particular type |
@@ -17827,6 +23731,10 @@ is(Boolean, true); // true
 is(Boolean, new Boolean(true)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-59-isAfterDate |  This snippet can be used to check whether a date is after another date |
@@ -17837,6 +23745,10 @@ const isAfterDate = (dateA, dateB) => dateA > dateB;
 isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-60-isAnagram |  This snippet can be used to check whether a particular string is an anagram with another string |
@@ -17856,6 +23768,10 @@ const isAnagram = (str1, str2) => {
 isAnagram('iceman', 'cinema'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-61-isArrayLike |  This snippet can be used to check if a provided argument is iterable like an array |
@@ -17868,6 +23784,10 @@ isArrayLike('abc'); // true
 isArrayLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-62-isBeforeDate |  This snippet can be used to check whether a date is before another date |
@@ -17878,6 +23798,10 @@ const isBeforeDate = (dateA, dateB) => dateA < dateB;
 isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-63-isBoolean |  This snippet can be used to check whether an argument is a boolean |
@@ -17889,6 +23813,10 @@ isBoolean(null); // false
 isBoolean(false); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-64-isBrowser |  This snippet can be used to determine whether the current runtime environment is a browser. This is helpful for avoiding errors when running front-end modules on the server (Node) |
@@ -17900,6 +23828,10 @@ isBrowser(); // true (browser)
 isBrowser(); // false (Node)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-65-isBrowserTabFocused |  This snippet can be used to determine whether the browser tab is focused |
@@ -17910,6 +23842,10 @@ const isBrowserTabFocused = () => !document.hidden;
 isBrowserTabFocused(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-66-isLowerCase |  This snippet can be used to determine whether a string is lower case |
@@ -17922,6 +23858,10 @@ isLowerCase('a3@$'); // true
 isLowerCase('Ab4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-67-isNil |  This snippet can be used to check whether a value is  or  |
@@ -17933,6 +23873,10 @@ isNil(null); // true
 isNil(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-68-isNull |  This snippet can be used to check whether a value is  |
@@ -17943,6 +23887,10 @@ const isNull = val => val === null;
 isNull(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-69-isNumber |  This snippet can be used to check whether a provided value is a number |
@@ -17954,6 +23902,10 @@ isNumber('1'); // false
 isNumber(1); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-70-isObject |  This snippet can be used to check whether a provided value is an object. It uses the Object constructor to create an object wrapper for the given value |
@@ -17969,6 +23921,10 @@ isObject({}); // true
 isObject(true); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-71-isObjectLike |  This snippet can be used to check if a value is not and that its  is “object” |
@@ -17982,6 +23938,10 @@ isObjectLike(x => x); // false
 isObjectLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-72-isPlainObject |  This snippet checks whether a value is an object created by the Object constructor |
@@ -17993,6 +23953,10 @@ isPlainObject({ a: 1 }); // true
 isPlainObject(new Map()); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-73-isPromiseLike |  This snippet checks whether an object looks like a  |
@@ -18012,6 +23976,10 @@ isPromiseLike(null); // false
 isPromiseLike({}); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-74-isSameDate |  This snippet can be used to check whether two dates are equal |
@@ -18022,6 +23990,10 @@ const isSameDate = (dateA, dateB) => dateA.toISOString() === dateB.toISOString()
 isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-75-isString |  This snippet can be used to check whether an argument is a string |
@@ -18032,6 +24004,10 @@ const isString = val => typeof val === 'string';
 isString('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-76-isSymbol |  This snippet can be used to check whether an argument is a symbol |
@@ -18042,6 +24018,10 @@ const isSymbol = val => typeof val === 'symbol';
 isSymbol(Symbol('x')); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-77-isUndefined |  This snippet can be used to check whether a value is undefined |
@@ -18052,6 +24032,10 @@ const isUndefined = val => val === undefined;
 isUndefined(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-78-isUpperCase |  This snippet can be used to check whether a string is upper case |
@@ -18064,6 +24048,10 @@ isLowerCase('A3@$'); // true
 isLowerCase('aB4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-79-isValidJSON |  This snippet can be used to check whether a string is a valid JSON |
@@ -18083,6 +24071,10 @@ isValidJSON('{"name":"Adam",age:"20"}'); // false
 isValidJSON(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-80-last |  This snippet returns the last element of an array |
@@ -18093,6 +24085,10 @@ const last = arr => arr[arr.length - 1];
 last([1, 2, 3]); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-81-matches |  This snippet compares two objects to determine if the first one contains the same property values as the second one |
@@ -18105,6 +24101,10 @@ matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true }); 
 matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-82-maxDate |  This snippet can be used to get the latest date |
@@ -18121,6 +24121,10 @@ const array = [
 maxDate(array); // 2018-03-11T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-83-maxN |  This snippet returns the  largest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in descending order) |
@@ -18132,6 +24136,10 @@ maxN([1, 2, 3]); // [3]
 maxN([1, 2, 3], 2); // [3,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-84-minDate |  This snippet can be used to get the earliest date |
@@ -18148,6 +24156,10 @@ const array = [
 minDate(array); // 2016-01-08T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-85-minN |  This snippet returns the  smallest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in ascending order) |
@@ -18159,6 +24171,10 @@ minN([1, 2, 3]); // [1]
 minN([1, 2, 3], 2); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-86-negate |  This snippet can be used to apply the not operator () to a predicate function with its arguments |
@@ -18169,6 +24185,10 @@ const negate = func => (...args) => !func(...args);
 [1, 2, 3, 4, 5, 6].filter(negate(n => n % 2 === 0)); // [ 1, 3, 5 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-87-nodeListToArray |  This snippet can be used to convert a  to an array |
@@ -18179,6 +24199,10 @@ const nodeListToArray = nodeList => [...nodeList];
 nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-88-pad |  This snippet can be used to  a string on both sides with a specified character if it is shorter than the specified length |
@@ -18192,6 +24216,10 @@ pad(String(42), 6, '0'); // '004200'
 pad('foobar', 3); // 'foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-89-radsToDegrees |  This snippet can be used to convert an angle from radians to degrees |
@@ -18202,6 +24230,10 @@ const radsToDegrees = rad => (rad * 180.0) / Math.PI;
 radsToDegrees(Math.PI / 2); // 90
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-90-randomHexColorCode |  This snippet can be used to generate a random hexadecimal color code |
@@ -18215,6 +24247,10 @@ const randomHexColorCode = () => {
 randomHexColorCode(); // "#e34155"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-91-randomIntArrayInRange |  This snippet can be used to generate an array with  random integers in a specified range |
@@ -18226,6 +24262,10 @@ const randomIntArrayInRange = (min, max, n = 1) =>
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-92-randomIntegerInRange |  This snippet can be used to generate a random integer in a specified range |
@@ -18236,6 +24276,10 @@ const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min
 randomIntegerInRange(0, 5); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-93-randomNumberInRange |  This snippet can be used to return a random number in a specified range |
@@ -18246,6 +24290,10 @@ const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;
 randomNumberInRange(2, 10); // 6.0211363285087005
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-94-readFileLines |  This snippet can be used to read a file by getting an array of lines from a file |
@@ -18262,6 +24310,10 @@ let arr = readFileLines('test.txt');
 console.log(arr); // ['line1', 'line2', 'line3']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-95-redirect |  This snippet can be used to do a redirect to a specified URL |
@@ -18273,6 +24325,10 @@ const redirect = (url, asLink = true) =>
 redirect('https://google.com');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-96-reverse |  This snippet can be used to reverse a string |
@@ -18283,6 +24339,10 @@ const reverseString = str => [...str].reverse().join('');
 reverseString('foobar'); // 'raboof'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-97-round |  This snippet can be used to round a number to a specified number of digits |
@@ -18293,6 +24353,10 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.005, 2); // 1.01
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-98-runPromisesInSeries |  This snippet can be used to run an array of promises in series |
@@ -18305,6 +24369,10 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 // Executes each promise sequentially, taking a total of 3 seconds to complete
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-99-sample |  This snippet can be used to get a random number from an array |
@@ -18315,6 +24383,10 @@ const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 sample([3, 7, 9, 11]); // 9
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-100-sampleSize |  This snippet can be used to get random elements from unique positions from an array up to the size of the array. Elements in the array are shuffled using the  |
@@ -18333,6 +24405,10 @@ sampleSize([1, 2, 3], 2); // [3,1]
 sampleSize([1, 2, 3], 4); // [2,3,1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-101-scrollToTop |  This snippet can be used to do a smooth scroll to the top of the current page |
@@ -18349,6 +24425,10 @@ const scrollToTop = () => {
 scrollToTop();
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-102-serializeCookie |  This snippet can be used to serialize a cookie name-value pair into a Set-Cookie header string |
@@ -18359,6 +24439,10 @@ const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIC
 serializeCookie('foo', 'bar'); // 'foo=bar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-103-setStyle |  This snippet can be used to set the value of a CSS rule for a particular element |
@@ -18370,6 +24454,10 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 // The first <p> element on the page will have a font-size of 20px
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-104-shallowClone |  This snippet can be used to create a shallow clone of an object |
@@ -18381,6 +24469,10 @@ const a = { x: true, y: 1 };
 const b = shallowClone(a); // a !== b
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-105-show |  This snippet can be used to show all the elements specified |
@@ -18391,6 +24483,10 @@ const show = (...el) => [...el].forEach(e => (e.style.display = ''));
 show(...document.querySelectorAll('img')); // Shows all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-106-shuffle |  This snippet can be used to order the elements of an array randomly using the  |
@@ -18409,6 +24505,10 @@ const foo = [1, 2, 3];
 shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-107-similarity |  This snippet can be used to return an array of elements that appear in two arrays |
@@ -18419,6 +24519,10 @@ const similarity = (arr, values) => arr.filter(v => values.includes(v))
 similarity([1, 2, 3], [1, 2, 4]); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-108-sleep |  This snippet can be used to delay the execution of an asynchronous function by putting it into sleep |
@@ -18433,6 +24537,10 @@ async function sleepyWork() {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-130-smoothScroll |  This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
@@ -18447,6 +24555,10 @@ smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-110-sortCharactersInString |  This snippet can be used to alphabetically sort the characters in a string |
@@ -18457,6 +24569,10 @@ const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)
 sortCharactersInString('cabbage'); // 'aabbceg'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-111-splitLines |  This snippet can be used to split a multi-line string into an array of lines |
@@ -18467,6 +24583,10 @@ const splitLines = str => str.split(/\r?\n/);
 splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline', 'string.' , '']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-112-stripHTMLTags |  This snippet can be used to remove HTML/XML tags from a string |
@@ -18477,6 +24597,10 @@ const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
 stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-113-sum |  This snippet can be used to find the sum of two or more numbers or arrays |
@@ -18488,6 +24612,10 @@ sum(1, 2, 3, 4); // 10
 sum(...[1, 2, 3, 4]); // 10
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-114-tail |  This snippet can be used to get an array with all the elements of an array except for the first one. If the array has only one element, then that an array with that element will be returned instead |
@@ -18499,6 +24627,10 @@ tail([1, 2, 3]); // [2,3]
 tail([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-115-take |  This snippet can be used to get an array with elements removed from the beginning |
@@ -18510,6 +24642,10 @@ take([1, 2, 3], 5); // [1, 2, 3]
 take([1, 2, 3], 0); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-116-takeRight |  This snippet can be used to get an array with elements removed from the end |
@@ -18521,6 +24657,10 @@ takeRight([1, 2, 3], 2); // [ 2, 3 ]
 takeRight([1, 2, 3]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-117-timeTaken |  This snippet can be used to find out the time it takes to execute a function |
@@ -18536,6 +24676,10 @@ const timeTaken = callback => {
 timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-118-times |  This snippet can be used to iterate over a callback times |
@@ -18551,6 +24695,10 @@ times(5, i => (output += i));
 console.log(output); // 01234
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-119-toCurrency |  This snippet can be used to format a number like a currency |
@@ -18566,6 +24714,10 @@ toCurrency(322342436423.2435, 'JPY'); // ¥322,342,436,423 | currency: Japanese 
 toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Japanese Yen | currencyLangFormat: Finnish
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-120-toDecimalMark |  This snippet uses the function to convert float-point arithmetic to the decimal mark form by using a number to make a comma-separated string |
@@ -18576,6 +24728,10 @@ const toDecimalMark = num => num.toLocaleString('en-US');
 toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-121-toggleClass |  This snippet can be used to toggle a class for an element |
@@ -18586,6 +24742,10 @@ const toggleClass = (el, className) => el.classList.toggle(className);
 toggleClass(document.querySelector('p.special'), 'special'); // The paragraph will not have the 'special' class anymore
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-122-tomorrow |  This snippet can be used to get a string representation of tomorrow’s date |
@@ -18600,6 +24760,10 @@ const tomorrow = () => {
 tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-123-unfold |  This snippet can be used to build an array using an iterator function and an initial seed value |
@@ -18616,6 +24780,10 @@ var f = n => (n > 50 ? false : [-n, n + 10]);
 unfold(f, 10); // [-10, -20, -30, -40, -50]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-124-union |  This snippet can be used to find the  of two arrays, resulting in an array that has elements that come from both arrays but that do not repeat |
@@ -18626,6 +24794,10 @@ const union = (a, b) => Array.from(new Set([...a, ...b]));
 union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-125-uniqueElements |  This snippet uses ES6 andtheoperator to get every element only once |
@@ -18636,6 +24808,10 @@ const uniqueElements = arr => [...new Set(arr)];
 uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-126-validateNumber |  This snippet can be used to check whether a value is a number |
@@ -18646,6 +24822,10 @@ const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) ==
 validateNumber('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-127-words |  This snippet converts a string into an array of words |
@@ -18657,6 +24837,10 @@ words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-128-getES6moduleSyntaxBySource |  Get all ES6 modules syntax from the source directory |
@@ -18678,6 +24862,10 @@ export function getES6moduleSyntaxBySource(source, extension) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-129-concatJSONsourcesToOneFile |  Concat & export all external JSON sources to one JSON file |
@@ -18702,6 +24890,10 @@ export function concatJSONsourcesToOneFile(sourcesList, distPath) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-131-validateEmail |  Email validator with regex |
@@ -18730,6 +24922,10 @@ all([4, 2, 3], x => x > 1); // true
 all([1, 2, 3]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-2-allEqual |  This snippet checks whether all elements of the array are equal |
@@ -18741,6 +24937,10 @@ allEqual([1, 2, 3, 4, 5, 6]); // false
 allEqual([1, 1, 1, 1]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-3-approximatelyEqual |  This snippet checks whether two numbers are approximately equal to each other, with a small difference |
@@ -18751,6 +24951,10 @@ const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsi
 approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-4-arrayToCSV |  This snippet converts the elements to strings with comma-separated values |
@@ -18763,6 +24967,10 @@ arrayToCSV([['a', 'b'], ['c', 'd']]); // '"a","b"\n"c","d"'
 arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-5-arrayToHtmlList |  This snippet converts the elements of an array into  tags and appends them to the list of the given ID |
@@ -18777,6 +24985,10 @@ const arrayToHtmlList = (arr, listID) =>
 arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-6-attempt |  This snippet executes a function, returning either the result or the caught error object |
@@ -18795,6 +25007,10 @@ var elements = attempt(function(selector) {
 if (elements instanceof Error) elements = []; // elements = []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-7-average |  This snippet returns the average of two or more numerical values |
@@ -18805,6 +25021,10 @@ average(...[1, 2, 3]); // 2
 average(1, 2, 3); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-8-averageBy |  This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function |
@@ -18818,6 +25038,10 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o => o.n); // 5
 averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-9-bifurcate |  This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise |
@@ -18829,6 +25053,10 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-10-bifurcateBy |  This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group |
@@ -18841,6 +25069,10 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-11-bottomVisible |  This snippet checks whether the bottom of a page is visible |
@@ -18853,6 +25085,10 @@ const bottomVisible = () =>
 bottomVisible(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-12-byteSize |  This snippet returns the length of a string in bytes |
@@ -18864,6 +25100,10 @@ byteSize('😀'); // 4
 byteSize('Hello World'); // 11
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-13-capitalize |  This snippet capitalizes the first letter of a string |
@@ -18876,6 +25116,10 @@ capitalize('fooBar'); // 'FooBar'
 capitalize('fooBar', true); // 'Foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-14-capitalizeEveryWord |  This snippet capitalizes the first letter of every word in a given string |
@@ -18886,6 +25130,10 @@ const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperC
 capitalizeEveryWord('hello world!'); // 'Hello World!'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-15-castArray |  This snippet converts a non-array value into array |
@@ -18897,6 +25145,10 @@ castArray('foo'); // ['foo']
 castArray([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-16-compact |  This snippet removes false values from an array |
@@ -18908,6 +25160,10 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 // [ 1, 2, 3, 'a', 's', 34 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-17-countOccurrences |  This snippet counts the occurrences of a value in an array |
@@ -18917,6 +25173,10 @@ const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 :
 countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-18-createDirIfNotExists |  This snippet uses  to check whether a directory exists and then  to create it if it doesn’t |
@@ -18928,6 +25188,10 @@ createDirIfNotExists('test');
 // creates the directory 'test', if it doesn't exist
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-19-currentURL |  This snippet returns the current URL |
@@ -18938,6 +25202,10 @@ const currentURL = () => window.location.href;
 currentURL(); // 'https://medium.com/@fatosmorina'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-20-dayOfYear |  This snippet gets the day of the year from a object |
@@ -18949,6 +25217,10 @@ const dayOfYear = date =>
 dayOfYear(new Date()); // 272
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-21-decapitalize |  This snippet turns the first letter of a string into lowercase |
@@ -18961,6 +25233,10 @@ decapitalize('FooBar'); // 'fooBar'
 decapitalize('FooBar'); // 'fooBar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-22-deepFlatten |  This snippet flattens an array recursively |
@@ -18971,6 +25247,10 @@ const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFla
 deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-23-default |  This snippet assigns default values for all properties in an object that are  |
@@ -18981,6 +25261,10 @@ const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj
 defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-24-defer |  This snippet delays the execution of a function until the current call stack is cleared |
@@ -18991,6 +25275,10 @@ const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
 defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-25-degreesToRads |  This snippet can be used to convert a value from degrees to radians |
@@ -19001,6 +25289,10 @@ const degreesToRads = deg => (deg * Math.PI) / 180.0;
 degreesToRads(90.0); // ~1.5708
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-26-difference |  This snippet finds the difference between two arrays |
@@ -19014,6 +25306,10 @@ const difference = (a, b) => {
 difference([1, 2, 3], [1, 2, 4]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-27-differenceBy |  This snippet returns the difference between two arrays, after applying a given function to each element of both lists |
@@ -19028,6 +25324,10 @@ differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [1.2]
 differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-28-differenceWith |  This snippet removes the values for which the comparator function returns  |
@@ -19039,6 +25339,10 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 // [1, 1.2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-29-digitize |  This snippet gets a number as input and returns an array of its digits |
@@ -19049,6 +25353,10 @@ const digitize = n => [...`${n}`].map(i => parseInt(i));
 digitize(431); // [4, 3, 1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-30-distance |  This snippet returns the distance between two points by calculating the Euclidean distance |
@@ -19059,6 +25367,10 @@ const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);
 distance(1, 1, 2, 3); // 2.23606797749979
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-31-DropLeft |  This snippet returns a new array with  elements removed from the left |
@@ -19071,6 +25383,10 @@ dropLeft([1, 2, 3], 2); // [3]
 dropLeft([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-32-dropRight |  This snippet returns a new array with  elements removed from the right |
@@ -19083,6 +25399,10 @@ dropRight([1, 2, 3], 2); // [1]
 dropRight([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-33-dropRightWhile |  This snippet removes elements from the right side of an array until the passed function returns  |
@@ -19096,6 +25416,10 @@ const dropRightWhile = (arr, func) => {
 dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-34-dropWhile |  This snippet removes elements from an array until the passed function returns  |
@@ -19109,6 +25433,10 @@ const dropWhile = (arr, func) => {
 dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-35-elementContains |  This snippet checks whether the parent element contains the child |
@@ -19120,6 +25448,10 @@ elementContains(document.querySelector('head'), document.querySelector('title'))
 elementContains(document.querySelector('body'), document.querySelector('body')); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-36-Filter Duplicate Elements |  This snippet removes duplicate values in an array |
@@ -19130,6 +25462,10 @@ const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexO
 filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-37-findKey |  This snippet returns the first key that satisfies a given function |
@@ -19147,6 +25483,10 @@ findKey(
 ); // 'barney'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-38-findLast |  This snippet returns the last element for which a given function returns a truthy value |
@@ -19157,6 +25497,10 @@ const findLast = (arr, fn) => arr.filter(fn).pop();
 findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-39-flatten |  This snippet flattens an array up to a specified depth using recursion |
@@ -19169,6 +25513,10 @@ flatten([1, [2], 3, 4]); // [1, 2, 3, 4]
 flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-40-forEachRight |  This snippet executes a function for each element of an array starting from the array’s last element |
@@ -19183,6 +25531,10 @@ const forEachRight = (arr, callback) =>
 forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-41-forOwn |  This snippet iterates on each property of an object and iterates a callback for each one respectively |
@@ -19192,6 +25544,10 @@ const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, ob
 forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-42-functionName |  This snippet prints the name of a function into the console |
@@ -19202,6 +25558,10 @@ const functionName = fn => (console.debug(fn.name), fn);
 functionName(Math.max); // max (logged in debug channel of console)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-43-Get Time From Date |  This snippet can be used to get the time from a object as a string |
@@ -19212,6 +25572,10 @@ const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);
 getColonTimeFromDate(new Date()); // "08:38:00"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-44-Get Days Between Dates |  This snippet can be used to find the difference in days between two dates |
@@ -19223,6 +25587,10 @@ const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
 getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-45-getStyle |  This snippet can be used to get the value of a CSS rule for a particular element |
@@ -19233,6 +25601,10 @@ const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];
 getStyle(document.querySelector('p'), 'font-size'); // '16px'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-46-getType |  This snippet can be used to get the type of a value |
@@ -19244,6 +25616,10 @@ const getType = v =>
 getType(new Set([1, 2, 3])); // 'set'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-47-hasClass |  This snippet checks whether an element has a particular class |
@@ -19253,6 +25629,10 @@ const hasClass = (el, className) => el.classList.contains(className);
 hasClass(document.querySelector('p.special'), 'special'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-48-head |  This snippet returns the  of a list |
@@ -19263,6 +25643,10 @@ const head = arr => arr[0];
 head([1, 2, 3]); // 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-49-hide |  This snippet can be used to hide all elements specified |
@@ -19273,6 +25657,10 @@ const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
 hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-50-httpsRedirect |  This snippet can be used to redirect from HTTP to HTTPS in a particular domain |
@@ -19285,6 +25673,10 @@ const httpsRedirect = () => {
 httpsRedirect(); // If you are on http://mydomain.com, you are redirected to https://mydomain.com
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-51-indexOfAll |  This snippet can be used to get all indexes of a value in an array, which returns an empty array, in case this value is not included in it |
@@ -19296,6 +25688,10 @@ indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
 indexOfAll([1, 2, 3], 4); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-52-initial |  This snippet returns all elements of an array except the last one |
@@ -19307,6 +25703,10 @@ initial([1, 2, 3]); // [1,2]const initial = arr => arr.slice(0, -1);
 initial([1, 2, 3]); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-53-insertAfter |  This snippet can be used to insert an HTML string after the end of a particular element |
@@ -19317,6 +25717,10 @@ const insertAfter = (el, htmlString) => el.insertAdjacentHTML('afterend', htmlSt
 insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">...</div> <p>after</p>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-54-insertBefore |  This snippet can be used to insert an HTML string before a particular element |
@@ -19327,6 +25731,10 @@ const insertBefore = (el, htmlString) => el.insertAdjacentHTML('beforebegin', ht
 insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p> <div id="myId">...</div>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-55-intersection |  This snippet can be used to get an array with elements that are included in two other arrays |
@@ -19340,6 +25748,10 @@ const intersection = (a, b) => {
 intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-56-intersectionBy |  This snippet can be used to return a list of elements that exist in both arrays, after a particular function has been executed to each element of both arrays |
@@ -19353,6 +25765,10 @@ const intersectionBy = (a, b, fn) => {
 intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-57-intersectionWith |  This snippet can be used to return a list of elements that exist in both arrays by using a comparator function |
@@ -19363,6 +25779,10 @@ const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, 
 intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)); // [1.5, 3, 0]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-58-is |  This snippet can be used to check if a value is of a particular type |
@@ -19385,6 +25805,10 @@ is(Boolean, true); // true
 is(Boolean, new Boolean(true)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-59-isAfterDate |  This snippet can be used to check whether a date is after another date |
@@ -19395,6 +25819,10 @@ const isAfterDate = (dateA, dateB) => dateA > dateB;
 isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-60-isAnagram |  This snippet can be used to check whether a particular string is an anagram with another string |
@@ -19414,6 +25842,10 @@ const isAnagram = (str1, str2) => {
 isAnagram('iceman', 'cinema'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-61-isArrayLike |  This snippet can be used to check if a provided argument is iterable like an array |
@@ -19426,6 +25858,10 @@ isArrayLike('abc'); // true
 isArrayLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-62-isBeforeDate |  This snippet can be used to check whether a date is before another date |
@@ -19436,6 +25872,10 @@ const isBeforeDate = (dateA, dateB) => dateA < dateB;
 isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-63-isBoolean |  This snippet can be used to check whether an argument is a boolean |
@@ -19447,6 +25887,10 @@ isBoolean(null); // false
 isBoolean(false); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-64-isBrowser |  This snippet can be used to determine whether the current runtime environment is a browser. This is helpful for avoiding errors when running front-end modules on the server (Node) |
@@ -19458,6 +25902,10 @@ isBrowser(); // true (browser)
 isBrowser(); // false (Node)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-65-isBrowserTabFocused |  This snippet can be used to determine whether the browser tab is focused |
@@ -19468,6 +25916,10 @@ const isBrowserTabFocused = () => !document.hidden;
 isBrowserTabFocused(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-66-isLowerCase |  This snippet can be used to determine whether a string is lower case |
@@ -19480,6 +25932,10 @@ isLowerCase('a3@$'); // true
 isLowerCase('Ab4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-67-isNil |  This snippet can be used to check whether a value is  or  |
@@ -19491,6 +25947,10 @@ isNil(null); // true
 isNil(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-68-isNull |  This snippet can be used to check whether a value is  |
@@ -19501,6 +25961,10 @@ const isNull = val => val === null;
 isNull(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-69-isNumber |  This snippet can be used to check whether a provided value is a number |
@@ -19512,6 +25976,10 @@ isNumber('1'); // false
 isNumber(1); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-70-isObject |  This snippet can be used to check whether a provided value is an object. It uses the Object constructor to create an object wrapper for the given value |
@@ -19527,6 +25995,10 @@ isObject({}); // true
 isObject(true); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-71-isObjectLike |  This snippet can be used to check if a value is not and that its  is “object” |
@@ -19540,6 +26012,10 @@ isObjectLike(x => x); // false
 isObjectLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-72-isPlainObject |  This snippet checks whether a value is an object created by the Object constructor |
@@ -19551,6 +26027,10 @@ isPlainObject({ a: 1 }); // true
 isPlainObject(new Map()); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-73-isPromiseLike |  This snippet checks whether an object looks like a  |
@@ -19570,6 +26050,10 @@ isPromiseLike(null); // false
 isPromiseLike({}); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-74-isSameDate |  This snippet can be used to check whether two dates are equal |
@@ -19580,6 +26064,10 @@ const isSameDate = (dateA, dateB) => dateA.toISOString() === dateB.toISOString()
 isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-75-isString |  This snippet can be used to check whether an argument is a string |
@@ -19590,6 +26078,10 @@ const isString = val => typeof val === 'string';
 isString('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-76-isSymbol |  This snippet can be used to check whether an argument is a symbol |
@@ -19600,6 +26092,10 @@ const isSymbol = val => typeof val === 'symbol';
 isSymbol(Symbol('x')); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-77-isUndefined |  This snippet can be used to check whether a value is undefined |
@@ -19610,6 +26106,10 @@ const isUndefined = val => val === undefined;
 isUndefined(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-78-isUpperCase |  This snippet can be used to check whether a string is upper case |
@@ -19622,6 +26122,10 @@ isLowerCase('A3@$'); // true
 isLowerCase('aB4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-79-isValidJSON |  This snippet can be used to check whether a string is a valid JSON |
@@ -19641,6 +26145,10 @@ isValidJSON('{"name":"Adam",age:"20"}'); // false
 isValidJSON(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-80-last |  This snippet returns the last element of an array |
@@ -19651,6 +26159,10 @@ const last = arr => arr[arr.length - 1];
 last([1, 2, 3]); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-81-matches |  This snippet compares two objects to determine if the first one contains the same property values as the second one |
@@ -19663,6 +26175,10 @@ matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true }); 
 matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-82-maxDate |  This snippet can be used to get the latest date |
@@ -19679,6 +26195,10 @@ const array = [
 maxDate(array); // 2018-03-11T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-83-maxN |  This snippet returns the  largest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in descending order) |
@@ -19690,6 +26210,10 @@ maxN([1, 2, 3]); // [3]
 maxN([1, 2, 3], 2); // [3,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-84-minDate |  This snippet can be used to get the earliest date |
@@ -19706,6 +26230,10 @@ const array = [
 minDate(array); // 2016-01-08T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-85-minN |  This snippet returns the  smallest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in ascending order) |
@@ -19717,6 +26245,10 @@ minN([1, 2, 3]); // [1]
 minN([1, 2, 3], 2); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-86-negate |  This snippet can be used to apply the not operator () to a predicate function with its arguments |
@@ -19727,6 +26259,10 @@ const negate = func => (...args) => !func(...args);
 [1, 2, 3, 4, 5, 6].filter(negate(n => n % 2 === 0)); // [ 1, 3, 5 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-87-nodeListToArray |  This snippet can be used to convert a  to an array |
@@ -19737,6 +26273,10 @@ const nodeListToArray = nodeList => [...nodeList];
 nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-88-pad |  This snippet can be used to  a string on both sides with a specified character if it is shorter than the specified length |
@@ -19750,6 +26290,10 @@ pad(String(42), 6, '0'); // '004200'
 pad('foobar', 3); // 'foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-89-radsToDegrees |  This snippet can be used to convert an angle from radians to degrees |
@@ -19760,6 +26304,10 @@ const radsToDegrees = rad => (rad * 180.0) / Math.PI;
 radsToDegrees(Math.PI / 2); // 90
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-90-randomHexColorCode |  This snippet can be used to generate a random hexadecimal color code |
@@ -19773,6 +26321,10 @@ const randomHexColorCode = () => {
 randomHexColorCode(); // "#e34155"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-91-randomIntArrayInRange |  This snippet can be used to generate an array with  random integers in a specified range |
@@ -19784,6 +26336,10 @@ const randomIntArrayInRange = (min, max, n = 1) =>
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-92-randomIntegerInRange |  This snippet can be used to generate a random integer in a specified range |
@@ -19794,6 +26350,10 @@ const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min
 randomIntegerInRange(0, 5); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-93-randomNumberInRange |  This snippet can be used to return a random number in a specified range |
@@ -19804,6 +26364,10 @@ const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;
 randomNumberInRange(2, 10); // 6.0211363285087005
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-94-readFileLines |  This snippet can be used to read a file by getting an array of lines from a file |
@@ -19820,6 +26384,10 @@ let arr = readFileLines('test.txt');
 console.log(arr); // ['line1', 'line2', 'line3']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-95-redirect |  This snippet can be used to do a redirect to a specified URL |
@@ -19831,6 +26399,10 @@ const redirect = (url, asLink = true) =>
 redirect('https://google.com');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-96-reverse |  This snippet can be used to reverse a string |
@@ -19841,6 +26413,10 @@ const reverseString = str => [...str].reverse().join('');
 reverseString('foobar'); // 'raboof'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-97-round |  This snippet can be used to round a number to a specified number of digits |
@@ -19851,6 +26427,10 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.005, 2); // 1.01
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-98-runPromisesInSeries |  This snippet can be used to run an array of promises in series |
@@ -19863,6 +26443,10 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 // Executes each promise sequentially, taking a total of 3 seconds to complete
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-99-sample |  This snippet can be used to get a random number from an array |
@@ -19873,6 +26457,10 @@ const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 sample([3, 7, 9, 11]); // 9
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-100-sampleSize |  This snippet can be used to get random elements from unique positions from an array up to the size of the array. Elements in the array are shuffled using the  |
@@ -19891,6 +26479,10 @@ sampleSize([1, 2, 3], 2); // [3,1]
 sampleSize([1, 2, 3], 4); // [2,3,1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-101-scrollToTop |  This snippet can be used to do a smooth scroll to the top of the current page |
@@ -19907,6 +26499,10 @@ const scrollToTop = () => {
 scrollToTop();
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-102-serializeCookie |  This snippet can be used to serialize a cookie name-value pair into a Set-Cookie header string |
@@ -19917,6 +26513,10 @@ const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIC
 serializeCookie('foo', 'bar'); // 'foo=bar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-103-setStyle |  This snippet can be used to set the value of a CSS rule for a particular element |
@@ -19928,6 +26528,10 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 // The first <p> element on the page will have a font-size of 20px
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-104-shallowClone |  This snippet can be used to create a shallow clone of an object |
@@ -19939,6 +26543,10 @@ const a = { x: true, y: 1 };
 const b = shallowClone(a); // a !== b
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-105-show |  This snippet can be used to show all the elements specified |
@@ -19949,6 +26557,10 @@ const show = (...el) => [...el].forEach(e => (e.style.display = ''));
 show(...document.querySelectorAll('img')); // Shows all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-106-shuffle |  This snippet can be used to order the elements of an array randomly using the  |
@@ -19967,6 +26579,10 @@ const foo = [1, 2, 3];
 shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-107-similarity |  This snippet can be used to return an array of elements that appear in two arrays |
@@ -19977,6 +26593,10 @@ const similarity = (arr, values) => arr.filter(v => values.includes(v))
 similarity([1, 2, 3], [1, 2, 4]); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-108-sleep |  This snippet can be used to delay the execution of an asynchronous function by putting it into sleep |
@@ -19991,6 +26611,10 @@ async function sleepyWork() {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-130-smoothScroll |  This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
@@ -20005,6 +26629,10 @@ smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-110-sortCharactersInString |  This snippet can be used to alphabetically sort the characters in a string |
@@ -20015,6 +26643,10 @@ const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)
 sortCharactersInString('cabbage'); // 'aabbceg'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-111-splitLines |  This snippet can be used to split a multi-line string into an array of lines |
@@ -20025,6 +26657,10 @@ const splitLines = str => str.split(/\r?\n/);
 splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline', 'string.' , '']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-112-stripHTMLTags |  This snippet can be used to remove HTML/XML tags from a string |
@@ -20035,6 +26671,10 @@ const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
 stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-113-sum |  This snippet can be used to find the sum of two or more numbers or arrays |
@@ -20046,6 +26686,10 @@ sum(1, 2, 3, 4); // 10
 sum(...[1, 2, 3, 4]); // 10
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-114-tail |  This snippet can be used to get an array with all the elements of an array except for the first one. If the array has only one element, then that an array with that element will be returned instead |
@@ -20057,6 +26701,10 @@ tail([1, 2, 3]); // [2,3]
 tail([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-115-take |  This snippet can be used to get an array with elements removed from the beginning |
@@ -20068,6 +26716,10 @@ take([1, 2, 3], 5); // [1, 2, 3]
 take([1, 2, 3], 0); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-116-takeRight |  This snippet can be used to get an array with elements removed from the end |
@@ -20079,6 +26731,10 @@ takeRight([1, 2, 3], 2); // [ 2, 3 ]
 takeRight([1, 2, 3]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-117-timeTaken |  This snippet can be used to find out the time it takes to execute a function |
@@ -20094,6 +26750,10 @@ const timeTaken = callback => {
 timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-118-times |  This snippet can be used to iterate over a callback times |
@@ -20109,6 +26769,10 @@ times(5, i => (output += i));
 console.log(output); // 01234
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-119-toCurrency |  This snippet can be used to format a number like a currency |
@@ -20124,6 +26788,10 @@ toCurrency(322342436423.2435, 'JPY'); // ¥322,342,436,423 | currency: Japanese 
 toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Japanese Yen | currencyLangFormat: Finnish
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-120-toDecimalMark |  This snippet uses the function to convert float-point arithmetic to the decimal mark form by using a number to make a comma-separated string |
@@ -20134,6 +26802,10 @@ const toDecimalMark = num => num.toLocaleString('en-US');
 toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-121-toggleClass |  This snippet can be used to toggle a class for an element |
@@ -20144,6 +26816,10 @@ const toggleClass = (el, className) => el.classList.toggle(className);
 toggleClass(document.querySelector('p.special'), 'special'); // The paragraph will not have the 'special' class anymore
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-122-tomorrow |  This snippet can be used to get a string representation of tomorrow’s date |
@@ -20158,6 +26834,10 @@ const tomorrow = () => {
 tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-123-unfold |  This snippet can be used to build an array using an iterator function and an initial seed value |
@@ -20174,6 +26854,10 @@ var f = n => (n > 50 ? false : [-n, n + 10]);
 unfold(f, 10); // [-10, -20, -30, -40, -50]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-124-union |  This snippet can be used to find the  of two arrays, resulting in an array that has elements that come from both arrays but that do not repeat |
@@ -20184,6 +26868,10 @@ const union = (a, b) => Array.from(new Set([...a, ...b]));
 union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-125-uniqueElements |  This snippet uses ES6 andtheoperator to get every element only once |
@@ -20194,6 +26882,10 @@ const uniqueElements = arr => [...new Set(arr)];
 uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-126-validateNumber |  This snippet can be used to check whether a value is a number |
@@ -20204,6 +26896,10 @@ const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) ==
 validateNumber('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-127-words |  This snippet converts a string into an array of words |
@@ -20215,6 +26911,10 @@ words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-128-getES6moduleSyntaxBySource |  Get all ES6 modules syntax from the source directory |
@@ -20236,6 +26936,10 @@ export function getES6moduleSyntaxBySource(source, extension) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-129-concatJSONsourcesToOneFile |  Concat & export all external JSON sources to one JSON file |
@@ -20260,6 +26964,10 @@ export function concatJSONsourcesToOneFile(sourcesList, distPath) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-131-validateEmail |  Email validator with regex |
@@ -20288,6 +26996,10 @@ all([4, 2, 3], x => x > 1); // true
 all([1, 2, 3]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-2-allEqual |  This snippet checks whether all elements of the array are equal |
@@ -20299,6 +27011,10 @@ allEqual([1, 2, 3, 4, 5, 6]); // false
 allEqual([1, 1, 1, 1]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-3-approximatelyEqual |  This snippet checks whether two numbers are approximately equal to each other, with a small difference |
@@ -20309,6 +27025,10 @@ const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsi
 approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-4-arrayToCSV |  This snippet converts the elements to strings with comma-separated values |
@@ -20321,6 +27041,10 @@ arrayToCSV([['a', 'b'], ['c', 'd']]); // '"a","b"\n"c","d"'
 arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-5-arrayToHtmlList |  This snippet converts the elements of an array into  tags and appends them to the list of the given ID |
@@ -20335,6 +27059,10 @@ const arrayToHtmlList = (arr, listID) =>
 arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-6-attempt |  This snippet executes a function, returning either the result or the caught error object |
@@ -20353,6 +27081,10 @@ var elements = attempt(function(selector) {
 if (elements instanceof Error) elements = []; // elements = []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-7-average |  This snippet returns the average of two or more numerical values |
@@ -20363,6 +27095,10 @@ average(...[1, 2, 3]); // 2
 average(1, 2, 3); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-8-averageBy |  This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function |
@@ -20376,6 +27112,10 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o => o.n); // 5
 averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-9-bifurcate |  This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise |
@@ -20387,6 +27127,10 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-10-bifurcateBy |  This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group |
@@ -20399,6 +27143,10 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-11-bottomVisible |  This snippet checks whether the bottom of a page is visible |
@@ -20411,6 +27159,10 @@ const bottomVisible = () =>
 bottomVisible(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-12-byteSize |  This snippet returns the length of a string in bytes |
@@ -20422,6 +27174,10 @@ byteSize('😀'); // 4
 byteSize('Hello World'); // 11
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-13-capitalize |  This snippet capitalizes the first letter of a string |
@@ -20434,6 +27190,10 @@ capitalize('fooBar'); // 'FooBar'
 capitalize('fooBar', true); // 'Foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-14-capitalizeEveryWord |  This snippet capitalizes the first letter of every word in a given string |
@@ -20444,6 +27204,10 @@ const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperC
 capitalizeEveryWord('hello world!'); // 'Hello World!'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-15-castArray |  This snippet converts a non-array value into array |
@@ -20455,6 +27219,10 @@ castArray('foo'); // ['foo']
 castArray([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-16-compact |  This snippet removes false values from an array |
@@ -20466,6 +27234,10 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 // [ 1, 2, 3, 'a', 's', 34 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-17-countOccurrences |  This snippet counts the occurrences of a value in an array |
@@ -20475,6 +27247,10 @@ const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 :
 countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-18-createDirIfNotExists |  This snippet uses  to check whether a directory exists and then  to create it if it doesn’t |
@@ -20486,6 +27262,10 @@ createDirIfNotExists('test');
 // creates the directory 'test', if it doesn't exist
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-19-currentURL |  This snippet returns the current URL |
@@ -20496,6 +27276,10 @@ const currentURL = () => window.location.href;
 currentURL(); // 'https://medium.com/@fatosmorina'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-20-dayOfYear |  This snippet gets the day of the year from a object |
@@ -20507,6 +27291,10 @@ const dayOfYear = date =>
 dayOfYear(new Date()); // 272
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-21-decapitalize |  This snippet turns the first letter of a string into lowercase |
@@ -20519,6 +27307,10 @@ decapitalize('FooBar'); // 'fooBar'
 decapitalize('FooBar'); // 'fooBar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-22-deepFlatten |  This snippet flattens an array recursively |
@@ -20529,6 +27321,10 @@ const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFla
 deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-23-default |  This snippet assigns default values for all properties in an object that are  |
@@ -20539,6 +27335,10 @@ const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj
 defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-24-defer |  This snippet delays the execution of a function until the current call stack is cleared |
@@ -20549,6 +27349,10 @@ const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
 defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-25-degreesToRads |  This snippet can be used to convert a value from degrees to radians |
@@ -20559,6 +27363,10 @@ const degreesToRads = deg => (deg * Math.PI) / 180.0;
 degreesToRads(90.0); // ~1.5708
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-26-difference |  This snippet finds the difference between two arrays |
@@ -20572,6 +27380,10 @@ const difference = (a, b) => {
 difference([1, 2, 3], [1, 2, 4]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-27-differenceBy |  This snippet returns the difference between two arrays, after applying a given function to each element of both lists |
@@ -20586,6 +27398,10 @@ differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [1.2]
 differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-28-differenceWith |  This snippet removes the values for which the comparator function returns  |
@@ -20597,6 +27413,10 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 // [1, 1.2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-29-digitize |  This snippet gets a number as input and returns an array of its digits |
@@ -20607,6 +27427,10 @@ const digitize = n => [...`${n}`].map(i => parseInt(i));
 digitize(431); // [4, 3, 1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-30-distance |  This snippet returns the distance between two points by calculating the Euclidean distance |
@@ -20617,6 +27441,10 @@ const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);
 distance(1, 1, 2, 3); // 2.23606797749979
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-31-DropLeft |  This snippet returns a new array with  elements removed from the left |
@@ -20629,6 +27457,10 @@ dropLeft([1, 2, 3], 2); // [3]
 dropLeft([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-32-dropRight |  This snippet returns a new array with  elements removed from the right |
@@ -20641,6 +27473,10 @@ dropRight([1, 2, 3], 2); // [1]
 dropRight([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-33-dropRightWhile |  This snippet removes elements from the right side of an array until the passed function returns  |
@@ -20654,6 +27490,10 @@ const dropRightWhile = (arr, func) => {
 dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-34-dropWhile |  This snippet removes elements from an array until the passed function returns  |
@@ -20667,6 +27507,10 @@ const dropWhile = (arr, func) => {
 dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-35-elementContains |  This snippet checks whether the parent element contains the child |
@@ -20678,6 +27522,10 @@ elementContains(document.querySelector('head'), document.querySelector('title'))
 elementContains(document.querySelector('body'), document.querySelector('body')); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-36-Filter Duplicate Elements |  This snippet removes duplicate values in an array |
@@ -20688,6 +27536,10 @@ const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexO
 filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-37-findKey |  This snippet returns the first key that satisfies a given function |
@@ -20705,6 +27557,10 @@ findKey(
 ); // 'barney'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-38-findLast |  This snippet returns the last element for which a given function returns a truthy value |
@@ -20715,6 +27571,10 @@ const findLast = (arr, fn) => arr.filter(fn).pop();
 findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-39-flatten |  This snippet flattens an array up to a specified depth using recursion |
@@ -20727,6 +27587,10 @@ flatten([1, [2], 3, 4]); // [1, 2, 3, 4]
 flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-40-forEachRight |  This snippet executes a function for each element of an array starting from the array’s last element |
@@ -20741,6 +27605,10 @@ const forEachRight = (arr, callback) =>
 forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-41-forOwn |  This snippet iterates on each property of an object and iterates a callback for each one respectively |
@@ -20750,6 +27618,10 @@ const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, ob
 forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-42-functionName |  This snippet prints the name of a function into the console |
@@ -20760,6 +27632,10 @@ const functionName = fn => (console.debug(fn.name), fn);
 functionName(Math.max); // max (logged in debug channel of console)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-43-Get Time From Date |  This snippet can be used to get the time from a object as a string |
@@ -20770,6 +27646,10 @@ const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);
 getColonTimeFromDate(new Date()); // "08:38:00"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-44-Get Days Between Dates |  This snippet can be used to find the difference in days between two dates |
@@ -20781,6 +27661,10 @@ const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
 getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-45-getStyle |  This snippet can be used to get the value of a CSS rule for a particular element |
@@ -20791,6 +27675,10 @@ const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];
 getStyle(document.querySelector('p'), 'font-size'); // '16px'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-46-getType |  This snippet can be used to get the type of a value |
@@ -20802,6 +27690,10 @@ const getType = v =>
 getType(new Set([1, 2, 3])); // 'set'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-47-hasClass |  This snippet checks whether an element has a particular class |
@@ -20811,6 +27703,10 @@ const hasClass = (el, className) => el.classList.contains(className);
 hasClass(document.querySelector('p.special'), 'special'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-48-head |  This snippet returns the  of a list |
@@ -20821,6 +27717,10 @@ const head = arr => arr[0];
 head([1, 2, 3]); // 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-49-hide |  This snippet can be used to hide all elements specified |
@@ -20831,6 +27731,10 @@ const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
 hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-50-httpsRedirect |  This snippet can be used to redirect from HTTP to HTTPS in a particular domain |
@@ -20843,6 +27747,10 @@ const httpsRedirect = () => {
 httpsRedirect(); // If you are on http://mydomain.com, you are redirected to https://mydomain.com
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-51-indexOfAll |  This snippet can be used to get all indexes of a value in an array, which returns an empty array, in case this value is not included in it |
@@ -20854,6 +27762,10 @@ indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
 indexOfAll([1, 2, 3], 4); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-52-initial |  This snippet returns all elements of an array except the last one |
@@ -20865,6 +27777,10 @@ initial([1, 2, 3]); // [1,2]const initial = arr => arr.slice(0, -1);
 initial([1, 2, 3]); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-53-insertAfter |  This snippet can be used to insert an HTML string after the end of a particular element |
@@ -20875,6 +27791,10 @@ const insertAfter = (el, htmlString) => el.insertAdjacentHTML('afterend', htmlSt
 insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">...</div> <p>after</p>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-54-insertBefore |  This snippet can be used to insert an HTML string before a particular element |
@@ -20885,6 +27805,10 @@ const insertBefore = (el, htmlString) => el.insertAdjacentHTML('beforebegin', ht
 insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p> <div id="myId">...</div>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-55-intersection |  This snippet can be used to get an array with elements that are included in two other arrays |
@@ -20898,6 +27822,10 @@ const intersection = (a, b) => {
 intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-56-intersectionBy |  This snippet can be used to return a list of elements that exist in both arrays, after a particular function has been executed to each element of both arrays |
@@ -20911,6 +27839,10 @@ const intersectionBy = (a, b, fn) => {
 intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-57-intersectionWith |  This snippet can be used to return a list of elements that exist in both arrays by using a comparator function |
@@ -20921,6 +27853,10 @@ const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, 
 intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)); // [1.5, 3, 0]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-58-is |  This snippet can be used to check if a value is of a particular type |
@@ -20943,6 +27879,10 @@ is(Boolean, true); // true
 is(Boolean, new Boolean(true)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-59-isAfterDate |  This snippet can be used to check whether a date is after another date |
@@ -20953,6 +27893,10 @@ const isAfterDate = (dateA, dateB) => dateA > dateB;
 isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-60-isAnagram |  This snippet can be used to check whether a particular string is an anagram with another string |
@@ -20972,6 +27916,10 @@ const isAnagram = (str1, str2) => {
 isAnagram('iceman', 'cinema'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-61-isArrayLike |  This snippet can be used to check if a provided argument is iterable like an array |
@@ -20984,6 +27932,10 @@ isArrayLike('abc'); // true
 isArrayLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-62-isBeforeDate |  This snippet can be used to check whether a date is before another date |
@@ -20994,6 +27946,10 @@ const isBeforeDate = (dateA, dateB) => dateA < dateB;
 isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-63-isBoolean |  This snippet can be used to check whether an argument is a boolean |
@@ -21005,6 +27961,10 @@ isBoolean(null); // false
 isBoolean(false); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-64-isBrowser |  This snippet can be used to determine whether the current runtime environment is a browser. This is helpful for avoiding errors when running front-end modules on the server (Node) |
@@ -21016,6 +27976,10 @@ isBrowser(); // true (browser)
 isBrowser(); // false (Node)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-65-isBrowserTabFocused |  This snippet can be used to determine whether the browser tab is focused |
@@ -21026,6 +27990,10 @@ const isBrowserTabFocused = () => !document.hidden;
 isBrowserTabFocused(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-66-isLowerCase |  This snippet can be used to determine whether a string is lower case |
@@ -21038,6 +28006,10 @@ isLowerCase('a3@$'); // true
 isLowerCase('Ab4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-67-isNil |  This snippet can be used to check whether a value is  or  |
@@ -21049,6 +28021,10 @@ isNil(null); // true
 isNil(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-68-isNull |  This snippet can be used to check whether a value is  |
@@ -21059,6 +28035,10 @@ const isNull = val => val === null;
 isNull(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-69-isNumber |  This snippet can be used to check whether a provided value is a number |
@@ -21070,6 +28050,10 @@ isNumber('1'); // false
 isNumber(1); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-70-isObject |  This snippet can be used to check whether a provided value is an object. It uses the Object constructor to create an object wrapper for the given value |
@@ -21085,6 +28069,10 @@ isObject({}); // true
 isObject(true); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-71-isObjectLike |  This snippet can be used to check if a value is not and that its  is “object” |
@@ -21098,6 +28086,10 @@ isObjectLike(x => x); // false
 isObjectLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-72-isPlainObject |  This snippet checks whether a value is an object created by the Object constructor |
@@ -21109,6 +28101,10 @@ isPlainObject({ a: 1 }); // true
 isPlainObject(new Map()); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-73-isPromiseLike |  This snippet checks whether an object looks like a  |
@@ -21128,6 +28124,10 @@ isPromiseLike(null); // false
 isPromiseLike({}); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-74-isSameDate |  This snippet can be used to check whether two dates are equal |
@@ -21138,6 +28138,10 @@ const isSameDate = (dateA, dateB) => dateA.toISOString() === dateB.toISOString()
 isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-75-isString |  This snippet can be used to check whether an argument is a string |
@@ -21148,6 +28152,10 @@ const isString = val => typeof val === 'string';
 isString('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-76-isSymbol |  This snippet can be used to check whether an argument is a symbol |
@@ -21158,6 +28166,10 @@ const isSymbol = val => typeof val === 'symbol';
 isSymbol(Symbol('x')); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-77-isUndefined |  This snippet can be used to check whether a value is undefined |
@@ -21168,6 +28180,10 @@ const isUndefined = val => val === undefined;
 isUndefined(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-78-isUpperCase |  This snippet can be used to check whether a string is upper case |
@@ -21180,6 +28196,10 @@ isLowerCase('A3@$'); // true
 isLowerCase('aB4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-79-isValidJSON |  This snippet can be used to check whether a string is a valid JSON |
@@ -21199,6 +28219,10 @@ isValidJSON('{"name":"Adam",age:"20"}'); // false
 isValidJSON(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-80-last |  This snippet returns the last element of an array |
@@ -21209,6 +28233,10 @@ const last = arr => arr[arr.length - 1];
 last([1, 2, 3]); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-81-matches |  This snippet compares two objects to determine if the first one contains the same property values as the second one |
@@ -21221,6 +28249,10 @@ matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true }); 
 matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-82-maxDate |  This snippet can be used to get the latest date |
@@ -21237,6 +28269,10 @@ const array = [
 maxDate(array); // 2018-03-11T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-83-maxN |  This snippet returns the  largest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in descending order) |
@@ -21248,6 +28284,10 @@ maxN([1, 2, 3]); // [3]
 maxN([1, 2, 3], 2); // [3,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-84-minDate |  This snippet can be used to get the earliest date |
@@ -21264,6 +28304,10 @@ const array = [
 minDate(array); // 2016-01-08T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-85-minN |  This snippet returns the  smallest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in ascending order) |
@@ -21275,6 +28319,10 @@ minN([1, 2, 3]); // [1]
 minN([1, 2, 3], 2); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-86-negate |  This snippet can be used to apply the not operator () to a predicate function with its arguments |
@@ -21285,6 +28333,10 @@ const negate = func => (...args) => !func(...args);
 [1, 2, 3, 4, 5, 6].filter(negate(n => n % 2 === 0)); // [ 1, 3, 5 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-87-nodeListToArray |  This snippet can be used to convert a  to an array |
@@ -21295,6 +28347,10 @@ const nodeListToArray = nodeList => [...nodeList];
 nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-88-pad |  This snippet can be used to  a string on both sides with a specified character if it is shorter than the specified length |
@@ -21308,6 +28364,10 @@ pad(String(42), 6, '0'); // '004200'
 pad('foobar', 3); // 'foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-89-radsToDegrees |  This snippet can be used to convert an angle from radians to degrees |
@@ -21318,6 +28378,10 @@ const radsToDegrees = rad => (rad * 180.0) / Math.PI;
 radsToDegrees(Math.PI / 2); // 90
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-90-randomHexColorCode |  This snippet can be used to generate a random hexadecimal color code |
@@ -21331,6 +28395,10 @@ const randomHexColorCode = () => {
 randomHexColorCode(); // "#e34155"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-91-randomIntArrayInRange |  This snippet can be used to generate an array with  random integers in a specified range |
@@ -21342,6 +28410,10 @@ const randomIntArrayInRange = (min, max, n = 1) =>
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-92-randomIntegerInRange |  This snippet can be used to generate a random integer in a specified range |
@@ -21352,6 +28424,10 @@ const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min
 randomIntegerInRange(0, 5); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-93-randomNumberInRange |  This snippet can be used to return a random number in a specified range |
@@ -21362,6 +28438,10 @@ const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;
 randomNumberInRange(2, 10); // 6.0211363285087005
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-94-readFileLines |  This snippet can be used to read a file by getting an array of lines from a file |
@@ -21378,6 +28458,10 @@ let arr = readFileLines('test.txt');
 console.log(arr); // ['line1', 'line2', 'line3']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-95-redirect |  This snippet can be used to do a redirect to a specified URL |
@@ -21389,6 +28473,10 @@ const redirect = (url, asLink = true) =>
 redirect('https://google.com');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-96-reverse |  This snippet can be used to reverse a string |
@@ -21399,6 +28487,10 @@ const reverseString = str => [...str].reverse().join('');
 reverseString('foobar'); // 'raboof'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-97-round |  This snippet can be used to round a number to a specified number of digits |
@@ -21409,6 +28501,10 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.005, 2); // 1.01
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-98-runPromisesInSeries |  This snippet can be used to run an array of promises in series |
@@ -21421,6 +28517,10 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 // Executes each promise sequentially, taking a total of 3 seconds to complete
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-99-sample |  This snippet can be used to get a random number from an array |
@@ -21431,6 +28531,10 @@ const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 sample([3, 7, 9, 11]); // 9
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-100-sampleSize |  This snippet can be used to get random elements from unique positions from an array up to the size of the array. Elements in the array are shuffled using the  |
@@ -21449,6 +28553,10 @@ sampleSize([1, 2, 3], 2); // [3,1]
 sampleSize([1, 2, 3], 4); // [2,3,1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-101-scrollToTop |  This snippet can be used to do a smooth scroll to the top of the current page |
@@ -21465,6 +28573,10 @@ const scrollToTop = () => {
 scrollToTop();
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-102-serializeCookie |  This snippet can be used to serialize a cookie name-value pair into a Set-Cookie header string |
@@ -21475,6 +28587,10 @@ const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIC
 serializeCookie('foo', 'bar'); // 'foo=bar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-103-setStyle |  This snippet can be used to set the value of a CSS rule for a particular element |
@@ -21486,6 +28602,10 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 // The first <p> element on the page will have a font-size of 20px
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-104-shallowClone |  This snippet can be used to create a shallow clone of an object |
@@ -21497,6 +28617,10 @@ const a = { x: true, y: 1 };
 const b = shallowClone(a); // a !== b
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-105-show |  This snippet can be used to show all the elements specified |
@@ -21507,6 +28631,10 @@ const show = (...el) => [...el].forEach(e => (e.style.display = ''));
 show(...document.querySelectorAll('img')); // Shows all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-106-shuffle |  This snippet can be used to order the elements of an array randomly using the  |
@@ -21525,6 +28653,10 @@ const foo = [1, 2, 3];
 shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-107-similarity |  This snippet can be used to return an array of elements that appear in two arrays |
@@ -21535,6 +28667,10 @@ const similarity = (arr, values) => arr.filter(v => values.includes(v))
 similarity([1, 2, 3], [1, 2, 4]); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-108-sleep |  This snippet can be used to delay the execution of an asynchronous function by putting it into sleep |
@@ -21549,6 +28685,10 @@ async function sleepyWork() {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-130-smoothScroll |  This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
@@ -21563,6 +28703,10 @@ smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-110-sortCharactersInString |  This snippet can be used to alphabetically sort the characters in a string |
@@ -21573,6 +28717,10 @@ const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)
 sortCharactersInString('cabbage'); // 'aabbceg'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-111-splitLines |  This snippet can be used to split a multi-line string into an array of lines |
@@ -21583,6 +28731,10 @@ const splitLines = str => str.split(/\r?\n/);
 splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline', 'string.' , '']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-112-stripHTMLTags |  This snippet can be used to remove HTML/XML tags from a string |
@@ -21593,6 +28745,10 @@ const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
 stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-113-sum |  This snippet can be used to find the sum of two or more numbers or arrays |
@@ -21604,6 +28760,10 @@ sum(1, 2, 3, 4); // 10
 sum(...[1, 2, 3, 4]); // 10
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-114-tail |  This snippet can be used to get an array with all the elements of an array except for the first one. If the array has only one element, then that an array with that element will be returned instead |
@@ -21615,6 +28775,10 @@ tail([1, 2, 3]); // [2,3]
 tail([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-115-take |  This snippet can be used to get an array with elements removed from the beginning |
@@ -21626,6 +28790,10 @@ take([1, 2, 3], 5); // [1, 2, 3]
 take([1, 2, 3], 0); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-116-takeRight |  This snippet can be used to get an array with elements removed from the end |
@@ -21637,6 +28805,10 @@ takeRight([1, 2, 3], 2); // [ 2, 3 ]
 takeRight([1, 2, 3]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-117-timeTaken |  This snippet can be used to find out the time it takes to execute a function |
@@ -21652,6 +28824,10 @@ const timeTaken = callback => {
 timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-118-times |  This snippet can be used to iterate over a callback times |
@@ -21667,6 +28843,10 @@ times(5, i => (output += i));
 console.log(output); // 01234
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-119-toCurrency |  This snippet can be used to format a number like a currency |
@@ -21682,6 +28862,10 @@ toCurrency(322342436423.2435, 'JPY'); // ¥322,342,436,423 | currency: Japanese 
 toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Japanese Yen | currencyLangFormat: Finnish
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-120-toDecimalMark |  This snippet uses the function to convert float-point arithmetic to the decimal mark form by using a number to make a comma-separated string |
@@ -21692,6 +28876,10 @@ const toDecimalMark = num => num.toLocaleString('en-US');
 toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-121-toggleClass |  This snippet can be used to toggle a class for an element |
@@ -21702,6 +28890,10 @@ const toggleClass = (el, className) => el.classList.toggle(className);
 toggleClass(document.querySelector('p.special'), 'special'); // The paragraph will not have the 'special' class anymore
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-122-tomorrow |  This snippet can be used to get a string representation of tomorrow’s date |
@@ -21716,6 +28908,10 @@ const tomorrow = () => {
 tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-123-unfold |  This snippet can be used to build an array using an iterator function and an initial seed value |
@@ -21732,6 +28928,10 @@ var f = n => (n > 50 ? false : [-n, n + 10]);
 unfold(f, 10); // [-10, -20, -30, -40, -50]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-124-union |  This snippet can be used to find the  of two arrays, resulting in an array that has elements that come from both arrays but that do not repeat |
@@ -21742,6 +28942,10 @@ const union = (a, b) => Array.from(new Set([...a, ...b]));
 union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-125-uniqueElements |  This snippet uses ES6 andtheoperator to get every element only once |
@@ -21752,6 +28956,10 @@ const uniqueElements = arr => [...new Set(arr)];
 uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-126-validateNumber |  This snippet can be used to check whether a value is a number |
@@ -21762,6 +28970,10 @@ const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) ==
 validateNumber('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-127-words |  This snippet converts a string into an array of words |
@@ -21773,6 +28985,10 @@ words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-128-getES6moduleSyntaxBySource |  Get all ES6 modules syntax from the source directory |
@@ -21794,6 +29010,10 @@ export function getES6moduleSyntaxBySource(source, extension) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-129-concatJSONsourcesToOneFile |  Concat & export all external JSON sources to one JSON file |
@@ -21818,6 +29038,10 @@ export function concatJSONsourcesToOneFile(sourcesList, distPath) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-131-validateEmail |  Email validator with regex |
@@ -21846,6 +29070,10 @@ all([4, 2, 3], x => x > 1); // true
 all([1, 2, 3]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-2-allEqual |  This snippet checks whether all elements of the array are equal |
@@ -21857,6 +29085,10 @@ allEqual([1, 2, 3, 4, 5, 6]); // false
 allEqual([1, 1, 1, 1]); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-3-approximatelyEqual |  This snippet checks whether two numbers are approximately equal to each other, with a small difference |
@@ -21867,6 +29099,10 @@ const approximatelyEqual = (v1, v2, epsilon = 0.001) => Math.abs(v1 - v2) < epsi
 approximatelyEqual(Math.PI / 2.0, 1.5708); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-4-arrayToCSV |  This snippet converts the elements to strings with comma-separated values |
@@ -21879,6 +29115,10 @@ arrayToCSV([['a', 'b'], ['c', 'd']]); // '"a","b"\n"c","d"'
 arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // '"a";"b"\n"c";"d"'```
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-5-arrayToHtmlList |  This snippet converts the elements of an array into  tags and appends them to the list of the given ID |
@@ -21893,6 +29133,10 @@ const arrayToHtmlList = (arr, listID) =>
 arrayToHtmlList(['item 1', 'item 2'], 'myListID');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-6-attempt |  This snippet executes a function, returning either the result or the caught error object |
@@ -21911,6 +29155,10 @@ var elements = attempt(function(selector) {
 if (elements instanceof Error) elements = []; // elements = []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-7-average |  This snippet returns the average of two or more numerical values |
@@ -21921,6 +29169,10 @@ average(...[1, 2, 3]); // 2
 average(1, 2, 3); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-8-averageBy |  This snippet returns the average of an array after initially doing the mapping of each element to a value using a given function |
@@ -21934,6 +29186,10 @@ averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], o => o.n); // 5
 averageBy([{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }], 'n'); // 5
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-9-bifurcate |  This snippet splits values into two groups and then puts a truthy element of in the first group, and in the second group otherwise |
@@ -21945,6 +29201,10 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [true, true, false, true]);
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-10-bifurcateBy |  This snippet splits values into two groups, based on a predicate function. If the predicate function returns a truthy value, the element will be placed in the first group. Otherwise, it will be placed in the second group |
@@ -21957,6 +29217,10 @@ bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
 // [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-11-bottomVisible |  This snippet checks whether the bottom of a page is visible |
@@ -21969,6 +29233,10 @@ const bottomVisible = () =>
 bottomVisible(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-12-byteSize |  This snippet returns the length of a string in bytes |
@@ -21980,6 +29248,10 @@ byteSize('😀'); // 4
 byteSize('Hello World'); // 11
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-13-capitalize |  This snippet capitalizes the first letter of a string |
@@ -21992,6 +29264,10 @@ capitalize('fooBar'); // 'FooBar'
 capitalize('fooBar', true); // 'Foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-14-capitalizeEveryWord |  This snippet capitalizes the first letter of every word in a given string |
@@ -22002,6 +29278,10 @@ const capitalizeEveryWord = str => str.replace(/\b[a-z]/g, char => char.toUpperC
 capitalizeEveryWord('hello world!'); // 'Hello World!'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-15-castArray |  This snippet converts a non-array value into array |
@@ -22013,6 +29293,10 @@ castArray('foo'); // ['foo']
 castArray([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-16-compact |  This snippet removes false values from an array |
@@ -22024,6 +29308,10 @@ compact([0, 1, false, 2, '', 3, 'a', 'e' * 23, NaN, 's', 34]);
 // [ 1, 2, 3, 'a', 's', 34 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-17-countOccurrences |  This snippet counts the occurrences of a value in an array |
@@ -22033,6 +29321,10 @@ const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 :
 countOccurrences([1, 1, 2, 1, 2, 3], 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-18-createDirIfNotExists |  This snippet uses  to check whether a directory exists and then  to create it if it doesn’t |
@@ -22044,6 +29336,10 @@ createDirIfNotExists('test');
 // creates the directory 'test', if it doesn't exist
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-19-currentURL |  This snippet returns the current URL |
@@ -22054,6 +29350,10 @@ const currentURL = () => window.location.href;
 currentURL(); // 'https://medium.com/@fatosmorina'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-20-dayOfYear |  This snippet gets the day of the year from a object |
@@ -22065,6 +29365,10 @@ const dayOfYear = date =>
 dayOfYear(new Date()); // 272
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-21-decapitalize |  This snippet turns the first letter of a string into lowercase |
@@ -22077,6 +29381,10 @@ decapitalize('FooBar'); // 'fooBar'
 decapitalize('FooBar'); // 'fooBar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-22-deepFlatten |  This snippet flattens an array recursively |
@@ -22087,6 +29395,10 @@ const deepFlatten = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFla
 deepFlatten([1, [2], [[3], 4], 5]); // [1,2,3,4,5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-23-default |  This snippet assigns default values for all properties in an object that are  |
@@ -22097,6 +29409,10 @@ const defaults = (obj, ...defs) => Object.assign({}, obj, ...defs.reverse(), obj
 defaults({ a: 1 }, { b: 2 }, { b: 6 }, { a: 3 }); // { a: 1, b: 2 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-24-defer |  This snippet delays the execution of a function until the current call stack is cleared |
@@ -22107,6 +29423,10 @@ const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
 defer(console.log, 'a'), console.log('b'); // logs 'b' then 'a'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-25-degreesToRads |  This snippet can be used to convert a value from degrees to radians |
@@ -22117,6 +29437,10 @@ const degreesToRads = deg => (deg * Math.PI) / 180.0;
 degreesToRads(90.0); // ~1.5708
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-26-difference |  This snippet finds the difference between two arrays |
@@ -22130,6 +29454,10 @@ const difference = (a, b) => {
 difference([1, 2, 3], [1, 2, 4]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-mixte-27-differenceBy |  This snippet returns the difference between two arrays, after applying a given function to each element of both lists |
@@ -22144,6 +29472,10 @@ differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [1.2]
 differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); // [ { x: 2 } ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-28-differenceWith |  This snippet removes the values for which the comparator function returns  |
@@ -22155,6 +29487,10 @@ differenceWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0], (a, b) => Math.round(a) === Mat
 // [1, 1.2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-29-digitize |  This snippet gets a number as input and returns an array of its digits |
@@ -22165,6 +29501,10 @@ const digitize = n => [...`${n}`].map(i => parseInt(i));
 digitize(431); // [4, 3, 1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-30-distance |  This snippet returns the distance between two points by calculating the Euclidean distance |
@@ -22175,6 +29515,10 @@ const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);
 distance(1, 1, 2, 3); // 2.23606797749979
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-31-DropLeft |  This snippet returns a new array with  elements removed from the left |
@@ -22187,6 +29531,10 @@ dropLeft([1, 2, 3], 2); // [3]
 dropLeft([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-32-dropRight |  This snippet returns a new array with  elements removed from the right |
@@ -22199,6 +29547,10 @@ dropRight([1, 2, 3], 2); // [1]
 dropRight([1, 2, 3], 42); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-33-dropRightWhile |  This snippet removes elements from the right side of an array until the passed function returns  |
@@ -22212,6 +29564,10 @@ const dropRightWhile = (arr, func) => {
 dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-34-dropWhile |  This snippet removes elements from an array until the passed function returns  |
@@ -22225,6 +29581,10 @@ const dropWhile = (arr, func) => {
 dropWhile([1, 2, 3, 4], n => n >= 3); // [3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-35-elementContains |  This snippet checks whether the parent element contains the child |
@@ -22236,6 +29596,10 @@ elementContains(document.querySelector('head'), document.querySelector('title'))
 elementContains(document.querySelector('body'), document.querySelector('body')); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-36-Filter Duplicate Elements |  This snippet removes duplicate values in an array |
@@ -22246,6 +29610,10 @@ const filterNonUnique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexO
 filterNonUnique([1, 2, 2, 3, 4, 4, 5]); // [1, 3, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-37-findKey |  This snippet returns the first key that satisfies a given function |
@@ -22263,6 +29631,10 @@ findKey(
 ); // 'barney'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-38-findLast |  This snippet returns the last element for which a given function returns a truthy value |
@@ -22273,6 +29645,10 @@ const findLast = (arr, fn) => arr.filter(fn).pop();
 findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-39-flatten |  This snippet flattens an array up to a specified depth using recursion |
@@ -22285,6 +29661,10 @@ flatten([1, [2], 3, 4]); // [1, 2, 3, 4]
 flatten([1, [2, [3, [4, 5], 6], 7], 8], 2); // [1, 2, 3, [4, 5], 6, 7, 8]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-40-forEachRight |  This snippet executes a function for each element of an array starting from the array’s last element |
@@ -22299,6 +29679,10 @@ const forEachRight = (arr, callback) =>
 forEachRight([1, 2, 3, 4], val => console.log(val)); // '4', '3', '2', '1'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-41-forOwn |  This snippet iterates on each property of an object and iterates a callback for each one respectively |
@@ -22308,6 +29692,10 @@ const forOwn = (obj, fn) => Object.keys(obj).forEach(key => fn(obj[key], key, ob
 forOwn({ foo: 'bar', a: 1 }, v => console.log(v)); // 'bar', 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-42-functionName |  This snippet prints the name of a function into the console |
@@ -22318,6 +29706,10 @@ const functionName = fn => (console.debug(fn.name), fn);
 functionName(Math.max); // max (logged in debug channel of console)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-43-Get Time From Date |  This snippet can be used to get the time from a object as a string |
@@ -22328,6 +29720,10 @@ const getColonTimeFromDate = date => date.toTimeString().slice(0, 8);
 getColonTimeFromDate(new Date()); // "08:38:00"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-44-Get Days Between Dates |  This snippet can be used to find the difference in days between two dates |
@@ -22339,6 +29735,10 @@ const getDaysDiffBetweenDates = (dateInitial, dateFinal) =>
 getDaysDiffBetweenDates(new Date('2019-01-13'), new Date('2019-01-15')); // 2
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-45-getStyle |  This snippet can be used to get the value of a CSS rule for a particular element |
@@ -22349,6 +29749,10 @@ const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];
 getStyle(document.querySelector('p'), 'font-size'); // '16px'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-46-getType |  This snippet can be used to get the type of a value |
@@ -22360,6 +29764,10 @@ const getType = v =>
 getType(new Set([1, 2, 3])); // 'set'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-47-hasClass |  This snippet checks whether an element has a particular class |
@@ -22369,6 +29777,10 @@ const hasClass = (el, className) => el.classList.contains(className);
 hasClass(document.querySelector('p.special'), 'special'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-48-head |  This snippet returns the  of a list |
@@ -22379,6 +29791,10 @@ const head = arr => arr[0];
 head([1, 2, 3]); // 1
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-49-hide |  This snippet can be used to hide all elements specified |
@@ -22389,6 +29805,10 @@ const hide = (...el) => [...el].forEach(e => (e.style.display = 'none'));
 hide(document.querySelectorAll('img')); // Hides all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-50-httpsRedirect |  This snippet can be used to redirect from HTTP to HTTPS in a particular domain |
@@ -22401,6 +29821,10 @@ const httpsRedirect = () => {
 httpsRedirect(); // If you are on http://mydomain.com, you are redirected to https://mydomain.com
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-51-indexOfAll |  This snippet can be used to get all indexes of a value in an array, which returns an empty array, in case this value is not included in it |
@@ -22412,6 +29836,10 @@ indexOfAll([1, 2, 3, 1, 2, 3], 1); // [0,3]
 indexOfAll([1, 2, 3], 4); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-52-initial |  This snippet returns all elements of an array except the last one |
@@ -22423,6 +29851,10 @@ initial([1, 2, 3]); // [1,2]const initial = arr => arr.slice(0, -1);
 initial([1, 2, 3]); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-53-insertAfter |  This snippet can be used to insert an HTML string after the end of a particular element |
@@ -22433,6 +29865,10 @@ const insertAfter = (el, htmlString) => el.insertAdjacentHTML('afterend', htmlSt
 insertAfter(document.getElementById('myId'), '<p>after</p>'); // <div id="myId">...</div> <p>after</p>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-54-insertBefore |  This snippet can be used to insert an HTML string before a particular element |
@@ -22443,6 +29879,10 @@ const insertBefore = (el, htmlString) => el.insertAdjacentHTML('beforebegin', ht
 insertBefore(document.getElementById('myId'), '<p>before</p>'); // <p>before</p> <div id="myId">...</div>
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-55-intersection |  This snippet can be used to get an array with elements that are included in two other arrays |
@@ -22456,6 +29896,10 @@ const intersection = (a, b) => {
 intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-56-intersectionBy |  This snippet can be used to return a list of elements that exist in both arrays, after a particular function has been executed to each element of both arrays |
@@ -22469,6 +29913,10 @@ const intersectionBy = (a, b, fn) => {
 intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor); // [2.1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-57-intersectionWith |  This snippet can be used to return a list of elements that exist in both arrays by using a comparator function |
@@ -22479,6 +29927,10 @@ const intersectionWith = (a, b, comp) => a.filter(x => b.findIndex(y => comp(x, 
 intersectionWith([1, 1.2, 1.5, 3, 0], [1.9, 3, 0, 3.9], (a, b) => Math.round(a) === Math.round(b)); // [1.5, 3, 0]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-58-is |  This snippet can be used to check if a value is of a particular type |
@@ -22501,6 +29953,10 @@ is(Boolean, true); // true
 is(Boolean, new Boolean(true)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-59-isAfterDate |  This snippet can be used to check whether a date is after another date |
@@ -22511,6 +29967,10 @@ const isAfterDate = (dateA, dateB) => dateA > dateB;
 isAfterDate(new Date(2010, 10, 21), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-60-isAnagram |  This snippet can be used to check whether a particular string is an anagram with another string |
@@ -22530,6 +29990,10 @@ const isAnagram = (str1, str2) => {
 isAnagram('iceman', 'cinema'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-61-isArrayLike |  This snippet can be used to check if a provided argument is iterable like an array |
@@ -22542,6 +30006,10 @@ isArrayLike('abc'); // true
 isArrayLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-62-isBeforeDate |  This snippet can be used to check whether a date is before another date |
@@ -22552,6 +30020,10 @@ const isBeforeDate = (dateA, dateB) => dateA < dateB;
 isBeforeDate(new Date(2010, 10, 20), new Date(2010, 10, 21)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-63-isBoolean |  This snippet can be used to check whether an argument is a boolean |
@@ -22563,6 +30035,10 @@ isBoolean(null); // false
 isBoolean(false); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-64-isBrowser |  This snippet can be used to determine whether the current runtime environment is a browser. This is helpful for avoiding errors when running front-end modules on the server (Node) |
@@ -22574,6 +30050,10 @@ isBrowser(); // true (browser)
 isBrowser(); // false (Node)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-65-isBrowserTabFocused |  This snippet can be used to determine whether the browser tab is focused |
@@ -22584,6 +30064,10 @@ const isBrowserTabFocused = () => !document.hidden;
 isBrowserTabFocused(); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-66-isLowerCase |  This snippet can be used to determine whether a string is lower case |
@@ -22596,6 +30080,10 @@ isLowerCase('a3@$'); // true
 isLowerCase('Ab4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-67-isNil |  This snippet can be used to check whether a value is  or  |
@@ -22607,6 +30095,10 @@ isNil(null); // true
 isNil(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-68-isNull |  This snippet can be used to check whether a value is  |
@@ -22617,6 +30109,10 @@ const isNull = val => val === null;
 isNull(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-69-isNumber |  This snippet can be used to check whether a provided value is a number |
@@ -22628,6 +30124,10 @@ isNumber('1'); // false
 isNumber(1); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-70-isObject |  This snippet can be used to check whether a provided value is an object. It uses the Object constructor to create an object wrapper for the given value |
@@ -22643,6 +30143,10 @@ isObject({}); // true
 isObject(true); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-71-isObjectLike |  This snippet can be used to check if a value is not and that its  is “object” |
@@ -22656,6 +30160,10 @@ isObjectLike(x => x); // false
 isObjectLike(null); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-72-isPlainObject |  This snippet checks whether a value is an object created by the Object constructor |
@@ -22667,6 +30175,10 @@ isPlainObject({ a: 1 }); // true
 isPlainObject(new Map()); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-73-isPromiseLike |  This snippet checks whether an object looks like a  |
@@ -22686,6 +30198,10 @@ isPromiseLike(null); // false
 isPromiseLike({}); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-74-isSameDate |  This snippet can be used to check whether two dates are equal |
@@ -22696,6 +30212,10 @@ const isSameDate = (dateA, dateB) => dateA.toISOString() === dateB.toISOString()
 isSameDate(new Date(2010, 10, 20), new Date(2010, 10, 20)); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-75-isString |  This snippet can be used to check whether an argument is a string |
@@ -22706,6 +30226,10 @@ const isString = val => typeof val === 'string';
 isString('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-76-isSymbol |  This snippet can be used to check whether an argument is a symbol |
@@ -22716,6 +30240,10 @@ const isSymbol = val => typeof val === 'symbol';
 isSymbol(Symbol('x')); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-77-isUndefined |  This snippet can be used to check whether a value is undefined |
@@ -22726,6 +30254,10 @@ const isUndefined = val => val === undefined;
 isUndefined(undefined); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-78-isUpperCase |  This snippet can be used to check whether a string is upper case |
@@ -22738,6 +30270,10 @@ isLowerCase('A3@$'); // true
 isLowerCase('aB4'); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-79-isValidJSON |  This snippet can be used to check whether a string is a valid JSON |
@@ -22757,6 +30293,10 @@ isValidJSON('{"name":"Adam",age:"20"}'); // false
 isValidJSON(null); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-80-last |  This snippet returns the last element of an array |
@@ -22767,6 +30307,10 @@ const last = arr => arr[arr.length - 1];
 last([1, 2, 3]); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-object-81-matches |  This snippet compares two objects to determine if the first one contains the same property values as the second one |
@@ -22779,6 +30323,10 @@ matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true }); 
 matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true }); // false
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-82-maxDate |  This snippet can be used to get the latest date |
@@ -22795,6 +30343,10 @@ const array = [
 maxDate(array); // 2018-03-11T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-83-maxN |  This snippet returns the  largest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in descending order) |
@@ -22806,6 +30358,10 @@ maxN([1, 2, 3]); // [3]
 maxN([1, 2, 3], 2); // [3,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-84-minDate |  This snippet can be used to get the earliest date |
@@ -22822,6 +30378,10 @@ const array = [
 minDate(array); // 2016-01-08T22:00:00.000Z
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-85-minN |  This snippet returns the  smallest elements from a list. If is greater than or equal to the list’s length, then it will return the original list (sorted in ascending order) |
@@ -22833,6 +30393,10 @@ minN([1, 2, 3]); // [1]
 minN([1, 2, 3], 2); // [1,2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-86-negate |  This snippet can be used to apply the not operator () to a predicate function with its arguments |
@@ -22843,6 +30407,10 @@ const negate = func => (...args) => !func(...args);
 [1, 2, 3, 4, 5, 6].filter(negate(n => n % 2 === 0)); // [ 1, 3, 5 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-87-nodeListToArray |  This snippet can be used to convert a  to an array |
@@ -22853,6 +30421,10 @@ const nodeListToArray = nodeList => [...nodeList];
 nodeListToArray(document.childNodes); // [ <!DOCTYPE html>, html ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-88-pad |  This snippet can be used to  a string on both sides with a specified character if it is shorter than the specified length |
@@ -22866,6 +30438,10 @@ pad(String(42), 6, '0'); // '004200'
 pad('foobar', 3); // 'foobar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-89-radsToDegrees |  This snippet can be used to convert an angle from radians to degrees |
@@ -22876,6 +30452,10 @@ const radsToDegrees = rad => (rad * 180.0) / Math.PI;
 radsToDegrees(Math.PI / 2); // 90
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-90-randomHexColorCode |  This snippet can be used to generate a random hexadecimal color code |
@@ -22889,6 +30469,10 @@ const randomHexColorCode = () => {
 randomHexColorCode(); // "#e34155"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-91-randomIntArrayInRange |  This snippet can be used to generate an array with  random integers in a specified range |
@@ -22900,6 +30484,10 @@ const randomIntArrayInRange = (min, max, n = 1) =>
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-92-randomIntegerInRange |  This snippet can be used to generate a random integer in a specified range |
@@ -22910,6 +30498,10 @@ const randomIntegerInRange = (min, max) => Math.floor(Math.random() * (max - min
 randomIntegerInRange(0, 5); // 3
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-93-randomNumberInRange |  This snippet can be used to return a random number in a specified range |
@@ -22920,6 +30512,10 @@ const randomNumberInRange = (min, max) => Math.random() * (max - min) + min;
 randomNumberInRange(2, 10); // 6.0211363285087005
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-lib-94-readFileLines |  This snippet can be used to read a file by getting an array of lines from a file |
@@ -22936,6 +30532,10 @@ let arr = readFileLines('test.txt');
 console.log(arr); // ['line1', 'line2', 'line3']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-bom-95-redirect |  This snippet can be used to do a redirect to a specified URL |
@@ -22947,6 +30547,10 @@ const redirect = (url, asLink = true) =>
 redirect('https://google.com');
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-96-reverse |  This snippet can be used to reverse a string |
@@ -22957,6 +30561,10 @@ const reverseString = str => [...str].reverse().join('');
 reverseString('foobar'); // 'raboof'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-math-97-round |  This snippet can be used to round a number to a specified number of digits |
@@ -22967,6 +30575,10 @@ const round = (n, decimals = 0) => Number(`${Math.round(`${n}e${decimals}`)}e-${
 round(1.005, 2); // 1.01
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-98-runPromisesInSeries |  This snippet can be used to run an array of promises in series |
@@ -22979,6 +30591,10 @@ runPromisesInSeries([() => delay(1000), () => delay(2000)]);
 // Executes each promise sequentially, taking a total of 3 seconds to complete
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-99-sample |  This snippet can be used to get a random number from an array |
@@ -22989,6 +30605,10 @@ const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 sample([3, 7, 9, 11]); // 9
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-100-sampleSize |  This snippet can be used to get random elements from unique positions from an array up to the size of the array. Elements in the array are shuffled using the  |
@@ -23007,6 +30627,10 @@ sampleSize([1, 2, 3], 2); // [3,1]
 sampleSize([1, 2, 3], 4); // [2,3,1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-101-scrollToTop |  This snippet can be used to do a smooth scroll to the top of the current page |
@@ -23023,6 +30647,10 @@ const scrollToTop = () => {
 scrollToTop();
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-102-serializeCookie |  This snippet can be used to serialize a cookie name-value pair into a Set-Cookie header string |
@@ -23033,6 +30661,10 @@ const serializeCookie = (name, val) => `${encodeURIComponent(name)}=${encodeURIC
 serializeCookie('foo', 'bar'); // 'foo=bar'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-103-setStyle |  This snippet can be used to set the value of a CSS rule for a particular element |
@@ -23044,6 +30676,10 @@ setStyle(document.querySelector('p'), 'font-size', '20px');
 // The first <p> element on the page will have a font-size of 20px
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-104-shallowClone |  This snippet can be used to create a shallow clone of an object |
@@ -23055,6 +30691,10 @@ const a = { x: true, y: 1 };
 const b = shallowClone(a); // a !== b
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-105-show |  This snippet can be used to show all the elements specified |
@@ -23065,6 +30705,10 @@ const show = (...el) => [...el].forEach(e => (e.style.display = ''));
 show(...document.querySelectorAll('img')); // Shows all <img> elements on the page
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-106-shuffle |  This snippet can be used to order the elements of an array randomly using the  |
@@ -23083,6 +30727,10 @@ const foo = [1, 2, 3];
 shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-107-similarity |  This snippet can be used to return an array of elements that appear in two arrays |
@@ -23093,6 +30741,10 @@ const similarity = (arr, values) => arr.filter(v => values.includes(v))
 similarity([1, 2, 3], [1, 2, 4]); // [1, 2]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-promise-108-sleep |  This snippet can be used to delay the execution of an asynchronous function by putting it into sleep |
@@ -23107,6 +30759,10 @@ async function sleepyWork() {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-130-smoothScroll |  This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
@@ -23121,6 +30777,10 @@ smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-string-110-sortCharactersInString |  This snippet can be used to alphabetically sort the characters in a string |
@@ -23131,6 +30791,10 @@ const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)
 sortCharactersInString('cabbage'); // 'aabbceg'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-111-splitLines |  This snippet can be used to split a multi-line string into an array of lines |
@@ -23141,6 +30805,10 @@ const splitLines = str => str.split(/\r?\n/);
 splitLines('This\nis a\nmultiline\nstring.\n'); // ['This', 'is a', 'multiline', 'string.' , '']
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-112-stripHTMLTags |  This snippet can be used to remove HTML/XML tags from a string |
@@ -23151,6 +30819,10 @@ const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
 stripHTMLTags('<p><em>lorem</em> <strong>ipsum</strong></p>'); // 'lorem ipsum'
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-113-sum |  This snippet can be used to find the sum of two or more numbers or arrays |
@@ -23162,6 +30834,10 @@ sum(1, 2, 3, 4); // 10
 sum(...[1, 2, 3, 4]); // 10
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-114-tail |  This snippet can be used to get an array with all the elements of an array except for the first one. If the array has only one element, then that an array with that element will be returned instead |
@@ -23173,6 +30849,10 @@ tail([1, 2, 3]); // [2,3]
 tail([1]); // [1]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-115-take |  This snippet can be used to get an array with elements removed from the beginning |
@@ -23184,6 +30864,10 @@ take([1, 2, 3], 5); // [1, 2, 3]
 take([1, 2, 3], 0); // []
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-116-takeRight |  This snippet can be used to get an array with elements removed from the end |
@@ -23195,6 +30879,10 @@ takeRight([1, 2, 3], 2); // [ 2, 3 ]
 takeRight([1, 2, 3]); // [3]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-117-timeTaken |  This snippet can be used to find out the time it takes to execute a function |
@@ -23210,6 +30898,10 @@ const timeTaken = callback => {
 timeTaken(() => Math.pow(2, 10)); // 1024, (logged): timeTaken: 0.02099609375ms
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-118-times |  This snippet can be used to iterate over a callback times |
@@ -23225,6 +30917,10 @@ times(5, i => (output += i));
 console.log(output); // 01234
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-119-toCurrency |  This snippet can be used to format a number like a currency |
@@ -23240,6 +30936,10 @@ toCurrency(322342436423.2435, 'JPY'); // ¥322,342,436,423 | currency: Japanese 
 toCurrency(322342436423.2435, 'JPY', 'fi'); // 322 342 436 423 ¥ | currency: Japanese Yen | currencyLangFormat: Finnish
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-120-toDecimalMark |  This snippet uses the function to convert float-point arithmetic to the decimal mark form by using a number to make a comma-separated string |
@@ -23250,6 +30950,10 @@ const toDecimalMark = num => num.toLocaleString('en-US');
 toDecimalMark(12305030388.9087); // "12,305,030,388.909"
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-dom-121-toggleClass |  This snippet can be used to toggle a class for an element |
@@ -23260,6 +30964,10 @@ const toggleClass = (el, className) => el.classList.toggle(className);
 toggleClass(document.querySelector('p.special'), 'special'); // The paragraph will not have the 'special' class anymore
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-date-122-tomorrow |  This snippet can be used to get a string representation of tomorrow’s date |
@@ -23274,6 +30982,10 @@ const tomorrow = () => {
 tomorrow(); // 2019-09-08 (if current date is 2018-09-08)
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-func-123-unfold |  This snippet can be used to build an array using an iterator function and an initial seed value |
@@ -23290,6 +31002,10 @@ var f = n => (n > 50 ? false : [-n, n + 10]);
 unfold(f, 10); // [-10, -20, -30, -40, -50]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-124-union |  This snippet can be used to find the  of two arrays, resulting in an array that has elements that come from both arrays but that do not repeat |
@@ -23300,6 +31016,10 @@ const union = (a, b) => Array.from(new Set([...a, ...b]));
 union([1, 2, 3], [4, 3, 2]); // [1,2,3,4]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-array-125-uniqueElements |  This snippet uses ES6 andtheoperator to get every element only once |
@@ -23310,6 +31030,10 @@ const uniqueElements = arr => [...new Set(arr)];
 uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-126-validateNumber |  This snippet can be used to check whether a value is a number |
@@ -23320,6 +31044,10 @@ const validateNumber = n => !isNaN(parseFloat(n)) && isFinite(n) && Number(n) ==
 validateNumber('10'); // true
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-cast-127-words |  This snippet converts a string into an array of words |
@@ -23331,6 +31059,10 @@ words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-128-getES6moduleSyntaxBySource |  Get all ES6 modules syntax from the source directory |
@@ -23352,6 +31084,10 @@ export function getES6moduleSyntaxBySource(source, extension) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-gen-129-concatJSONsourcesToOneFile |  Concat & export all external JSON sources to one JSON file |
@@ -23376,6 +31112,10 @@ export function concatJSONsourcesToOneFile(sourcesList, distPath) {
 }
 ```
         
+<div align="left">
+    <b><a href="#-table-of-contents">↥ Back To Top</a></b>
+</div>
+
 | Prefix | Description |
 |  :-- | :--  |
 | bbeo-pattern-test-131-validateEmail |  Email validator with regex |
