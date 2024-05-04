@@ -2827,7 +2827,7 @@ async function sleepyWork() {
         
 | Prefix | Description |
 |  :-- | :--  |
-| bbeo-pattern-dom-130-smoothScroll | [pattern]: This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
+| bbeo-pattern-dom-109-smoothScroll | [pattern]: This snippet can be used to smoothly scroll the element on which it is called into the visible area of the browser window |
 
 ```js
 const smoothScroll = element =>
@@ -2835,7 +2835,7 @@ const smoothScroll = element =>
     behavior: 'smooth'
   });
   
-smoothScroll('#fooBar'); // scrolls smoothly to the element with the fooBar id
+smoothScroll('#fooBar'); // scrolls smoothly to the element with the id fooBar
 smoothScroll('.fooBar'); // scrolls smoothly to the first element with a class of fooBar
 ```
         
@@ -3047,62 +3047,6 @@ const words = (str, pattern = /[^a-zA-Z-]+/) => str.split(pattern).filter(Boolea
 
 words('I love javaScript!!'); // ["I", "love", "javaScript"]
 words('python, javaScript & coffee'); // ["python", "javaScript", "coffee"]
-```
-        
-| Prefix | Description |
-|  :-- | :--  |
-| bbeo-pattern-gen-128-getES6moduleSyntaxBySource | [pattern]: Get all ES6 modules syntax from the source directory |
-
-```js
-export function getES6moduleSyntaxBySource(source, extension) {
-	const fixVarName = varName => varName.replace(/-/g, '_');
-	const dropRight = (arr, n = 1) => arr.slice(0, -n); 
-	let sourceList = fsReadDir(source);
-	let sourceES6 = [];
-	sourceList.forEach(source => {
-		if (source.endsWith(extension)) {
-			sourceES6.push(dropRight(source, 3));
-		}
-	});
-	return sourceES6.map(
-		source => `import { ${fixVarName(source)} } from './${source}.js';`,
-	);
-}
-```
-        
-| Prefix | Description |
-|  :-- | :--  |
-| bbeo-pattern-gen-129-concatJSONsourcesToOneFile | [pattern]: Concat & export all external JSON sources to one JSON file |
-
-```js
-export function concatJSONsourcesToOneFile(sourcesList, distPath) {
-	const refactorSourceList = sourceList => {
-		let objRefactored = {};
-		sourceList.forEach(source => {
-			objRefactored = { ...objRefactored, ...source };
-		});
-		return objRefactored;
-	};
-
-	const JSONexportation = (sourceList, distPath) => {
-		fs.writeFileSync(distPath, JSON.stringify(sourceList), 'utf8', err => {
-			console.log(err ? err : 'The file was saved!');
-		});
-	};
-
-	JSONexportation(refactorSourceList(sourcesList), distPath);
-}
-```
-        
-| Prefix | Description |
-|  :-- | :--  |
-| bbeo-pattern-test-131-validateEmail | [pattern]: Email validator with regex |
-
-```js
-const validateEmail = email => {      
-  var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-  return emailPattern.test(email); 
-};
 ```
         
 <div align="left">
