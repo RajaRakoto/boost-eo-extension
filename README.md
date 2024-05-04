@@ -315,7 +315,7 @@ if (${1:condition}) {
         
 | Prefix | Description |
 |  :-- | :--  |
-| bbeo-basic-if2 | [basic] Conditional statement 2 |
+| bbeo-basic-if2 | [basic]: Conditional statement 2 |
 
 ```js
 if (${1:condition1}) {
@@ -326,7 +326,7 @@ if (${1:condition1}) {
         
 | Prefix | Description |
 |  :-- | :--  |
-| bbeo-basic-if3 | [basic] Conditional statement 3 |
+| bbeo-basic-if3 | [basic]: Conditional statement 3 |
 
 ```js
 if (${1:condition1}) {
@@ -340,7 +340,7 @@ if (${1:condition1}) {
         
 | Prefix | Description |
 |  :-- | :--  |
-| bbeo-basic-ternary | [basic] Ternary condition |
+| bbeo-basic-ternary | [basic]: Ternary condition |
 
 ```js
 ${1:condition} ? ${2:expr1} : ${3:expr2}
@@ -348,7 +348,7 @@ ${1:condition} ? ${2:expr1} : ${3:expr2}
         
 | Prefix | Description |
 |  :-- | :--  |
-| bbeo-basic-ternary2 | [basic] Ternary condition 2 |
+| bbeo-basic-ternary2 | [basic]: Ternary condition 2 |
 
 ```js
 ${1:condition} ? ${2:expr1} : ${3:condition2} ? ${4:expr2} : ${5:expr3}
