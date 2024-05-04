@@ -1,12 +1,12 @@
 /* constants */
 import {
-	emoji,
-	banner,
-	distFile,
-	dataPath,
-	sourcePath,
-	tableHeader,
-	backToTop,
+	EMOJI,
+	BANNER,
+	DIST_FILE,
+	DATA_PATH,
+	SOURCE_PATH,
+	TABLE_HEADER,
+	BACK_TO_TOP,
 } from "./constants";
 
 /* utils */
@@ -27,17 +27,17 @@ function renderBanner() {
 		try {
 			const result = [];
 
-			result.push(banner.logo);
-			result.push(banner.title);
-			result.push(banner.badge);
-			result.push(banner.description);
-			result.push(banner.usage);
+			result.push(BANNER.logo);
+			result.push(BANNER.title);
+			result.push(BANNER.badge);
+			result.push(BANNER.description);
+			result.push(BANNER.usage);
 			result.push("---\n");
 
 			resolve(result.join("\n"));
 		} catch (error) {
 			reject(
-				`[error]: an error occurred while rendering the banner: \n${error}`,
+				`[error]: an error occurred while rendering the BANNER: \n${error}`,
 			);
 		}
 	});
@@ -50,7 +50,7 @@ function renderTableOfContents(categories) {
 				.map((category) => `[${category}](${getFormatedTag(category)})`)
 				.join(" | ");
 			let result = "";
-			result += `\n### ${emoji.title} Table of contents\n\n`;
+			result += `\n### ${EMOJI.title} Table of contents\n\n`;
 			result += "| " + tableOfContents + " |\n";
 			result += getTableSeparator(categories.length) + "\n";
 			result += "\n---\n";
@@ -65,15 +65,15 @@ function renderTableOfContents(categories) {
 
 async function renderSnippets(data, categories) {
 	try {
-		const tableColumnNumber = tableHeader.split("|").length - 2;
+		const tableColumnNumber = TABLE_HEADER.split("|").length - 2;
 		let result = "";
-		result += `\n### ${emoji.title} Snippets\n`;
+		result += `\n### ${EMOJI.title} Snippets\n`;
 
 		for (const category of categories) {
 			const snippets = await getAllSnippetsByCategory(data, category);
-			result += `\n#### ${emoji.category} ${category}\n`;
+			result += `\n#### ${EMOJI.category} ${category}\n`;
 			snippets.forEach((snippet) => {
-				result += tableHeader + "\n";
+				result += TABLE_HEADER + "\n";
 				result += getTableSeparator(tableColumnNumber) + "\n";
 				result += `| ${snippet.prefix} | ${snippet.description} |\n`;
 				result += `
@@ -82,7 +82,7 @@ ${snippet.body.join("\n")}
 \`\`\`
         `;
 			});
-			result += backToTop;
+			result += BACK_TO_TOP;
 		}
 
 		return result;
@@ -95,36 +95,36 @@ ${snippet.body.join("\n")}
 
 async function main() {
 	try {
-		const data = JSON.parse(await readFileAsync(dataPath, "utf8"));
-		const categories = await getAllCategoriesNamesFromDirectory(sourcePath);
-		await clearFile(distFile);
+		const data = JSON.parse(await readFileAsync(DATA_PATH, "utf8"));
+		const categories = await getAllCategoriesNamesFromDirectory(SOURCE_PATH);
+		await clearFile(DIST_FILE);
 
-		const banner = await renderBanner();
+		const BANNER = await renderBanner();
 		await writeToFile(
-			distFile,
-			banner,
-			`${emoji.done} Banner generated ... [done]`,
+			DIST_FILE,
+			BANNER,
+			`${EMOJI.done} BANNER generated ... [done]`,
 		);
 
 		const tableOfContents = await renderTableOfContents(categories);
 		await writeToFile(
-			distFile,
+			DIST_FILE,
 			tableOfContents,
-			`${emoji.done} Table of contents generated ... [done]`,
+			`${EMOJI.done} Table of contents generated ... [done]`,
 		);
 
 		const snippets = await renderSnippets(data, categories);
 		await writeToFile(
-			distFile,
+			DIST_FILE,
 			snippets,
-			`${emoji.done} Snippets generated ... [done]`,
+			`${EMOJI.done} Snippets generated ... [done]`,
 		);
 
 		console.log(
 			"> NOTE: Please execute `bun run prettier` to format all files before commiting",
 		);
 	} catch (error) {
-		console.error(`\n${emoji.failed} An error occurred while generating ...`);
+		console.error(`\n${EMOJI.failed} An error occurred while generating ...`);
 		console.error(error);
 	}
 }

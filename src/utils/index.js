@@ -1,5 +1,5 @@
 /* constants */
-import { emoji } from "../constants";
+import { EMOJI } from "../constants";
 
 /* libs */
 import * as fs from "fs";
@@ -44,7 +44,7 @@ export async function writeToFile(destination, content, successMessage) {
 export async function clearFile(filePath) {
 	try {
 		await writeFileAsync(filePath, "");
-		console.log(`${emoji.done} ${filePath} has been cleared ... [done]`);
+		console.log(`${EMOJI.done} ${filePath} has been cleared ... [done]`);
 	} catch (error) {
 		throw new Error(
 			`[error]: an error occurred while clearing the file: \n${error}`,
