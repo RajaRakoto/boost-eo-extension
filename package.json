@@ -1,7 +1,7 @@
 {
 	"name": "boost-eo-extension",
 	"displayName": "boost-eo",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "A collection of handy code snippets and design tricks to boost productivity for JavaScript developers, accessible within VSCode ✨",
 	"publisher": "raja",
 	"author": "Raja Rakotonirina <raja.rakoto7@gmail.com>",
