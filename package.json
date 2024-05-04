@@ -37,7 +37,7 @@
 	"scripts": {
 		"script:es6": "bun es6.js",
 		"clean": "rimraf build dist coverage",
-		"build": "bun run clean && bun build.js && vsce package && mv boost-eo-*.vsix dist",
+		"build": "bun run clean && bun build.js && bun src/index.js && vsce package && mv boost-eo-*.vsix dist",
 		"test": "bun test",
 		"eslint": "eslint --config .eslintrc --report-unused-disable-directives --max-warnings 0",
 		"prettier": "prettier --config .prettierrc --write .",
