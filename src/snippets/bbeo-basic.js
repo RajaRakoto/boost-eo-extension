@@ -9,7 +9,7 @@ export const bbeo_basic = {
 		body: ["if (${1:condition}) {", "    ${2:body}", "}"],
 		description: "[basic]: Conditional statement",
 	},
-	"[basic] Conditional statement 2": {
+	"[basic]: Conditional statement 2": {
 		prefix: "bbeo-basic-if2",
 		body: [
 			"if (${1:condition1}) {",
@@ -17,9 +17,9 @@ export const bbeo_basic = {
 			"} else (${2:condition2}) {",
 			"    ${4:body2}",
 		],
-		description: "[basic] Conditional statement 2",
+		description: "[basic]: Conditional statement 2",
 	},
-	"[basic] Conditional statement 3": {
+	"[basic]: Conditional statement 3": {
 		prefix: "bbeo-basic-if3",
 		body: [
 			"if (${1:condition1}) {",
@@ -30,19 +30,19 @@ export const bbeo_basic = {
 			"    ${5:body3}",
 			"}",
 		],
-		description: "[basic] Conditional statement 3",
+		description: "[basic]: Conditional statement 3",
 	},
-	"[basic] Ternary condition": {
+	"[basic]: Ternary condition": {
 		prefix: "bbeo-basic-ternary",
 		body: ["${1:condition} ? ${2:expr1} : ${3:expr2}"],
-		description: "[basic] Ternary condition",
+		description: "[basic]: Ternary condition",
 	},
-	"[basic] Ternary condition 2": {
+	"[basic]: Ternary condition 2": {
 		prefix: "bbeo-basic-ternary2",
 		body: [
 			"${1:condition} ? ${2:expr1} : ${3:condition2} ? ${4:expr2} : ${5:expr3}",
 		],
-		description: "[basic] Ternary condition 2",
+		description: "[basic]: Ternary condition 2",
 	},
 	"[basic]: Ternary condition 3": {
 		prefix: "bbeo-basic-ternary3",
