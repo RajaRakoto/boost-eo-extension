@@ -86,7 +86,7 @@ export function getAllSnippetsByCategory(data, category) {
 			const snippets = [];
 
 			for (const key in data) {
-				if (data.hasOwnProperty(key)) {
+				if (Object.prototype.hasOwnProperty.call(data, key)) {
 					const snippet = data[key];
 					if (snippet.prefix.startsWith(`bbeo-${category}-`)) {
 						snippets.push({
