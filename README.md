@@ -13,7 +13,7 @@ Explore a curated compilation of helpful code snippets and clever design techniq
 ### 📌 Table of contents
 
 | [array](#-array) | [basic](#-basic) | [cast](#-cast) | [class](#-class) | [console](#-console) | [date](#-date) | [destruct](#-destruct) | [dom](#-dom) | [function](#-function) | [math](#-math) | [object](#-object) | [pattern](#-pattern) | [regex](#-regex) | [spread](#-spread) | [string](#-string) |
-|  :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :--  |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 
 ---
 
