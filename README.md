@@ -1,12 +1,10 @@
-<div align="center">
-<img src="https://github.com/RajaRakoto/github-docs/blob/master/boost-eo-extension/boost-eo.png?raw=true" width=256>
-</div>
-
 # boost-eo-extension 💛
 
 ![Git](https://img.shields.io/badge/-Git-777?style=flat&logo=git&logoColor=F05032&labelColor=ffffff) ![Gitub](https://img.shields.io/badge/-Gitub-777?style=flat&logo=github&logoColor=777&labelColor=ffffff)
 
 Explore a curated compilation of helpful code snippets and clever design techniques designed to improve JavaScript developer productivity, easily accessible right within the VSCode environment.
+
+<img src="https://github.com/RajaRakoto/github-docs/blob/master/boost-eo-extension/boost-eo-demo.gif?raw=true" width="800">
 
 **Usage**: You can install it by typing "boost-eo" in the extension tab of your IDE
   
