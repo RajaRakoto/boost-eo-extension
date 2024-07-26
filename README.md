@@ -7,7 +7,7 @@ Explore a curated compilation of helpful code snippets and clever design techniq
 <img src="https://github.com/RajaRakoto/github-docs/blob/master/boost-eo-extension/boost-eo-demo.gif?raw=true" width="800">
 
 **Usage**: You can install it by typing "boost-eo" in the extension tab of your IDE
-  
+
 ---
 
 ### 📌 Table of contents
