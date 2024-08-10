@@ -1,5 +1,5 @@
 /**
- * @description: gruntfile for vscode boilerplate
+ * @description: gruntfile for boost-eo
  * @requires: grunt | load-grunt-tasks | grunt-contrib-compress
  */
 module.exports = (grunt) => {
@@ -136,7 +136,7 @@ module.exports = (grunt) => {
 
 		// task resume
 		getTaskResume(
-			"== VSCODE BOILERPLATE TASKS ==",
+			"== BOOST-EO TASKS ==",
 			plumTaskNames,
 			plumTaskStatus,
 			"yellow",

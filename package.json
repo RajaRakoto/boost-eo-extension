@@ -1,29 +1,30 @@
 {
-	"name": "my-extension",
-	"displayName": "My extension",
-	"version": "1.0.0",
-	"description": "Minimalistic boilerplate to quick-start VSCode Extension development 🚀",
+	"name": "boost-eo",
+	"displayName": "boost-eo",
+	"version": "2.0.0",
+	"description": "A collection of handy code snippets and design tricks to boost productivity for JavaScript developers, accessible within VSCode ✨",
 	"publisher": "raja",
 	"author": "Raja Rakotonirina <raja.rakoto7@gmail.com>",
 	"license": "MIT",
-	"icon": "./assets/vscode-extension.png",
+	"icon": "./assets/boost-eo.png",
 	"readme": "./README.md",
 	"type": "module",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/RajaRakoto/vscode-boilerplate.git"
+		"url": "git+https://github.com/RajaRakoto/boost-eo-extension.git"
 	},
-	"homepage": "https://github.com/RajaRakoto/vscode-boilerplate#readme",
-	"bugs": "https://github.com/RajaRakoto/vscode-boilerplate/issues",
+	"homepage": "https://github.com/RajaRakoto/boost-eo-extension#readme",
+	"bugs": "https://github.com/RajaRakoto/boost-eo-extension/issues",
 	"files": ["dist"],
 	"keywords": [
 		"extension",
 		"vscode",
 		"javascript",
-		"minimalist",
-		"boilerplate",
-		"template",
-		"starter"
+		"productivity",
+		"snippets",
+		"helper",
+		"patterns",
+		"collection"
 	],
 	"engines": {
 		"vscode": "^1.39.0"
@@ -32,8 +33,8 @@
 	"scripts": {
 		"script:es6": "bun es6.js",
 		"clean": "rimraf build dist coverage",
-		"build": "bun run clean && bun build.js && vsce package && mv my-*.vsix dist",
-		"test": "bun test",
+		"build": "bun run clean && bun build.js && bun src/index.js && vsce package && mv boost-eo-*.vsix dist",
+    "test": "bun test",
 		"biome:start": "biome start",
 		"biome:stop": "biome stop",
 		"biome:fix": "biome check --fix .",
@@ -51,11 +52,11 @@
 		"snippets": [
 			{
 				"language": "javascript",
-				"path": "./dist/my-extension.code-snippets"
+				"path": "./dist/boost-eo-extension.code-snippets"
 			},
 			{
 				"language": "typescript",
-				"path": "./dist/my-extension.code-snippets"
+				"path": "./dist/boost-eo-extension.code-snippets"
 			}
 		]
 	},
