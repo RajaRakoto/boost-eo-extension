@@ -1,46 +1,43 @@
 {
-	"name": "boost-eo",
-	"displayName": "boost-eo",
-	"version": "2.0.0",
-	"description": "A collection of handy code snippets and design tricks to boost productivity for JavaScript developers, accessible within VSCode ✨",
+	"name": "my-extension",
+	"displayName": "My extension",
+	"version": "1.0.0",
+	"description": "Minimalistic boilerplate to quick-start VSCode Extension development 🚀",
 	"publisher": "raja",
 	"author": "Raja Rakotonirina <raja.rakoto7@gmail.com>",
 	"license": "MIT",
-	"icon": "./assets/boost-eo.png",
+	"icon": "./assets/vscode-extension.png",
 	"readme": "./README.md",
 	"type": "module",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/RajaRakoto/boost-eo-extension.git"
+		"url": "git+https://github.com/RajaRakoto/vscode-boilerplate.git"
 	},
-	"homepage": "https://github.com/RajaRakoto/boost-eo-extension#readme",
-	"bugs": "https://github.com/RajaRakoto/boost-eo-extension/issues",
-	"files": [
-		"dist"
-	],
+	"homepage": "https://github.com/RajaRakoto/vscode-boilerplate#readme",
+	"bugs": "https://github.com/RajaRakoto/vscode-boilerplate/issues",
+	"files": ["dist"],
 	"keywords": [
 		"extension",
 		"vscode",
 		"javascript",
-		"productivity",
-		"snippets",
-		"helper",
-		"patterns",
-		"collection"
+		"minimalist",
+		"boilerplate",
+		"template",
+		"starter"
 	],
 	"engines": {
 		"vscode": "^1.39.0"
 	},
-	"categories": [
-		"Snippets"
-	],
+	"categories": ["Snippets"],
 	"scripts": {
 		"script:es6": "bun es6.js",
 		"clean": "rimraf build dist coverage",
-		"build": "bun run clean && bun build.js && bun src/index.js && vsce package && mv boost-eo-*.vsix dist",
+		"build": "bun run clean && bun build.js && vsce package && mv my-*.vsix dist",
 		"test": "bun test",
-		"eslint": "eslint --config .eslintrc --report-unused-disable-directives --max-warnings 0",
-		"prettier": "prettier --config .prettierrc --write .",
+		"biome:start": "biome start",
+		"biome:stop": "biome stop",
+		"biome:fix": "biome check --fix .",
+		"biome:unsafe": "biome check --fix --unsafe .",
 		"backup": "grunt backup",
 		"pkg-check": "depcheck",
 		"pkg-upgrade": "ncu --interactive --format group --packageManager bun",
@@ -54,18 +51,21 @@
 		"snippets": [
 			{
 				"language": "javascript",
-				"path": "./dist/boost-eo-extension.code-snippets"
+				"path": "./dist/my-extension.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./dist/my-extension.code-snippets"
 			}
 		]
 	},
 	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
 		"depcheck": "^1.4.7",
-		"eslint": "^8.57.0",
-		"eslint-config-prettier": "^9.1.0",
 		"grunt": "^1.6.1",
 		"grunt-contrib-compress": "^2.0.0",
 		"load-grunt-tasks": "^5.1.0",
-		"npm-check-updates": "^16.14.15",
-		"rimraf": "^5.0.5"
+		"npm-check-updates": "^17.0.6",
+		"rimraf": "^6.0.1"
 	}
 }
