@@ -2,9 +2,9 @@
 import { EMOJI } from "../constants";
 
 /* libs */
-import * as fs from "fs";
-import * as path from "path";
-import util from "util";
+import * as fs from "node:fs";
+import * as path from "node:path";
+import util from "node:util";
 
 // ==========================
 
@@ -60,7 +60,7 @@ export function getTableSeparator(columns) {
 	if (columns <= 0) {
 		throw new Error("[error]: columns must be greater than 0");
 	}
-	return "| " + Array.from({ length: columns }, () => " :-- ").join("|") + " |";
+	return `| ${Array.from({ length: columns }, () => " :-- ").join("|")} |`;
 }
 
 /**
@@ -71,7 +71,7 @@ export function getFormatedTag(text) {
 	let transformedText = text.replace(/\(|\)/g, "-");
 	transformedText = transformedText.replace(/\+|&/g, "--");
 	transformedText = transformedText.replace(/ /g, "-");
-	transformedText = "#-" + transformedText.toLowerCase();
+	transformedText = `#-${transformedText.toLowerCase()}`;
 	return transformedText;
 }
 

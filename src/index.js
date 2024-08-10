@@ -46,13 +46,13 @@ function renderBanner() {
 function renderTableOfContents(categories) {
 	return new Promise((resolve, reject) => {
 		try {
-			let tableOfContents = categories
+			const tableOfContents = categories
 				.map((category) => `[${category}](${getFormatedTag(category)})`)
 				.join(" | ");
 			let result = "";
 			result += `\n### ${EMOJI.title} Table of contents\n\n`;
-			result += "| " + tableOfContents + " |\n";
-			result += getTableSeparator(categories.length) + "\n";
+			result += `| ${tableOfContents} |\n`;
+			result += `${getTableSeparator(categories.length)}\n`;
 			result += "\n---\n";
 			resolve(result);
 		} catch (error) {
@@ -73,8 +73,8 @@ async function renderSnippets(data, categories) {
 			const snippets = await getAllSnippetsByCategory(data, category);
 			result += `\n#### ${EMOJI.category} ${category}\n`;
 			snippets.forEach((snippet) => {
-				result += TABLE_HEADER + "\n";
-				result += getTableSeparator(tableColumnNumber) + "\n";
+				result += `${TABLE_HEADER}\n`;
+				result += `${getTableSeparator(tableColumnNumber)}\n`;
 				result += `| ${snippet.prefix} | ${snippet.description} |\n`;
 				result += `
 \`\`\`js
