@@ -1,6 +1,6 @@
 /* libs */
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 
 /* snippets */
 import { bbeo_array } from "./src/snippets/bbeo-array.js";
