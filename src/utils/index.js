@@ -22,13 +22,14 @@ export const fileExistsAsync = util.promisify(fs.exists);
 export async function writeToFile(destination, content, successMessage) {
 	try {
 		const fileExists = await fileExistsAsync(destination);
+		let finalContent = content;
 
 		if (fileExists) {
 			const existingContent = await readFileAsync(destination, "utf8");
-			content = existingContent + content;
+			finalContent = existingContent + content;
 		}
 
-		await writeFileAsync(destination, content);
+		await writeFileAsync(destination, finalContent);
 		console.log(successMessage);
 	} catch (error) {
 		throw new Error(

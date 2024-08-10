@@ -72,7 +72,7 @@ async function renderSnippets(data, categories) {
 		for (const category of categories) {
 			const snippets = await getAllSnippetsByCategory(data, category);
 			result += `\n#### ${EMOJI.category} ${category}\n`;
-			snippets.forEach((snippet) => {
+			for (const snippet of snippets) {
 				result += `${TABLE_HEADER}\n`;
 				result += `${getTableSeparator(tableColumnNumber)}\n`;
 				result += `| ${snippet.prefix} | ${snippet.description} |\n`;
@@ -81,7 +81,7 @@ async function renderSnippets(data, categories) {
 ${snippet.body.join("\n")}
 \`\`\`
         `;
-			});
+			}
 			result += BACK_TO_TOP;
 		}
 
