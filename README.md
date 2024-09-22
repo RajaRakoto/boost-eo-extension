@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://rajarakoto.github.io/github-docs/boost-eo-extension/boost-eo.png" width=256>
+<img src="https://rajarakoto.github.io/github-docs/boost-eo-extension/boost-eo.png" width=128>
 </div>
 
 # boost-eo-extension 💛
