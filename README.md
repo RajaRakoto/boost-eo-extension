@@ -6,7 +6,9 @@
 
 ![Git](https://img.shields.io/badge/-Git-777?style=flat&logo=git&logoColor=F05032&labelColor=ffffff) ![Gitub](https://img.shields.io/badge/-Gitub-777?style=flat&logo=github&logoColor=777&labelColor=ffffff)
 
-Explore a curated compilation of helpful code snippets and clever design techniques designed to improve JavaScript developer productivity, easily accessible right within the VSCode environment.
+**Explore a curated compilation of helpful code snippets and clever design techniques designed to improve JavaScript developer productivity, easily accessible right within the VSCode environment.**
+
+<img src="https://rajarakoto.github.io/github-docs/boost-eo-extension/boost-eo-extension-demo.gif" width=800>
 
 **Usage**: You can install it by typing "boost-eo" in the extension tab of your IDE
   
